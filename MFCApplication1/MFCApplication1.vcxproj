@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BBC29C2B-A814-49F0-B1FD-8B8071854EA1}</ProjectGuid>
+    <RootNamespace>MFCApplication1</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>HONS</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Beijing.h" />
+    <ClInclude Include="beijingyuzhi.h" />
+    <ClInclude Include="BFEN.h" />
+    <ClInclude Include="Blingmindu.h" />
+    <ClInclude Include="bzengyi.h" />
+    <ClInclude Include="caitushezhi.h" />
+    <ClInclude Include="ENINPUT.h" />
+    <ClInclude Include="Famenceshi.h" />
+    <ClInclude Include="Frmlogin.h" />
+    <ClInclude Include="fuzhu.h" />
+    <ClInclude Include="GFEN.h" />
+    <ClInclude Include="Glingmindu.h" />
+    <ClInclude Include="gzengyi.h" />
+    <ClInclude Include="huidu1.h" />
+    <ClInclude Include="huidu2.h" />
+    <ClInclude Include="huiduhulue.h" />
+    <ClInclude Include="HUIERF.h" />
+    <ClInclude Include="HUIFEN.h" />
+    <ClInclude Include="HUNFEN.h" />
+    <ClInclude Include="hunselingmindu.h" />
+    <ClInclude Include="InputDlg.h" />
+    <ClInclude Include="JIEZHIRIQI.h" />
+    <ClInclude Include="Liuliangsheding.h" />
+    <ClInclude Include="MFCApplication1.h" />
+    <ClInclude Include="MFCApplication1Dlg.h" />
+    <ClInclude Include="Mianji.h" />
+    <ClInclude Include="mianjiweitiao.h" />
+    <ClInclude Include="mima.h" />
+    <ClInclude Include="modbus\modbus-private.h" />
+    <ClInclude Include="modbus\stdint.h" />
+    <ClInclude Include="modsheding.h" />
+    <ClInclude Include="Moshixuanze.h" />
+    <ClInclude Include="moshixuanzeer.h" />
+    <ClInclude Include="moshixuanzesan.h" />
+    <ClInclude Include="MyPublicData.h" />
+    <ClInclude Include="Pingyi.h" />
+    <ClInclude Include="Qinghui.h" />
+    <ClInclude Include="QuanXianDlg.h" />
+    <ClInclude Include="QUFEN.h" />
+    <ClInclude Include="quyuer.h" />
+    <ClInclude Include="QUYUERFEN.h" />
+    <ClInclude Include="quyusan.h" />
+    <ClInclude Include="QUYUSANFEN.h" />
+    <ClInclude Include="quyusi.h" />
+    <ClInclude Include="QUYUSIFEN.h" />
+    <ClInclude Include="quyuwu.h" />
+    <ClInclude Include="QUYUWUFEN.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RFEN.h" />
+    <ClInclude Include="rgbtrans.h" />
+    <ClInclude Include="rlingmindu.h" />
+    <ClInclude Include="Rzengyi.h" />
+    <ClInclude Include="shendu.h" />
+    <ClInclude Include="shenduer.h" />
+    <ClInclude Include="SHENDUFEN.h" />
+    <ClInclude Include="SHENERFEN.h" />
+    <ClInclude Include="shujuduqu.h" />
+    <ClInclude Include="SkinH.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="tiaoshi.h" />
+    <ClInclude Include="tinystr.h" />
+    <ClInclude Include="tinyxml.h" />
+    <ClInclude Include="tishikuang.h" />
+    <ClInclude Include="TONGDAO.h" />
+    <ClInclude Include="tongxinzhuangtai.h" />
+    <ClInclude Include="udpcaitu.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="VGAsheding.h" />
+    <ClInclude Include="xiangjihuafen.h" />
+    <ClInclude Include="xingxuanlingmindu.h" />
+    <ClInclude Include="xingxuanshezhi.h" />
+    <ClInclude Include="XMLHelper.h" />
+    <ClInclude Include="Yanchi.h" />
+    <ClInclude Include="yanseCol.h" />
+    <ClInclude Include="yansehangmianji.h" />
+    <ClInclude Include="Yansemingan.h" />
+    <ClInclude Include="yanseminganqiangdu.h" />
+    <ClInclude Include="yuancheng.h" />
+    <ClInclude Include="ZHUBANSHUJU.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Beijing.cpp" />
+    <ClCompile Include="beijingyuzhi.cpp" />
+    <ClCompile Include="BFEN.cpp" />
+    <ClCompile Include="Blingmindu.cpp" />
+    <ClCompile Include="bzengyi.cpp" />
+    <ClCompile Include="caitushezhi.cpp" />
+    <ClCompile Include="ENINPUT.cpp" />
+    <ClCompile Include="Famenceshi.cpp" />
+    <ClCompile Include="Frmlogin.cpp" />
+    <ClCompile Include="fuzhu.cpp" />
+    <ClCompile Include="GFEN.cpp" />
+    <ClCompile Include="Glingmindu.cpp" />
+    <ClCompile Include="gzengyi.cpp" />
+    <ClCompile Include="huidu1.cpp" />
+    <ClCompile Include="huidu2.cpp" />
+    <ClCompile Include="huiduhulue.cpp" />
+    <ClCompile Include="HUIERF.cpp" />
+    <ClCompile Include="HUIFEN.cpp" />
+    <ClCompile Include="HUNFEN.cpp" />
+    <ClCompile Include="hunselingmindu.cpp" />
+    <ClCompile Include="InputDlg.cpp" />
+    <ClCompile Include="JIEZHIRIQI.cpp" />
+    <ClCompile Include="Liuliangsheding.cpp" />
+    <ClCompile Include="MFCApplication1.cpp" />
+    <ClCompile Include="MFCApplication1Dlg.cpp" />
+    <ClCompile Include="Mianji.cpp" />
+    <ClCompile Include="mianjiweitiao.cpp" />
+    <ClCompile Include="mima.cpp" />
+    <ClCompile Include="modsheding.cpp" />
+    <ClCompile Include="Moshixuanze.cpp" />
+    <ClCompile Include="moshixuanzeer.cpp" />
+    <ClCompile Include="moshixuanzesan.cpp" />
+    <ClCompile Include="MyPublicData.cpp" />
+    <ClCompile Include="Pingyi.cpp" />
+    <ClCompile Include="Qinghui.cpp" />
+    <ClCompile Include="QuanXianDlg.cpp" />
+    <ClCompile Include="QUFEN.cpp" />
+    <ClCompile Include="quyuer.cpp" />
+    <ClCompile Include="QUYUERFEN.cpp" />
+    <ClCompile Include="quyusan.cpp" />
+    <ClCompile Include="QUYUSANFEN.cpp" />
+    <ClCompile Include="quyusi.cpp" />
+    <ClCompile Include="QUYUSIFEN.cpp" />
+    <ClCompile Include="quyuwu.cpp" />
+    <ClCompile Include="QUYUWUFEN.cpp" />
+    <ClCompile Include="RFEN.cpp" />
+    <ClCompile Include="rlingmindu.cpp" />
+    <ClCompile Include="Rzengyi.cpp" />
+    <ClCompile Include="shendu.cpp" />
+    <ClCompile Include="shenduer.cpp" />
+    <ClCompile Include="SHENDUFEN.cpp" />
+    <ClCompile Include="SHENERFEN.cpp" />
+    <ClCompile Include="shujuduqu.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tiaoshi.cpp" />
+    <ClCompile Include="tinystr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tinyxml.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tinyxmlerror.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tinyxmlparser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tishikuang.cpp" />
+    <ClCompile Include="TONGDAO.cpp" />
+    <ClCompile Include="tongxinzhuangtai.cpp" />
+    <ClCompile Include="udpcaitu.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="VGAsheding.cpp" />
+    <ClCompile Include="xiangjihuafen.cpp" />
+    <ClCompile Include="xingxuanlingmindu.cpp" />
+    <ClCompile Include="xingxuanshezhi.cpp" />
+    <ClCompile Include="XMLHelper.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Yanchi.cpp" />
+    <ClCompile Include="yanseCol.cpp" />
+    <ClCompile Include="yansehangmianji.cpp" />
+    <ClCompile Include="Yansemingan.cpp" />
+    <ClCompile Include="yanseminganqiangdu.cpp" />
+    <ClCompile Include="yuancheng.cpp" />
+    <ClCompile Include="ZHUBANSHUJU.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MFCApplication1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="modbus.dll" />
+    <None Include="res\MFCApplication1.rc2" />
+    <None Include="rgbtrans.dll" />
+    <None Include="SkinH.dll" />
+    <None Include="skinh.she" />
+    <None Include="SkinHu.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\Administrator\Desktop\HS_system-master\MFCApplication11\res\MFCApplication1.ico" />
+    <Image Include="res\beijing.bmp" />
+    <Image Include="res\bitbug_favicon.ico" />
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\Green.ico" />
+    <Image Include="res\hengtiao.bmp" />
+    <Image Include="res\HS.ico" />
+    <Image Include="res\icon2.ico" />
+    <Image Include="res\icon3.ico" />
+    <Image Include="res\MFCApplication1.ico" />
+    <Image Include="res\motherboard .ico" />
+    <Image Include="res\motherboard.bmp" />
+    <Image Include="res\motherboard.ico" />
+    <Image Include="res\RED.ico" />
+    <Image Include="res\xiangji.bmp" />
+    <Image Include="res\zhukong.bmp" />
+    <Image Include="res\zhukongban.bmp" />
+    <Image Include="res\zhukongban.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="modbus.lib" />
+    <Library Include="rgbtrans.lib" />
+    <Library Include="SkinH.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="chinese.xml" />
+    <Xml Include="english.xml" />
+    <Xml Include="lasttime.xml" />
+    <Xml Include="mode1.xml" />
+    <Xml Include="mode10.xml" />
+    <Xml Include="mode11.xml" />
+    <Xml Include="mode12.xml" />
+    <Xml Include="mode13.xml" />
+    <Xml Include="mode14.xml" />
+    <Xml Include="mode15.xml" />
+    <Xml Include="mode16.xml" />
+    <Xml Include="mode17.xml" />
+    <Xml Include="mode18.xml" />
+    <Xml Include="mode19.xml" />
+    <Xml Include="mode2.xml" />
+    <Xml Include="mode20.xml" />
+    <Xml Include="mode3.xml" />
+    <Xml Include="mode4.xml" />
+    <Xml Include="mode5.xml" />
+    <Xml Include="mode6.xml" />
+    <Xml Include="mode7.xml" />
+    <Xml Include="mode8.xml" />
+    <Xml Include="mode9.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MFCApplication1.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,872 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CAboutDlg" Collapsed="true">
+    <Position X="25.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MFCApplication1Dlg.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiXmlParsingData" Collapsed="true">
+    <Position X="18.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAQABAAEAAAAAAAAAAEEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>tinyxmlparser.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Beijing" Collapsed="true">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/gEIAAECAAEAANsAAJBgAABsAAAAAAAAAAAAAAMCABg=</HashCode>
+      <FileName>Beijing.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="beijingyuzhi" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAIIJEAAAEgsP84ABAAAAAAAAEAAAAAAAABAAECAAA=</HashCode>
+      <FileName>beijingyuzhi.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFEN" Collapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIQEAAAEAgH8YABAgAAAAAAAAAAAAAAAAAAECAAA=</HashCode>
+      <FileName>BFEN.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Blingmindu" Collapsed="true">
+    <Position X="22.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>vgFIwAcAACEEOv8UABIgCAAjAAUDAACCEAIAAXEGgAg=</HashCode>
+      <FileName>Blingmindu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="bzengyi" Collapsed="true">
+    <Position X="24" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKICEAAAEBsP8YABAAAAAEAEAAAAABAAAAAIECACA=</HashCode>
+      <FileName>bzengyi.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="caitushezhi" Collapsed="true">
+    <Position X="27.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIBEAAAEAgH8YABAAAAAAAAAAAQAAAAAAIAECIAA=</HashCode>
+      <FileName>caitushezhi.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Famenceshi" Collapsed="true">
+    <Position X="25.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKIIEAAAEAMP8IgBAAAAACAAAAAQAAAAAAAQECAoA=</HashCode>
+      <FileName>Famenceshi.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Frmlogin" Collapsed="true">
+    <Position X="27.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACEAEAAAAAIIABAAAAAhAAAABACgAAIAAAAAAAA=</HashCode>
+      <FileName>Frmlogin.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="fuzhu" Collapsed="true">
+    <Position X="29.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAEBAAAAAAgIEBAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>fuzhu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GFEN" Collapsed="true">
+    <Position X="31" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIJAEAAAEAgH8YABAAAAAAAAAAAAAAAAAAAAECAAg=</HashCode>
+      <FileName>GFEN.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Glingmindu" Collapsed="true">
+    <Position X="17" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABIwAsAACEkMv8WABIACCADAAUCAAACAAIBAWECgAA=</HashCode>
+      <FileName>Glingmindu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="gzengyi" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKICEAAAEBsP8YABAAAAAEAEAAAAAgAAAAAAECACA=</HashCode>
+      <FileName>gzengyi.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="huidu1" Collapsed="true">
+    <Position X="20.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAUAAQFAMPsAABAAAAAAAAAEAAAAAAAAABECAAI=</HashCode>
+      <FileName>huidu1.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="huidu2" Collapsed="true">
+    <Position X="22.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAoIAUgAAFAMP8AABAAAAAAAAAAAAAAAAAAAEECgAA=</HashCode>
+      <FileName>huidu2.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="huiduhulue" Collapsed="true">
+    <Position X="24" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIJAEAAAEAgH8YABAAAAAAAAAAABAAAAAAAAGCAAA=</HashCode>
+      <FileName>huiduhulue.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HUIERF" Collapsed="true">
+    <Position X="25.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAEAAAEAgH8YABAAAAAAAAAAAAQAAAAAEAECAAA=</HashCode>
+      <FileName>HUIERF.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HUIFEN" Collapsed="true">
+    <Position X="27.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAEAEAEAgH8YABAAAAAAAAAAAAAAAAAAAAECAAA=</HashCode>
+      <FileName>HUIFEN.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HUNFEN" Collapsed="true">
+    <Position X="29.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAEAEAEAgH8YABAEAAAAAAAAAAAAAAAAAAECAAA=</HashCode>
+      <FileName>HUNFEN.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="hunselingmindu" Collapsed="true">
+    <Position X="31" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QABIQAMAACEAMP8QAhIACAACIAQCAAACAAAAEUECgAA=</HashCode>
+      <FileName>hunselingmindu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CInputDlg" Collapsed="true">
+    <Position X="29.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIBAAgAAAAEAAAARAAAAAABAAgBAAAAAAEAABAIBA=</HashCode>
+      <FileName>InputDlg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CLiuliangsheding" Collapsed="true">
+    <Position X="31" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAJIAMAgAEQOv8IABAQAGAAAKAAAACAABAAEAECAEE=</HashCode>
+      <FileName>Liuliangsheding.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMFCApplication1App" Collapsed="true">
+    <Position X="17" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQA=</HashCode>
+      <FileName>MFCApplication1.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMFCApplication1Dlg" Collapsed="true">
+    <Position X="18.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>nhCKGBEAAAkQCAAAABAQAAAyCQIAQAQAoAQAkAESAQA=</HashCode>
+      <FileName>MFCApplication1Dlg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mianji" Collapsed="true">
+    <Position X="17" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAGAAAEAsP8IABAAEAAAAAAAAAAAAAAAAAECAAA=</HashCode>
+      <FileName>Mianji.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mianjiweitiao" Collapsed="true">
+    <Position X="18.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAEAAAEAgH8YABAAAAAgAAAAAAAAAAAAAAECABA=</HashCode>
+      <FileName>mianjiweitiao.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="modsheding" Collapsed="true">
+    <Position X="20.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBAIAAEAAAAAML8IABAAAAAQAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>modsheding.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Moshixuanze" Collapsed="true">
+    <Position X="22.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKALEABAEAAPQIAJAAAAABAAAAAgAAgB8AAAGiAQA=</HashCode>
+      <FileName>Moshixuanze.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="moshixuanzeer" Collapsed="true">
+    <Position X="24" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKALEAAAEAAPQIAJAAQAABEAAAAgAAwAIwAAGiAQA=</HashCode>
+      <FileName>moshixuanzeer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="moshixuanzesan" Collapsed="true">
+    <Position X="25.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAKEAAAEAAbwIABCIQAABAAAAAgCAAAIAACFCAAA=</HashCode>
+      <FileName>moshixuanzesan.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMyPublicData" Collapsed="true">
+    <Position X="20.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAgAAAAAIAAAAAMAAAAAIgAAAAAAAIAACSAFA=</HashCode>
+      <FileName>MyPublicData.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pingyi" Collapsed="true">
+    <Position X="29.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACBOQBNAACECMf9cABIACAgCAMQQAABDAAAACUkGgDI=</HashCode>
+      <FileName>Pingyi.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Qinghui" Collapsed="true">
+    <Position X="31" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAEAAAEAQDsIABAAAAAAAAAAAAAABAAAAAECAAA=</HashCode>
+      <FileName>Qinghui.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CQuanXianDlg" Collapsed="true">
+    <Position X="22.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAGAACAAAAAIABAAAAAgAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>QuanXianDlg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QUFEN" Collapsed="true">
+    <Position X="17" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAEAAAEAgH8YABAAAAAAAAAAAAAAAAAEAgECAAA=</HashCode>
+      <FileName>QUFEN.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="quyuer" Collapsed="true">
+    <Position X="18.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAoIAEAAAGAMP8AABBAAAAAAAEAAAAAAAQAAEECIAA=</HashCode>
+      <FileName>quyuer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QUYUERFEN" Collapsed="true">
+    <Position X="20.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAEAAAEAgH8YABAAgAAAAAAAAgAAAAAAAAECAAA=</HashCode>
+      <FileName>QUYUERFEN.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="quyusan" Collapsed="true">
+    <Position X="22.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAoIAEAAAGIMP8AAFAAQAAAAAAAAAAAAAAAAEECAAA=</HashCode>
+      <FileName>quyusan.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QUYUSANFEN" Collapsed="true">
+    <Position X="24" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIEEAAAEAgH8YABAAAAAIAAAAAAAAAAAAAAECAAA=</HashCode>
+      <FileName>QUYUSANFEN.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="quyusi" Collapsed="true">
+    <Position X="25.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAoIAEAAAGAMP8AABABAAAAAAAAAAAAAAAAEEECAQA=</HashCode>
+      <FileName>quyusi.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QUYUSIFEN" Collapsed="true">
+    <Position X="27.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAEAAAEAgH8YABAAAAAAAAAAAAAAAAAAAAECAAA=</HashCode>
+      <FileName>QUYUSIFEN.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="quyuwu" Collapsed="true">
+    <Position X="29.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAApIAEAAAGAMP8AABAAAAAAAAAAAAAAAAAAAEECABA=</HashCode>
+      <FileName>quyuwu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QUYUWUFEN" Collapsed="true">
+    <Position X="31" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAEAAAEAgH8YAJAAAAAAAAAQAAAAAAAAAAECAAA=</HashCode>
+      <FileName>QUYUWUFEN.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RFEN" Collapsed="true">
+    <Position X="17" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAEBAAEAgH8YABAAAAAAAAAAAAAAAAAACAECAAA=</HashCode>
+      <FileName>RFEN.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rlingmindu" Collapsed="true">
+    <Position X="18.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABIQAsAACEgMv8SABIACCADAAUCAAACAAIAAUEWoAA=</HashCode>
+      <FileName>rlingmindu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rzengyi" Collapsed="true">
+    <Position X="20.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKICEAAAEBsP8YABAAAAAEAEAAAAAAAACAAAEDACA=</HashCode>
+      <FileName>Rzengyi.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="shendu" Collapsed="true">
+    <Position X="22.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAEAAAGAMP8AABAAACAAAAAAAAQgAAAAAAUCAAA=</HashCode>
+      <FileName>shendu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="shenduer" Collapsed="true">
+    <Position X="24" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAIIAEAAAGAMP8AABAAEAAAAAAQAAAAAAAAAAUCAAA=</HashCode>
+      <FileName>shenduer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SHENDUFEN" Collapsed="true">
+    <Position X="25.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAEAAAEAgH8YABAAACAAAAQAAAAAAAAAAAECAAA=</HashCode>
+      <FileName>SHENDUFEN.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SHENERFEN" Collapsed="true">
+    <Position X="27.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAEAAAEAgH8YABEAAAAAAAACAAAAAAAAAAECAAA=</HashCode>
+      <FileName>SHENERFEN.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tiaoshi" Collapsed="true">
+    <Position X="29.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/gEIAAEAAIFAMP84AJAAAAAqAAAgAAAAAAAAAANCAJg=</HashCode>
+      <FileName>tiaoshi.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiXmlString" Collapsed="true">
+    <Position X="3.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAIAAAAEAAAlAsICAQACAAEAAIIAiQExCAABAAA=</HashCode>
+      <FileName>tinystr.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiXmlOutStream" Collapsed="true">
+    <Position X="3.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>tinystr.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiXmlVisitor" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAQAAAAAAAAAAAAAIAAAAAAAAAAAgAA=</HashCode>
+      <FileName>tinyxml.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiXmlBase" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAgggBQAEAgEAAAQAgBhABASADAQAiAIAAAiAAAkAAA=</HashCode>
+      <FileName>tinyxml.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiXmlNode" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AKAgAAAIAEAEiiBAhEAAYQAEAAqBgCECAYtgAAtAIDA=</HashCode>
+      <FileName>tinyxml.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiXmlAttribute" Collapsed="true">
+    <Position X="14.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQggAAAgAAQggAEAABAAQQAAAIEAGQAAABgQAIEEAA=</HashCode>
+      <FileName>tinyxml.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiXmlAttributeSet" Collapsed="true">
+    <Position X="31" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAQAAQAAABAAAAAAJAAAAACAiAAAAAAA=</HashCode>
+      <FileName>tinyxml.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiXmlElement" Collapsed="true">
+    <Position X="1" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAACACAAAJAAAAIIEAgQCAAA0BCBAgAAAEIFE=</HashCode>
+      <FileName>tinyxml.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiXmlComment" Collapsed="true">
+    <Position X="3.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAIAAAAAAAAAAAAAAAQAAAAAAAAEIAAAgAAAEIBA=</HashCode>
+      <FileName>tinyxml.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiXmlText" Collapsed="true">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AKAgAAAABAAAAAAAAEAAAABAAAABgAEAAAAgAAAEIBQ=</HashCode>
+      <FileName>tinyxml.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiXmlDeclaration" Collapsed="true">
+    <Position X="7.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIAgACCAAAQAAAAAAAAAAAAAgAAAAIEAAAIoAAAEKBA=</HashCode>
+      <FileName>tinyxml.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiXmlUnknown" Collapsed="true">
+    <Position X="10" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAAEAAAAAAAAAAAAACAAAAAAEAAAAgAIAEIBA=</HashCode>
+      <FileName>tinyxml.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiXmlDocument" Collapsed="true">
+    <Position X="12.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAABBAQAQABAgEICAAAAAEQBAEBFAAgAEgUJBA=</HashCode>
+      <FileName>tinyxml.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiXmlHandle" Collapsed="true">
+    <Position X="17" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAEAAAAEAAAIAAAEgAIAABAAAAAAAAAIEoCAEAABA=</HashCode>
+      <FileName>tinyxml.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiXmlPrinter" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAEABEhAQgBAAQAAAAMAAAAAAAAABQIBQAwAA=</HashCode>
+      <FileName>tinyxml.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TONGDAO" Collapsed="true">
+    <Position X="20.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAEAAAAAABAAAACAAAAAAACAAAAAAAECAAA=</HashCode>
+      <FileName>TONGDAO.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tongxinzhuangtai" Collapsed="true">
+    <Position X="22.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgEIAAEAYREAAACgQBgAAAAAAAAAAAAAABCAAAECQAA=</HashCode>
+      <FileName>tongxinzhuangtai.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="udpcaitu" Collapsed="true">
+    <Position X="24" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KASNABEAIAEAASiYMDAABAABgBgAAQAAIBIACAESQQA=</HashCode>
+      <FileName>udpcaitu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CUser" Collapsed="true">
+    <Position X="24" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAIAAAAACAA=</HashCode>
+      <FileName>User.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VGAsheding" Collapsed="true">
+    <Position X="25.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAIEAAFEAsP8oABAAgAAAAAAAAUAEAEAAAAECAAA=</HashCode>
+      <FileName>VGAsheding.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="xiangjihuafen" Collapsed="true">
+    <Position X="27.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAFAAAAAAAgIAJAAAABAQAAAAAAEAhAAAACCAAA=</HashCode>
+      <FileName>xiangjihuafen.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="xingxuanlingmindu" Collapsed="true">
+    <Position X="29.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAaICEAAAEBsP8YABAAAAAEAEAAAAAACAAAAAECACA=</HashCode>
+      <FileName>xingxuanlingmindu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="xingxuanshezhi" Collapsed="true">
+    <Position X="31" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAEAAAEAAGgIABABAAACAAAAAAAAAAAAAAECAAA=</HashCode>
+      <FileName>xingxuanshezhi.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="opXML" Collapsed="true">
+    <Position X="27.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACgAABBAACAAAAAAABKAAAaIAkQARAAAAAACAQA=</HashCode>
+      <FileName>XMLHelper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yanchi" Collapsed="true">
+    <Position X="17" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAEAABEIMP8AAJgHACAAAAAAAAAAAACAAAECAAA=</HashCode>
+      <FileName>Yanchi.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="yansehangmianji" Collapsed="true">
+    <Position X="18.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIMEAgAEAsP8YABAAAAAAABAAAAAAAAAAAAEiAIA=</HashCode>
+      <FileName>yansehangmianji.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yansemingan" Collapsed="true">
+    <Position X="20.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAoMAEAAAGAMP8AABAAAAAAEEAAAAAAAAAAAEECAAA=</HashCode>
+      <FileName>Yansemingan.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="yanseminganqiangdu" Collapsed="true">
+    <Position X="22.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAEAAAEAIOgIABAAIAAAAAAAAAAAAAAAAAUCAAA=</HashCode>
+      <FileName>yanseminganqiangdu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="yuancheng" Collapsed="true">
+    <Position X="24" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAEAAAEEAAAQABAAAAARAAERAAAAABAAAAECAAA=</HashCode>
+      <FileName>yuancheng.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZHUBANSHUJU" Collapsed="true">
+    <Position X="25.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIIEAAAEAAI4AABAAAAAAAAAAAAAAAAAAAAECAAA=</HashCode>
+      <FileName>ZHUBANSHUJU.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="zhuce" Collapsed="true">
+    <Position X="27.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACEAAAAAAAAAABgBAAAhAAAAAAAAAAIAAEAAABA=</HashCode>
+      <FileName>zhuce.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="_sft" Collapsed="true">
+    <Position X="1.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAIAABAAAAA=</HashCode>
+      <FileName>modbus\modbus-private.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_modbus_backend" Collapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAIgQAAAACQAACgoAA0AAAAAAABABAAIgAEAAAACA=</HashCode>
+      <FileName>modbus\modbus-private.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_modbus" Collapsed="true">
+    <Position X="17" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCAAAAAAAAAAAAIAAiAAAAAIAAAAAAAAIAIABAAAAA=</HashCode>
+      <FileName>modbus\modbus-private.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="TiXmlCursor" Collapsed="true">
+    <Position X="18.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQACAAAAAAAAAAAABABAAAA=</HashCode>
+      <FileName>tinyxml.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="uint8_t" Collapsed="true">
+    <Position X="31" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint16_t" Collapsed="true">
+    <Position X="25.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ssize_t" Collapsed="true">
+    <Position X="25.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>modbus\modbus-private.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="modbus_backend_type_t" Collapsed="true">
+    <Position X="11.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>modbus\modbus-private.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="msg_type_t" Collapsed="true">
+    <Position X="5.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>modbus\modbus-private.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="sft_t" Collapsed="true">
+    <Position X="1.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>modbus\modbus-private.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="modbus_backend_t" Collapsed="true">
+    <Position X="7.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>modbus\modbus-private.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int8_t" Collapsed="true">
+    <Position X="20.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int16_t" Collapsed="true">
+    <Position X="31" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int32_t" Collapsed="true">
+    <Position X="17" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint32_t" Collapsed="true">
+    <Position X="27.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int64_t" Collapsed="true">
+    <Position X="18.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint64_t" Collapsed="true">
+    <Position X="29.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int_least8_t" Collapsed="true">
+    <Position X="29.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int_least16_t" Collapsed="true">
+    <Position X="24" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int_least32_t" Collapsed="true">
+    <Position X="25.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int_least64_t" Collapsed="true">
+    <Position X="27.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint_least8_t" Collapsed="true">
+    <Position X="24" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint_least16_t" Collapsed="true">
+    <Position X="18.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint_least32_t" Collapsed="true">
+    <Position X="20.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint_least64_t" Collapsed="true">
+    <Position X="22.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int_fast8_t" Collapsed="true">
+    <Position X="22.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int_fast16_t" Collapsed="true">
+    <Position X="17" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int_fast32_t" Collapsed="true">
+    <Position X="18.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int_fast64_t" Collapsed="true">
+    <Position X="20.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint_fast8_t" Collapsed="true">
+    <Position X="17" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint_fast16_t" Collapsed="true">
+    <Position X="27.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint_fast32_t" Collapsed="true">
+    <Position X="29.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint_fast64_t" Collapsed="true">
+    <Position X="31" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="intptr_t" Collapsed="true">
+    <Position X="24" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>modbus\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uintptr_t" Collapsed="true">
+    <Position X="18.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\vadefs.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="intmax_t" Collapsed="true">
+    <Position X="22.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uintmax_t" Collapsed="true">
+    <Position X="17" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="__unnamed_enum_0c50_1" Collapsed="true">
+    <Position X="11.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>modbus\modbus-private.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="__unnamed_enum_0c50_2" Collapsed="true">
+    <Position X="5.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>modbus\modbus-private.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="__unnamed_enum_0c8d_1" Collapsed="true">
+    <Position X="17" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAACABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>tinyxml.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TiXmlEncoding" Collapsed="true">
+    <Position X="18.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAABAAAAAAAABAAAA=</HashCode>
+      <FileName>tinyxml.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

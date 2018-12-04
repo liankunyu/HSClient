@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MFCApplication1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCApplication1Dlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Liuliangsheding.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Mianji.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Qinghui.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Famenceshi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Moshixuanze.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Yansemingan.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Rzengyi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VGAsheding.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Beijing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Pingyi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Yanchi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Glingmindu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Blingmindu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hunselingmindu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tiaoshi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rlingmindu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InputDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyPublicData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="quyuer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="shendu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gzengyi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bzengyi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinH.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="yuancheng.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="modbus\modbus-private.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="modbus\stdint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="modsheding.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="beijingyuzhi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="caitushezhi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="huidu1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="huidu2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="huiduhulue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mianjiweitiao.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="quyusan.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="quyusi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="quyuwu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="shenduer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xingxuanlingmindu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xingxuanshezhi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="yansehangmianji.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="yanseminganqiangdu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fuzhu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="udpcaitu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xiangjihuafen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rgbtrans.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QuanXianDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Frmlogin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tinystr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="moshixuanzeer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="moshixuanzesan.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GFEN.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RFEN.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HUNFEN.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QUFEN.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BFEN.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QUYUERFEN.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QUYUSANFEN.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QUYUSIFEN.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QUYUWUFEN.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SHENDUFEN.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SHENERFEN.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HUIFEN.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HUIERF.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHUBANSHUJU.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TONGDAO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tongxinzhuangtai.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="yanseCol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="shujuduqu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ENINPUT.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JIEZHIRIQI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mima.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tishikuang.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MFCApplication1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCApplication1Dlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Liuliangsheding.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Mianji.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Qinghui.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Famenceshi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Moshixuanze.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Yansemingan.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Rzengyi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VGAsheding.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Beijing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Pingyi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Yanchi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Glingmindu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Blingmindu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hunselingmindu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tiaoshi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rlingmindu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InputDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyPublicData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="quyuer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="shendu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="gzengyi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="bzengyi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="yuancheng.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="modsheding.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="beijingyuzhi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="caitushezhi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="huidu1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="huidu2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="huiduhulue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mianjiweitiao.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="quyusan.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="quyusi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="quyuwu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="shenduer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xingxuanlingmindu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xingxuanshezhi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="yansehangmianji.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="yanseminganqiangdu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fuzhu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="udpcaitu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xiangjihuafen.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="QuanXianDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Frmlogin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tinystr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlerror.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlparser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moshixuanzeer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="moshixuanzesan.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GFEN.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RFEN.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HUNFEN.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="QUFEN.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BFEN.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="QUYUERFEN.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="QUYUSANFEN.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="QUYUSIFEN.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="QUYUWUFEN.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SHENDUFEN.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SHENERFEN.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HUIFEN.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HUIERF.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHUBANSHUJU.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TONGDAO.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tongxinzhuangtai.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="yanseCol.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="shujuduqu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ENINPUT.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="JIEZHIRIQI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mima.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tishikuang.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MFCApplication1.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MFCApplication1.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ClassDiagram.cd" />
+    <None Include="modbus.dll" />
+    <None Include="rgbtrans.dll" />
+    <None Include="SkinH.dll" />
+    <None Include="skinh.she" />
+    <None Include="SkinHu.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\MFCApplication1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\Administrator\Desktop\HS_system-master\MFCApplication11\res\MFCApplication1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\icon2.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\RED.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\icon3.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Green.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitbug_favicon.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\zhukongban.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\motherboard.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\motherboard .ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\zhukongban.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\zhukong.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\motherboard.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\xiangji.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\HS.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\beijing.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\hengtiao.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="modbus.lib" />
+    <Library Include="rgbtrans.lib" />
+    <Library Include="SkinH.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="chinese.xml" />
+    <Xml Include="english.xml" />
+    <Xml Include="lasttime.xml" />
+    <Xml Include="mode1.xml" />
+    <Xml Include="mode2.xml" />
+    <Xml Include="mode3.xml" />
+    <Xml Include="mode4.xml" />
+    <Xml Include="mode5.xml" />
+    <Xml Include="mode6.xml" />
+    <Xml Include="mode7.xml" />
+    <Xml Include="mode8.xml" />
+    <Xml Include="mode9.xml" />
+    <Xml Include="mode10.xml" />
+    <Xml Include="mode11.xml" />
+    <Xml Include="mode12.xml" />
+    <Xml Include="mode13.xml" />
+    <Xml Include="mode14.xml" />
+    <Xml Include="mode15.xml" />
+    <Xml Include="mode16.xml" />
+    <Xml Include="mode17.xml" />
+    <Xml Include="mode18.xml" />
+    <Xml Include="mode19.xml" />
+    <Xml Include="mode20.xml" />
+  </ItemGroup>
+</Project>
