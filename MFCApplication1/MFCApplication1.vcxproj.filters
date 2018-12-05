@@ -255,7 +255,7 @@
     <ClInclude Include="mima.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="tishikuang.h">
+    <ClInclude Include="Tip.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -485,7 +485,7 @@
     <ClCompile Include="mima.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="tishikuang.cpp">
+    <ClCompile Include="Tip.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

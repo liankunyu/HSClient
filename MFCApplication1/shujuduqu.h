@@ -1,4 +1,5 @@
 #pragma once
+#include "afxwin.h"
 
 
 // shujuduqu ¶Ô»°¿ò
@@ -21,7 +22,7 @@ protected:
 
 	DECLARE_MESSAGE_MAP()
 public:
-	afx_msg void OnBnClickedButton1();
+//	afx_msg void OnBnClickedButton1();
 	afx_msg void ReSize();
 	POINT old;
 	afx_msg void OnSize(UINT nType, int cx, int cy);
@@ -38,4 +39,7 @@ public:
 	virtual BOOL PreTranslateMessage(MSG* pMsg);
 	afx_msg void OnBnClickedButton3();
 	afx_msg void OnBnClickedButton2();
+	CComboBox m_combox1;
+	afx_msg void OnBnClickedCancel();
+	afx_msg void OnCbnSelchangeCombo1();
 };

@@ -28,6 +28,7 @@
 #include "mima.h"
 #include "yanseCol.h"
 #include "JIEZHIRIQI.h"
+#include "Tip.h"
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -269,7 +270,9 @@ BOOL CMFCApplication1Dlg::OnInitDialog()
 		{
 			if (tongxincuowu[i] == (-1))
 			{
-				MessageBox(L"通信有异常");
+				m_Tip = "num6601";//传入节点名
+				Tip tip;
+				tip.DoModal();
 				fanhuizhi = 0;
 				SetTimer(1, 1000, NULL);  //设置定时器判断是否出现时间错误，有两种情况，第一种系统时间出错，第二种是超过截止日期
 				SetTimer(2, 2000, NULL);  //判断指令下发是否出现错误
@@ -278,7 +281,9 @@ BOOL CMFCApplication1Dlg::OnInitDialog()
 		}
 		if (!(CMyPublicData::bit_read(10, 104, 8)))
 		{
-			MessageBox(L"    气压不足！！！");
+			m_Tip = "num6602";//传入节点名
+			Tip tip;
+			tip.DoModal();
 		}
 		SetTimer(1, 1000, NULL);  //设置定时器判断是否出现时间错误，有两种情况，第一种系统时间出错，第二种是超过截止日期
 		SetTimer(2, 2000, NULL);  //判断指令下发是否出现错误
@@ -551,7 +556,9 @@ void CMFCApplication1Dlg::OnTimer(UINT_PTR nIDEvent)
 		}
 		if (shijiancha1(m_guanji) < 0)
 		{
-			MessageBox(L"当前系统时间错误,将关机!");
+			m_Tip = "num6603";//传入节点名
+			Tip tip;
+			tip.DoModal();
 			//HANDLE hToken;
 			//TOKEN_PRIVILEGES tkp;
 			//if (!OpenProcessToken(GetCurrentProcess(), TOKEN_ADJUST_PRIVILEGES | TOKEN_QUERY, &hToken))//获得当前进程伪句柄函数GetCurrentProcess
@@ -640,7 +647,9 @@ void CMFCApplication1Dlg::OnTimer(UINT_PTR nIDEvent)
 		if (fanhuizhi == (-1))
 		{
 			fanhuizhi = 0;
-			MessageBox(L"通信异常");
+			m_Tip = "num6601";//传入节点名
+			Tip tip;
+			tip.DoModal();
 		}
 	}
 	//用于更新时间

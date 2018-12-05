@@ -134,3 +134,4 @@ extern int Device_ID;             //设备标识
 extern CString server_IP;             //服务器IP
 extern CString server_Port;             //服务器端口号
 extern int SWlang;             //用于判断是否进行语言切换，因为语言切换不在主界面，为了在语言切换后能够将所有界面进行刷新，故在主界面和高级设定添加一个定时器用于切换语言
+extern string m_Tip;     //通过这个全局变量向消息框传入不同的变量值，然后通过XML查询显示不同的消息，为了多语言

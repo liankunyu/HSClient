@@ -168,7 +168,7 @@
     <ClInclude Include="tiaoshi.h" />
     <ClInclude Include="tinystr.h" />
     <ClInclude Include="tinyxml.h" />
-    <ClInclude Include="tishikuang.h" />
+    <ClInclude Include="Tip.h" />
     <ClInclude Include="TONGDAO.h" />
     <ClInclude Include="tongxinzhuangtai.h" />
     <ClInclude Include="udpcaitu.h" />
@@ -261,7 +261,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="tishikuang.cpp" />
+    <ClCompile Include="Tip.cpp" />
     <ClCompile Include="TONGDAO.cpp" />
     <ClCompile Include="tongxinzhuangtai.cpp" />
     <ClCompile Include="udpcaitu.cpp" />

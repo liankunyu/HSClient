@@ -9,6 +9,7 @@
 #include "XMLHelper.h"
 #include "ZHUBANSHUJU.h"
 #include "TONGDAO.h"
+#include "Tip.h"
 // modsheding 对话框
 
 IMPLEMENT_DYNAMIC(modsheding, CDialogEx)
@@ -1686,7 +1687,9 @@ void modsheding::OnBnClickedButton4()
 	}
 	CMyPublicData::bit_set(10, 9, 6, true);               //阀电源最后开启
 	GetDlgItem(IDC_BUTTON4)->EnableWindow(TRUE);
-	MessageBox(L"成功");
+	m_Tip = "num6613";//传入节点名
+	Tip tip;
+	tip.DoModal();
 }
 
 

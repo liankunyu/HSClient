@@ -7,6 +7,7 @@
 #include "afxdialogex.h"
 #include "MyPublicData.h"
 #include "XMLHelper.h"
+#include "Tip.h"
 // tongxinzhuangtai 对话框
 
 IMPLEMENT_DYNAMIC(tongxinzhuangtai, CDialogEx)
@@ -352,7 +353,9 @@ void tongxinzhuangtai::OnBnClickedButton4()
 	{
 		if (tongxincuowu[i] == (-1))
 		{
-			MessageBox(L"通信有异常");
+			m_Tip = "num6601";//传入节点名
+			Tip tip;
+			tip.DoModal();
 			
 			return ;
 		}
@@ -362,7 +365,9 @@ void tongxinzhuangtai::OnBnClickedButton4()
 	}
 	else
 	{
-		MessageBox(L"     气压不足！！！");
+		m_Tip = "num6602";//传入节点名
+		Tip tip;
+		tip.DoModal();
 	}
 	GetDlgItem(IDC_BUTTON4)->EnableWindow(TRUE);
 }

@@ -8,6 +8,7 @@
 #include "InputDlg.h"
 #include "MyPublicData.h"
 #include "XMLHelper.h"
+#include "Tip.h"
 //#include "ADOConnect.h"
 // xiangjihuafen 对话框
 
@@ -240,8 +241,10 @@ void xiangjihuafen::OnBnClickedButton1()
 		flag = 20;
 	}
 	CMyPublicData::setfunc(31 + flag, 16, 256, 91);
+	m_Tip = "num6610";//传入节点名
+	Tip tip;
+	tip.DoModal();
 	UpdateData(FALSE);
-	MessageBox(L"发送成功！");
 }
 
 //保存修改

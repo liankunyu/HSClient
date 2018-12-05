@@ -10,6 +10,7 @@
 #include <string>
 #include <sstream>
 #include "ENINPUT.h"
+#include "Tip.h"
 // JIEZHIRIQI 对话框
 
 IMPLEMENT_DYNAMIC(JIEZHIRIQI, CDialogEx)
@@ -189,7 +190,9 @@ void JIEZHIRIQI::OnBnClickedButton2()
 	m_cstr2.Format(_T("%d"), Device_ID);
 	if ((m_cstr2.Trim()) != (m_cstr3.Trim()))
 	{
-		MessageBox(L"Device ID Error");
+		m_Tip = "num6604";//传入节点名
+		Tip tip;
+		tip.DoModal();
 		return;
 	}
 
@@ -273,11 +276,15 @@ void JIEZHIRIQI::OnBnClickedButton2()
 		str = "xianshi";
 		opx.ModifyNode("xianshi", str);
 		opx.SaveFile();
-		MessageBox(L"  写入成功！");
+		m_Tip = "num6605";//传入节点名
+		Tip tip;
+		tip.DoModal();
 	}
 	else
 	{
-		MessageBox(L"  TimeError！");
+		m_Tip = "num6606";//传入节点名
+		Tip tip;
+		tip.DoModal();
 	}
 	UpdateData(FALSE);
 }
@@ -306,7 +313,9 @@ void JIEZHIRIQI::OnBnClickedButton3()
 	}
 	else
 	{
-		MessageBox(L"口令错误！");
+		m_Tip = "num6607";//传入节点名
+		Tip tip;
+		tip.DoModal();
 	}
 }
 
@@ -326,7 +335,9 @@ void JIEZHIRIQI::OnBnClickedButton4()
 	TOKEN_PRIVILEGES tkp;
 	if (!OpenProcessToken(GetCurrentProcess(), TOKEN_ADJUST_PRIVILEGES | TOKEN_QUERY, &hToken))//获得当前进程伪句柄函数GetCurrentProcess
 	{
-		MessageBox(L"取得程序访问失败");
+		m_Tip = "num6608";//传入节点名
+		Tip tip;
+		tip.DoModal();
 		return;
 	}
 	LookupPrivilegeValue(NULL, SE_SHUTDOWN_NAME, &tkp.Privileges[0].Luid);  //查找进程权限函数LookupPrivilegeValue

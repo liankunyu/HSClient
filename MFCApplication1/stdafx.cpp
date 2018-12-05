@@ -87,3 +87,4 @@ int Device_ID=18032803;             //设备标识
 extern CString server_IP=L"127.0.0.1";             //服务器IP
 extern CString server_Port=L"9999";             //服务器端口号
 extern int SWlang=0;                    //用于判断是否进行语言切换
+extern string m_Tip="num6601";

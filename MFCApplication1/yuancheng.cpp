@@ -8,6 +8,7 @@
 #include "MyPublicData.h"
 #include "ENINPUT.h"
 #include "XMLHelper.h"
+#include "Tip.h"
 // yuancheng 对话框
 
 IMPLEMENT_DYNAMIC(yuancheng, CDialogEx)
@@ -59,7 +60,9 @@ void yuancheng::OnBnClickedConnectButton()
 	USES_CONVERSION;
 	if ((m_ip_edit == L"") || (m_port == L""))
 	{
-		MessageBox(L"    IP或PORT不能为空！");
+		m_Tip = "num6611";//传入节点名
+		Tip tip;
+		tip.DoModal();
 	}
 	else
 	{
@@ -308,7 +311,9 @@ void yuancheng::OnBnClickedButton1()
 
 	if (send(clientSock,(const char*)buf, 6515, 0) == SOCKET_ERROR)
 	{
-		MessageBox(L"失败");
+		m_Tip = "num6612";//传入节点名
+		Tip tip;
+		tip.DoModal();
 	}
 }
 

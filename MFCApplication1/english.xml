@@ -102,7 +102,12 @@
         <num0717>0</num0717>
         <num0718>0</num0718>
         <num0719>0</num0719>
-        <num0720>0</num0720>
+        <num0720>正常打</num0720>
+        <num0721>单孔测试</num0721>
+        <num0722>循环测试</num0722>
+        <num0723>停止测试</num0723>
+        <num0724>0</num0724>
+        <num0725>0</num0725>
     </famenceshi>
     <fuzhu>
         <num0801>First</num0801>
@@ -619,7 +624,12 @@
         <num3812>0</num3812>
         <num3813>0</num3813>
         <num3814>0</num3814>
-        <num3815>0</num3815>
+        <num3815>停用型选</num3815>
+        <num3816>全选</num3816>
+        <num3817>选大</num3817>
+        <num3818>选小</num3818>
+        <num3819>0</num3819>
+        <num3820>0</num3820>
     </xingxuanshezhi>
     <yanchi>
         <num3901>Delay Setting</num3901>
@@ -915,7 +925,32 @@
         <num6112>Refresh</num6112>
         <num6113>Exit</num6113>
         <num6114>0</num6114>
-        <num6115>0</num6115>
+        <num6115>通道1前相机</num6115>
+        <num6116>通道1后相机</num6116>
+        <num6117>通道2前相机</num6117>
+        <num6118>通道2后相机</num6118>
+        <num6119>通道3前相机</num6119>
+        <num6120>通道3后相机</num6120>
+        <num6121>通道4前相机</num6121>
+        <num6122>通道4后相机</num6122>
+        <num6123>通道5前相机</num6123>
+        <num6124>通道5后相机</num6124>
+        <num6125>通道6前相机</num6125>
+        <num6126>通道6后相机</num6126>
+        <num6127>通道7前相机</num6127>
+        <num6128>通道7后相机</num6128>
+        <num6129>通道8前相机</num6129>
+        <num6130>通道8后相机</num6130>
+        <num6131>通道9前相机</num6131>
+        <num6132>通道9后相机</num6132>
+        <num6133>通道10前相机</num6133>
+        <num6134>通道10后相机</num6134>
+        <num6135>0</num6135>
+        <num6136>0</num6136>
+        <num6137>0</num6137>
+        <num6138>0</num6138>
+        <num6139>0</num6139>
+        <num6140>0</num6140>
     </shuzhiduqu>
     <zhuangtai>
         <num6201>Board</num6201>
@@ -982,4 +1017,21 @@
         <num6514>0</num6514>
         <num6515>0</num6515>
     </yuancheng>
+    <xiaoxikuang>
+        <num6601>通信错误</num6601>
+        <num6602>发送文件</num6602>
+        <num6603>返回</num6603>
+        <num6604>0</num6604>
+        <num6605>0</num6605>
+        <num6606>0</num6606>
+        <num6607>0</num6607>
+        <num6608>0</num6608>
+        <num6609>0</num6609>
+        <num6610>0</num6610>
+        <num6611>0</num6611>
+        <num6612>0</num6612>
+        <num6613>0</num6613>
+        <num6614>0</num6614>
+        <num6615>0</num6615>
+    </xiaoxikuang>
 </system>

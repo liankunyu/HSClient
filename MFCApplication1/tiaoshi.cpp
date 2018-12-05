@@ -28,6 +28,7 @@
 #include "XMLHelper.h"
 #include "yanseCol.h"
 #include "xiangjihuafen.h"
+#include "Tip.h"
 // tiaoshi 对话框
 
 IMPLEMENT_DYNAMIC(tiaoshi, CDialogEx)
@@ -442,7 +443,9 @@ void tiaoshi::OnBnClickedButton9()
 	TOKEN_PRIVILEGES tkp;
 	if (!OpenProcessToken(GetCurrentProcess(), TOKEN_ADJUST_PRIVILEGES | TOKEN_QUERY, &hToken))//获得当前进程伪句柄函数GetCurrentProcess
 	{
-		MessageBox(L"取得程序访问失败");
+		m_Tip = "num6608";//传入节点名
+		Tip tip;
+		tip.DoModal();
 		return;
 	}
 	LookupPrivilegeValue(NULL, SE_SHUTDOWN_NAME, &tkp.Privileges[0].Luid);  //查找进程权限函数LookupPrivilegeValue

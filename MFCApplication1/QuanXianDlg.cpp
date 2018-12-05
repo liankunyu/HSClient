@@ -7,6 +7,7 @@
 #include "afxdialogex.h"
 #include"XMLHelper.h"
 #include "ENINPUT.h"
+#include "Tip.h"
 // CQuanXianDlg 对话框
 
 IMPLEMENT_DYNAMIC(CQuanXianDlg, CDialogEx)
@@ -54,7 +55,9 @@ void CQuanXianDlg::OnBnClickedButton1()
 	}
 	else
 	{
-		MessageBox(L"密码错误");
+		m_Tip = "num6609";//传入节点名
+		Tip tip;
+		tip.DoModal();
 		m_Edit1 = "";
 		UpdateData(FALSE);
 	}

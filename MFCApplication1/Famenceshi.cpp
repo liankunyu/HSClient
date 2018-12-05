@@ -504,6 +504,18 @@ BOOL Famenceshi::OnInitDialog()
 	opx.QueryNode_Text("num0715", yuyan);
 	cstr = yuyan;
 	GetDlgItem(IDCANCEL)->SetWindowText(cstr);
+	opx.QueryNode_Text("num0720", yuyan); //初始化combobox
+	cstr = yuyan;
+	m_combox1.AddString(cstr);
+	opx.QueryNode_Text("num0721", yuyan);
+	cstr = yuyan;
+	m_combox1.AddString(cstr);
+	opx.QueryNode_Text("num0722", yuyan);
+	cstr = yuyan;
+	m_combox1.AddString(cstr);
+	opx.QueryNode_Text("num0723", yuyan);
+	cstr = yuyan;
+	m_combox1.AddString(cstr);
 	opx.SaveFile();
 	if (famencs == true)
 	{
@@ -514,11 +526,11 @@ BOOL Famenceshi::OnInitDialog()
 		}
 		if (famen[40]==2)
 		{
-			SetDlgItemText(IDC_COMBO1, L"循环测试");
+			m_combox1.SetCurSel(2);
 		}
 		if (famen[40] == 3)
 		{
-			SetDlgItemText(IDC_COMBO1, L"单孔测试");
+			m_combox1.SetCurSel(1);
 		}
 		xiangjixuanze = 29 + flag_num + m_double1 * 2; //获得选择的相机编号
 		datatestDPU[4] = famen[40];     //famnen[40]保存的是选择的相机工作状态 0为停止工作 1为正常工作
@@ -784,7 +796,8 @@ void Famenceshi::OnBnClickedButton14()
 	// TODO: 在此添加控件通知处理程序代码
 	datatestDPU[4] = 1;
 	CMyPublicData::setfunc(xiangjixuanze, 16, 1, 1);
-	m_combox1.SetCurSel(3);
+	m_combox1.SetCurSel(0);
+	famen[40] = 1;
 }
 
 
@@ -796,7 +809,7 @@ void Famenceshi::OnBnClickedButton10()
 	{
 		datatestDPU[4] = 3;
 		CMyPublicData::setfunc(xiangjixuanze, 16, 1, 1);
-		m_combox1.SetCurSel(0);
+		m_combox1.SetCurSel(1);
 		datatestDPU[4] = famen[1];
 		CMyPublicData::setfunc(xiangjixuanze, 16, 13, 1);
 		famen[40] = 3;
@@ -826,7 +839,7 @@ void Famenceshi::OnBnClickedButton56()
 	xiangjixuanze = 29 + flag_num + famen[0] * 2; //获得选择的相机编号
 	datatestDPU[4] = 0;
 	CMyPublicData::setfunc(xiangjixuanze, 16, 1, 1);
-	m_combox1.SetCurSel(1);
+	m_combox1.SetCurSel(3);
 	famen[40] = 0;
 }
 

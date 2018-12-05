@@ -241,23 +241,35 @@ BOOL xingxuanshezhi::OnInitDialog()
 	opx.QueryNode_Text("num3810", yuyan);
 	cstr = yuyan;
 	GetDlgItem(IDCANCEL)->SetWindowText(cstr);
-	UpdateData(FALSE);
+	opx.QueryNode_Text("num3815", yuyan);
+	cstr = yuyan;
+	m_combox1.AddString(cstr);
+	opx.QueryNode_Text("num3816", yuyan);
+	cstr = yuyan;
+	m_combox1.AddString(cstr);
+	opx.QueryNode_Text("num3817", yuyan);
+	cstr = yuyan;
+	m_combox1.AddString(cstr);
+	opx.QueryNode_Text("num3818", yuyan);
+	cstr = yuyan;
+	m_combox1.AddString(cstr);
+	opx.SaveFile();
 
 	if (xingxuansd[4] == 0)            //设置COMBOX的初始值 
 	{
-		SetDlgItemText(IDC_COMBO1, L"停用型选");
+		m_combox1.SetCurSel(0);
 	}
 	if (xingxuansd[4] == 1)        
 	{
-		SetDlgItemText(IDC_COMBO1, L"全选");
+		m_combox1.SetCurSel(1);
 	}
 	if (xingxuansd[4] == 2)     
 	{
-		SetDlgItemText(IDC_COMBO1, L"选大");
+		m_combox1.SetCurSel(2);
 	}
 	if (xingxuansd[4] == 3)           
 	{
-		SetDlgItemText(IDC_COMBO1, L"选小");
+		m_combox1.SetCurSel(3);
 	}
 
 	ModifyStyle(WS_CAPTION, 0, 0);
@@ -276,6 +288,7 @@ BOOL xingxuanshezhi::OnInitDialog()
 	GetDlgItem(IDC_EDIT2)->SendMessage(EM_SETRECT, 0, (LPARAM)&rect);
 	GetDlgItem(IDC_EDIT18)->SendMessage(EM_SETRECT, 0, (LPARAM)&rect);
 	GetDlgItem(IDC_EDIT30)->SendMessage(EM_SETRECT, 0, (LPARAM)&rect);
+	UpdateData(FALSE);
 	return TRUE;  // return TRUE unless you set the focus to a control
 				  // 异常: OCX 属性页应返回 FALSE
 }
@@ -284,9 +297,7 @@ BOOL xingxuanshezhi::OnInitDialog()
 void xingxuanshezhi::OnCbnSelchangeCombo1()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	CString strChoosed;
-	m_combox1.GetLBText(m_combox1.GetCurSel(), strChoosed);
-	if (strChoosed == "停用型选")
+	if (m_combox1.GetCurSel()==0)
 	{
 		xingxuansd[4] = 0;
 		datatestDPU[4] = 0;
@@ -298,7 +309,7 @@ void xingxuanshezhi::OnCbnSelchangeCombo1()
 			}
 		}
 	}
-	if (strChoosed == "全选")
+	if (m_combox1.GetCurSel() == 1)
 	{
 		xingxuansd[4] = 1;
 		datatestDPU[4] = 1;
@@ -310,7 +321,7 @@ void xingxuanshezhi::OnCbnSelchangeCombo1()
 			}
 		}
 	}
-	if (strChoosed == "选大")
+	if (m_combox1.GetCurSel() == 2)
 	{
 		xingxuansd[4] = 2;
 		datatestDPU[4] = 2;
@@ -322,7 +333,7 @@ void xingxuanshezhi::OnCbnSelchangeCombo1()
 			}
 		}
 	}
-	if (strChoosed == "选小")
+	if (m_combox1.GetCurSel() == 3)
 	{
 		xingxuansd[4] = 3;
 		datatestDPU[4] = 3;
