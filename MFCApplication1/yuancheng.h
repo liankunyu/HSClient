@@ -1,6 +1,5 @@
 #pragma once
 #include "afxwin.h"
-#include "tishikuang.h"
 
 // yuancheng ¶Ô»°¿ò
 struct toClientMsg

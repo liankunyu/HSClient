@@ -231,6 +231,18 @@ BOOL CMFCApplication1Dlg::OnInitDialog()
 	  opx6.QueryNode_Text("num1717", yuyan);
 	  cstr = yuyan;
 	  GetDlgItem(IDCANCEL)->SetWindowText(cstr);
+	  opx6.QueryNode_Text("num1720", yuyan);
+	  cstr = yuyan;
+	  GetDlgItem(IDC_STATIC16)->SetWindowText(cstr);
+	  opx6.QueryNode_Text("num1721", yuyan);
+	  cstr = yuyan;
+	  GetDlgItem(IDC_MINGZI_STATIC)->SetWindowText(cstr);
+	  opx6.QueryNode_Text("num1722", yuyan);
+	  cstr = yuyan;
+	  GetDlgItem(IDC_DIZHIZHI_STATIC)->SetWindowText(cstr);
+	  opx6.QueryNode_Text("num1723", yuyan);
+	  cstr = yuyan;
+	  GetDlgItem(IDC_DIANHUA_STATIC)->SetWindowText(cstr);
 	  opx6.SaveFile();
 
 	  //开始打、停止打按钮改变颜色
@@ -640,6 +652,18 @@ void CMFCApplication1Dlg::OnTimer(UINT_PTR nIDEvent)
 			opx.QueryNode_Text("num1717", yuyan);
 			cstr = yuyan;
 			GetDlgItem(IDCANCEL)->SetWindowText(cstr);
+			opx.QueryNode_Text("num1720", yuyan);
+			cstr = yuyan;
+			GetDlgItem(IDC_STATIC16)->SetWindowText(cstr);
+			opx.QueryNode_Text("num1721", yuyan);
+			cstr = yuyan;
+			GetDlgItem(IDC_MINGZI_STATIC)->SetWindowText(cstr);
+			opx.QueryNode_Text("num1722", yuyan);
+			cstr = yuyan;
+			GetDlgItem(IDC_DIZHIZHI_STATIC)->SetWindowText(cstr);
+			opx.QueryNode_Text("num1723", yuyan);
+			cstr = yuyan;
+			GetDlgItem(IDC_DIANHUA_STATIC)->SetWindowText(cstr);
 			opx.SaveFile();
 			SWlang = 0;
 			UpdateData(FALSE);

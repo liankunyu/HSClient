@@ -6,7 +6,7 @@
 #include "TONGDAO.h"
 #include "afxdialogex.h"
 #include "MyPublicData.h"
-
+#include "XMLHelper.h"
 // TONGDAO 对话框
 
 IMPLEMENT_DYNAMIC(TONGDAO, CDialogEx)
@@ -109,7 +109,7 @@ TONGDAO::TONGDAO(CWnd* pParent /*=NULL*/)
 	, m_double94(0)
 	, m_double95(0)
 	, m_double96(0)
-	,flag(1)
+	,flag(0)
 {
 
 }
@@ -236,22 +236,347 @@ BOOL TONGDAO::OnInitDialog()
 	// TODO:  在此添加额外的初始化
 	UpdateData(TRUE);
 	double m_bian;  //用于combox的判断
-	if (tongdaoflag==2)
+	const char* yuyan;                                  //语言控制，通过xml文件更改语言
+	CString cstr;
+	opXML opx(lang);
+	opx.QueryNode_Text("num6701", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC401)->SetWindowText(cstr);
+	if (tongdaoflag == 1)
 	{
-		GetDlgItem(IDC_BUTTON1)->SetWindowText(L"Rear");
+		opx.QueryNode_Text("num6702", yuyan);
+		cstr = yuyan;
+		GetDlgItem(IDC_BUTTON1)->SetWindowText(cstr);
+	}
+	if (tongdaoflag == 2)
+	{
+		opx.QueryNode_Text("num6703", yuyan);
+		cstr = yuyan;
+		GetDlgItem(IDC_BUTTON1)->SetWindowText(cstr);
 		GetDlgItem(IDC_BUTTON1)->EnableWindow(FALSE);
 	}
+	opx.QueryNode_Text("num6704", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC11)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6705", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC300)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6706", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC301)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6707", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC302)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6708", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC303)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6709", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC304)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6710", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC305)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6711", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC306)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6712", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC307)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6713", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC308)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6714", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC309)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6715", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC310)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6716", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC311)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6717", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC312)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6718", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC313)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6719", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC314)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6720", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC315)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6721", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC316)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6722", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC317)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6723", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC318)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6724", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC319)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6725", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC320)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6726", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC321)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6727", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC322)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6728", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC323)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6729", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC324)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6730", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC325)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6731", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC326)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6732", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC327)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6733", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC328)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6734", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC329)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6735", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC330)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6736", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC331)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6737", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC332)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6738", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC333)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6739", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC334)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6740", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC335)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6741", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC336)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6742", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC337)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6743", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC338)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6744", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC339)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6745", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC340)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6746", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC341)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6747", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC342)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6748", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC343)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6749", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC344)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6750", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC345)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6751", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC346)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6752", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC347)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6753", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC348)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6754", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC349)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6755", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC350)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6756", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC351)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6757", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC352)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6758", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC353)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6759", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC354)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6760", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC355)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6761", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC356)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6762", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC357)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6763", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC358)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6764", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC359)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6765", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC360)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6766", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC361)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6767", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC362)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6768", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC363)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6769", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC364)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6770", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC365)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6771", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC366)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6772", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC367)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6773", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC368)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6774", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC369)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6775", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC370)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6776", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC371)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6777", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC372)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6778", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC373)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6779", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC374)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6780", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC375)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6781", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC376)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6782", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC378)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6783", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC379)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6784", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC380)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6785", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC381)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6786", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC382)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6787", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC383)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6788", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC384)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6789", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC385)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6790", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC386)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6791", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC387)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6792", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC388)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6793", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC389)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6794", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC390)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6795", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC391)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6796", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC392)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6797", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC393)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6798", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC394)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6799", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_STATIC395)->SetWindowText(cstr);
+	opx.QueryNode_Text("num67100", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDCANCEL)->SetWindowText(cstr);
+
+
 	xiangjihao = 29+tongdaoflag + tongdaohao*2;
 	CMyPublicData::setfunc(xiangjihao, 3, 1, 50);
 	m_bian = databuff[0];
-	if (m_bian==0)
+	if (m_bian == 0)
 	{
-		GetDlgItem(IDC_COMBO3)->SetWindowText(L"停止测试");
+		opx.QueryNode_Text("num0723", yuyan);
+		cstr = yuyan;
+		GetDlgItem(IDC_COMBO3)->SetWindowText(cstr);
 	}
 	if (m_bian == 1)
 	{
-		GetDlgItem(IDC_COMBO3)->SetWindowText(L"正常工作");
+		opx.QueryNode_Text("num0720", yuyan);
+		cstr = yuyan;
+		GetDlgItem(IDC_COMBO3)->SetWindowText(cstr);
 	}
+	if (m_bian == 2)
+	{
+		opx.QueryNode_Text("num0722", yuyan);
+		cstr = yuyan;
+		GetDlgItem(IDC_COMBO3)->SetWindowText(cstr);
+	}
+	if (m_bian == 3)
+	{
+		opx.QueryNode_Text("num0721", yuyan);
+		cstr = yuyan;
+		GetDlgItem(IDC_COMBO3)->SetWindowText(cstr);
+	}
+	opx.SaveFile();
+
 	m_double1 = databuff[3];
 	m_double2 = databuff[4];
 
@@ -370,6 +695,7 @@ BOOL TONGDAO::OnInitDialog()
 		m_double65 = databuff[7];
 		m_double66 = databuff[8];
 	}
+
 	UpdateData(FALSE);
 	
 	ModifyStyle(WS_CAPTION, 0, 0);
@@ -431,6 +757,7 @@ void TONGDAO::ReSize()
 void TONGDAO::OnBnClickedCancel()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	tongdaoflag = 1;
 	CDialogEx::OnCancel();
 }
 
@@ -439,10 +766,11 @@ void TONGDAO::OnBnClickedButton1()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	UpdateData(TRUE);
+	const char* yuyan;                                  //语言控制，通过xml文件更改语言
 	CString cstr;
-	GetDlgItem(IDC_BUTTON1)->GetWindowText(cstr);
+	opXML opx(lang);
 	double m_bian;  //用于combox的判断
-	if (cstr==L"Front")
+	if (tongdaoflag==1)
 	{
 		if (modsd[xiangjihao-31]!=L"OFF")
 		{
@@ -450,7 +778,10 @@ void TONGDAO::OnBnClickedButton1()
 			if (fanhuizhi != (-1))
 			{
 				xiangjihao = 31 + tongdaohao * 2;
-				GetDlgItem(IDC_BUTTON1)->SetWindowText(L"Rear");
+				tongdaoflag = 2;
+				opx.QueryNode_Text("num6703", yuyan);
+				cstr = yuyan;
+				GetDlgItem(IDC_BUTTON1)->SetWindowText(cstr);
 			}
 			else
 			{
@@ -463,21 +794,41 @@ void TONGDAO::OnBnClickedButton1()
 			return;
 		}
 	}
-	if (cstr == L"Rear")
+	else
 	{
 		xiangjihao = 30 + tongdaohao * 2;
-		GetDlgItem(IDC_BUTTON1)->SetWindowText(L"Front");
+		tongdaoflag = 1;
+		opx.QueryNode_Text("num6702", yuyan);
+		cstr = yuyan;
+		GetDlgItem(IDC_BUTTON1)->SetWindowText(cstr);
 	}
 	CMyPublicData::setfunc(xiangjihao, 3, 1, 50);
 	m_bian = databuff[0];
 	if (m_bian == 0)
 	{
-		GetDlgItem(IDC_COMBO3)->SetWindowText(L"停止测试");
+		opx.QueryNode_Text("num0723", yuyan);
+		cstr = yuyan;
+		GetDlgItem(IDC_COMBO3)->SetWindowText(cstr);
 	}
 	if (m_bian == 1)
 	{
-		GetDlgItem(IDC_COMBO3)->SetWindowText(L"正常工作");
+		opx.QueryNode_Text("num0720", yuyan);
+		cstr = yuyan;
+		GetDlgItem(IDC_COMBO3)->SetWindowText(cstr);
 	}
+	if (m_bian == 2)
+	{
+		opx.QueryNode_Text("num0722", yuyan);
+		cstr = yuyan;
+		GetDlgItem(IDC_COMBO3)->SetWindowText(cstr);
+	}
+	if (m_bian == 3)
+	{
+		opx.QueryNode_Text("num0721", yuyan);
+		cstr = yuyan;
+		GetDlgItem(IDC_COMBO3)->SetWindowText(cstr);
+	}
+	opx.SaveFile();
 	m_double1 = databuff[3];
 	m_double2 = databuff[4];
 

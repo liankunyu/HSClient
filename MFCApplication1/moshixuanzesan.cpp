@@ -13,6 +13,8 @@
 #include "moshixuanzeer.h"
 #include "MyPublicData.h"
 #include "ENINPUT.h"
+#include "Tip.h"
+#include "Tip2.h"
 // moshixuanzesan 对话框
 
 IMPLEMENT_DYNAMIC(moshixuanzesan, CDialogEx)
@@ -69,16 +71,17 @@ END_MESSAGE_MAP()
 void moshixuanzesan::OnBnClickedButton1()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	try
+	m_Tip2 = "num6801";
+	Tip2 tip2;
+	tip2.DoModal();
+	if (m_Retip == 0)
 	{
-		if (MessageBox(L"         是否读取", L"提示", MB_ICONEXCLAMATION | MB_OKCANCEL) == IDCANCEL)
-
-		{
-			MessageBox(L"     已取消操作！", L"提示");
-			return;
-		}
-		else
-		{
+		m_Tip = "num6614";
+		Tip tip;
+		tip.DoModal();
+	}
+	if (m_Retip == 1)
+	{
 			UpdateData(TRUE);
 			ReadXML("mode11.xml");
 			m_mode16 = L"MODE11   " + m_mode11;
@@ -92,12 +95,6 @@ void moshixuanzesan::OnBnClickedButton1()
 			opx.SaveFile();
 			UpdateData(FALSE);
 		}
-
-	}
-	catch (CMemoryException* e)
-	{
-		MessageBox(L"读取失败", L"提示");
-	}
 }
 
 
@@ -270,16 +267,19 @@ void moshixuanzesan::ReadXML(string str)
 {
 	//读取XML文件数据值
 	CMyPublicData::readXML(str);
-	//判断通信状态
 	for (int i = 0; i < 21; i++)
 	{
 		if (tongxincuowu[i] == (-1))
 		{
-			MessageBox(L"通信有异常");
+			m_Tip = "num6601";
+			Tip tip;
+			tip.DoModal();
 			return;
 		}
 	}
-	MessageBox(L"    读取成功！", L"提示");
+	m_Tip = "num6615";
+	Tip tip;
+	tip.DoModal();
 }
 
 
@@ -303,16 +303,17 @@ double moshixuanzesan::atoi(const char* str)
 void moshixuanzesan::OnBnClickedButton4()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	try
+	m_Tip2 = "num6801";
+	Tip2 tip2;
+	tip2.DoModal();
+	if (m_Retip == 0)
 	{
-		if (MessageBox(L"         是否读取", L"提示", MB_ICONEXCLAMATION | MB_OKCANCEL) == IDCANCEL)
-
-		{
-			MessageBox(L"     已取消操作！", L"提示");
-			return;
-		}
-		else
-		{
+		m_Tip = "num6614";
+		Tip tip;
+		tip.DoModal();
+	}
+	if (m_Retip == 1)
+	{
 			UpdateData(TRUE);
 			ReadXML("mode12.xml");
 			m_mode16 = L"MODE12   " + m_mode12;
@@ -326,28 +327,23 @@ void moshixuanzesan::OnBnClickedButton4()
 			opx.SaveFile();
 			UpdateData(FALSE);
 		}
-
-	}
-	catch (CMemoryException* e)
-	{
-		MessageBox(L"读取失败", L"提示");
-	}
 }
 
 
 void moshixuanzesan::OnBnClickedButton6()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	try
+	m_Tip2 = "num6801";
+	Tip2 tip2;
+	tip2.DoModal();
+	if (m_Retip == 0)
 	{
-		if (MessageBox(L"         是否读取", L"提示", MB_ICONEXCLAMATION | MB_OKCANCEL) == IDCANCEL)
-
-		{
-			MessageBox(L"     已取消操作！", L"提示");
-			return;
-		}
-		else
-		{
+		m_Tip = "num6614";
+		Tip tip;
+		tip.DoModal();
+	}
+	if (m_Retip == 1)
+	{
 			UpdateData(TRUE);
 			ReadXML("mode13.xml");
 			m_mode16 = L"MODE13   " + m_mode13;
@@ -361,28 +357,23 @@ void moshixuanzesan::OnBnClickedButton6()
 			opx.SaveFile();
 			UpdateData(FALSE);
 		}
-
-	}
-	catch (CMemoryException* e)
-	{
-		MessageBox(L"读取失败", L"提示");
-	}
 }
 
 
 void moshixuanzesan::OnBnClickedButton8()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	try
+	m_Tip2 = "num6801";
+	Tip2 tip2;
+	tip2.DoModal();
+	if (m_Retip == 0)
 	{
-		if (MessageBox(L"         是否读取", L"提示", MB_ICONEXCLAMATION | MB_OKCANCEL) == IDCANCEL)
-
-		{
-			MessageBox(L"     已取消操作！", L"提示");
-			return;
-		}
-		else
-		{
+		m_Tip = "num6614";
+		Tip tip;
+		tip.DoModal();
+	}
+	if (m_Retip == 1)
+	{
 			UpdateData(TRUE);
 			ReadXML("mode14.xml");
 			m_mode16 = L"MODE14   " + m_mode14;
@@ -396,28 +387,23 @@ void moshixuanzesan::OnBnClickedButton8()
 			opx.SaveFile();
 			UpdateData(FALSE);
 		}
-
-	}
-	catch (CMemoryException* e)
-	{
-		MessageBox(L"读取失败", L"提示");
-	}
 }
 
 
 void moshixuanzesan::OnBnClickedButton10()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	try
+	m_Tip2 = "num6801";
+	Tip2 tip2;
+	tip2.DoModal();
+	if (m_Retip == 0)
 	{
-		if (MessageBox(L"         是否读取", L"提示", MB_ICONEXCLAMATION | MB_OKCANCEL) == IDCANCEL)
-
-		{
-			MessageBox(L"     已取消操作！", L"提示");
-			return;
-		}
-		else
-		{
+		m_Tip = "num6614";
+		Tip tip;
+		tip.DoModal();
+	}
+	if (m_Retip == 1)
+	{
 			UpdateData(TRUE);
 			ReadXML("mode15.xml");
 			m_mode16 = L"MODE15   " + m_mode15;
@@ -431,21 +417,25 @@ void moshixuanzesan::OnBnClickedButton10()
 			opx.SaveFile();
 			UpdateData(FALSE);
 		}
-
-	}
-	catch (CMemoryException* e)
-	{
-		MessageBox(L"读取失败", L"提示");
-	}
 }
 
 
 void moshixuanzesan::OnBnClickedButton2()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	m_Tip2 = "num6802";
+	Tip2 tip2;
+	tip2.DoModal();
+	if (m_Retip == 0)
+	{
+		m_Tip = "num6614";
+		Tip tip;
+		tip.DoModal();
+	}
+	if (m_Retip == 1)
+	{
 		UpdateData(TRUE);
 		CMyPublicData::writerXML("mode11.xml");
-		MessageBox(L"存储成功！", L"提示");
 		m_mode16 = L"MODE11   " + m_mode11;
 		string mc;
 		opXML opx("name.xml");
@@ -456,15 +446,29 @@ void moshixuanzesan::OnBnClickedButton2()
 		opx.ModifyNode("name97", mc);
 		opx.SaveFile();
 		UpdateData(FALSE);
+		m_Tip = "num6616";
+		Tip tip;
+		tip.DoModal();
+	}
 }
 
 
 void moshixuanzesan::OnBnClickedButton5()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	m_Tip2 = "num6802";
+	Tip2 tip2;
+	tip2.DoModal();
+	if (m_Retip == 0)
+	{
+		m_Tip = "num6614";
+		Tip tip;
+		tip.DoModal();
+	}
+	if (m_Retip == 1)
+	{
 		UpdateData(TRUE);
 		CMyPublicData::writerXML("mode12.xml");
-		MessageBox(L"存储成功！", L"提示");
 		m_mode16 = L"MODE12   " + m_mode12;
 		string mc;
 		opXML opx("name.xml");
@@ -475,12 +479,27 @@ void moshixuanzesan::OnBnClickedButton5()
 		opx.ModifyNode("name97", mc);
 		opx.SaveFile();
 		UpdateData(FALSE);
+		m_Tip = "num6616";
+		Tip tip;
+		tip.DoModal();
+	}
 }
 
 
 void moshixuanzesan::OnBnClickedButton7()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	m_Tip2 = "num6802";
+	Tip2 tip2;
+	tip2.DoModal();
+	if (m_Retip == 0)
+	{
+		m_Tip = "num6614";
+		Tip tip;
+		tip.DoModal();
+	}
+	if (m_Retip == 1)
+	{
 		UpdateData(TRUE);
 		CMyPublicData::writerXML("mode13.xml");
 		MessageBox(L"存储成功！", L"提示");
@@ -494,15 +513,29 @@ void moshixuanzesan::OnBnClickedButton7()
 		opx.ModifyNode("name97", mc);
 		opx.SaveFile();
 		UpdateData(FALSE);
+		m_Tip = "num6616";
+		Tip tip;
+		tip.DoModal();
+	}
 }
 
 
 void moshixuanzesan::OnBnClickedButton9()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	m_Tip2 = "num6802";
+	Tip2 tip2;
+	tip2.DoModal();
+	if (m_Retip == 0)
+	{
+		m_Tip = "num6614";
+		Tip tip;
+		tip.DoModal();
+	}
+	if (m_Retip == 1)
+	{
 		UpdateData(TRUE);
 		CMyPublicData::writerXML("mode14.xml");
-		MessageBox(L"存储成功！", L"提示");
 		m_mode16 = L"MODE14   " + m_mode14;
 		string mc;
 		opXML opx("name.xml");
@@ -513,15 +546,29 @@ void moshixuanzesan::OnBnClickedButton9()
 		opx.ModifyNode("name97", mc);
 		opx.SaveFile();
 		UpdateData(FALSE);
+		m_Tip = "num6616";
+		Tip tip;
+		tip.DoModal();
+	}
 }
 
 
 void moshixuanzesan::OnBnClickedButton57()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	m_Tip2 = "num6802";
+	Tip2 tip2;
+	tip2.DoModal();
+	if (m_Retip == 0)
+	{
+		m_Tip = "num6614";
+		Tip tip;
+		tip.DoModal();
+	}
+	if (m_Retip == 1)
+	{
 		UpdateData(TRUE);
 		CMyPublicData::writerXML("mode11.xml");
-		MessageBox(L"存储成功！", L"提示");
 		m_mode16 = L"MODE15   " + m_mode15;
 		string mc;
 		opXML opx("name.xml");
@@ -532,6 +579,10 @@ void moshixuanzesan::OnBnClickedButton57()
 		opx.ModifyNode("name97", mc);
 		opx.SaveFile();
 		UpdateData(FALSE);
+		m_Tip = "num6616";
+		Tip tip;
+		tip.DoModal();
+	}
 }
 
 

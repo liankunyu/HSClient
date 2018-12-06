@@ -516,13 +516,25 @@ BOOL Famenceshi::OnInitDialog()
 	opx.QueryNode_Text("num0723", yuyan);
 	cstr = yuyan;
 	m_combox1.AddString(cstr);
-	opx.SaveFile();
+	opx.QueryNode_Text("num0724", yuyan);
+	cstr = yuyan;
+	GetDlgItem(IDC_BUTTON17)->SetWindowText(cstr);
 	if (famencs == true)
 	{
 		flag_num = famen[41];
 		if (famen[41]==2)
 		{
-			GetDlgItem(IDC_BUTTON17)->SetWindowText(L"Rear");
+			opx.QueryNode_Text("num0725", yuyan);
+			cstr = yuyan;
+			GetDlgItem(IDC_BUTTON17)->SetWindowText(cstr);
+		}
+		if (famen[40] == 0)
+		{
+			m_combox1.SetCurSel(3);
+		}
+		if (famen[40] == 1)
+		{
+			m_combox1.SetCurSel(0);
 		}
 		if (famen[40]==2)
 		{
@@ -547,6 +559,7 @@ BOOL Famenceshi::OnInitDialog()
 	{
 		GetDlgItem(IDC_BUTTON15)->SetWindowText(_T("OFF"));
 	}
+	opx.SaveFile();
 	UpdateData(FALSE);
 	GetDlgItem(IDC_COMBO1)->EnableWindow(FALSE);
 	ModifyStyle(WS_CAPTION, 0, 0);
@@ -864,21 +877,26 @@ void Famenceshi::OnBnClickedButton15()
 void Famenceshi::OnBnClickedButton17()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	const char* yuyan;
+	CString cstr;
+	opXML opx(lang);
 	ShutDown(famen[0], famen[1]);
 	if (flag_num == 2)
 	{
-		GetDlgItem(IDC_BUTTON17)->SetWindowText(_T("Front"));
+		opx.QueryNode_Text("num0724", yuyan);
+		cstr = yuyan;
+		GetDlgItem(IDC_BUTTON17)->SetWindowText(cstr);
 		flag_num =1;
 		xiangjixuanze = 29 + flag_num + m_double1 * 2; //获得选择的相机编号
-		//xiangjixuanze = 32;
 		UpdateData(FALSE);
 	}
 	else
 	{
-		GetDlgItem(IDC_BUTTON17)->SetWindowText(_T("Rear"));
+		opx.QueryNode_Text("num0725", yuyan);
+		cstr = yuyan;
+		GetDlgItem(IDC_BUTTON17)->SetWindowText(cstr);
 		flag_num = 2;
 		xiangjixuanze = 29 + flag_num + m_double1 * 2; //获得选择的相机编号
-		//xiangjixuanze = 33;
 		UpdateData(FALSE);
 	}
 	if (modsd[xiangjixuanze-32]!="OFF")
@@ -895,14 +913,12 @@ void Famenceshi::OnBnClickedButton17()
 
 void Famenceshi::OnBnClickedCancel()
 {
-	CString cstr;
-	GetDlgItem(IDC_BUTTON17)->GetWindowText(cstr);
 	xiangjixuanze = 29 + flag_num + famen[0] * 2;
 	if (modsd[xiangjixuanze-32] != "OFF")
 	{
 		ShutDown(famen[0], famen[1]);
 	}
-	if (cstr=="Front")
+	if (flag_num==1)
 	{
 		famen[41] = 1;
 	}
