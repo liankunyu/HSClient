@@ -568,6 +568,7 @@ void CMFCApplication1Dlg::OnTimer(UINT_PTR nIDEvent)
 		}
 		if (shijiancha1(m_guanji) < 0)
 		{
+			KillTimer(1);
 			m_Tip = "num6603";//传入节点名
 			Tip tip;
 			tip.DoModal();
