@@ -148,7 +148,7 @@ BOOL CMFCApplication1Dlg::OnInitDialog()
 	opx4.QueryNode_Text("gjsj", cre_id);  //获的当前关机时间
 	m_guanji =cre_id;
 	opx4.QueryNode_Text("fangan", cre_id); //获得当前色选模式
-	m_moshi = cre_id;                     
+	m_moshi = opx4.UTF8ToUnicode(cre_id);                     
 	ModelSize = m_moshi;          //将当前色选方案赋值给ModelSize编辑框
 	opx4.QueryNode_Text("xianshi", cre_id);  //是否显示剩余时间
 	CString CSVisible(cre_id);

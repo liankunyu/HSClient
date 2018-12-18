@@ -3443,7 +3443,6 @@ void CMyPublicData::readXML(string str)
 void CMyPublicData::writerXML(string strXML)
 {
 	string str;
-	USES_CONVERSION;
 	opXML opx3(strXML);
 
 	str = opx3.numtoString(beijingban[0]);
@@ -3619,9 +3618,9 @@ void CMyPublicData::writerXML(string strXML)
 	opx3.ModifyNode("num0425", str);
 
 	//保存服务器IP和Port
-	str = W2A(server_IP);
+	str = opx3.UnicodeToUTF8(server_IP);
 	opx3.ModifyNode("serverIP", str);
-	str = W2A(server_Port);
+	str = opx3.UnicodeToUTF8(server_Port);
 	opx3.ModifyNode("serverPort", str);
 
 	str = opx3.numtoString(famen[0]);
@@ -3648,17 +3647,17 @@ void CMyPublicData::writerXML(string strXML)
 	str = opx3.numtoString(fuzhugongneng[3]);
 	opx3.ModifyNode("num0604", str);
 
-	str = W2A(fuzhusd[0]);
+	str = opx3.UnicodeToUTF8(fuzhusd[0]);
 	opx3.ModifyNode("num0621", str);
-	str = W2A(fuzhusd[1]);
+	str = opx3.UnicodeToUTF8(fuzhusd[1]);
 	opx3.ModifyNode("num0622", str);
-	str = W2A(fuzhusd[2]);
+	str = opx3.UnicodeToUTF8(fuzhusd[2]);
 	opx3.ModifyNode("num0623", str);
-	str = W2A(fuzhusd[3]);
+	str = opx3.UnicodeToUTF8(fuzhusd[3]);
 	opx3.ModifyNode("num0624", str);
-	str = W2A(fuzhusd[4]);
+	str = opx3.UnicodeToUTF8(fuzhusd[4]);
 	opx3.ModifyNode("num0625", str);
-	str = W2A(fuzhusd[5]);
+	str = opx3.UnicodeToUTF8(fuzhusd[5]);
 	opx3.ModifyNode("num0626", str);
 
 
@@ -4009,45 +4008,45 @@ void CMyPublicData::writerXML(string strXML)
 	str = opx3.numtoString(vga[3]);
 	opx3.ModifyNode("num1804", str);
 
-	str = W2A(vgasd[0]);
+	str = opx3.UnicodeToUTF8(vgasd[0]);
 	opx3.ModifyNode("num1821", str);
-	str = W2A(vgasd[1]);
+	str = opx3.UnicodeToUTF8(vgasd[1]);
 	opx3.ModifyNode("num1822", str);
-	str = W2A(vgasd[2]);
+	str = opx3.UnicodeToUTF8(vgasd[2]);
 	opx3.ModifyNode("num1823", str);
-	str = W2A(vgasd[3]);
+	str = opx3.UnicodeToUTF8(vgasd[3]);
 	opx3.ModifyNode("num1824", str);
-	str = W2A(vgasd[4]);
+	str = opx3.UnicodeToUTF8(vgasd[4]);
 	opx3.ModifyNode("num1825", str);
-	str = W2A(vgasd[5]);
+	str = opx3.UnicodeToUTF8(vgasd[5]);
 	opx3.ModifyNode("num1826", str);
-	str = W2A(vgasd[6]);
+	str = opx3.UnicodeToUTF8(vgasd[6]);
 	opx3.ModifyNode("num1827", str);
-	str = W2A(vgasd[7]);
+	str = opx3.UnicodeToUTF8(vgasd[7]);
 	opx3.ModifyNode("num1828", str);
-	str = W2A(vgasd[8]);
+	str = opx3.UnicodeToUTF8(vgasd[8]);
 	opx3.ModifyNode("num1829", str);
-	str = W2A(vgasd[9]);
+	str = opx3.UnicodeToUTF8(vgasd[9]);
 	opx3.ModifyNode("num1830", str);
-	str = W2A(vgasd[10]);
+	str = opx3.UnicodeToUTF8(vgasd[10]);
 	opx3.ModifyNode("num1831", str);
-	str = W2A(vgasd[11]);
+	str = opx3.UnicodeToUTF8(vgasd[11]);
 	opx3.ModifyNode("num1832", str);
-	str = W2A(vgasd[12]);
+	str = opx3.UnicodeToUTF8(vgasd[12]);
 	opx3.ModifyNode("num1833", str);
-	str = W2A(vgasd[13]);
+	str = opx3.UnicodeToUTF8(vgasd[13]);
 	opx3.ModifyNode("num1834", str);
-	str = W2A(vgasd[14]);
+	str = opx3.UnicodeToUTF8(vgasd[14]);
 	opx3.ModifyNode("num1835", str);
-	str = W2A(vgasd[15]);
+	str = opx3.UnicodeToUTF8(vgasd[15]);
 	opx3.ModifyNode("num1836", str);
-	str = W2A(vgasd[16]);
+	str = opx3.UnicodeToUTF8(vgasd[16]);
 	opx3.ModifyNode("num1837", str);
-	str = W2A(vgasd[17]);
+	str = opx3.UnicodeToUTF8(vgasd[17]);
 	opx3.ModifyNode("num1838", str);
-	str = W2A(vgasd[18]);
+	str = opx3.UnicodeToUTF8(vgasd[18]);
 	opx3.ModifyNode("num1839", str);
-	str = W2A(vgasd[19]);
+	str = opx3.UnicodeToUTF8(vgasd[19]);
 	opx3.ModifyNode("num1840", str);
 
 
@@ -4667,72 +4666,72 @@ void CMyPublicData::writerXML(string strXML)
 
 
 
-	str = W2A(modsd[0]);
+	str = opx3.UnicodeToUTF8(modsd[0]);
 	opx3.ModifyNode("num3401", str);
-	str = W2A(modsd[1]);
+	str = opx3.UnicodeToUTF8(modsd[1]);
 	opx3.ModifyNode("num3402", str);
-	str = W2A(modsd[2]);
+	str = opx3.UnicodeToUTF8(modsd[2]);
 	opx3.ModifyNode("num3403", str);
-	str = W2A(modsd[3]);
+	str = opx3.UnicodeToUTF8(modsd[3]);
 	opx3.ModifyNode("num3404", str);
-	str = W2A(modsd[4]);
+	str = opx3.UnicodeToUTF8(modsd[4]);
 	opx3.ModifyNode("num3405", str);
-	str = W2A(modsd[5]);
+	str = opx3.UnicodeToUTF8(modsd[5]);
 	opx3.ModifyNode("num3406", str);
-	str = W2A(modsd[6]);
+	str = opx3.UnicodeToUTF8(modsd[6]);
 	opx3.ModifyNode("num3407", str);
-	str = W2A(modsd[7]);
+	str = opx3.UnicodeToUTF8(modsd[7]);
 	opx3.ModifyNode("num3408", str);
-	str = W2A(modsd[8]);
+	str = opx3.UnicodeToUTF8(modsd[8]);
 	opx3.ModifyNode("num3409", str);
-	str = W2A(modsd[9]);
+	str = opx3.UnicodeToUTF8(modsd[9]);
 	opx3.ModifyNode("num3410", str);
-	str = W2A(modsd[10]);
+	str = opx3.UnicodeToUTF8(modsd[10]);
 	opx3.ModifyNode("num3411", str);
-	str = W2A(modsd[11]);
+	str = opx3.UnicodeToUTF8(modsd[11]);
 	opx3.ModifyNode("num3412", str);
-	str = W2A(modsd[12]);
+	str = opx3.UnicodeToUTF8(modsd[12]);
 	opx3.ModifyNode("num3413", str);
-	str = W2A(modsd[13]);
+	str = opx3.UnicodeToUTF8(modsd[13]);
 	opx3.ModifyNode("num3414", str);
-	str = W2A(modsd[14]);
+	str = opx3.UnicodeToUTF8(modsd[14]);
 	opx3.ModifyNode("num3415", str);
-	str = W2A(modsd[15]);
+	str = opx3.UnicodeToUTF8(modsd[15]);
 	opx3.ModifyNode("num3416", str);
-	str = W2A(modsd[16]);
+	str = opx3.UnicodeToUTF8(modsd[16]);
 	opx3.ModifyNode("num3417", str);
-	str = W2A(modsd[17]);
+	str = opx3.UnicodeToUTF8(modsd[17]);
 	opx3.ModifyNode("num3418", str);
-	str = W2A(modsd[18]);
+	str = opx3.UnicodeToUTF8(modsd[18]);
 	opx3.ModifyNode("num3419", str);
-	str = W2A(modsd[19]);
+	str = opx3.UnicodeToUTF8(modsd[19]);
 	opx3.ModifyNode("num3420", str);
-	str = W2A(modsd[20]);
+	str = opx3.UnicodeToUTF8(modsd[20]);
 	opx3.ModifyNode("num3421", str);
 
 	str = opx3.numtoString(addSW);
 	opx3.ModifyNode("num3422", str);
 
 
-	str = W2A(liuliangsd[0]);
+	str = opx3.UnicodeToUTF8(liuliangsd[0]);
 	opx3.ModifyNode("num3501", str);
-	str = W2A(liuliangsd[1]);
+	str = opx3.UnicodeToUTF8(liuliangsd[1]);
 	opx3.ModifyNode("num3502", str);
-	str = W2A(liuliangsd[2]);
+	str = opx3.UnicodeToUTF8(liuliangsd[2]);
 	opx3.ModifyNode("num3503", str);
-	str = W2A(liuliangsd[3]);
+	str = opx3.UnicodeToUTF8(liuliangsd[3]);
 	opx3.ModifyNode("num3504", str);
-	str = W2A(liuliangsd[4]);
+	str = opx3.UnicodeToUTF8(liuliangsd[4]);
 	opx3.ModifyNode("num3505", str);
-	str = W2A(liuliangsd[5]);
+	str = opx3.UnicodeToUTF8(liuliangsd[5]);
 	opx3.ModifyNode("num3506", str);
-	str = W2A(liuliangsd[6]);
+	str = opx3.UnicodeToUTF8(liuliangsd[6]);
 	opx3.ModifyNode("num3507", str);
-	str = W2A(liuliangsd[7]);
+	str = opx3.UnicodeToUTF8(liuliangsd[7]);
 	opx3.ModifyNode("num3508", str);
-	str = W2A(liuliangsd[8]);
+	str = opx3.UnicodeToUTF8(liuliangsd[8]);
 	opx3.ModifyNode("num3509", str);
-	str = W2A(liuliangsd[9]);
+	str = opx3.UnicodeToUTF8(liuliangsd[9]);
 	opx3.ModifyNode("num3510", str);
 
 
@@ -5811,9 +5810,10 @@ void CMyPublicData::writerXML(string strXML)
 	string s;
 	CTime tm = CTime::GetCurrentTime();
 	CString str1 = tm.Format("%Y-%m-%d %H:%M:%S");//获得当前时间
-	s = W2A(str1);
+	s = opx3.UnicodeToUTF8(str1);
 	opx3.ModifyNode("gjsj", s);
-	s = W2A(m_moshi);
+	/*s = opx3.UnicodeToUTF8(m_moshi);*/
+	s = opx3.UnicodeToUTF8(m_moshi);
 	opx3.ModifyNode("fangan", s);
 	opx3.SaveFile();
 }

@@ -87,8 +87,8 @@ void moshixuanzesan::OnBnClickedButton1()
 			m_mode16 = L"MODE11   " + m_mode11;
 			string mc;
 			opXML opx("name.xml");
-			USES_CONVERSION;
-			mc = W2A(m_mode16);
+			
+			mc = opx.UnicodeToUTF8(m_mode16);
 			opx.ModifyNode("name96", mc);
 			mc = "11";
 			opx.ModifyNode("name97", mc);
@@ -237,17 +237,17 @@ BOOL moshixuanzesan::OnInitDialog()
 	const char* mc;    //名称
 	opXML opxx("name.xml");
 	opxx.QueryNode_Text("name11", mc);
-	m_mode11 = mc;
+	m_mode11 = opxx.UTF8ToUnicode(mc);
 	opxx.QueryNode_Text("name12", mc);
-	m_mode12= mc;
+	m_mode12= opxx.UTF8ToUnicode(mc);
 	opxx.QueryNode_Text("name13", mc);
-	m_mode13 = mc;
+	m_mode13 = opxx.UTF8ToUnicode(mc);
 	opxx.QueryNode_Text("name14", mc);
-	m_mode14= mc;
+	m_mode14= opxx.UTF8ToUnicode(mc);
 	opxx.QueryNode_Text("name15", mc);
-	m_mode15 = mc;
+	m_mode15 = opxx.UTF8ToUnicode(mc);
 	opxx.QueryNode_Text("name96", mc);
-	m_mode16 = mc;
+	m_mode16 = opxx.UTF8ToUnicode(mc);
 	opxx.SaveFile();
 	UpdateData(FALSE);
 	return TRUE;  // return TRUE unless you set the focus to a control
@@ -319,8 +319,8 @@ void moshixuanzesan::OnBnClickedButton4()
 			m_mode16 = L"MODE12   " + m_mode12;
 			string mc;
 			opXML opx("name.xml");
-			USES_CONVERSION;
-			mc = W2A(m_mode16);
+			
+			mc = opx.UnicodeToUTF8(m_mode16);
 			opx.ModifyNode("name96", mc);
 			mc = "12";
 			opx.ModifyNode("name97", mc);
@@ -349,8 +349,8 @@ void moshixuanzesan::OnBnClickedButton6()
 			m_mode16 = L"MODE13   " + m_mode13;
 			string mc;
 			opXML opx("name.xml");
-			USES_CONVERSION;
-			mc = W2A(m_mode16);
+			
+			mc = opx.UnicodeToUTF8(m_mode16);
 			opx.ModifyNode("name96", mc);
 			mc = "13";
 			opx.ModifyNode("name97", mc);
@@ -379,8 +379,8 @@ void moshixuanzesan::OnBnClickedButton8()
 			m_mode16 = L"MODE14   " + m_mode14;
 			string mc;
 			opXML opx("name.xml");
-			USES_CONVERSION;
-			mc = W2A(m_mode16);
+			
+			mc = opx.UnicodeToUTF8(m_mode16);
 			opx.ModifyNode("name96", mc);
 			mc = "14";
 			opx.ModifyNode("name97", mc);
@@ -409,8 +409,8 @@ void moshixuanzesan::OnBnClickedButton10()
 			m_mode16 = L"MODE15   " + m_mode15;
 			string mc;
 			opXML opx("name.xml");
-			USES_CONVERSION;
-			mc = W2A(m_mode16);
+			
+			mc = opx.UnicodeToUTF8(m_mode16);
 			opx.ModifyNode("name96", mc);
 			mc = "15";
 			opx.ModifyNode("name97", mc);
@@ -439,8 +439,8 @@ void moshixuanzesan::OnBnClickedButton2()
 		m_mode16 = L"MODE11   " + m_mode11;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode16);
+		
+		mc = opx.UnicodeToUTF8(m_mode16);
 		opx.ModifyNode("name96", mc);
 		mc = "11";
 		opx.ModifyNode("name97", mc);
@@ -472,8 +472,8 @@ void moshixuanzesan::OnBnClickedButton5()
 		m_mode16 = L"MODE12   " + m_mode12;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode16);
+		
+		mc = opx.UnicodeToUTF8(m_mode16);
 		opx.ModifyNode("name96", mc);
 		mc = "12";
 		opx.ModifyNode("name97", mc);
@@ -506,8 +506,8 @@ void moshixuanzesan::OnBnClickedButton7()
 		m_mode16 = L"MODE13   " + m_mode13;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode16);
+		
+		mc = opx.UnicodeToUTF8(m_mode16);
 		opx.ModifyNode("name96", mc);
 		mc = "13";
 		opx.ModifyNode("name97", mc);
@@ -539,8 +539,8 @@ void moshixuanzesan::OnBnClickedButton9()
 		m_mode16 = L"MODE14   " + m_mode14;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode16);
+		
+		mc = opx.UnicodeToUTF8(m_mode16);
 		opx.ModifyNode("name96", mc);
 		mc = "14";
 		opx.ModifyNode("name97", mc);
@@ -572,8 +572,8 @@ void moshixuanzesan::OnBnClickedButton57()
 		m_mode16 = L"MODE15   " + m_mode15;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode16);
+		
+		mc = opx.UnicodeToUTF8(m_mode16);
 		opx.ModifyNode("name96", mc);
 		mc = "15";
 		opx.ModifyNode("name97", mc);
@@ -625,7 +625,7 @@ void moshixuanzesan::OnBnClickedButton3()
 BOOL moshixuanzesan::PreTranslateMessage(MSG* pMsg)
 {
 	// TODO: 在此添加专用代码和/或调用基类
-	USES_CONVERSION;
+	
 	UpdateData(TRUE);
 	const char* cstr;
 	string mc;
@@ -638,14 +638,14 @@ BOOL moshixuanzesan::PreTranslateMessage(MSG* pMsg)
 		{
 			m_mode11 = ent.ValueShow;
 			opXML opx("name.xml");   //打开name.xml文件
-			mc = W2A(m_mode11);       //将CString转化为string
+			mc = opx.UnicodeToUTF8(m_mode11);       //将CString转化为string
 			opx.ModifyNode("name11", mc);   //修改保存name.xml中name6的值
 			opx.QueryNode_Text("name97", cstr);   //查询name.xml中name97的值
 			mc = cstr;
 			if (mc == "11")                      //如果修改方案名称为当前方案名称进行色选方案刷新
 			{
 				m_mode16 = L"MODE11   " + m_mode11;
-				mc = W2A(m_mode16);
+				mc = opx.UnicodeToUTF8(m_mode16);
 				opx.ModifyNode("name96", mc);    //修改的当前色选方案
 			}
 			opx.SaveFile();         //保存
@@ -664,14 +664,14 @@ BOOL moshixuanzesan::PreTranslateMessage(MSG* pMsg)
 			{
 				m_mode12 = ent.ValueShow;
 				opXML opx("name.xml");
-				mc = W2A(m_mode12);
+				mc = opx.UnicodeToUTF8(m_mode12);
 				opx.ModifyNode("name12", mc);
 				opx.QueryNode_Text("name97", cstr);
 				mc = cstr;
 				if (mc == "12")
 				{
 					m_mode16 = L"MODE12   " + m_mode12;
-					mc = W2A(m_mode16);
+					mc = opx.UnicodeToUTF8(m_mode16);
 					opx.ModifyNode("name96", mc);
 				}
 				opx.SaveFile();
@@ -690,14 +690,14 @@ BOOL moshixuanzesan::PreTranslateMessage(MSG* pMsg)
 				{
 					m_mode13 = ent.ValueShow;
 					opXML opx("name.xml");
-					mc = W2A(m_mode13);
+					mc = opx.UnicodeToUTF8(m_mode13);
 					opx.ModifyNode("name13", mc);
 					opx.QueryNode_Text("name97", cstr);
 					mc = cstr;
 					if (mc == "13")
 					{
 						m_mode16 = L"MODE13   " + m_mode13;
-						mc = W2A(m_mode16);
+						mc = opx.UnicodeToUTF8(m_mode16);
 						opx.ModifyNode("name96", mc);
 					}
 					opx.SaveFile();
@@ -716,14 +716,14 @@ BOOL moshixuanzesan::PreTranslateMessage(MSG* pMsg)
 					{
 						m_mode14 = ent.ValueShow;
 						opXML opx("name.xml");
-						mc = W2A(m_mode14);
+						mc = opx.UnicodeToUTF8(m_mode14);
 						opx.ModifyNode("name14", mc);
 						opx.QueryNode_Text("name97", cstr);
 						mc = cstr;
 						if (mc == "14")
 						{
 							m_mode16 = L"MODE14   " + m_mode14;
-							mc = W2A(m_mode16);
+							mc = opx.UnicodeToUTF8(m_mode16);
 							opx.ModifyNode("name96", mc);
 						}
 						opx.SaveFile();
@@ -742,14 +742,14 @@ BOOL moshixuanzesan::PreTranslateMessage(MSG* pMsg)
 						{
 							m_mode15 = ent.ValueShow;
 							opXML opx("name.xml");
-							mc = W2A(m_mode15);
+							mc = opx.UnicodeToUTF8(m_mode15);
 							opx.ModifyNode("name15", mc);
 							opx.QueryNode_Text("name97", cstr);
 							mc = cstr;
 							if (mc == "15")
 							{
 								m_mode16 = L"MODE15   " + m_mode15;
-								mc = W2A(m_mode16);
+								mc = opx.UnicodeToUTF8(m_mode16);
 								opx.ModifyNode("name96", mc);
 							}
 							opx.SaveFile();

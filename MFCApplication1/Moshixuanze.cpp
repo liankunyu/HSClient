@@ -95,8 +95,7 @@ void Moshixuanze::OnBnClickedButton1()
 		m_mode6 = L"MODE1   " + m_mode1;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode6);
+		mc = opx.UnicodeToUTF8(m_mode6);
 		opx.ModifyNode("name96", mc);
 		mc = "1";
 		opx.ModifyNode("name97", mc);
@@ -126,8 +125,7 @@ void Moshixuanze::OnBnClickedButton2()
 		m_mode6 = L"MODE1   " + m_mode1;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode6);
+		mc = opx.UnicodeToUTF8(m_mode6);
 		opx.ModifyNode("name96", mc);
 		mc = "1";
 		opx.ModifyNode("name97", mc);
@@ -209,17 +207,17 @@ BOOL Moshixuanze::OnInitDialog()
 	const char* mc;    //名称
 	opXML opxx("name.xml");
 	opxx.QueryNode_Text("name1", mc);
-	m_mode1 = mc;
+	m_mode1 =opxx.UTF8ToUnicode(mc);
 	opxx.QueryNode_Text("name2", mc);
-	m_mode2 = mc;
+	m_mode2 = opxx.UTF8ToUnicode(mc);
 	opxx.QueryNode_Text("name3", mc);
-	m_mode3 = mc;
+	m_mode3 = opxx.UTF8ToUnicode(mc);
 	opxx.QueryNode_Text("name4", mc);
-	m_mode4 = mc;
+	m_mode4 = opxx.UTF8ToUnicode(mc);
 	opxx.QueryNode_Text("name5", mc);
-	m_mode5 = mc;
+	m_mode5 = opxx.UTF8ToUnicode(mc);
 	opxx.QueryNode_Text("name96", mc);
-	m_mode6 = mc;
+	m_mode6 = opxx.UTF8ToUnicode(mc);
 	opxx.SaveFile();
 	GetDlgItem(IDC_EDIT4)->EnableWindow(FALSE);   //初始使编辑框不可编辑
 	GetDlgItem(IDC_EDIT23)->EnableWindow(FALSE);
@@ -315,8 +313,7 @@ void Moshixuanze::OnBnClickedButton5()
 		m_mode6 = L"MODE2   " + m_mode2;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode6);
+		mc = opx.UnicodeToUTF8(m_mode6);
 		opx.ModifyNode("name96", mc);
 		mc = "2";
 		opx.ModifyNode("name97", mc);
@@ -434,8 +431,7 @@ void Moshixuanze::OnBnClickedButton4()
 		m_mode6 = L"MODE2   " + m_mode2;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode6);
+		mc = opx.UnicodeToUTF8(m_mode6);
 		opx.ModifyNode("name96", mc);
 		mc = "2";
 		opx.ModifyNode("name97", mc);
@@ -464,8 +460,7 @@ void Moshixuanze::OnBnClickedButton6()
 		m_mode6 = L"MODE3   " + m_mode3;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode6);
+		mc = opx.UnicodeToUTF8(m_mode6);
 		opx.ModifyNode("name96", mc);
 		mc = "3";
 		opx.ModifyNode("name97", mc);
@@ -495,8 +490,7 @@ void Moshixuanze::OnBnClickedButton7()
 		m_mode6 = L"MODE3   " + m_mode3;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode6);
+		mc = opx.UnicodeToUTF8(m_mode6);
 		opx.ModifyNode("name96", mc);
 		mc = "3";
 		opx.ModifyNode("name97", mc);
@@ -528,8 +522,7 @@ void Moshixuanze::OnBnClickedButton8()
 		m_mode6 = L"MODE4   " + m_mode4;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode6);
+		mc = opx.UnicodeToUTF8(m_mode6);
 		opx.ModifyNode("name96", mc);
 		mc = "4";
 		opx.ModifyNode("name97", mc);
@@ -558,8 +551,7 @@ void Moshixuanze::OnBnClickedButton9()
 		m_mode6 = L"MODE4   " + m_mode4;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode6);
+		mc = opx.UnicodeToUTF8(m_mode6);
 		opx.ModifyNode("name96", mc);
 		mc = "4";
 		opx.ModifyNode("name97", mc);
@@ -591,8 +583,7 @@ void Moshixuanze::OnBnClickedButton10()
 		m_mode6 = L"MODE5   " + m_mode5;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode6);
+		mc = opx.UnicodeToUTF8(m_mode6);
 		opx.ModifyNode("name96", mc);
 		mc = "5";
 		opx.ModifyNode("name97", mc);
@@ -621,8 +612,7 @@ void Moshixuanze::OnBnClickedButton57()
 		m_mode6 = L"MODE5   " + m_mode5;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode6);
+		mc =opx.UnicodeToUTF8(m_mode6);
 		opx.ModifyNode("name96", mc);
 		mc = "5";
 		opx.ModifyNode("name97", mc);
@@ -795,7 +785,7 @@ void Moshixuanze::OnTimer(UINT_PTR nIDEvent)
 			const char* cstr;
 			opXML opx("name.xml");
 			opx.QueryNode_Text("name96", cstr);
-			m_mode6 = cstr;
+			m_mode6 = opx.UTF8ToUnicode(cstr);
 			opx.SaveFile();
 			UpdateData(FALSE);
 			sexuanfangan = false;
@@ -814,7 +804,6 @@ void Moshixuanze::OnBnClickedButton11()
 BOOL Moshixuanze::PreTranslateMessage(MSG* pMsg)
 {
 	// TODO: 在此添加专用代码和/或调用基类
-	USES_CONVERSION;
 	UpdateData(TRUE);
 	const char* cstr;
 	string mc;
@@ -827,14 +816,14 @@ BOOL Moshixuanze::PreTranslateMessage(MSG* pMsg)
 		{
 			m_mode1 = ent.ValueShow;
 			opXML opx("name.xml");
-			mc = W2A(m_mode1);
+			mc = opx.UnicodeToUTF8(m_mode1);
 			opx.ModifyNode("name1", mc);
 			opx.QueryNode_Text("name97", cstr);
 			mc = cstr;
 			if (mc == "1")
 			{
 				m_mode6 = L"MODE1   " + m_mode1;
-				mc = W2A(m_mode6);
+				mc = opx.UnicodeToUTF8(m_mode6);
 				opx.ModifyNode("name96", mc);
 			}
 			opx.SaveFile();
@@ -853,14 +842,14 @@ BOOL Moshixuanze::PreTranslateMessage(MSG* pMsg)
 			{
 				m_mode2 = ent.ValueShow;
 				opXML opx("name.xml");
-				mc = W2A(m_mode2);
+				mc = opx.UnicodeToUTF8(m_mode2);
 				opx.ModifyNode("name2", mc);
 				opx.QueryNode_Text("name97", cstr);
 				mc = cstr;
 				if (mc == "2")
 				{
 					m_mode6 = L"MODE2   " + m_mode2;
-					mc = W2A(m_mode6);
+					mc = opx.UnicodeToUTF8(m_mode6);
 					opx.ModifyNode("name96", mc);
 				}
 				opx.SaveFile();
@@ -879,14 +868,14 @@ BOOL Moshixuanze::PreTranslateMessage(MSG* pMsg)
 				{
 					m_mode3 = ent.ValueShow;
 					opXML opx("name.xml");
-					mc = W2A(m_mode3);
+					mc = opx.UnicodeToUTF8(m_mode3);
 					opx.ModifyNode("name3", mc);
 					opx.QueryNode_Text("name97", cstr);
 					mc = cstr;
 					if (mc == "3")
 					{
 						m_mode6 = L"MODE3   " + m_mode3;
-						mc = W2A(m_mode6);
+						mc = opx.UnicodeToUTF8(m_mode6);
 						opx.ModifyNode("name96", mc);
 					}
 					opx.SaveFile();
@@ -905,14 +894,14 @@ BOOL Moshixuanze::PreTranslateMessage(MSG* pMsg)
 					{
 						m_mode4 = ent.ValueShow;
 						opXML opx("name.xml");
-						mc = W2A(m_mode4);
+						mc = opx.UnicodeToUTF8(m_mode4);
 						opx.ModifyNode("name4", mc);
 						opx.QueryNode_Text("name97", cstr);
 						mc = cstr;
 						if (mc == "4")
 						{
 							m_mode6 = L"MODE4   " + m_mode4;
-							mc = W2A(m_mode6);
+							mc = opx.UnicodeToUTF8(m_mode6);
 							opx.ModifyNode("name96", mc);
 						}
 						opx.SaveFile();
@@ -931,14 +920,14 @@ BOOL Moshixuanze::PreTranslateMessage(MSG* pMsg)
 						{
 							m_mode5 = ent.ValueShow;
 							opXML opx("name.xml");
-							mc = W2A(m_mode5);
+							mc = opx.UnicodeToUTF8(m_mode5);
 							opx.ModifyNode("name5", mc);
 							opx.QueryNode_Text("name97", cstr);
 							mc = cstr;
 							if (mc == "5")
 							{
 								m_mode6 = L"MODE5   " + m_mode5;
-								mc = W2A(m_mode6);
+								mc = opx.UnicodeToUTF8(m_mode6);
 								opx.ModifyNode("name96", mc);
 							}
 							opx.SaveFile();

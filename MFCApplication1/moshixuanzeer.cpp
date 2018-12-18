@@ -132,8 +132,8 @@ void moshixuanzeer::OnBnClickedButton1()
 		m_mode16 = L"MODE6   " + m_mode6;    //显示当前色选方案名称
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode16);             //CString转换string
+		
+		mc = opx.UnicodeToUTF8(m_mode16);             //CString转换string
 		opx.ModifyNode("name96", mc);   //修改name.xml的name96的值
 		mc = "6";
 		opx.ModifyNode("name97", mc);
@@ -161,8 +161,8 @@ void moshixuanzeer::OnBnClickedButton2()
 		m_mode16 = L"MODE6   " + m_mode6;    //显示当前色选方案名称
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode16);             //CString转换string
+		
+		mc = opx.UnicodeToUTF8(m_mode16);             //CString转换string
 		opx.ModifyNode("name96", mc);   //修改name.xml的name96的值
 		mc = "6";
 		opx.ModifyNode("name97", mc);
@@ -193,8 +193,8 @@ void moshixuanzeer::OnBnClickedButton4()
 		m_mode16 = L"MODE7   " + m_mode7;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode16);
+		
+		mc = opx.UnicodeToUTF8(m_mode16);
 		opx.ModifyNode("name96", mc);
 		mc = "7";
 		opx.ModifyNode("name97", mc);
@@ -223,8 +223,8 @@ void moshixuanzeer::OnBnClickedButton5()
 			m_mode16 = L"MODE7   " + m_mode7;    //显示当前色选方案名称
 			string mc;
 			opXML opx("name.xml");
-			USES_CONVERSION;
-			mc = W2A(m_mode16);             //CString转换string
+			
+			mc = opx.UnicodeToUTF8(m_mode16);             //CString转换string
 			opx.ModifyNode("name96", mc);   //修改name.xml的name96的值
 			mc = "7";
 			opx.ModifyNode("name97", mc);
@@ -256,8 +256,8 @@ void moshixuanzeer::OnBnClickedButton6()
 		m_mode16 = L"MODE8   " + m_mode8;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode16);
+		
+		mc = opx.UnicodeToUTF8(m_mode16);
 		opx.ModifyNode("name96", mc);
 		mc = "8";
 		opx.ModifyNode("name97", mc);
@@ -286,8 +286,8 @@ void moshixuanzeer::OnBnClickedButton7()
 			m_mode16 = L"MODE8   " + m_mode8;    //显示当前色选方案名称
 			string mc;
 			opXML opx("name.xml");
-			USES_CONVERSION;
-			mc = W2A(m_mode16);             //CString转换string
+			
+			mc = opx.UnicodeToUTF8(m_mode16);             //CString转换string
 			opx.ModifyNode("name96", mc);   //修改name.xml的name96的值
 			mc = "8";
 			opx.ModifyNode("name97", mc);
@@ -319,8 +319,8 @@ void moshixuanzeer::OnBnClickedButton8()
 		m_mode16 = L"MODE9   " + m_mode9;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode16);
+		
+		mc = opx.UnicodeToUTF8(m_mode16);
 		opx.ModifyNode("name96", mc);
 		mc = "9";
 		opx.ModifyNode("name97", mc);
@@ -349,8 +349,8 @@ void moshixuanzeer::OnBnClickedButton9()
 			m_mode16 = L"MODE9   " + m_mode9;    //显示当前色选方案名称
 			string mc;
 			opXML opx("name.xml");
-			USES_CONVERSION;
-			mc = W2A(m_mode16);             //CString转换string
+			
+			mc = opx.UnicodeToUTF8(m_mode16);             //CString转换string
 			opx.ModifyNode("name96", mc);   //修改name.xml的name96的值
 			mc = "9";
 			opx.ModifyNode("name97", mc);
@@ -382,8 +382,8 @@ void moshixuanzeer::OnBnClickedButton10()
 		m_mode16 = L"MODE10   " + m_mode10;
 		string mc;
 		opXML opx("name.xml");
-		USES_CONVERSION;
-		mc = W2A(m_mode16);
+		
+		mc = opx.UnicodeToUTF8(m_mode16);
 		opx.ModifyNode("name96", mc);
 		mc = "10";
 		opx.ModifyNode("name97", mc);
@@ -412,8 +412,8 @@ void moshixuanzeer::OnBnClickedButton57()
 			m_mode16 = L"MODE10   " + m_mode10;    //显示当前色选方案名称
 			string mc;
 			opXML opx("name.xml");
-			USES_CONVERSION;
-			mc = W2A(m_mode16);             //CString转换string
+			
+			mc = opx.UnicodeToUTF8(m_mode16);             //CString转换string
 			opx.ModifyNode("name96", mc);   //修改name.xml的name96的值
 			mc = "10";
 			opx.ModifyNode("name97", mc);
@@ -436,7 +436,7 @@ void moshixuanzeer::OnBnClickedButton57()
 //	string mc;
 //	UpdateData(TRUE);
 //	opXML opx("name.xml");   //打开name.xml文件
-//	USES_CONVERSION;
+//	
 //	mc = W2A(m_mode6);       //将CString转化为string
 //	opx.ModifyNode("name6", mc);   //修改保存name.xml中name6的值
 //	opx.QueryNode_Text("name97", cstr);   //查询name.xml中name97的值
@@ -462,7 +462,7 @@ void moshixuanzeer::OnBnClickedButton57()
 //	string mc;
 //	UpdateData(TRUE);
 //	opXML opx("name.xml");
-//	USES_CONVERSION;
+//	
 //	mc = W2A(m_mode7);
 //	opx.ModifyNode("name7", mc);
 //	opx.QueryNode_Text("name97", cstr);
@@ -488,7 +488,7 @@ void moshixuanzeer::OnBnClickedButton57()
 //	string mc;
 //	UpdateData(TRUE);
 //	opXML opx("name.xml");
-//	USES_CONVERSION;
+//	
 //	mc = W2A(m_mode8);
 //	opx.ModifyNode("name8", mc);
 //	opx.QueryNode_Text("name97", cstr);
@@ -514,7 +514,7 @@ void moshixuanzeer::OnBnClickedButton57()
 //	string mc;
 //	UpdateData(TRUE);
 //	opXML opx("name.xml");
-//	USES_CONVERSION;
+//	
 //	mc = W2A(m_mode9);
 //	opx.ModifyNode("name9", mc);
 //	opx.QueryNode_Text("name97", cstr);
@@ -540,7 +540,7 @@ void moshixuanzeer::OnBnClickedButton57()
 //	string mc;
 //	UpdateData(TRUE);
 //	opXML opx("name.xml");
-//	USES_CONVERSION;
+//	
 //	mc = W2A(m_mode10);
 //	opx.ModifyNode("name10", mc);
 //	opx.QueryNode_Text("name97", cstr);
@@ -675,17 +675,17 @@ BOOL moshixuanzeer::OnInitDialog()
 	const char* mc;    //名称
 	opXML opxx("name.xml");
 	opxx.QueryNode_Text("name6", mc);
-	m_mode6 = mc;
+	m_mode6 = opxx.UTF8ToUnicode(mc);
 	opxx.QueryNode_Text("name7", mc);
-	m_mode7 = mc;
+	m_mode7 = opxx.UTF8ToUnicode(mc);
 	opxx.QueryNode_Text("name8", mc);
-	m_mode8 = mc;
+	m_mode8 = opxx.UTF8ToUnicode(mc);
 	opxx.QueryNode_Text("name9", mc);
-	m_mode9 = mc;
+	m_mode9 = opxx.UTF8ToUnicode(mc);
 	opxx.QueryNode_Text("name10", mc);
-	m_mode10 = mc;
+	m_mode10 = opxx.UTF8ToUnicode(mc);
 	opxx.QueryNode_Text("name96", mc);
-	m_mode16 = mc;
+	m_mode16 = opxx.UTF8ToUnicode(mc);
 	opxx.SaveFile();
 	GetDlgItem(IDC_EDIT4)->EnableWindow(FALSE);
 	GetDlgItem(IDC_EDIT23)->EnableWindow(FALSE);
@@ -779,7 +779,7 @@ void moshixuanzeer::OnBnClickedButton3()
 BOOL moshixuanzeer::PreTranslateMessage(MSG* pMsg)
 {
 	// TODO: 在此添加专用代码和/或调用基类
-	USES_CONVERSION;
+	
 	UpdateData(TRUE);
 	const char* cstr;
 	string mc;
@@ -792,14 +792,14 @@ BOOL moshixuanzeer::PreTranslateMessage(MSG* pMsg)
 		{
 			m_mode6 = ent.ValueShow;
 			opXML opx("name.xml");   //打开name.xml文件
-			mc = W2A(m_mode6);       //将CString转化为string
+			mc = opx.UnicodeToUTF8(m_mode6);       //将CString转化为string
 			opx.ModifyNode("name6", mc);   //修改保存name.xml中name6的值
 			opx.QueryNode_Text("name97", cstr);   //查询name.xml中name97的值
 			mc = cstr;
 			if (mc == "6")                      //如果修改方案名称为当前方案名称进行色选方案刷新
 			{
 				m_mode16 = L"MODE6   " + m_mode6;
-				mc = W2A(m_mode16);
+				mc = opx.UnicodeToUTF8(m_mode16);
 				opx.ModifyNode("name96", mc);    //修改的当前色选方案
 			}
 			opx.SaveFile();         //保存
@@ -818,14 +818,14 @@ BOOL moshixuanzeer::PreTranslateMessage(MSG* pMsg)
 			{
 				m_mode7 = ent.ValueShow;
 				opXML opx("name.xml");
-				mc = W2A(m_mode7);
+				mc = opx.UnicodeToUTF8(m_mode7);
 				opx.ModifyNode("name7", mc);
 				opx.QueryNode_Text("name97", cstr);
 				mc = cstr;
 				if (mc == "7")
 				{
 					m_mode16 = L"MODE7   " + m_mode7;
-					mc = W2A(m_mode16);
+					mc = opx.UnicodeToUTF8(m_mode16);
 					opx.ModifyNode("name96", mc);
 				}
 				opx.SaveFile();
@@ -844,14 +844,14 @@ BOOL moshixuanzeer::PreTranslateMessage(MSG* pMsg)
 				{
 					m_mode8 = ent.ValueShow;
 					opXML opx("name.xml");
-					mc = W2A(m_mode8);
+					mc = opx.UnicodeToUTF8(m_mode8);
 					opx.ModifyNode("name8", mc);
 					opx.QueryNode_Text("name97", cstr);
 					mc = cstr;
 					if (mc == "8")
 					{
 						m_mode16 = L"MODE8   " + m_mode8;
-						mc = W2A(m_mode16);
+						mc = opx.UnicodeToUTF8(m_mode16);
 						opx.ModifyNode("name96", mc);
 					}
 					opx.SaveFile();
@@ -870,14 +870,14 @@ BOOL moshixuanzeer::PreTranslateMessage(MSG* pMsg)
 					{
 						m_mode9 = ent.ValueShow;
 						opXML opx("name.xml");
-						mc = W2A(m_mode9);
+						mc = opx.UnicodeToUTF8(m_mode9);
 						opx.ModifyNode("name9", mc);
 						opx.QueryNode_Text("name97", cstr);
 						mc = cstr;
 						if (mc == "9")
 						{
 							m_mode16 = L"MODE9   " + m_mode9;
-							mc = W2A(m_mode16);
+							mc = opx.UnicodeToUTF8(m_mode16);
 							opx.ModifyNode("name96", mc);
 						}
 						opx.SaveFile();
@@ -896,14 +896,14 @@ BOOL moshixuanzeer::PreTranslateMessage(MSG* pMsg)
 						{
 							m_mode10 = ent.ValueShow;
 							opXML opx("name.xml");
-							mc = W2A(m_mode10);
+							mc = opx.UnicodeToUTF8(m_mode10);
 							opx.ModifyNode("name10", mc);
 							opx.QueryNode_Text("name97", cstr);
 							mc = cstr;
 							if (mc == "10")
 							{
 								m_mode16 = L"MODE10   " + m_mode10;
-								mc = W2A(m_mode16);
+								mc = opx.UnicodeToUTF8(m_mode16);
 								opx.ModifyNode("name96", mc);
 							}
 							opx.SaveFile();
