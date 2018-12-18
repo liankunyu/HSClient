@@ -162,6 +162,7 @@
     <ClInclude Include="SHENDUFEN.h" />
     <ClInclude Include="SHENERFEN.h" />
     <ClInclude Include="shujuduqu.h" />
+    <ClInclude Include="SkinH.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="tiaoshi.h" />
