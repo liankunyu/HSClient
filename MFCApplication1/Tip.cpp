@@ -5,7 +5,7 @@
 #include "Tip.h"
 #include "afxdialogex.h"
 #include "XMLHelper.h"
-
+#include "Resource.h"
 // Tip ¶Ô»°¿ò
 
 IMPLEMENT_DYNAMIC(Tip, CDialogEx)

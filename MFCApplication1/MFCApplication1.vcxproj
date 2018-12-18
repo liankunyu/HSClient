@@ -319,7 +319,6 @@
   <ItemGroup>
     <Library Include="modbus.lib" />
     <Library Include="rgbtrans.lib" />
-    <Library Include="SkinH.lib" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="chinese.xml" />

@@ -1,4 +1,5 @@
 
+
 // stdafx.h : 标准系统包含文件的包含文件，
 // 或是经常使用但不常更改的
 // 特定于项目的包含文件
@@ -19,12 +20,10 @@
 #include <afxwin.h>         // MFC 核心组件和标准组件
 #include <afxext.h>         // MFC 扩展
 
-#include <string>
+
 #include <afxdisp.h>        // MFC 自动化类
 
-#include "SkinH.h"
-#pragma comment(lib, "SkinH.lib")
-//#pragma comment(lib,"modbus.lib")
+
 
 #ifndef _AFX_NO_OLE_SUPPORT
 #include <afxdtctl.h>           // MFC 对 Internet Explorer 4 公共控件的支持
@@ -35,10 +34,10 @@
 
 #include <afxcontrolbars.h>     // 功能区和控件条的 MFC 支持
 
-
 #include <afxsock.h>            // MFC 套接字扩展
-
-
+#include <string>
+#include "SkinH.h"
+#pragma comment(lib,"SkinHu.lib") //连接库文件
 
 //#import "c:\Program Files\Common Files\System\ado\msado15.dll" no_namespace rename("EOF", "adoEOF") rename("BOF", "adoBOF")
 

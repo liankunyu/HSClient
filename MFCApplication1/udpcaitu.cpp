@@ -4,6 +4,8 @@
 #include "stdafx.h"
 #include "udpcaitu.h"
 #include "afxdialogex.h"
+#include "Resource.h"
+#include <Windows.h>
 #include <vector>  
 #include <string>  
 #include <fstream>  
@@ -11,7 +13,6 @@
 #include <list>
 #include <algorithm>
 #include <stdlib.h>
-#include <Windows.h>
 #include "InputDlg.h"
 #include "MyPublicData.h"
 #include "rgbtrans.h"

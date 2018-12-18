@@ -102,9 +102,6 @@
     <ClInclude Include="bzengyi.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="SkinH.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="yuancheng.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -259,6 +256,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Tip2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinH.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -570,7 +570,6 @@
   <ItemGroup>
     <Library Include="modbus.lib" />
     <Library Include="rgbtrans.lib" />
-    <Library Include="SkinH.lib" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="chinese.xml" />
