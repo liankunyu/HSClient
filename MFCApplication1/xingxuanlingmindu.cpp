@@ -703,22 +703,22 @@ BOOL xingxuanlingmindu::OnInitDialog()
 	CString cstr;
 	opXML opx(lang);
 	opx.QueryNode_Text("num3701", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_STATIC0)->SetWindowText(cstr);
 	opx.QueryNode_Text("num3702", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_KAISHIDA)->SetWindowText(cstr);
 	opx.QueryNode_Text("num3703", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_TINGZHIDA)->SetWindowText(cstr);
 	opx.QueryNode_Text("num3704", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_STATIC21)->SetWindowText(cstr);
 	opx.QueryNode_Text("num3705", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_STATIC22)->SetWindowText(cstr);
 	opx.QueryNode_Text("num3706", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDCANCEL)->SetWindowText(cstr);
 	opx.SaveFile();
 

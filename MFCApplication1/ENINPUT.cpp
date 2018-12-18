@@ -644,13 +644,13 @@ BOOL ENINPUT::OnInitDialog()
 	CString cstr;
 	opXML opx(lang);
 	opx.QueryNode_Text("num4701", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_MFCBUTCLEAR)->SetWindowText(cstr);
 	opx.QueryNode_Text("num4702", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDCANCEL)->SetWindowText(cstr);
 	opx.QueryNode_Text("num4703", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDOK)->SetWindowText(cstr);
 	opx.SaveFile();
 	return TRUE;  // return TRUE unless you set the focus to a control

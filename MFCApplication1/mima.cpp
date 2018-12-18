@@ -8,7 +8,6 @@
 #include "ENINPUT.h"
 #include "yuancheng.h"
 #include "Tip.h"
-#include "XMLHelper.h"
 
 // mima 对话框
 
@@ -118,32 +117,4 @@ void mima::OnBnClickedButton3()
 	//启用远程控制功能修改密码
 	yuancheng yc;
 	yc.DoModal();
-}
-
-
-BOOL mima::OnInitDialog()
-{
-	CDialogEx::OnInitDialog();
-
-	// TODO:  在此添加额外的初始化
-	UpdateData(TRUE);
-	const char* yuyan;
-	CString cstr;
-	opXML opx(lang);
-	opx.QueryNode_Text("num7001", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
-	GetDlgItem(IDC_MIMA_STATIC)->SetWindowText(cstr);
-	opx.QueryNode_Text("num7002", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
-	GetDlgItem(IDC_BUTTON2)->SetWindowText(cstr);
-	opx.QueryNode_Text("num7003", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
-	GetDlgItem(IDC_BUTTON3)->SetWindowText(cstr);
-	opx.QueryNode_Text("num7004", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
-	GetDlgItem(IDC_BUTTON1)->SetWindowText(cstr);
-	opx.SaveFile();
-	UpdateData(FALSE);
-	return TRUE;  // return TRUE unless you set the focus to a control
-				  // 异常: OCX 属性页应返回 FALSE
 }

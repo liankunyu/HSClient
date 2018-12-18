@@ -217,7 +217,6 @@
 #include "InputDlg.h"
 #include "afxdialogex.h"
 #include "resource.h"
-#include "XMLHelper.h"
 
 // CInputDlg 对话框
 
@@ -428,33 +427,3 @@ void CInputDlg::OnBnClickedCancel()
 }
 
 
-
-
-BOOL CInputDlg::OnInitDialog()
-{
-	CDialogEx::OnInitDialog();
-
-	// TODO:  在此添加额外的初始化
-	const char* yuyan;
-	CString cstr;
-	opXML opx(lang);
-	opx.QueryNode_Text("num6901", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
-	GetDlgItem(IDC_STATICMAX)->SetWindowText(cstr);
-	opx.QueryNode_Text("num6902", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
-	GetDlgItem(IDC_STATICMIN)->SetWindowText(cstr);
-	opx.QueryNode_Text("num6903", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
-	GetDlgItem(IDC_MFCBUTCLEAR)->SetWindowText(cstr);
-	opx.QueryNode_Text("num6904", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
-	GetDlgItem(IDCANCEL)->SetWindowText(cstr);
-	opx.QueryNode_Text("num6905", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
-	GetDlgItem(IDOK)->SetWindowText(cstr);
-	opx.SaveFile();
-	UpdateData(FALSE);
-	return TRUE;  // return TRUE unless you set the focus to a control
-				  // 异常: OCX 属性页应返回 FALSE
-}

@@ -19,6 +19,7 @@
 // udpcaitu ¶Ô»°¿ò
 
 #pragma comment(lib, "rgbtrans.lib")
+
 using namespace std;
 IMPLEMENT_DYNAMIC(udpcaitu, CDialogEx)
 #define WM_EXITTHREAD (WM_USER + 1)

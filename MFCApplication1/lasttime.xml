@@ -55,18 +55,18 @@
         <num0130>0</num0130>
     </beijingyuzhi>
     <blingmin>
-        <num0201>9</num0201>
-        <num0202>9</num0202>
-        <num0203>9</num0203>
-        <num0204>9</num0204>
-        <num0205>9</num0205>
-        <num0206>9</num0206>
-        <num0207>9</num0207>
-        <num0208>9</num0208>
-        <num0209>9</num0209>
-        <num0210>9</num0210>
-        <num0211>9</num0211>
-        <num0212>9</num0212>
+        <num0201>10</num0201>
+        <num0202>10</num0202>
+        <num0203>10</num0203>
+        <num0204>10</num0204>
+        <num0205>10</num0205>
+        <num0206>10</num0206>
+        <num0207>10</num0207>
+        <num0208>10</num0208>
+        <num0209>10</num0209>
+        <num0210>10</num0210>
+        <num0211>10</num0211>
+        <num0212>10</num0212>
         <num0213>0</num0213>
         <num0214>0</num0214>
         <num0215>0</num0215>
@@ -131,11 +131,11 @@
         <num0430>0</num0430>
     </caitu>
     <ceshi>
-        <lastlang>japanese.xml</lastlang>
+        <lastlang>chinese.xml</lastlang>
         <serverIP>127.0.0.1</serverIP>
         <serverPort>9999</serverPort>
-        <fangan>MODE8 TRE</fangan>
-        <sendtime>2018-11-19 14:50:26.80</sendtime>
+        <fangan>MODE2 ´óÅ£Âó</fangan>
+        <sendtime>2018-11-11 13:36:03.13</sendtime>
         <bling2>2013-09-22</bling2>
         <bling3>2014-01-22</bling3>
         <bling4>2018-08-07 11:50:11</bling4>
@@ -155,7 +155,7 @@
         <rzeng2>2017-11-26 08:53:24</rzeng2>
         <xianshi>xianshi</xianshi>
         <jzsj>2019-1-30</jzsj>
-        <gjsj>2018-12-18 11:06:56</gjsj>
+        <gjsj>2018-12-07 11:27:47</gjsj>
         <vga1>2017-11-30 14:01:46</vga1>
         <vga2>2018-01-24 08:56:06</vga2>
         <vga3>2018-01-08 05:09:18</vga3>
@@ -242,18 +242,18 @@
         <num0630>0</num0630>
     </fuzhu>
     <glingmin>
-        <num0701>11</num0701>
-        <num0702>11</num0702>
-        <num0703>11</num0703>
-        <num0704>11</num0704>
-        <num0705>11</num0705>
-        <num0706>11</num0706>
-        <num0707>11</num0707>
-        <num0708>11</num0708>
-        <num0709>11</num0709>
-        <num0710>11</num0710>
-        <num0711>11</num0711>
-        <num0712>11</num0712>
+        <num0701>10</num0701>
+        <num0702>10</num0702>
+        <num0703>10</num0703>
+        <num0704>10</num0704>
+        <num0705>10</num0705>
+        <num0706>10</num0706>
+        <num0707>10</num0707>
+        <num0708>10</num0708>
+        <num0709>10</num0709>
+        <num0710>10</num0710>
+        <num0711>10</num0711>
+        <num0712>10</num0712>
         <num0713>0</num0713>
         <num0714>0</num0714>
         <num0715>0</num0715>
@@ -286,18 +286,18 @@
         <num0825>0</num0825>
     </gzengyi>
     <hunselingmin>
-        <num0901>8</num0901>
-        <num0902>8</num0902>
-        <num0903>8</num0903>
-        <num0904>8</num0904>
-        <num0905>8</num0905>
-        <num0906>8</num0906>
-        <num0907>8</num0907>
-        <num0908>8</num0908>
-        <num0909>8</num0909>
-        <num0910>8</num0910>
-        <num0911>8</num0911>
-        <num0912>8</num0912>
+        <num0901>10</num0901>
+        <num0902>10</num0902>
+        <num0903>10</num0903>
+        <num0904>10</num0904>
+        <num0905>10</num0905>
+        <num0906>10</num0906>
+        <num0907>10</num0907>
+        <num0908>10</num0908>
+        <num0909>10</num0909>
+        <num0910>10</num0910>
+        <num0911>10</num0911>
+        <num0912>10</num0912>
         <num0913>0</num0913>
         <num0914>0</num0914>
         <num0915>0</num0915>
@@ -323,7 +323,7 @@
         <num1008>1</num1008>
         <num1009>1</num1009>
         <num1010>1</num1010>
-        <num1011>15</num1011>
+        <num1011>14</num1011>
         <num1012>3</num1012>
         <num1013>3</num1013>
         <num1014>0</num1014>
@@ -418,18 +418,18 @@
         <num1420>0</num1420>
     </quyuer>
     <rlingmin>
-        <num1501>15</num1501>
-        <num1502>12</num1502>
-        <num1503>12</num1503>
-        <num1504>12</num1504>
-        <num1505>12</num1505>
-        <num1506>12</num1506>
-        <num1507>12</num1507>
-        <num1508>12</num1508>
-        <num1509>12</num1509>
-        <num1510>12</num1510>
-        <num1511>12</num1511>
-        <num1512>12</num1512>
+        <num1501>11</num1501>
+        <num1502>10</num1502>
+        <num1503>10</num1503>
+        <num1504>10</num1504>
+        <num1505>10</num1505>
+        <num1506>10</num1506>
+        <num1507>10</num1507>
+        <num1508>10</num1508>
+        <num1509>10</num1509>
+        <num1510>10</num1510>
+        <num1511>10</num1511>
+        <num1512>10</num1512>
         <num1513>0</num1513>
         <num1514>0</num1514>
         <num1515>0</num1515>

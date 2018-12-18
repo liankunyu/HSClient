@@ -1,4 +1,4 @@
-ï»¿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="GB2312" ?>
 <system>
     <blingmin>
         <num0101>B Sensitivity Setting</num0101>
@@ -102,13 +102,13 @@
         <num0717>0</num0717>
         <num0718>0</num0718>
         <num0719>0</num0719>
-        <num0720>æ­£å¸¸æ‰“</num0720>
-        <num0721>å•å­”æµ‹è¯•</num0721>
-        <num0722>å¾ªçŽ¯æµ‹è¯•</num0722>
-        <num0723>åœæ­¢æµ‹è¯•</num0723>
+        <num0720>Õý³£´ò</num0720>
+        <num0721>µ¥¿×²âÊÔ</num0721>
+        <num0722>Ñ­»·²âÊÔ</num0722>
+        <num0723>Í£Ö¹²âÊÔ</num0723>
         <num0724>0</num0724>
-        <num0724>å‰ç›¸æœº</num0724>
-        <num0725>åŽç›¸æœº</num0725>
+        <num0724>Ç°Ïà»ú</num0724>
+        <num0725>ºóÏà»ú</num0725>
         <num0726>0</num0726>
     </famenceshi>
     <fuzhu>
@@ -274,10 +274,10 @@
         <num1717>shutdown</num1717>
         <num1718>0</num1718>
         <num1719>0</num1719>
-        <num1720>å®¢æˆ·æœåŠ¡</num1720>
-        <num1721>å®‰å¾½å®å®žå…‰æœºç”µé«˜ç§‘æœ‰é™å…¬å¸</num1721>
-        <num1722>åœ°å€ï¼šåˆè‚¥å¸‚åŒ…æ²³åŒºå»¶å®‰è·¯2å·</num1722>
-        <num1723>çƒ­çº¿ï¼š400-078-9997</num1723>
+        <num1720>¿Í»§·þÎñ</num1720>
+        <num1721>°²»ÕºêÊµ¹â»úµç¸ß¿ÆÓÐÏÞ¹«Ë¾</num1721>
+        <num1722>µØÖ·£ººÏ·ÊÊÐ°üºÓÇøÑÓ°²Â·2ºÅ</num1722>
+        <num1723>ÈÈÏß£º400-078-9997</num1723>
         <num1724>0</num1724>
         <num1725>0</num1725>
         <num1726>0</num1726>
@@ -421,7 +421,7 @@
         <num2510>0</num2510>
     </qinghui>
     <quanxian>
-        <num2601>Passwordï¼š</num2601>
+        <num2601>Password£º</num2601>
         <num2602>OK</num2602>
         <num2603>Cancel</num2603>
         <num2604>0</num2604>
@@ -634,10 +634,10 @@
         <num3812>0</num3812>
         <num3813>0</num3813>
         <num3814>0</num3814>
-        <num3815>åœç”¨åž‹é€‰</num3815>
-        <num3816>å…¨é€‰</num3816>
-        <num3817>é€‰å¤§</num3817>
-        <num3818>é€‰å°</num3818>
+        <num3815>Í£ÓÃÐÍÑ¡</num3815>
+        <num3816>È«Ñ¡</num3816>
+        <num3817>Ñ¡´ó</num3817>
+        <num3818>Ñ¡Ð¡</num3818>
         <num3819>0</num3819>
         <num3820>0</num3820>
     </xingxuanshezhi>
@@ -666,8 +666,8 @@
         <num4010>0</num4010>
     </yansehangmianji>
     <yansemingan>
-        <num4101>Areaä¸€</num4101>
-        <num4102>Areaä¸€Component</num4102>
+        <num4101>AreaÒ»</num4101>
+        <num4102>AreaÒ»Component</num4102>
         <num4103>Start</num4103>
         <num4104>Stop</num4104>
         <num4105>First</num4105>
@@ -717,7 +717,7 @@
         <num4320>0</num4320>
     </yuancheng>
     <zhuce>
-        <num4401>Registration codeï¼š</num4401>
+        <num4401>Registration code£º</num4401>
         <num4402>Register</num4402>
         <num4403>0</num4403>
         <num4404>0</num4404>
@@ -935,26 +935,26 @@
         <num6112>Refresh</num6112>
         <num6113>Exit</num6113>
         <num6114>0</num6114>
-        <num6115>é€šé“1å‰ç›¸æœº</num6115>
-        <num6116>é€šé“1åŽç›¸æœº</num6116>
-        <num6117>é€šé“2å‰ç›¸æœº</num6117>
-        <num6118>é€šé“2åŽç›¸æœº</num6118>
-        <num6119>é€šé“3å‰ç›¸æœº</num6119>
-        <num6120>é€šé“3åŽç›¸æœº</num6120>
-        <num6121>é€šé“4å‰ç›¸æœº</num6121>
-        <num6122>é€šé“4åŽç›¸æœº</num6122>
-        <num6123>é€šé“5å‰ç›¸æœº</num6123>
-        <num6124>é€šé“5åŽç›¸æœº</num6124>
-        <num6125>é€šé“6å‰ç›¸æœº</num6125>
-        <num6126>é€šé“6åŽç›¸æœº</num6126>
-        <num6127>é€šé“7å‰ç›¸æœº</num6127>
-        <num6128>é€šé“7åŽç›¸æœº</num6128>
-        <num6129>é€šé“8å‰ç›¸æœº</num6129>
-        <num6130>é€šé“8åŽç›¸æœº</num6130>
-        <num6131>é€šé“9å‰ç›¸æœº</num6131>
-        <num6132>é€šé“9åŽç›¸æœº</num6132>
-        <num6133>é€šé“10å‰ç›¸æœº</num6133>
-        <num6134>é€šé“10åŽç›¸æœº</num6134>
+        <num6115>Í¨µÀ1Ç°Ïà»ú</num6115>
+        <num6116>Í¨µÀ1ºóÏà»ú</num6116>
+        <num6117>Í¨µÀ2Ç°Ïà»ú</num6117>
+        <num6118>Í¨µÀ2ºóÏà»ú</num6118>
+        <num6119>Í¨µÀ3Ç°Ïà»ú</num6119>
+        <num6120>Í¨µÀ3ºóÏà»ú</num6120>
+        <num6121>Í¨µÀ4Ç°Ïà»ú</num6121>
+        <num6122>Í¨µÀ4ºóÏà»ú</num6122>
+        <num6123>Í¨µÀ5Ç°Ïà»ú</num6123>
+        <num6124>Í¨µÀ5ºóÏà»ú</num6124>
+        <num6125>Í¨µÀ6Ç°Ïà»ú</num6125>
+        <num6126>Í¨µÀ6ºóÏà»ú</num6126>
+        <num6127>Í¨µÀ7Ç°Ïà»ú</num6127>
+        <num6128>Í¨µÀ7ºóÏà»ú</num6128>
+        <num6129>Í¨µÀ8Ç°Ïà»ú</num6129>
+        <num6130>Í¨µÀ8ºóÏà»ú</num6130>
+        <num6131>Í¨µÀ9Ç°Ïà»ú</num6131>
+        <num6132>Í¨µÀ9ºóÏà»ú</num6132>
+        <num6133>Í¨µÀ10Ç°Ïà»ú</num6133>
+        <num6134>Í¨µÀ10ºóÏà»ú</num6134>
         <num6135>0</num6135>
         <num6136>0</num6136>
         <num6137>0</num6137>
@@ -1014,8 +1014,8 @@
         <num6501>Connect server</num6501>
         <num6502>send files</num6502>
         <num6503>Exit</num6503>
-        <num6504>IP</num6504>
-        <num6505>Port</num6505>
+        <num6504>0</num6504>
+        <num6505>0</num6505>
         <num6506>0</num6506>
         <num6507>0</num6507>
         <num6508>0</num6508>
@@ -1028,128 +1028,128 @@
         <num6515>0</num6515>
     </yuancheng>
     <xiaoxikuang>
-        <num6601>é€šä¿¡å¼‚å¸¸</num6601>
-        <num6602>æ°”åŽ‹ä¸è¶³ï¼ï¼ï¼</num6602>
-        <num6603>å½“å‰ç³»ç»Ÿæ—¶é—´é”™è¯¯,å°†å…³æœº!</num6603>
-        <num6604>è®¾å¤‡IDé”™è¯¯ï¼</num6604>
-        <num6605>æ—¥æœŸå†™å…¥æˆåŠŸï¼</num6605>
-        <num6606>æ—¥æœŸé”™è¯¯ï¼</num6606>
-        <num6607>å£ä»¤é”™è¯¯ï¼</num6607>
-        <num6608>å–å¾—ç¨‹åºè®¿é—®å¤±è´¥</num6608>
-        <num6609>å¯†ç é”™è¯¯</num6609>
-        <num6610>å‘é€æˆåŠŸï¼</num6610>
-        <num6611>IPæˆ–PORTä¸èƒ½ä¸ºç©ºï¼</num6611>
-        <num6612>å‘é€å¤±è´¥</num6612>
-        <num6613>åˆ‡æ¢æˆåŠŸ</num6613>
-        <num6614>å·²å–æ¶ˆæ“ä½œï¼</num6614>
-        <num6615>è¯»å–æˆåŠŸï¼</num6615>
-        <num6616>å­˜å‚¨æˆåŠŸï¼</num6616>
+        <num6601>Í¨ÐÅÒì³£</num6601>
+        <num6602>ÆøÑ¹²»×ã£¡£¡£¡</num6602>
+        <num6603>µ±Ç°ÏµÍ³Ê±¼ä´íÎó,½«¹Ø»ú!</num6603>
+        <num6604>Éè±¸ID´íÎó£¡</num6604>
+        <num6605>ÈÕÆÚÐ´Èë³É¹¦£¡</num6605>
+        <num6606>ÈÕÆÚ´íÎó£¡</num6606>
+        <num6607>¿ÚÁî´íÎó£¡</num6607>
+        <num6608>È¡µÃ³ÌÐò·ÃÎÊÊ§°Ü</num6608>
+        <num6609>ÃÜÂë´íÎó</num6609>
+        <num6610>·¢ËÍ³É¹¦£¡</num6610>
+        <num6611>IP»òPORT²»ÄÜÎª¿Õ£¡</num6611>
+        <num6612>·¢ËÍÊ§°Ü</num6612>
+        <num6613>ÇÐ»»³É¹¦</num6613>
+        <num6614>ÒÑÈ¡Ïû²Ù×÷£¡</num6614>
+        <num6615>¶ÁÈ¡³É¹¦£¡</num6615>
+        <num6616>´æ´¢³É¹¦£¡</num6616>
         <num6617>0</num6617>
         <num6618>0</num6618>
         <num6619>0</num6619>
         <num6620>0</num6620>
     </xiaoxikuang>
     <tongdao>
-        <num6701>é€šé“ç›¸æœºå‚æ•°</num6701>
-        <num6702>å‰ç›¸æœº</num6702>
-        <num6703>åŽç›¸æœº</num6703>
-        <num6704>å¼€é˜€æ—¶é—´</num6704>
-        <num6705>å»¶è¿Ÿ</num6705>
-        <num6706>å¹³ç§»</num6706>
-        <num6707>å¼€é˜€å‘¨æœŸ</num6707>
-        <num6708>CCDé€Ÿåº¦</num6708>
-        <num6709>å‡é€Ÿ</num6709>
-        <num6710>é€Ÿåº¦</num6710>
-        <num6711>å­”ä½</num6711>
+        <num6701>Í¨µÀÏà»ú²ÎÊý</num6701>
+        <num6702>Ç°Ïà»ú</num6702>
+        <num6703>ºóÏà»ú</num6703>
+        <num6704>¿ª·§Ê±¼ä</num6704>
+        <num6705>ÑÓ³Ù</num6705>
+        <num6706>Æ½ÒÆ</num6706>
+        <num6707>¿ª·§ÖÜÆÚ</num6707>
+        <num6708>CCDËÙ¶È</num6708>
+        <num6709>¾ùËÙ</num6709>
+        <num6710>ËÙ¶È</num6710>
+        <num6711>¿×Î»</num6711>
         <num6712>19</num6712>
-        <num6713>é¢œè¡Œé¢ç§¯</num6713>
+        <num6713>ÑÕÐÐÃæ»ý</num6713>
         <num6714>21</num6714>
-        <num6715>æ ¡æ­£</num6715>
-        <num6716>vgaæ»¤æ³¢</num6716>
-        <num6717>vgaæŒ‡æ ‡</num6717>
+        <num6715>Ð£Õý</num6715>
+        <num6716>vgaÂË²¨</num6716>
+        <num6717>vgaÖ¸±ê</num6717>
         <num6718>vga enable</num6718>
-        <num6719>æš—é¢ç§¯</num6719>
-        <num6720>äº®é¢ç§¯</num6720>
-        <num6721>é‡å ç‚¹æ•°</num6721>
-        <num6722>å•è‡´</num6722>
-        <num6723>å•å¢ž1</num6723>
-        <num6724>å•å¢ž2</num6724>
-        <num6725>å•å¢ž3</num6725>
-        <num6726>å•å¢ž4</num6726>
-        <num6727>å•å¢ž5</num6727>
-        <num6728>å•å¢ž6</num6728>
-        <num6729>å•å¢ž7</num6729>
-        <num6730>å•å¢ž8</num6730>
-        <num6731>å•å¢ž9</num6731>
-        <num6732>å•å¢ž10</num6732>
-        <num6733>å•å¢ž11</num6733>
-        <num6734>å•å¢ž12</num6734>
-        <num6735>å•å¢ž13</num6735>
-        <num6736>å•å¢ž14</num6736>
-        <num6737>å•å¢ž15</num6737>
-        <num6738>å•å¢ž16</num6738>
-        <num6739>å•å¢ž17</num6739>
-        <num6740>å•å¢ž18</num6740>
-        <num6741>å•å¢ž19</num6741>
-        <num6742>å•å¢ž20</num6742>
-        <num6743>å•å¢ž21</num6743>
-        <num6744>å•å¢ž22</num6744>
-        <num6745>å•å¢ž23</num6745>
-        <num6746>å•å¢ž24</num6746>
-        <num6747>å•å¢ž25</num6747>
-        <num6748>å•å¢ž26</num6748>
-        <num6749>å•å¢ž27</num6749>
-        <num6750>å•å¢ž28</num6750>
-        <num6751>å•å¢ž29</num6751>
-        <num6752>å•å¢ž30</num6752>
-        <num6753>å•å¢ž31</num6753>
-        <num6754>å•å¢ž32</num6754>
-        <num6755>Ræš—</num6755>
-        <num6756>Räº®</num6756>
-        <num6757>Gæš—</num6757>
-        <num6758>Gäº®</num6758>
-        <num6759>Bæš—</num6759>
-        <num6760>Bäº®</num6760>
-        <num6761>Rå¢ž</num6761>
+        <num6719>°µÃæ»ý</num6719>
+        <num6720>ÁÁÃæ»ý</num6720>
+        <num6721>ÖØµþµãÊý</num6721>
+        <num6722>µ¥ÖÂ</num6722>
+        <num6723>µ¥Ôö1</num6723>
+        <num6724>µ¥Ôö2</num6724>
+        <num6725>µ¥Ôö3</num6725>
+        <num6726>µ¥Ôö4</num6726>
+        <num6727>µ¥Ôö5</num6727>
+        <num6728>µ¥Ôö6</num6728>
+        <num6729>µ¥Ôö7</num6729>
+        <num6730>µ¥Ôö8</num6730>
+        <num6731>µ¥Ôö9</num6731>
+        <num6732>µ¥Ôö10</num6732>
+        <num6733>µ¥Ôö11</num6733>
+        <num6734>µ¥Ôö12</num6734>
+        <num6735>µ¥Ôö13</num6735>
+        <num6736>µ¥Ôö14</num6736>
+        <num6737>µ¥Ôö15</num6737>
+        <num6738>µ¥Ôö16</num6738>
+        <num6739>µ¥Ôö17</num6739>
+        <num6740>µ¥Ôö18</num6740>
+        <num6741>µ¥Ôö19</num6741>
+        <num6742>µ¥Ôö20</num6742>
+        <num6743>µ¥Ôö21</num6743>
+        <num6744>µ¥Ôö22</num6744>
+        <num6745>µ¥Ôö23</num6745>
+        <num6746>µ¥Ôö24</num6746>
+        <num6747>µ¥Ôö25</num6747>
+        <num6748>µ¥Ôö26</num6748>
+        <num6749>µ¥Ôö27</num6749>
+        <num6750>µ¥Ôö28</num6750>
+        <num6751>µ¥Ôö29</num6751>
+        <num6752>µ¥Ôö30</num6752>
+        <num6753>µ¥Ôö31</num6753>
+        <num6754>µ¥Ôö32</num6754>
+        <num6755>R°µ</num6755>
+        <num6756>RÁÁ</num6756>
+        <num6757>G°µ</num6757>
+        <num6758>GÁÁ</num6758>
+        <num6759>B°µ</num6759>
+        <num6760>BÁÁ</num6760>
+        <num6761>RÔö</num6761>
         <num6762>clamR</num6762>
-        <num6763>Gå¢ž</num6763>
+        <num6763>GÔö</num6763>
         <num6764>clamG</num6764>
-        <num6765>Bå¢ž</num6765>
+        <num6765>BÔö</num6765>
         <num6766>clamB</num6766>
-        <num6767>æ¨¡å¼</num6767>
-        <num6768>æ··æš—</num6768>
-        <num6769>æ··äº®</num6769>
-        <num6770>èƒŒé˜ˆ</num6770>
-        <num6771>é¢œè‰²é¢ç§¯</num6771>
-        <num6772>åŒº1ä¸Š</num6772>
-        <num6773>åŒº1ä¸‹</num6773>
-        <num6774>æ·±1ä¸Š</num6774>
-        <num6775>æ·±1ä¸‹</num6775>
-        <num6776>ç°1ä¸Š</num6776>
-        <num6777>ç°1ä¸‹</num6777>
-        <num6778>åŒº2ä¸Š</num6778>
-        <num6779>åŒº2ä¸‹</num6779>
-        <num6780>åŒº3ä¸Š</num6780>
-        <num6781>åŒº3ä¸‹</num6781>
-        <num6782>åŒº4ä¸Š</num6782>
-        <num6783>åŒº4ä¸‹</num6783>
-        <num6784>åŒº5ä¸Š</num6784>
-        <num6785>åŒº5ä¸‹</num6785>
-        <num6786>æ·±2ä¸Š</num6786>
-        <num6787>æ·±2ä¸‹</num6787>
-        <num6788>ç°2ä¸Š</num6788>
-        <num6789>ç°2ä¸‹</num6789>
-        <num6790>åž‹é€‰é˜ˆå€¼</num6790>
-        <num6791>åž‹é€‰çµæ•</num6791>
-        <num6792>ç°åº¦å¿½ç•¥</num6792>
-        <num6793>é¢ç§¯å¾®è°ƒ</num6793>
-        <num6794>åž‹é€‰æ¨¡å¼</num6794>
-        <num6795>å¼€é˜€å‘¨æœŸ</num6795>
-        <num6796>å¼€é˜€æ—¶é—´</num6796>
-        <num6797>å»¶è¿Ÿ</num6797>
+        <num6767>Ä£Ê½</num6767>
+        <num6768>»ì°µ</num6768>
+        <num6769>»ìÁÁ</num6769>
+        <num6770>±³ãÐ</num6770>
+        <num6771>ÑÕÉ«Ãæ»ý</num6771>
+        <num6772>Çø1ÉÏ</num6772>
+        <num6773>Çø1ÏÂ</num6773>
+        <num6774>Éî1ÉÏ</num6774>
+        <num6775>Éî1ÏÂ</num6775>
+        <num6776>»Ò1ÉÏ</num6776>
+        <num6777>»Ò1ÏÂ</num6777>
+        <num6778>Çø2ÉÏ</num6778>
+        <num6779>Çø2ÏÂ</num6779>
+        <num6780>Çø3ÉÏ</num6780>
+        <num6781>Çø3ÏÂ</num6781>
+        <num6782>Çø4ÉÏ</num6782>
+        <num6783>Çø4ÏÂ</num6783>
+        <num6784>Çø5ÉÏ</num6784>
+        <num6785>Çø5ÏÂ</num6785>
+        <num6786>Éî2ÉÏ</num6786>
+        <num6787>Éî2ÏÂ</num6787>
+        <num6788>»Ò2ÉÏ</num6788>
+        <num6789>»Ò2ÏÂ</num6789>
+        <num6790>ÐÍÑ¡ãÐÖµ</num6790>
+        <num6791>ÐÍÑ¡ÁéÃô</num6791>
+        <num6792>»Ò¶ÈºöÂÔ</num6792>
+        <num6793>Ãæ»ýÎ¢µ÷</num6793>
+        <num6794>ÐÍÑ¡Ä£Ê½</num6794>
+        <num6795>¿ª·§ÖÜÆÚ</num6795>
+        <num6796>¿ª·§Ê±¼ä</num6796>
+        <num6797>ÑÓ³Ù</num6797>
         <num6798>NULL</num6798>
-        <num6799>é¢œæ•å¼ºåº¦</num6799>
-        <num67100>è¿”å›ž</num67100>
+        <num6799>ÑÕÃôÇ¿¶È</num6799>
+        <num67100>·µ»Ø</num67100>
         <num67101>0</num67101>
         <num67102>0</num67102>
         <num67103>0</num67103>
@@ -1172,8 +1172,8 @@
         <num67120>0</num67120>
     </tongdao>
     <xiaoxikuang2>
-        <num6801>æç¤ºï¼šæ˜¯å¦è¯»å–ï¼Ÿ</num6801>
-        <num6802>æç¤ºï¼šæ˜¯å¦å­˜å‚¨ï¼Ÿ</num6802>
+        <num6801>ÌáÊ¾£ºÊÇ·ñ¶ÁÈ¡£¿</num6801>
+        <num6802>ÌáÊ¾£ºÊÇ·ñ´æ´¢£¿</num6802>
         <num6803>0</num6803>
         <num6804>0</num6804>
         <num6805>0</num6805>
@@ -1188,28 +1188,4 @@
         <num6814>0</num6814>
         <num6815>0</num6815>
     </xiaoxikuang2>
-    <shurumianban>
-        <num6901>Max:</num6901>
-        <num6902>Min:</num6902>
-        <num6903>æ¸…é›¶</num6903>
-        <num6904>é€€å‡º</num6904>
-        <num6905>ç¡®è®¤</num6905>
-        <num6906>0</num6906>
-        <num6907>0</num6907>
-        <num6908>0</num6908>
-        <num6909>0</num6909>
-        <num6910>0</num6910>
-    </shurumianban>
-    <mima>
-        <num7001>å¯†ç ï¼š</num7001>
-        <num7002>é€€å‡ºç³»ç»Ÿ</num7002>
-        <num7003>è¿œç¨‹ä¿®æ”¹</num7003>
-        <num7004>ç¡®è®¤</num7004>
-        <num7005>0</num7005>
-        <num7006>0</num7006>
-        <num7007>0</num7007>
-        <num7008>0</num7008>
-        <num7009>0</num7009>
-        <num7010>0</num7010>
-    </mima>
 </system>

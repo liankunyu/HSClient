@@ -60,7 +60,7 @@ BOOL Tip2::OnInitDialog()
 	CString cstr;
 	opXML opx(lang);
 	opx.QueryNode_Text(m_Tip2, yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_Tip2)->SetWindowText(cstr);
 	opx.SaveFile();
 	UpdateData(FALSE);

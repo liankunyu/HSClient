@@ -90,5 +90,4 @@ public:
 	afx_msg void OnBnClickedCancel();
 
 	double ValueMin;
-	virtual BOOL OnInitDialog();
 };

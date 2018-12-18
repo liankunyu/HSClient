@@ -22,7 +22,8 @@
 #include <string>
 #include <afxdisp.h>        // MFC 自动化类
 
-
+#include "SkinH.h"
+#pragma comment(lib, "SkinH.lib")
 //#pragma comment(lib,"modbus.lib")
 
 #ifndef _AFX_NO_OLE_SUPPORT
@@ -53,8 +54,6 @@
 #endif
 #endif
 #include "modbus/stdint.h"
-#include "SkinH.h"
-#pragma comment(lib, "SkinHu.lib")
 using namespace std;
 extern double beijingban[1024];//用于背景板界面的全局数组变量，beijingban数组读取、存储、下发XML文件数据。
 extern double beijingyuzhisheding[1024];//背景阈值界面全局数组变量，读取、存储、下发XML文件数据

@@ -80,11 +80,11 @@ BOOL CQuanXianDlg::OnInitDialog()
 	const char* yuyan;
 	opXML opx(lang);
 	opx.QueryNode_Text("num2601",yuyan);
-	m_static1 = opx.UTF8ToUnicode(yuyan);
+	m_static1 = yuyan;
 	opx.QueryNode_Text("num2602", yuyan);
-	m_static2 = opx.UTF8ToUnicode(yuyan);
+	m_static2 = yuyan;
 	opx.QueryNode_Text("num2603", yuyan);
-	m_static3 = opx.UTF8ToUnicode(yuyan);
+	m_static3 = yuyan;
 	opx.SaveFile();
 	UpdateData(FALSE);
 	return TRUE;  // return TRUE unless you set the focus to a control

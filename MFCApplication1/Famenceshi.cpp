@@ -460,64 +460,64 @@ BOOL Famenceshi::OnInitDialog()
 	CString cstr;
 	opXML opx(lang);
 	opx.QueryNode_Text("num0701", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_STATIC0)->SetWindowText(cstr);
 	opx.QueryNode_Text("num0702", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_STATIC8)->SetWindowText(cstr);
 	opx.QueryNode_Text("num0703", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_STATIC2)->SetWindowText(cstr);
 	opx.QueryNode_Text("num0704", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_STATIC3)->SetWindowText(cstr);
 	opx.QueryNode_Text("num0705", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_STATIC4)->SetWindowText(cstr);
 	opx.QueryNode_Text("num0706", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_STATIC5)->SetWindowText(cstr);
 	opx.QueryNode_Text("num0707", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_STATIC6)->SetWindowText(cstr);
 	opx.QueryNode_Text("num0708", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_STATIC9)->SetWindowText(cstr);
 	opx.QueryNode_Text("num0709", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_STATIC7)->SetWindowText(cstr);
 	opx.QueryNode_Text("num0710", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_BUTTON14)->SetWindowText(cstr);
 	opx.QueryNode_Text("num0711", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_BUTTON10)->SetWindowText(cstr);
 	opx.QueryNode_Text("num0712", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_BUTTON16)->SetWindowText(cstr);
 	opx.QueryNode_Text("num0713", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_BUTTON56)->SetWindowText(cstr);
 	opx.QueryNode_Text("num0714", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_STATIC33)->SetWindowText(cstr);
 	opx.QueryNode_Text("num0715", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDCANCEL)->SetWindowText(cstr);
 	opx.QueryNode_Text("num0720", yuyan); //初始化combobox
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	m_combox1.AddString(cstr);
 	opx.QueryNode_Text("num0721", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	m_combox1.AddString(cstr);
 	opx.QueryNode_Text("num0722", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	m_combox1.AddString(cstr);
 	opx.QueryNode_Text("num0723", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	m_combox1.AddString(cstr);
 	opx.QueryNode_Text("num0724", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_BUTTON17)->SetWindowText(cstr);
 	if (famencs == true)
 	{
@@ -525,7 +525,7 @@ BOOL Famenceshi::OnInitDialog()
 		if (famen[41]==2)
 		{
 			opx.QueryNode_Text("num0725", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
+			cstr = yuyan;
 			GetDlgItem(IDC_BUTTON17)->SetWindowText(cstr);
 		}
 		if (famen[40] == 0)
@@ -884,7 +884,7 @@ void Famenceshi::OnBnClickedButton17()
 	if (flag_num == 2)
 	{
 		opx.QueryNode_Text("num0724", yuyan);
-		cstr = opx.UTF8ToUnicode(yuyan);
+		cstr = yuyan;
 		GetDlgItem(IDC_BUTTON17)->SetWindowText(cstr);
 		flag_num =1;
 		xiangjixuanze = 29 + flag_num + m_double1 * 2; //获得选择的相机编号
@@ -893,7 +893,7 @@ void Famenceshi::OnBnClickedButton17()
 	else
 	{
 		opx.QueryNode_Text("num0725", yuyan);
-		cstr = opx.UTF8ToUnicode(yuyan);
+		cstr = yuyan;
 		GetDlgItem(IDC_BUTTON17)->SetWindowText(cstr);
 		flag_num = 2;
 		xiangjixuanze = 29 + flag_num + m_double1 * 2; //获得选择的相机编号
@@ -908,7 +908,6 @@ void Famenceshi::OnBnClickedButton17()
 		datatestDPU[4] = famen[1];
 		CMyPublicData::setfunc(xiangjixuanze, 16, 13, 1);
 	}
-	opx.SaveFile();
 }
 
 

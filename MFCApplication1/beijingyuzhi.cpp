@@ -605,16 +605,16 @@ BOOL beijingyuzhi::OnInitDialog()
 	CString cstr;
 	opXML opx(lang);                        //ÓïÑÔÉèÖÃ
 	opx.QueryNode_Text("num0301", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_STATIC14)->SetWindowText(cstr);
 	opx.QueryNode_Text("num0302", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_STATIC11)->SetWindowText(cstr);
 	opx.QueryNode_Text("num0303", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDC_STATIC12)->SetWindowText(cstr);
 	opx.QueryNode_Text("num0304", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
+	cstr = yuyan;
 	GetDlgItem(IDCANCEL)->SetWindowText(cstr);
 	opx.SaveFile();
 	UpdateData(FALSE);
