@@ -102,9 +102,6 @@
     <ClInclude Include="bzengyi.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="SkinH.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="yuancheng.h">
       <Filter>头文件</Filter>
     </ClInclude>
