@@ -26,4 +26,5 @@ public:
 	virtual BOOL PreTranslateMessage(MSG* pMsg);
 	CString m_Edit1;
 	afx_msg void OnBnClickedButton3();
+	virtual BOOL OnInitDialog();
 };

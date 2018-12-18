@@ -642,17 +642,17 @@ BOOL yansehangmianji::OnInitDialog()
 	CString cstr;
 	opXML opx(lang);
 	opx.QueryNode_Text("num4001", yuyan);
-	cstr = yuyan;
+	cstr = opx.UTF8ToUnicode(yuyan);
 	GetDlgItem(IDC_STATIC33)->SetWindowText(cstr);
 	opx.QueryNode_Text("num4002", yuyan);
-	cstr = yuyan;
+	cstr = opx.UTF8ToUnicode(yuyan);
 	GetDlgItem(IDC_STATIC1)->SetWindowText(cstr);
 
 	opx.QueryNode_Text("num4003", yuyan);
-	cstr = yuyan;
+	cstr = opx.UTF8ToUnicode(yuyan);
 	GetDlgItem(IDC_STATIC2)->SetWindowText(cstr);
 	opx.QueryNode_Text("num4004", yuyan);
-	cstr = yuyan;
+	cstr = opx.UTF8ToUnicode(yuyan);
 	GetDlgItem(IDCANCEL)->SetWindowText(cstr);
 	opx.SaveFile();
 	UpdateData(FALSE);

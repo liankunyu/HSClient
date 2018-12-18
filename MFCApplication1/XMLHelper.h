@@ -30,5 +30,9 @@ public:
 	bool ModifyNode_Attribute(string strNodeName,map<string,string> &AttMap);//修改节点属性值
     void Encode(string &str);//加密
 	static string numtoString(double x);//double转string
+	wchar_t * ANSIToUnicode(const char* str);
+	char * UnicodeToANSI(const wchar_t *str);
+	TCHAR * UTF8ToUnicode(const char* str);
+	char * UnicodeToUTF8(const wchar_t *str);
 };
 
