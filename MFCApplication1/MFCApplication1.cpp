@@ -76,7 +76,7 @@ BOOL CMFCApplication1App::InitInstance()
 
 	// 初始化窗口
 	SetRegistryKey(_T("应用程序向导生成的本地应用程序"));
-	
+	SkinH_Attach();
 	CMFCApplication1Dlg dlg;
 	m_pMainWnd = &dlg;
 	INT_PTR nResponse = dlg.DoModal();

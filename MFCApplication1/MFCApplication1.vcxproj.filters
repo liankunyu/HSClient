@@ -102,6 +102,9 @@
     <ClInclude Include="bzengyi.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="SkinH.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="yuancheng.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -157,6 +160,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="fuzhu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="udpcaitu.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="xiangjihuafen.h">
@@ -250,6 +256,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Tip.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Tip2.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -383,6 +392,9 @@
     <ClCompile Include="fuzhu.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="udpcaitu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="xiangjihuafen.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -477,6 +489,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Tip.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Tip2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

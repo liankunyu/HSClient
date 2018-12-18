@@ -22,6 +22,8 @@
 #include <string>
 #include <afxdisp.h>        // MFC 自动化类
 
+#include "SkinH.h"
+#pragma comment(lib, "SkinH.lib")
 //#pragma comment(lib,"modbus.lib")
 
 #ifndef _AFX_NO_OLE_SUPPORT
