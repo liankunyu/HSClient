@@ -162,17 +162,14 @@
     <ClInclude Include="SHENDUFEN.h" />
     <ClInclude Include="SHENERFEN.h" />
     <ClInclude Include="shujuduqu.h" />
-    <ClInclude Include="SkinH.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="tiaoshi.h" />
     <ClInclude Include="tinystr.h" />
     <ClInclude Include="tinyxml.h" />
     <ClInclude Include="Tip.h" />
-    <ClInclude Include="Tip2.h" />
     <ClInclude Include="TONGDAO.h" />
     <ClInclude Include="tongxinzhuangtai.h" />
-    <ClInclude Include="udpcaitu.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="VGAsheding.h" />
     <ClInclude Include="xiangjihuafen.h" />
@@ -263,10 +260,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Tip.cpp" />
-    <ClCompile Include="Tip2.cpp" />
     <ClCompile Include="TONGDAO.cpp" />
     <ClCompile Include="tongxinzhuangtai.cpp" />
-    <ClCompile Include="udpcaitu.cpp" />
     <ClCompile Include="User.cpp" />
     <ClCompile Include="VGAsheding.cpp" />
     <ClCompile Include="xiangjihuafen.cpp" />

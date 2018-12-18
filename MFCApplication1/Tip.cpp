@@ -4,7 +4,7 @@
 #include "stdafx.h"
 #include "Tip.h"
 #include "afxdialogex.h"
-#include "XMLHelper.h"
+
 
 // Tip 对话框
 
@@ -38,14 +38,7 @@ BOOL Tip::OnInitDialog()
 	CDialogEx::OnInitDialog();
 
 	// TODO:  在此添加额外的初始化
-	const char* yuyan;                                  //语言控制，通过xml文件更改语言
-	CString cstr;
-	opXML opx(lang);
-	opx.QueryNode_Text(m_Tip, yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
-	GetDlgItem(IDC_Tip)->SetWindowText(cstr);
-	opx.SaveFile();
-	UpdateData(FALSE);
+
 	return TRUE;  // return TRUE unless you set the focus to a control
 				  // 异常: OCX 属性页应返回 FALSE
 }
