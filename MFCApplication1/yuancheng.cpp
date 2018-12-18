@@ -256,14 +256,21 @@ BOOL yuancheng::OnInitDialog()
 	CString cstr;
 	opXML opx(lang);
 	opx.QueryNode_Text("num6501", yuyan);
-	cstr = yuyan;
+	cstr = opx.UTF8ToUnicode(yuyan);
 	GetDlgItem(IDC_CONNECT_BUTTON)->SetWindowText(cstr);
 	opx.QueryNode_Text("num6502", yuyan);
-	cstr = yuyan;
+	cstr = opx.UTF8ToUnicode(yuyan);
 	GetDlgItem(IDC_SEND_BUTTON)->SetWindowText(cstr);
 	opx.QueryNode_Text("num6503", yuyan);
-	cstr = yuyan;
+	cstr = opx.UTF8ToUnicode(yuyan);
 	GetDlgItem(IDCANCEL)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6504", yuyan);
+	cstr = opx.UTF8ToUnicode(yuyan);
+	GetDlgItem(IDC_IP_STATIC)->SetWindowText(cstr);
+	opx.QueryNode_Text("num6505", yuyan);
+	cstr = opx.UTF8ToUnicode(yuyan);
+	GetDlgItem(IDC_Port_STATIC)->SetWindowText(cstr);
+	opx.SaveFile();
 	//ModifyStyle(WS_CAPTION, 0, 0);
 	//SendMessage(WM_SYSCOMMAND, SC_MAXIMIZE, 0);
 	////初始化窗口位置

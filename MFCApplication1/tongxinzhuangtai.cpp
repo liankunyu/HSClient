@@ -259,19 +259,19 @@ BOOL tongxinzhuangtai::OnInitDialog()
 	CString cstr;
 	opXML opx(lang);
 	opx.QueryNode_Text("num6201", yuyan);
-	cstr = yuyan;
+	cstr = opx.UTF8ToUnicode(yuyan);
 	GetDlgItem(IDC_BUTTON3)->SetWindowText(cstr);
 	opx.QueryNode_Text("num6202", yuyan);
-	cstr = yuyan;
+	cstr = opx.UTF8ToUnicode(yuyan);
 	GetDlgItem(IDC_BUTTON1)->SetWindowText(cstr);
 	opx.QueryNode_Text("num6203", yuyan);
-	cstr = yuyan;
+	cstr = opx.UTF8ToUnicode(yuyan);
 	GetDlgItem(IDC_BUTTON2)->SetWindowText(cstr);
 	opx.QueryNode_Text("num6204", yuyan);
-	cstr = yuyan;
+	cstr = opx.UTF8ToUnicode(yuyan);
 	GetDlgItem(IDC_BUTTON4)->SetWindowText(cstr);
 	opx.QueryNode_Text("num6205", yuyan);
-	cstr = yuyan;
+	cstr = opx.UTF8ToUnicode(yuyan);
 	GetDlgItem(IDCANCEL)->SetWindowText(cstr);
 	opx.SaveFile();
 
