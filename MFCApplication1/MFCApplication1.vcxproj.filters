@@ -507,7 +507,6 @@
     <None Include="ClassDiagram.cd" />
     <None Include="modbus.dll" />
     <None Include="rgbtrans.dll" />
-    <None Include="SkinH.dll" />
     <None Include="skinh.she" />
     <None Include="SkinHu.dll" />
   </ItemGroup>
@@ -570,6 +569,7 @@
   <ItemGroup>
     <Library Include="modbus.lib" />
     <Library Include="rgbtrans.lib" />
+    <Library Include="SkinHu.lib" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="chinese.xml" />
@@ -595,5 +595,6 @@
     <Xml Include="mode18.xml" />
     <Xml Include="mode19.xml" />
     <Xml Include="mode20.xml" />
+    <Xml Include="japanese.xml" />
   </ItemGroup>
 </Project>

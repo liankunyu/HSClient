@@ -292,7 +292,6 @@
     <None Include="modbus.dll" />
     <None Include="res\MFCApplication1.rc2" />
     <None Include="rgbtrans.dll" />
-    <None Include="SkinH.dll" />
     <None Include="skinh.she" />
     <None Include="SkinHu.dll" />
   </ItemGroup>
@@ -319,10 +318,12 @@
   <ItemGroup>
     <Library Include="modbus.lib" />
     <Library Include="rgbtrans.lib" />
+    <Library Include="SkinHu.lib" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="chinese.xml" />
     <Xml Include="english.xml" />
+    <Xml Include="japanese.xml" />
     <Xml Include="lasttime.xml" />
     <Xml Include="mode1.xml" />
     <Xml Include="mode10.xml" />
