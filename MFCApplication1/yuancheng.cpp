@@ -85,7 +85,7 @@ void yuancheng::OnBnClickedConnectButton()
 		//建立连接  
 		if (!connect(clientSock, (SOCKADDR*)&clientAddr, sizeof(SOCKADDR)))
 		{
-			m_rev_edit += L"connect Success!\r\n";
+			m_rev_edit = m_rev_edit+m_Msg[0]+L"\r\n";   //服务器连接成功提示
 			byte buf[60 * 1024] = { 0X68 };//0X68帧头, 192, 168, 0, 1,192, 168, 0, 1,0xFF控制码,25,125长度
 			buf[1] = (byte)((Device_ID >> 24) & 0xFF);
 			buf[2] = (byte)((Device_ID >> 16) & 0xFF);
@@ -108,7 +108,7 @@ void yuancheng::OnBnClickedConnectButton()
 			//}
 			if (send(clientSock, (const char*)buf, 15, NULL)== SOCKET_ERROR)
 			{
-				m_rev_edit += L"send Error！\r\n";
+				m_rev_edit = m_rev_edit + m_Msg[1] + L"\r\n";  //信息发送失败提示
 			}
 			else
 			{
@@ -119,7 +119,7 @@ void yuancheng::OnBnClickedConnectButton()
 		}
 		else
 		{
-			m_rev_edit += L"connect Error！\r\n";
+			m_rev_edit = m_rev_edit + m_Msg[2] + L"\r\n";   //服务器连接失败提示
 		}
 	}
 	UpdateData(FALSE);
@@ -189,7 +189,7 @@ void yuancheng::OnBnClickedSendButton()
 	//sendFile("mode14.xml",14);
 	//sendFile("mode15.xml",15);
 	//sendFile("name.xml",0x5A);
-	m_rev_edit += L"Upload file Success!\r\n";
+	m_rev_edit = m_rev_edit + m_Msg[3] + L"\r\n";  //文件上传成功提示
 	/*MessageBox(L"Success!");*/
 	UpdateData(FALSE);
 }
@@ -200,7 +200,7 @@ void yuancheng::sendFile(string str,int code)
 	FILE *pFile=NULL;
 	if (fopen_s(&pFile, str.c_str(), "rb") != 0)
 	{
-		m_rev_edit += L"fail to open file !\r\n";
+		m_rev_edit = m_rev_edit + m_Msg[4] + L"\r\n";  //文件打开失败提示
 		/*MessageBox(L"fail to open file!");*/
 		return;
 	}
@@ -239,7 +239,7 @@ void yuancheng::sendFile(string str,int code)
 
 	if (send(clientSock, (const char*)buf, len + 15, 0) == SOCKET_ERROR)
 	{
-		m_rev_edit += L"Failed to send!\r\n";
+		m_rev_edit = m_rev_edit + m_Msg[5] + L"\r\n";    //文件发送失败提示
 		/*MessageBox(L"失败");*/
 	}
 	Sleep(200);
@@ -270,6 +270,29 @@ BOOL yuancheng::OnInitDialog()
 	opx.QueryNode_Text("num6505", yuyan);
 	cstr = opx.UTF8ToUnicode(yuyan);
 	GetDlgItem(IDC_Port_STATIC)->SetWindowText(cstr);
+
+	opx.QueryNode_Text("num6510", yuyan);
+	m_Msg[0] = opx.UTF8ToUnicode(yuyan);
+	opx.QueryNode_Text("num6511", yuyan);
+	m_Msg[1] = opx.UTF8ToUnicode(yuyan);
+	opx.QueryNode_Text("num6512", yuyan);
+	m_Msg[2] = opx.UTF8ToUnicode(yuyan);
+	opx.QueryNode_Text("num6513", yuyan);
+	m_Msg[3] = opx.UTF8ToUnicode(yuyan);
+	opx.QueryNode_Text("num6514", yuyan);
+	m_Msg[4] = opx.UTF8ToUnicode(yuyan);
+	opx.QueryNode_Text("num6515", yuyan);
+	m_Msg[5] = opx.UTF8ToUnicode(yuyan);
+	opx.QueryNode_Text("num6516", yuyan);
+	m_Msg[6] = opx.UTF8ToUnicode(yuyan);
+	opx.QueryNode_Text("num6517", yuyan);
+	m_Msg[7] = opx.UTF8ToUnicode(yuyan);
+	opx.QueryNode_Text("num6518", yuyan);
+	m_Msg[8] = opx.UTF8ToUnicode(yuyan);
+	opx.QueryNode_Text("num6519", yuyan);
+	m_Msg[9] = opx.UTF8ToUnicode(yuyan);
+	opx.QueryNode_Text("num6520", yuyan);
+	m_Msg[10] = opx.UTF8ToUnicode(yuyan);
 	opx.SaveFile();
 	//ModifyStyle(WS_CAPTION, 0, 0);
 	//SendMessage(WM_SYSCOMMAND, SC_MAXIMIZE, 0);
@@ -555,7 +578,7 @@ int yuancheng::ProcessReceive(byte* data, int len)
 	FILE *pFil;
 	if (fopen_s(&pFil, path.c_str(), "w") != 0)
 	{
-		m_rev_edit += L"File write failure \r\n";
+		m_rev_edit = m_rev_edit + m_Msg[6] + L"\r\n";  //文件写入失败提示
 		return 0;
 	}
 	fwrite(revdata, 1, len - 15, pFil);
@@ -591,11 +614,16 @@ int yuancheng::ProcessReceive(byte* data, int len)
 	buf[strlength + 14] = { 0x16 };
 	if (send(clientSock, (const char*)buf, strlength + 15, NULL) == SOCKET_ERROR)
 	{
-		m_rev_edit += L"Receipt message failed！\r\n";
+		m_rev_edit = m_rev_edit + m_Msg[7] + L"\r\n";  //消息发送失败提示
 	}
 		//接受完成后是否执行重新下发
 		CMyPublicData::readXML("lasttime.xml");
-		m_rev_edit += L"Receive completion!\r\n";
+		m_rev_edit = m_rev_edit + m_Msg[8] + L"\r\n"; //接受完成提示
+		if (fanhuizhi == (-1))
+		{
+			fanhuizhi = 0;
+			m_rev_edit = m_rev_edit + m_Msg[9] + L"\r\n";  //通信异常提示
+		}
 		
 	/*}*/
 	return 1;
@@ -713,7 +741,7 @@ void yuancheng::OnTimer(UINT_PTR nIDEvent)
 		buf[14] = { 0x16 };
 		if (send(clientSock, (const char*)buf, 15, NULL) == SOCKET_ERROR)
 		{
-			m_rev_edit += L"HeartBeat send Error！\r\n";
+			m_rev_edit = m_rev_edit + m_Msg[10] + L"\r\n";  //心跳包发送失败提示
 		}
 	}
 	if (nIDEvent == 2)

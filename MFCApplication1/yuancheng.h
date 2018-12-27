@@ -53,8 +53,9 @@ public:
 	string  intFormat(byte* x, int start);
 	void sendFile(string str,int code);
 	SOCKET clientSock;
-	CString m_rev_edit;
-	CString m_temp_edit;
+	CString m_rev_edit;   //消息框
+	CString m_temp_edit;  //判断是否刷新消息框m_rev_edit!=m_temp_edit时刷新消息界面
+	CString m_Msg[15];    //用来存储在m_rev_edit编辑框中显示的消息
 	afx_msg void OnBnClickedCancel();
 	afx_msg void OnTimer(UINT_PTR nIDEvent);
 	virtual BOOL PreTranslateMessage(MSG* pMsg);

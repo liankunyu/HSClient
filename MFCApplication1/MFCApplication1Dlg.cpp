@@ -546,8 +546,10 @@ void CMFCApplication1Dlg::OnBnClickedTongxunzhuangtaiButton()
 void CMFCApplication1Dlg::OnBnClickedChangjianwentiButton()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	KillTimer(2);
 	yuancheng yc;
 	yc.DoModal();
+	SetTimer(2, 2000, NULL);
 }
 
 
@@ -561,6 +563,7 @@ void CMFCApplication1Dlg::OnTimer(UINT_PTR nIDEvent)
 		if (m_Int<0)
 		{
 			KillTimer(1);
+			KillTimer(2);
 			mima mm;
 			mm.DoModal();
 			JIEZHIRIQI jz;
