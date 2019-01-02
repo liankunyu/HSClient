@@ -661,14 +661,14 @@ void CMyPublicData::readXML(string str)
 	opx2.QueryNode_Text("num0425", number1);
 	caitu[24] = atoi(number1);
 
-	//获得服务器IP和Port
-	opx2.QueryNode_Text("serverIP", number1);
-	server_IP = number1;
-	opx2.QueryNode_Text("serverPort", number1);
-	server_Port = number1;
-	//获得最后一次选择的语言
-	opx2.QueryNode_Text("lastlang", number1);
-	lang = number1; 
+	////获得服务器IP和Port
+	//opx2.QueryNode_Text("serverIP", number1);
+	//server_IP = number1;
+	//opx2.QueryNode_Text("serverPort", number1);
+	//server_Port = number1;
+	////获得最后一次选择的语言
+	//opx2.QueryNode_Text("lastlang", number1);
+	//lang = number1; 
 
 	opx2.QueryNode_Text("num0501", number1);
 	famen[0] = atoi(number1);

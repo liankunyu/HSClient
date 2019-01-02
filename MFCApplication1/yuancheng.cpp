@@ -619,10 +619,15 @@ int yuancheng::ProcessReceive(byte* data, int len)
 		//接受完成后是否执行重新下发
 		CMyPublicData::readXML("lasttime.xml");
 		m_rev_edit = m_rev_edit + m_Msg[8] + L"\r\n"; //接受完成提示
-		if (fanhuizhi == (-1))
+		for (int i = 0; i < 21; i++)
 		{
-			fanhuizhi = 0;
-			m_rev_edit = m_rev_edit + m_Msg[9] + L"\r\n";  //通信异常提示
+			if (tongxincuowu[i] == (-1))
+			{
+				fanhuizhi = 0;
+				memset(tongxincuowu, 0, sizeof(tongxincuowu));   //每次将tongxincuowu数组全部置0，清除上一次的返回值
+				m_rev_edit = m_rev_edit + m_Msg[9] + L"\r\n";  //通信异常提示
+				break;
+			}
 		}
 		
 	/*}*/

@@ -87,6 +87,8 @@ void moshixuanzeer::ReadXML(string str)
 	{
 		if (tongxincuowu[i] == (-1))
 		{
+			memset(tongxincuowu, 0, sizeof(tongxincuowu));   //每次将tongxincuowu数组全部置0，清除上一次的返回值
+			fanhuizhi = 0;
 			m_Tip = "num6601";
 			Tip tip;
 			tip.DoModal();

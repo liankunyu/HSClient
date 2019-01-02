@@ -172,9 +172,12 @@ BOOL CMFCApplication1Dlg::OnInitDialog()
 	const char* yuyan;
 	opx4.QueryNode_Text("lastlang", yuyan);
 	lang = yuyan;
+	//获得服务器IP和Port
+	opx4.QueryNode_Text("serverIP", yuyan);
+	server_IP = yuyan;
+	opx4.QueryNode_Text("serverPort", yuyan);
+	server_Port = yuyan;
 	opx4.SaveFile();
-
-
 	// TODO:  在此添加额外的初始化代码   
 
 	//初始化语言                   
@@ -282,6 +285,7 @@ BOOL CMFCApplication1Dlg::OnInitDialog()
 		{
 			if (tongxincuowu[i] == (-1))
 			{
+				memset(tongxincuowu, 0, sizeof(tongxincuowu));   //每次将tongxincuowu数组全部置0，清除上一次的返回值
 				m_Tip = "num6601";//传入节点名
 				Tip tip;
 				tip.DoModal();
@@ -406,9 +410,17 @@ void CMFCApplication1Dlg::OnBnClickedMoshixuanzeButton()
 			CMyPublicData::setfunc(32 + i, 16, 1, 1);
 		}
 	}
+	m_tingzhi.m_bTransparent = FALSE;
+	m_tingzhi.m_bDontUseWinXPTheme = TRUE;
+	m_tingzhi.SetFaceColor(RGB(0, 255, 127));
+	m_kaishi.m_bTransparent = FALSE;
+	m_kaishi.m_bDontUseWinXPTheme = TRUE;
+	m_kaishi.SetFaceColor(RGB(255, 215, 0));
 	kaishida = false;
+	KillTimer(2);  //暂时关闭主界面的通信异常判断，f防止多次出现提示界面
 	Moshixuanze moshi;
 	moshi.DoModal();
+	SetTimer(2, 2000, NULL); //开启定时器
 }
 
 
