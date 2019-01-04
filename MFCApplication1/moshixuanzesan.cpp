@@ -504,7 +504,6 @@ void moshixuanzesan::OnBnClickedButton7()
 	{
 		UpdateData(TRUE);
 		CMyPublicData::writerXML("mode13.xml");
-		MessageBox(L"存储成功！", L"提示");
 		m_mode16 = L"MODE13   " + m_mode13;
 		string mc;
 		opXML opx("name.xml");

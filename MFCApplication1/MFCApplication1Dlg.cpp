@@ -417,7 +417,14 @@ void CMFCApplication1Dlg::OnBnClickedMoshixuanzeButton()
 	m_kaishi.m_bDontUseWinXPTheme = TRUE;
 	m_kaishi.SetFaceColor(RGB(255, 215, 0));
 	kaishida = false;
-	KillTimer(2);  //暂时关闭主界面的通信异常判断，f防止多次出现提示界面
+	if (fanhuizhi ==-1)
+	{
+		fanhuizhi = 0;
+		m_Tip = "num6601";//传入节点名
+		Tip tip;
+		tip.DoModal();
+	}
+	KillTimer(2);  //暂时关闭主界面的通信异常判断，防止多次出现提示界面
 	Moshixuanze moshi;
 	moshi.DoModal();
 	SetTimer(2, 2000, NULL); //开启定时器
@@ -550,8 +557,10 @@ void CMFCApplication1Dlg::ReSize()
 void CMFCApplication1Dlg::OnBnClickedTongxunzhuangtaiButton()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	KillTimer(2);  //暂时关闭主界面的通信异常判断，f防止多次出现提示界面
 	tongxinzhuangtai tx;
 	tx.DoModal();
+	SetTimer(2, 2000, NULL); //开启定时器
 }
 
 
