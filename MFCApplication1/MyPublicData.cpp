@@ -3435,7 +3435,7 @@ void CMyPublicData::readXML(string str)
 		setfunc(10, 3, 9, 1);
 		bit_set(10, 9, 6, true);               //阀电源最后开启
 	}
-
+	fanhuizhi = 0; //用完后重置为0
 }
 
 

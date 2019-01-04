@@ -623,7 +623,6 @@ int yuancheng::ProcessReceive(byte* data, int len)
 		{
 			if (tongxincuowu[i] == (-1))
 			{
-				fanhuizhi = 0;
 				memset(tongxincuowu, 0, sizeof(tongxincuowu));   //每次将tongxincuowu数组全部置0，清除上一次的返回值
 				m_rev_edit = m_rev_edit + m_Msg[9] + L"\r\n";  //通信异常提示
 				break;

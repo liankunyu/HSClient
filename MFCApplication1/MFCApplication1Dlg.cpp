@@ -289,7 +289,6 @@ BOOL CMFCApplication1Dlg::OnInitDialog()
 				m_Tip = "num6601";//传入节点名
 				Tip tip;
 				tip.DoModal();
-				fanhuizhi = 0;
 				SetTimer(1, 1000, NULL);  //设置定时器判断是否出现时间错误，有两种情况，第一种系统时间出错，第二种是超过截止日期
 				SetTimer(2, 2000, NULL);  //判断指令下发是否出现错误
 				return false;

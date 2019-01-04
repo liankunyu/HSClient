@@ -267,12 +267,12 @@ void moshixuanzesan::ReadXML(string str)
 {
 	//读取XML文件数据值
 	CMyPublicData::readXML(str);
+	
 	for (int i = 0; i < 21; i++)
 	{
 		if (tongxincuowu[i] == (-1))
 		{
 			memset(tongxincuowu, 0, sizeof(tongxincuowu));   //每次将tongxincuowu数组全部置0，清除上一次的返回值
-			fanhuizhi = 0;
 			m_Tip = "num6601";
 			Tip tip;
 			tip.DoModal();
