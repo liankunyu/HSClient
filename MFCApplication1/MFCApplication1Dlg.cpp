@@ -248,6 +248,28 @@ BOOL CMFCApplication1Dlg::OnInitDialog()
 	  GetDlgItem(IDC_DIANHUA_STATIC)->SetWindowText(cstr);
 	  opx6.SaveFile();
 
+
+		  //////////////////////////设置字体大小和字形////////////////////////
+		  CFont * p_Font;
+		  p_Font = new CFont;
+		  p_Font->CreateFont(24, // nHeight 
+			  0, // nWidth 
+			  0, // nEscapement 
+			  0, // nOrientation
+			  FW_NORMAL, // nWeight 
+			  FALSE, // bItalic 
+			  FALSE, // bUnderline 
+			  0, // cStrikeOut 
+			  ANSI_CHARSET, // nCharSet 
+			  OUT_DEFAULT_PRECIS, // nOutPrecision 
+			  CLIP_DEFAULT_PRECIS, // nClipPrecision 
+			  DEFAULT_QUALITY, // nQuality 
+			  DEFAULT_PITCH | FF_SWISS, // nPitchAndFamily 
+			  _T("Arial")); // lpszFac 
+							//  :: SetTextColor(HDC hDC,RGB(255,255,0)); //设置字体颜色
+		  GetDlgItem(IDC_KAISHIDA)->SetFont(p_Font);
+		  GetDlgItem(IDC_TINGZHIDA2)->SetFont(p_Font);
+		  /*delete p_Font;*/
 	  //开始打、停止打按钮改变颜色
 	  m_tingzhi.m_bTransparent = FALSE;
 	  m_tingzhi.m_bDontUseWinXPTheme = TRUE;
