@@ -51,7 +51,7 @@ public:
 	int allData2[30][1024] = {0};//用于把allData中所有数值从16位拆成两个byte8位值
 	void intTo2Byte();
 	string  intFormat(byte* x, int start);
-	void sendFile(string str,int code);
+	int sendFile(string str,int code);
 	SOCKET clientSock;
 	CString m_rev_edit;   //消息框
 	CString m_temp_edit;  //判断是否刷新消息框m_rev_edit!=m_temp_edit时刷新消息界面

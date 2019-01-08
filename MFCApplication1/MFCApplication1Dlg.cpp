@@ -265,11 +265,13 @@ BOOL CMFCApplication1Dlg::OnInitDialog()
 			  CLIP_DEFAULT_PRECIS, // nClipPrecision 
 			  DEFAULT_QUALITY, // nQuality 
 			  DEFAULT_PITCH | FF_SWISS, // nPitchAndFamily 
-			  _T("Arial")); // lpszFac 
+			  _T("MS Shell Dlg")); // lpszFac 
 							//  :: SetTextColor(HDC hDC,RGB(255,255,0)); //设置字体颜色
 		  GetDlgItem(IDC_KAISHIDA)->SetFont(p_Font);
 		  GetDlgItem(IDC_TINGZHIDA2)->SetFont(p_Font);
-		  /*delete p_Font;*/
+		  p_Font->Detach();//释放指针
+		  delete p_Font;//释放指针
+		//////////////////////////设置字体大小和字形////////////////////////
 	  //开始打、停止打按钮改变颜色
 	  m_tingzhi.m_bTransparent = FALSE;
 	  m_tingzhi.m_bDontUseWinXPTheme = TRUE;
@@ -299,7 +301,7 @@ BOOL CMFCApplication1Dlg::OnInitDialog()
 		GetClientRect(&rect);     //取客户区大小    
 		old.x = rect.right - rect.left;
 		old.y = rect.bottom - rect.top;
-
+		
 
 
 		//判断通信是否正常
@@ -324,6 +326,7 @@ BOOL CMFCApplication1Dlg::OnInitDialog()
 		}
 		SetTimer(1, 1000, NULL);  //设置定时器判断是否出现时间错误，有两种情况，第一种系统时间出错，第二种是超过截止日期
 		SetTimer(2, 2000, NULL);  //判断指令下发是否出现错误
+		
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
 

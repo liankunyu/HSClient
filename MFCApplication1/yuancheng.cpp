@@ -172,37 +172,22 @@ void yuancheng::ReSize()
 void yuancheng::OnBnClickedSendButton()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	sendFile("lasttime.xml",0);
-	//sendFile("mode1.xml",1);
-	//sendFile("mode2.xml",2);
-	//sendFile("mode3.xml",3);
-	//sendFile("mode4.xml",4);
-	//sendFile("mode5.xml",5);
-	//sendFile("mode6.xml",6);
-	//sendFile("mode7.xml",7);
-	//sendFile("mode8.xml",8);
-	//sendFile("mode9.xml",9);
-	//sendFile("mode10.xml",10);
-	//sendFile("mode11.xml",11);
-	//sendFile("mode12.xml",12);
-	//sendFile("mode13.xml",13);
-	//sendFile("mode14.xml",14);
-	//sendFile("mode15.xml",15);
-	//sendFile("name.xml",0x5A);
-	m_rev_edit = m_rev_edit + m_Msg[3] + L"\r\n";  //文件上传成功提示
-	/*MessageBox(L"Success!");*/
+	if (sendFile("lasttime.xml", 0)==1)
+	{
+		m_rev_edit = m_rev_edit + m_Msg[3] + L"\r\n";  //文件上传成功提示
+	}
 	UpdateData(FALSE);
 }
 
 
-void yuancheng::sendFile(string str,int code)
+int yuancheng::sendFile(string str,int code)
 {
 	FILE *pFile=NULL;
 	if (fopen_s(&pFile, str.c_str(), "rb") != 0)
 	{
 		m_rev_edit = m_rev_edit + m_Msg[4] + L"\r\n";  //文件打开失败提示
 		/*MessageBox(L"fail to open file!");*/
-		return;
+		return 0;
 	}
 	fseek(pFile, 0, SEEK_END);
 	int len = ftell(pFile);
@@ -241,9 +226,11 @@ void yuancheng::sendFile(string str,int code)
 	{
 		m_rev_edit = m_rev_edit + m_Msg[5] + L"\r\n";    //文件发送失败提示
 		/*MessageBox(L"失败");*/
+		return 0;
 	}
 	Sleep(200);
 	UpdateData(FALSE);
+	return 1;
 }
 
 BOOL yuancheng::OnInitDialog()
