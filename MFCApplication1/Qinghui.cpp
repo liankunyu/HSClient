@@ -355,8 +355,8 @@ void Qinghui::OnBnClickedButton11()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	CMyPublicData::setfunc(10, 3, 9, 1);
-	CMyPublicData::bit_set(10, 9, 6, false);
-	CMyPublicData::bit_set(10, 9, 8, false);
+	//CMyPublicData::bit_set(10, 9, 6, false);
+	//CMyPublicData::bit_set(10, 9, 8, false);
 	CMyPublicData::bit_set(10, 9, 0, true);
 }
 

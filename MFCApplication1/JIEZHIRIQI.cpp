@@ -376,8 +376,8 @@ BOOL JIEZHIRIQI::OnInitDialog()
 	cstr = opx.UTF8ToUnicode(yuyan);
 	GetDlgItem(IDC_BUTTON2)->SetWindowText(cstr);
 	opx.QueryNode_Text("num5204", yuyan);
-	cstr = opx.UTF8ToUnicode(yuyan);
-	GetDlgItem(IDC_BUTTON5)->SetWindowText(cstr);
+	//cstr = opx.UTF8ToUnicode(yuyan);
+	//GetDlgItem(IDC_BUTTON5)->SetWindowText(cstr);
 	opx.QueryNode_Text("num5205", yuyan);
 	cstr = opx.UTF8ToUnicode(yuyan);
 	GetDlgItem(IDC_STATIC5)->SetWindowText(cstr);

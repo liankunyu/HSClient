@@ -32,7 +32,7 @@ public:
 	static string numtoString(double x);//double×ªstring
 	wchar_t * ANSIToUnicode(const char* str);
 	char * UnicodeToANSI(const wchar_t *str);
-	TCHAR * UTF8ToUnicode(const char* str);
+	TCHAR * UTF8ToUnicode(const char* str);//UTF8×ªUnicode×Ö·û
 	char * UnicodeToUTF8(const wchar_t *str);
 };
 
