@@ -135,8 +135,11 @@ void Pingyi::OnBnClickedButton10()
 		UpdateData(FALSE);
 		pingyisheding[0] = m_double_1_edit;
 	}
-	datatestDPU[4] = pingyisheding[0];
-	CMyPublicData::setfunc(32, 16, 8, 1);
+	if (modsd[0] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[0];
+		CMyPublicData::setfunc(32, 16, 8, 1);
+	}
 
 }
 
@@ -157,8 +160,11 @@ void Pingyi::OnBnClickedButton33()
 		UpdateData(FALSE);
 		pingyisheding[0] = m_double_1_edit;
 	}
-	datatestDPU[4] = pingyisheding[0];
-	CMyPublicData::setfunc(32, 16, 8, 1);
+	if (modsd[0] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[0];
+		CMyPublicData::setfunc(32, 16, 8, 1);
+	}
 }
 
 
@@ -178,8 +184,11 @@ void Pingyi::OnBnClickedButton43()
 		UpdateData(FALSE);
 		pingyisheding[1] = m_double_2_edit;
 	}
-	datatestDPU[4] = pingyisheding[1];
-	CMyPublicData::setfunc(34, 16, 8, 1);
+	if (modsd[2] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[1];
+		CMyPublicData::setfunc(34, 16, 8, 1);
+	}
 }
 
 
@@ -199,8 +208,11 @@ void Pingyi::OnBnClickedButton45()
 		UpdateData(FALSE);
 		pingyisheding[2] = m_double_3_edit;
 	}
-	datatestDPU[4] = pingyisheding[2];
-	CMyPublicData::setfunc(36, 16, 8, 1);
+	if (modsd[4] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[2];
+		CMyPublicData::setfunc(36, 16, 8, 1);
+	}
 }
 
 
@@ -220,8 +232,11 @@ void Pingyi::OnBnClickedButton47()
 		UpdateData(FALSE);
 		pingyisheding[3] = m_double_4_edit;
 	}
-	datatestDPU[4] = pingyisheding[3];
-	CMyPublicData::setfunc(38, 16, 8, 1);
+	if (modsd[6] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[3];
+		CMyPublicData::setfunc(38, 16, 8, 1);
+	}
 }
 
 
@@ -241,8 +256,11 @@ void Pingyi::OnBnClickedButton51()
 		UpdateData(FALSE);
 		pingyisheding[4] = m_double_5_edit;
 	}
-	datatestDPU[4] = pingyisheding[4];
-	CMyPublicData::setfunc(40, 16, 8, 1);
+	if (modsd[8] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[4];
+		CMyPublicData::setfunc(40, 16, 8, 1);
+	}
 }
 
 
@@ -262,8 +280,11 @@ void Pingyi::OnBnClickedButton53()
 		UpdateData(FALSE);
 		pingyisheding[5] = m_double_6_edit;
 	}
-	datatestDPU[4] = pingyisheding[5];
-	CMyPublicData::setfunc(42, 16, 8, 1);
+	if (modsd[10] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[5];
+		CMyPublicData::setfunc(42, 16, 8, 1);
+	}
 }
 
 
@@ -283,8 +304,11 @@ void Pingyi::OnBnClickedButton70()
 		UpdateData(FALSE);
 		pingyisheding[6] = m_double_7_edit;
 	}
-	datatestDPU[4] = pingyisheding[6];
-	CMyPublicData::setfunc(44, 16, 8, 1);
+	if (modsd[12] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[6];
+		CMyPublicData::setfunc(44, 16, 8, 1);
+	}
 }
 
 
@@ -304,8 +328,11 @@ void Pingyi::OnBnClickedButton73()
 		UpdateData(FALSE);
 		pingyisheding[7] = m_double_8_edit;
 	}
-	datatestDPU[4] = pingyisheding[7];
-	CMyPublicData::setfunc(46, 16, 8, 1);
+	if (modsd[14] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[7];
+		CMyPublicData::setfunc(46, 16, 8, 1);
+	}
 }
 
 
@@ -325,8 +352,11 @@ void Pingyi::OnBnClickedButton76()
 		UpdateData(FALSE);
 		pingyisheding[8] = m_double_9_edit;
 	}
-	datatestDPU[4] = pingyisheding[8];
-	CMyPublicData::setfunc(48, 16, 8, 1);
+	if (modsd[16] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[8];
+		CMyPublicData::setfunc(48, 16, 8, 1);
+	}
 }
 
 
@@ -346,8 +376,11 @@ void Pingyi::OnBnClickedButton79()
 		UpdateData(FALSE);
 		pingyisheding[9] = m_double_10_edit;
 	}
-	datatestDPU[4] = pingyisheding[9];
-	CMyPublicData::setfunc(50, 16, 8, 1);
+	if (modsd[18] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[9];
+		CMyPublicData::setfunc(50, 16, 8, 1);
+	}
 }
 
 
@@ -367,8 +400,11 @@ void Pingyi::OnBnClickedButton82()
 		UpdateData(FALSE);
 		pingyisheding[10] = m_double_11_edit;
 	}
-	datatestDPU[4] = pingyisheding[10];
-	CMyPublicData::setfunc(33, 16, 8, 1);
+	if (modsd[1] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[10];
+		CMyPublicData::setfunc(33, 16, 8, 1);
+	}
 }
 
 
@@ -388,8 +424,11 @@ void Pingyi::OnBnClickedButton86()
 		UpdateData(FALSE);
 		pingyisheding[11] = m_double_12_edit;
 	}
-	datatestDPU[4] = pingyisheding[11];
-	CMyPublicData::setfunc(35, 16, 8, 1);
+	if (modsd[3] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[11];
+		CMyPublicData::setfunc(35, 16, 8, 1);
+	}
 }
 
 
@@ -409,8 +448,11 @@ void Pingyi::OnBnClickedButton44()
 		UpdateData(FALSE);
 		pingyisheding[1] = m_double_2_edit;
 	}
-	datatestDPU[4] = pingyisheding[1];
-	CMyPublicData::setfunc(34, 16, 8, 1);
+	if (modsd[2] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[1];
+		CMyPublicData::setfunc(34, 16, 8, 1);
+	}
 }
 
 
@@ -430,8 +472,11 @@ void Pingyi::OnBnClickedButton46()
 		UpdateData(FALSE);
 		pingyisheding[2] = m_double_3_edit;
 	}
-	datatestDPU[4] = pingyisheding[2];
-	CMyPublicData::setfunc(36, 16, 8, 1);
+	if (modsd[4] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[2];
+		CMyPublicData::setfunc(36, 16, 8, 1);
+	}
 }
 
 
@@ -451,8 +496,11 @@ void Pingyi::OnBnClickedButton48()
 		UpdateData(FALSE);
 		pingyisheding[3] = m_double_4_edit;
 	}
-	datatestDPU[4] = pingyisheding[3];
-	CMyPublicData::setfunc(38, 16, 8, 1);
+	if (modsd[6] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[3];
+		CMyPublicData::setfunc(38, 16, 8, 1);
+	}
 }
 
 
@@ -472,8 +520,11 @@ void Pingyi::OnBnClickedButton52()
 		UpdateData(FALSE);
 		pingyisheding[4] = m_double_5_edit;
 	}
-	datatestDPU[4] = pingyisheding[4];
-	CMyPublicData::setfunc(40, 16, 8, 1);
+	if (modsd[8] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[4];
+		CMyPublicData::setfunc(40, 16, 8, 1);
+	}
 }
 
 
@@ -493,8 +544,11 @@ void Pingyi::OnBnClickedButton54()
 		UpdateData(FALSE);
 		pingyisheding[5] = m_double_6_edit;
 	}
-	datatestDPU[4] = pingyisheding[5];
-	CMyPublicData::setfunc(42, 16, 8, 1);
+	if (modsd[10] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[5];
+		CMyPublicData::setfunc(42, 16, 8, 1);
+	}
 }
 
 
@@ -514,8 +568,11 @@ void Pingyi::OnBnClickedButton71()
 		UpdateData(FALSE);
 		pingyisheding[6] = m_double_7_edit;
 	}
-	datatestDPU[4] = pingyisheding[6];
-	CMyPublicData::setfunc(44, 16, 8, 1);
+	if (modsd[12] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[6];
+		CMyPublicData::setfunc(44, 16, 8, 1);
+	}
 }
 
 
@@ -535,8 +592,11 @@ void Pingyi::OnBnClickedButton74()
 		UpdateData(FALSE);
 		pingyisheding[7] = m_double_8_edit;
 	}
-	datatestDPU[4] = pingyisheding[7];
-	CMyPublicData::setfunc(46, 16, 8, 1);
+	if (modsd[14] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[7];
+		CMyPublicData::setfunc(46, 16, 8, 1);
+	}
 }
 
 
@@ -556,8 +616,11 @@ void Pingyi::OnBnClickedButton77()
 		UpdateData(FALSE);
 		pingyisheding[8] = m_double_9_edit;
 	}
-	datatestDPU[4] = pingyisheding[8];
-	CMyPublicData::setfunc(48, 16, 8, 1);
+	if (modsd[16] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[8];
+		CMyPublicData::setfunc(48, 16, 8, 1);
+	}
 }
 
 
@@ -577,8 +640,11 @@ void Pingyi::OnBnClickedButton80()
 		UpdateData(FALSE);
 		pingyisheding[9] = m_double_10_edit;
 	}
-	datatestDPU[4] = pingyisheding[9];
-	CMyPublicData::setfunc(50, 16, 8, 1);
+	if (modsd[18] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[9];
+		CMyPublicData::setfunc(50, 16, 8, 1);
+	}
 }
 
 
@@ -598,8 +664,11 @@ void Pingyi::OnBnClickedButton85()
 		UpdateData(FALSE);
 		pingyisheding[10] = m_double_11_edit;
 	}
-	datatestDPU[4] = pingyisheding[10];
-	CMyPublicData::setfunc(33, 16, 8, 1);
+	if (modsd[1] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[10];
+		CMyPublicData::setfunc(33, 16, 8, 1);
+	}
 }
 
 
@@ -619,8 +688,11 @@ void Pingyi::OnBnClickedButton87()
 		UpdateData(FALSE);
 		pingyisheding[11] = m_double_12_edit;
 	}
-	datatestDPU[4] = pingyisheding[11];
-	CMyPublicData::setfunc(35, 16, 8, 1);
+	if (modsd[3] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[11];
+		CMyPublicData::setfunc(35, 16, 8, 1);
+	}
 }
 
 
@@ -646,8 +718,11 @@ void Pingyi::OnBnClickedButton88()
 		UpdateData(FALSE);
 		pingyisheding[12] = m_double_13_edit;
 	}
-	datatestDPU[4] = pingyisheding[12];
-	CMyPublicData::setfunc(37, 16, 8, 1);
+	if (modsd[5] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[12];
+		CMyPublicData::setfunc(37, 16, 8, 1);
+	}
 }
 
 
@@ -667,8 +742,11 @@ void Pingyi::OnBnClickedButton106()
 		UpdateData(FALSE);
 		pingyisheding[13] = m_double_14_edit;
 	}
-	datatestDPU[4] = pingyisheding[13];
-	CMyPublicData::setfunc(39, 16, 8, 1);
+	if (modsd[7] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[13];
+		CMyPublicData::setfunc(39, 16, 8, 1);
+	}
 }
 
 
@@ -688,8 +766,11 @@ void Pingyi::OnBnClickedButton108()
 		UpdateData(FALSE);
 		pingyisheding[14] = m_double_15_edit;
 	}
-	datatestDPU[4] = pingyisheding[14];
-	CMyPublicData::setfunc(41, 16, 8, 1);
+	if (modsd[9] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[14];
+		CMyPublicData::setfunc(41, 16, 8, 1);
+	}
 }
 
 
@@ -709,8 +790,11 @@ void Pingyi::OnBnClickedButton110()
 		UpdateData(FALSE);
 		pingyisheding[15] = m_double_16_edit;
 	}
-	datatestDPU[4] = pingyisheding[15];
-	CMyPublicData::setfunc(43, 16, 8, 1);
+	if (modsd[11] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[15];
+		CMyPublicData::setfunc(43, 16, 8, 1);
+	}
 }
 
 
@@ -730,8 +814,11 @@ void Pingyi::OnBnClickedButton112()
 		UpdateData(FALSE);
 		pingyisheding[16] = m_double_17_edit;
 	}
-	datatestDPU[4] = pingyisheding[16];
-	CMyPublicData::setfunc(45, 16, 8, 1);
+	if (modsd[13] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[16];
+		CMyPublicData::setfunc(45, 16, 8, 1);
+	}
 }
 
 
@@ -751,8 +838,11 @@ void Pingyi::OnBnClickedButton114()
 		UpdateData(FALSE);
 		pingyisheding[17] = m_double_18_edit;
 	}
-	datatestDPU[4] = pingyisheding[17];
-	CMyPublicData::setfunc(47, 16, 8, 1);
+	if (modsd[15] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[17];
+		CMyPublicData::setfunc(47, 16, 8, 1);
+	}
 }
 
 
@@ -772,8 +862,11 @@ void Pingyi::OnBnClickedButton116()
 		UpdateData(FALSE);
 		pingyisheding[18] = m_double_19_edit;
 	}
-	datatestDPU[4] = pingyisheding[18];
-	CMyPublicData::setfunc(49, 16, 8, 1);
+	if (modsd[17] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[18];
+		CMyPublicData::setfunc(49, 16, 8, 1);
+	}
 }
 
 
@@ -793,8 +886,11 @@ void Pingyi::OnBnClickedButton118()
 		UpdateData(FALSE);
 		pingyisheding[19] = m_double_20_edit;
 	}
-	datatestDPU[4] = pingyisheding[19];
-	CMyPublicData::setfunc(51, 16, 8, 1);
+	if (modsd[19] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[19];
+		CMyPublicData::setfunc(51, 16, 8, 1);
+	}
 }
 
 
@@ -815,8 +911,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			pingyisheding[0] = m_double_1_edit;
 		}
-		datatestDPU[4] = pingyisheding[0];
-		CMyPublicData::setfunc(32, 16, 8, 1);
+		if (modsd[0] != L"OFF")
+		{
+			datatestDPU[4] = pingyisheding[0];
+			CMyPublicData::setfunc(32, 16, 8, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -836,8 +935,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 				UpdateData(FALSE);
 				pingyisheding[1] = m_double_2_edit;
 			}
-			datatestDPU[4] = pingyisheding[1];
-			CMyPublicData::setfunc(34, 16, 8, 1);
+			if (modsd[2] != L"OFF")
+			{
+				datatestDPU[4] = pingyisheding[1];
+				CMyPublicData::setfunc(34, 16, 8, 1);
+			}
 			return TRUE;
 		}
 		else
@@ -856,8 +958,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 					UpdateData(FALSE);
 					pingyisheding[2] = m_double_3_edit;
 				}
-				datatestDPU[4] = pingyisheding[2];
-				CMyPublicData::setfunc(36, 16, 8, 1);
+				if (modsd[4] != L"OFF")
+				{
+					datatestDPU[4] = pingyisheding[2];
+					CMyPublicData::setfunc(36, 16, 8, 1);
+				}
 				return TRUE;
 			}
 			else
@@ -876,8 +981,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 						UpdateData(FALSE);
 						pingyisheding[3] = m_double_4_edit;
 					}
-					datatestDPU[4] = pingyisheding[3];
-					CMyPublicData::setfunc(38, 16, 8, 1);
+					if (modsd[6] != L"OFF")
+					{
+						datatestDPU[4] = pingyisheding[3];
+						CMyPublicData::setfunc(38, 16, 8, 1);
+					}
 					return TRUE;
 				}
 				else
@@ -896,8 +1004,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 							UpdateData(FALSE);
 							pingyisheding[4] = m_double_5_edit;
 						}
-						datatestDPU[4] = pingyisheding[4];
-						CMyPublicData::setfunc(40, 16, 8, 1);
+						if (modsd[8] != L"OFF")
+						{
+							datatestDPU[4] = pingyisheding[4];
+							CMyPublicData::setfunc(40, 16, 8, 1);
+						}
 						return TRUE;
 					}
 					else
@@ -916,8 +1027,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 								UpdateData(FALSE);
 								pingyisheding[5] = m_double_6_edit;
 							}
-							datatestDPU[4] = pingyisheding[5];
-							CMyPublicData::setfunc(42, 16, 8, 1);
+							if (modsd[10] != L"OFF")
+							{
+								datatestDPU[4] = pingyisheding[5];
+								CMyPublicData::setfunc(42, 16, 8, 1);
+							}
 							return TRUE;
 						}
 						else
@@ -936,8 +1050,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 									UpdateData(FALSE);
 									pingyisheding[6] = m_double_7_edit;
 								}
-								datatestDPU[4] = pingyisheding[6];
-								CMyPublicData::setfunc(44, 16, 8, 1);
+								if (modsd[12] != L"OFF")
+								{
+									datatestDPU[4] = pingyisheding[6];
+									CMyPublicData::setfunc(44, 16, 8, 1);
+								}
 								return TRUE;
 							}
 							else
@@ -956,8 +1073,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 										UpdateData(FALSE);
 										pingyisheding[7] = m_double_8_edit;
 									}
-									datatestDPU[4] = pingyisheding[7];
-									CMyPublicData::setfunc(46, 16, 8, 1);
+									if (modsd[14] != L"OFF")
+									{
+										datatestDPU[4] = pingyisheding[7];
+										CMyPublicData::setfunc(46, 16, 8, 1);
+									}
 									return TRUE;
 								}
 								else
@@ -976,8 +1096,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 											UpdateData(FALSE);
 											pingyisheding[8] = m_double_9_edit;
 										}
-										datatestDPU[4] = pingyisheding[8];
-										CMyPublicData::setfunc(48, 16, 8, 1);
+										if (modsd[16] != L"OFF")
+										{
+											datatestDPU[4] = pingyisheding[8];
+											CMyPublicData::setfunc(48, 16, 8, 1);
+										}
 										return TRUE;
 									}
 									else
@@ -996,8 +1119,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 												UpdateData(FALSE);
 												pingyisheding[9] = m_double_10_edit;
 											}
-											datatestDPU[4] = pingyisheding[9];
-											CMyPublicData::setfunc(50, 16, 8, 1);
+											if (modsd[18] != L"OFF")
+											{
+												datatestDPU[4] = pingyisheding[9];
+												CMyPublicData::setfunc(50, 16, 8, 1);
+											}
 											return TRUE;
 										}
 										else
@@ -1016,8 +1142,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 													UpdateData(FALSE);
 													pingyisheding[10] = m_double_11_edit;
 												}
-												datatestDPU[4] = pingyisheding[10];
-												CMyPublicData::setfunc(33, 16, 8, 1);
+												if (modsd[1] != L"OFF")
+												{
+													datatestDPU[4] = pingyisheding[10];
+													CMyPublicData::setfunc(33, 16, 8, 1);
+												}
 												return TRUE;
 											}
 											else
@@ -1036,8 +1165,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 														UpdateData(FALSE);
 														pingyisheding[11] = m_double_12_edit;
 													}
-													datatestDPU[4] = pingyisheding[11];
-													CMyPublicData::setfunc(35, 16, 8, 1);
+													if (modsd[3] != L"OFF")
+													{
+														datatestDPU[4] = pingyisheding[11];
+														CMyPublicData::setfunc(35, 16, 8, 1);
+													}
 													return TRUE;
 												}
 												else
@@ -1056,8 +1188,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 															UpdateData(FALSE);
 															pingyisheding[12] = m_double_13_edit;
 														}
-														datatestDPU[4] = pingyisheding[12];
-														CMyPublicData::setfunc(37, 16, 8, 1);
+														if (modsd[5] != L"OFF")
+														{
+															datatestDPU[4] = pingyisheding[12];
+															CMyPublicData::setfunc(37, 16, 8, 1);
+														}
 														return TRUE;
 													}
 													else
@@ -1076,8 +1211,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 																UpdateData(FALSE);
 																pingyisheding[13] = m_double_14_edit;
 															}
-															datatestDPU[4] = pingyisheding[13];
-															CMyPublicData::setfunc(39, 16, 8, 1);
+															if (modsd[7] != L"OFF")
+															{
+																datatestDPU[4] = pingyisheding[13];
+																CMyPublicData::setfunc(39, 16, 8, 1);
+															}
 															return TRUE;
 														}
 														else
@@ -1096,8 +1234,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 																	UpdateData(FALSE);
 																	pingyisheding[14] = m_double_15_edit;
 																}
-																datatestDPU[4] = pingyisheding[14];
-																CMyPublicData::setfunc(41, 16, 8, 1);
+																if (modsd[9] != L"OFF")
+																{
+																	datatestDPU[4] = pingyisheding[14];
+																	CMyPublicData::setfunc(41, 16, 8, 1);
+																}
 																return TRUE;
 															}
 															else
@@ -1116,8 +1257,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 																		UpdateData(FALSE);
 																		pingyisheding[15] = m_double_16_edit;
 																	}
-																	datatestDPU[4] = pingyisheding[15];
-																	CMyPublicData::setfunc(43, 16, 8, 1);
+																	if (modsd[11] != L"OFF")
+																	{
+																		datatestDPU[4] = pingyisheding[15];
+																		CMyPublicData::setfunc(43, 16, 8, 1);
+																	}
 																	return TRUE;
 																}
 																else
@@ -1136,8 +1280,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 																			UpdateData(FALSE);
 																			pingyisheding[16] = m_double_17_edit;
 																		}
-																		datatestDPU[4] = pingyisheding[16];
-																		CMyPublicData::setfunc(45, 16, 8, 1);
+																		if (modsd[13] != L"OFF")
+																		{
+																			datatestDPU[4] = pingyisheding[16];
+																			CMyPublicData::setfunc(45, 16, 8, 1);
+																		}
 																		return TRUE;
 																	}
 																	else
@@ -1156,8 +1303,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 																				UpdateData(FALSE);
 																				pingyisheding[17] = m_double_18_edit;
 																			}
-																			datatestDPU[4] = pingyisheding[17];
-																			CMyPublicData::setfunc(47, 16, 8, 1);
+																			if (modsd[15] != L"OFF")
+																			{
+																				datatestDPU[4] = pingyisheding[17];
+																				CMyPublicData::setfunc(47, 16, 8, 1);
+																			}
 																			return TRUE;
 																		}
 																		else
@@ -1176,8 +1326,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 																					UpdateData(FALSE);
 																					pingyisheding[18] = m_double_19_edit;
 																				}
-																				datatestDPU[4] = pingyisheding[18];
-																				CMyPublicData::setfunc(49, 16, 8, 1);
+																				if (modsd[17] != L"OFF")
+																				{
+																					datatestDPU[4] = pingyisheding[18];
+																					CMyPublicData::setfunc(49, 16, 8, 1);
+																				}
 																				return TRUE;
 																			}
 																			else
@@ -1196,8 +1349,11 @@ BOOL Pingyi::PreTranslateMessage(MSG* pMsg)
 																						UpdateData(FALSE);
 																						pingyisheding[19] = m_double_20_edit;
 																					}
-																					datatestDPU[4] = pingyisheding[19];
-																					CMyPublicData::setfunc(51, 16, 8, 1);
+																					if (modsd[19] != L"OFF")
+																					{
+																						datatestDPU[4] = pingyisheding[19];
+																						CMyPublicData::setfunc(51, 16, 8, 1);
+																					}
 																					return TRUE;
 																				}
 																			}
@@ -1239,8 +1395,11 @@ void Pingyi::OnBnClickedButton89()
 		UpdateData(FALSE);
 		pingyisheding[12] = m_double_13_edit;
 	}
-	datatestDPU[4] = pingyisheding[12];
-	CMyPublicData::setfunc(37, 16, 8, 1);
+	if (modsd[5] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[12];
+		CMyPublicData::setfunc(37, 16, 8, 1);
+	}
 }
 
 
@@ -1260,8 +1419,11 @@ void Pingyi::OnBnClickedButton107()
 		UpdateData(FALSE);
 		pingyisheding[13] = m_double_14_edit;
 	}
-	datatestDPU[4] = pingyisheding[13];
-	CMyPublicData::setfunc(39, 16, 8, 1);
+	if (modsd[7] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[13];
+		CMyPublicData::setfunc(39, 16, 8, 1);
+	}
 }
 
 
@@ -1281,8 +1443,11 @@ void Pingyi::OnBnClickedButton109()
 		UpdateData(FALSE);
 		pingyisheding[14] = m_double_15_edit;
 	}
-	datatestDPU[4] = pingyisheding[14];
-	CMyPublicData::setfunc(41, 16, 8, 1);
+	if (modsd[9] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[14];
+		CMyPublicData::setfunc(41, 16, 8, 1);
+	}
 }
 
 
@@ -1302,8 +1467,11 @@ void Pingyi::OnBnClickedButton111()
 		UpdateData(FALSE);
 		pingyisheding[15] = m_double_16_edit;
 	}
-	datatestDPU[4] = pingyisheding[15];
-	CMyPublicData::setfunc(43, 16, 8, 1);
+	if (modsd[11] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[15];
+		CMyPublicData::setfunc(43, 16, 8, 1);
+	}
 }
 
 
@@ -1323,8 +1491,11 @@ void Pingyi::OnBnClickedButton113()
 		UpdateData(FALSE);
 		pingyisheding[16] = m_double_17_edit;
 	}
-	datatestDPU[4] = pingyisheding[16];
-	CMyPublicData::setfunc(45, 16, 8, 1);
+	if (modsd[13] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[16];
+		CMyPublicData::setfunc(45, 16, 8, 1);
+	}
 }
 
 
@@ -1344,8 +1515,11 @@ void Pingyi::OnBnClickedButton115()
 		UpdateData(FALSE);
 		pingyisheding[17] = m_double_18_edit;
 	}
-	datatestDPU[4] = pingyisheding[17];
-	CMyPublicData::setfunc(47, 16, 8, 1);
+	if (modsd[15] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[17];
+		CMyPublicData::setfunc(47, 16, 8, 1);
+	}
 }
 
 
@@ -1365,8 +1539,11 @@ void Pingyi::OnBnClickedButton117()
 		UpdateData(FALSE);
 		pingyisheding[18] = m_double_19_edit;
 	}
-	datatestDPU[4] = pingyisheding[18];
-	CMyPublicData::setfunc(49, 16, 8, 1);
+	if (modsd[17] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[18];
+		CMyPublicData::setfunc(49, 16, 8, 1);
+	}
 }
 
 
@@ -1386,8 +1563,11 @@ void Pingyi::OnBnClickedButton119()
 		UpdateData(FALSE);
 		pingyisheding[19] = m_double_20_edit;
 	}
-	datatestDPU[4] = pingyisheding[19];
-	CMyPublicData::setfunc(51, 16, 8, 1);
+	if (modsd[19] != L"OFF")
+	{
+		datatestDPU[4] = pingyisheding[19];
+		CMyPublicData::setfunc(51, 16, 8, 1);
+	}
 }
 
 

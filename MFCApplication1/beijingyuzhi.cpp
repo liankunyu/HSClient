@@ -132,8 +132,11 @@ void beijingyuzhi::OnBnClickedButton1()
 		UpdateData(FALSE);
 		beijingyuzhisheding[0] = m_double1;
 	}
-	datatestDPU[4] = beijingyuzhisheding[0];
-	CMyPublicData::setfunc(32, 16, 81, 1);
+	if (modsd[0] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[0];
+		CMyPublicData::setfunc(32, 16, 81, 1);
+	}
 
 }
 
@@ -154,8 +157,11 @@ void beijingyuzhi::OnBnClickedButton2()
 		UpdateData(FALSE);
 		beijingyuzhisheding[0] = m_double1;
 	}
-	datatestDPU[4] = beijingyuzhisheding[0];
-	CMyPublicData::setfunc(32, 16, 81, 1);
+	if (modsd[0] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[0];
+		CMyPublicData::setfunc(32, 16, 81, 1);
+	}
 }
 
 //判断屏幕点击事件，是否有相应的编辑框被点击，如果点击做出相应的处理程序
@@ -176,8 +182,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			beijingyuzhisheding[0] = m_double1;
 		}
-		datatestDPU[4] = beijingyuzhisheding[0];
-		CMyPublicData::setfunc(32, 16, 81, 1);
+		if (modsd[0] != L"OFF")
+		{
+			datatestDPU[4] = beijingyuzhisheding[0];
+			CMyPublicData::setfunc(32, 16, 81, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -196,8 +205,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 				UpdateData(FALSE);
 				beijingyuzhisheding[10] = m_double11;
 			}
-			datatestDPU[4] = beijingyuzhisheding[10];
-			CMyPublicData::setfunc(33, 16, 81, 1);
+			if (modsd[1] != L"OFF")
+			{
+				datatestDPU[4] = beijingyuzhisheding[10];
+				CMyPublicData::setfunc(33, 16, 81, 1);
+			}
 			return TRUE;
 		}
 		else
@@ -216,8 +228,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 					UpdateData(FALSE);
 					beijingyuzhisheding[2] = m_double3;
 				}
-				datatestDPU[4] = beijingyuzhisheding[2];
-				CMyPublicData::setfunc(36, 16, 81, 1);
+				if (modsd[4] != L"OFF")
+				{
+					datatestDPU[4] = beijingyuzhisheding[2];
+					CMyPublicData::setfunc(36, 16, 81, 1);
+				}
 				return TRUE;
 			}
 			else
@@ -236,8 +251,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 						UpdateData(FALSE);
 						beijingyuzhisheding[3] = m_double4;
 					}
-					datatestDPU[4] = beijingyuzhisheding[3];
-					CMyPublicData::setfunc(38, 16, 81, 1);
+					if (modsd[6] != L"OFF")
+					{
+						datatestDPU[4] = beijingyuzhisheding[3];
+						CMyPublicData::setfunc(38, 16, 81, 1);
+					}
 					return TRUE;
 				}
 				else
@@ -256,8 +274,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 							UpdateData(FALSE);
 							beijingyuzhisheding[4] = m_double5;
 						}
-						datatestDPU[4] = beijingyuzhisheding[4];
-						CMyPublicData::setfunc(40, 16, 81, 1);
+						if (modsd[8] != L"OFF")
+						{
+							datatestDPU[4] = beijingyuzhisheding[4];
+							CMyPublicData::setfunc(40, 16, 81, 1);
+						}
 						return TRUE;
 					}
 					else
@@ -276,8 +297,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 								UpdateData(FALSE);
 								beijingyuzhisheding[5] = m_double6;
 							}
-							datatestDPU[4] = beijingyuzhisheding[5];
-							CMyPublicData::setfunc(42, 16, 81, 1);
+							if (modsd[10] != L"OFF")
+							{
+								datatestDPU[4] = beijingyuzhisheding[5];
+								CMyPublicData::setfunc(42, 16, 81, 1);
+							}
 							return TRUE;
 						}
 						else
@@ -296,8 +320,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 									UpdateData(FALSE);
 									beijingyuzhisheding[6] = m_double7;
 								}
-								datatestDPU[4] = beijingyuzhisheding[6];
-								CMyPublicData::setfunc(44, 16, 81, 1);
+								if (modsd[12] != L"OFF")
+								{
+									datatestDPU[4] = beijingyuzhisheding[6];
+									CMyPublicData::setfunc(44, 16, 81, 1);
+								}
 								return TRUE;
 							}
 							else
@@ -316,8 +343,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 										UpdateData(FALSE);
 										beijingyuzhisheding[7] = m_double8;
 									}
-									datatestDPU[4] = beijingyuzhisheding[7];
-									CMyPublicData::setfunc(46, 16, 81, 1);
+									if (modsd[14] != L"OFF")
+									{
+										datatestDPU[4] = beijingyuzhisheding[7];
+										CMyPublicData::setfunc(46, 16, 81, 1);
+									}
 									return TRUE;
 								}
 								else
@@ -336,8 +366,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 											UpdateData(FALSE);
 											beijingyuzhisheding[8] = m_double9;
 										}
-										datatestDPU[4] = beijingyuzhisheding[8];
-										CMyPublicData::setfunc(48, 16, 81, 1);
+										if (modsd[16] != L"OFF")
+										{
+											datatestDPU[4] = beijingyuzhisheding[8];
+											CMyPublicData::setfunc(48, 16, 81, 1);
+										}
 										return TRUE;
 									}
 									else
@@ -356,8 +389,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 												UpdateData(FALSE);
 												beijingyuzhisheding[9] = m_double10;
 											}
-											datatestDPU[4] = beijingyuzhisheding[9];
-											CMyPublicData::setfunc(50, 16, 81, 1);
+											if (modsd[18] != L"OFF")
+											{
+												datatestDPU[4] = beijingyuzhisheding[9];
+												CMyPublicData::setfunc(50, 16, 81, 1);
+											}
 											return TRUE;
 										}
 										else
@@ -376,8 +412,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 													UpdateData(FALSE);
 													beijingyuzhisheding[11] = m_double12;
 												}
-												datatestDPU[4] = beijingyuzhisheding[11];
-												CMyPublicData::setfunc(35, 16, 81, 1);
+												if (modsd[3] != L"OFF")
+												{
+													datatestDPU[4] = beijingyuzhisheding[11];
+													CMyPublicData::setfunc(35, 16, 81, 1);
+												}
 												return TRUE;
 											}
 											else
@@ -396,8 +435,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 														UpdateData(FALSE);
 														beijingyuzhisheding[12] = m_double13;
 													}
-													datatestDPU[4] = beijingyuzhisheding[12];
-													CMyPublicData::setfunc(37, 16, 81, 1);
+													if (modsd[5] != L"OFF")
+													{
+														datatestDPU[4] = beijingyuzhisheding[12];
+														CMyPublicData::setfunc(37, 16, 81, 1);
+													}
 													return TRUE;
 												}
 												else
@@ -416,8 +458,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 															UpdateData(FALSE);
 															beijingyuzhisheding[13] = m_double14;
 														}
-														datatestDPU[4] = beijingyuzhisheding[13];
-														CMyPublicData::setfunc(39, 16, 81, 1);
+														if (modsd[7] != L"OFF")
+														{
+															datatestDPU[4] = beijingyuzhisheding[13];
+															CMyPublicData::setfunc(39, 16, 81, 1);
+														}
 														return TRUE;
 													}
 													else
@@ -436,8 +481,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 																UpdateData(FALSE);
 																beijingyuzhisheding[14] = m_double15;
 															}
-															datatestDPU[4] = beijingyuzhisheding[14];
-															CMyPublicData::setfunc(41, 16, 81, 1);
+															if (modsd[9] != L"OFF")
+															{
+																datatestDPU[4] = beijingyuzhisheding[14];
+																CMyPublicData::setfunc(41, 16, 81, 1);
+															}
 															return TRUE;
 														}
 														else
@@ -456,8 +504,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 																	UpdateData(FALSE);
 																	beijingyuzhisheding[15] = m_double16;
 																}
-																datatestDPU[4] = beijingyuzhisheding[15];
-																CMyPublicData::setfunc(43, 16, 81, 1);
+																if (modsd[11] != L"OFF")
+																{
+																	datatestDPU[4] = beijingyuzhisheding[15];
+																	CMyPublicData::setfunc(43, 16, 81, 1);
+																}
 																return TRUE;
 															}
 															else
@@ -476,8 +527,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 																		UpdateData(FALSE);
 																		beijingyuzhisheding[16] = m_double17;
 																	}
-																	datatestDPU[4] = beijingyuzhisheding[16];
-																	CMyPublicData::setfunc(45, 16, 81, 1);
+																	if (modsd[13] != L"OFF")
+																	{
+																		datatestDPU[4] = beijingyuzhisheding[16];
+																		CMyPublicData::setfunc(45, 16, 81, 1);
+																	}
 																	return TRUE;
 																}
 																else
@@ -496,8 +550,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 																			UpdateData(FALSE);
 																			beijingyuzhisheding[17] = m_double18;
 																		}
-																		datatestDPU[4] = beijingyuzhisheding[17];
-																		CMyPublicData::setfunc(47, 16, 81, 1);
+																		if (modsd[15] != L"OFF")
+																		{
+																			datatestDPU[4] = beijingyuzhisheding[17];
+																			CMyPublicData::setfunc(47, 16, 81, 1);
+																		}
 																		return TRUE;
 																	}
 																	else
@@ -516,8 +573,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 																				UpdateData(FALSE);
 																				beijingyuzhisheding[18] = m_double19;
 																			}
-																			datatestDPU[4] = beijingyuzhisheding[18];
-																			CMyPublicData::setfunc(49, 16, 81, 1);
+																			if (modsd[17] != L"OFF")
+																			{
+																				datatestDPU[4] = beijingyuzhisheding[18];
+																				CMyPublicData::setfunc(49, 16, 81, 1);
+																			}
 																			return TRUE;
 																		}
 																		else
@@ -536,8 +596,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 																					UpdateData(FALSE);
 																					beijingyuzhisheding[19] = m_double20;
 																				}
-																				datatestDPU[4] = beijingyuzhisheding[19];
-																				CMyPublicData::setfunc(51, 16, 81, 1);
+																				if (modsd[19] != L"OFF")
+																				{
+																					datatestDPU[4] = beijingyuzhisheding[19];
+																					CMyPublicData::setfunc(51, 16, 81, 1);
+																				}
 																				return TRUE;
 																			}
 																			else
@@ -556,8 +619,11 @@ BOOL beijingyuzhi::PreTranslateMessage(MSG* pMsg)
 																						UpdateData(FALSE);
 																						beijingyuzhisheding[1] = m_double2;
 																					}
-																					datatestDPU[4] = beijingyuzhisheding[1];
-																					CMyPublicData::setfunc(34, 16, 81, 1);
+																					if (modsd[2] != L"OFF")
+																					{
+																						datatestDPU[4] = beijingyuzhisheding[1];
+																						CMyPublicData::setfunc(34, 16, 81, 1);
+																					}
 																					return TRUE;
 																				}
 																			}
@@ -706,8 +772,11 @@ void beijingyuzhi::OnBnClickedButton11()
 		UpdateData(FALSE);
 		beijingyuzhisheding[10] = m_double11;
 	}
-	datatestDPU[4] = beijingyuzhisheding[10];
-	CMyPublicData::setfunc(33, 16, 81, 1);
+	if (modsd[1] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[10];
+		CMyPublicData::setfunc(33, 16, 81, 1);
+	}
 }
 
 
@@ -727,8 +796,11 @@ void beijingyuzhi::OnBnClickedButton12()
 		UpdateData(FALSE);
 		beijingyuzhisheding[10] = m_double11;
 	}
-	datatestDPU[4] = beijingyuzhisheding[10];
-	CMyPublicData::setfunc(33, 16, 81, 1);
+	if (modsd[1] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[10];
+		CMyPublicData::setfunc(33, 16, 81, 1);
+	}
 }
 
 
@@ -797,8 +869,11 @@ void beijingyuzhi::OnBnClickedButton3()
 		UpdateData(FALSE);
 		beijingyuzhisheding[1] = m_double2;
 	}
-	datatestDPU[4] = beijingyuzhisheding[1];
-	CMyPublicData::setfunc(34, 16, 81, 1);
+	if (modsd[2] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[1];
+		CMyPublicData::setfunc(34, 16, 81, 1);
+	}
 }
 
 
@@ -818,8 +893,11 @@ void beijingyuzhi::OnBnClickedButton4()
 		UpdateData(FALSE);
 		beijingyuzhisheding[1] = m_double2;
 	}
-	datatestDPU[4] = beijingyuzhisheding[1];
-	CMyPublicData::setfunc(34, 16, 81, 1);
+	if (modsd[2] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[1];
+		CMyPublicData::setfunc(34, 16, 81, 1);
+	}
 }
 
 
@@ -839,8 +917,11 @@ void beijingyuzhi::OnBnClickedButton5()
 		UpdateData(FALSE);
 		beijingyuzhisheding[2] = m_double3;
 	}
-	datatestDPU[4] = beijingyuzhisheding[2];
-	CMyPublicData::setfunc(36, 16, 81, 1);
+	if (modsd[4] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[2];
+		CMyPublicData::setfunc(36, 16, 81, 1);
+	}
 }
 
 
@@ -860,8 +941,11 @@ void beijingyuzhi::OnBnClickedButton6()
 		UpdateData(FALSE);
 		beijingyuzhisheding[2] = m_double3;
 	}
-	datatestDPU[4] = beijingyuzhisheding[2];
-	CMyPublicData::setfunc(36, 16, 81, 1);
+	if (modsd[4] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[2];
+		CMyPublicData::setfunc(36, 16, 81, 1);
+	}
 }
 
 
@@ -881,8 +965,11 @@ void beijingyuzhi::OnBnClickedButton7()
 		UpdateData(FALSE);
 		beijingyuzhisheding[3] = m_double4;
 	}
-	datatestDPU[4] = beijingyuzhisheding[3];
-	CMyPublicData::setfunc(38, 16, 81, 1);
+	if (modsd[6] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[3];
+		CMyPublicData::setfunc(38, 16, 81, 1);
+	}
 }
 
 
@@ -902,8 +989,11 @@ void beijingyuzhi::OnBnClickedButton8()
 		UpdateData(FALSE);
 		beijingyuzhisheding[3] = m_double4;
 	}
-	datatestDPU[4] = beijingyuzhisheding[3];
-	CMyPublicData::setfunc(38, 16, 81, 1);
+	if (modsd[6] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[3];
+		CMyPublicData::setfunc(38, 16, 81, 1);
+	}
 }
 
 
@@ -923,8 +1013,11 @@ void beijingyuzhi::OnBnClickedButton9()
 		UpdateData(FALSE);
 		beijingyuzhisheding[4] = m_double5;
 	}
-	datatestDPU[4] = beijingyuzhisheding[4];
-	CMyPublicData::setfunc(40, 16, 81, 1);
+	if (modsd[8] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[4];
+		CMyPublicData::setfunc(40, 16, 81, 1);
+	}
 }
 
 
@@ -944,8 +1037,11 @@ void beijingyuzhi::OnBnClickedButton10()
 		UpdateData(FALSE);
 		beijingyuzhisheding[4] = m_double5;
 	}
-	datatestDPU[4] = beijingyuzhisheding[4];
-	CMyPublicData::setfunc(40, 16, 81, 1);
+	if (modsd[8] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[4];
+		CMyPublicData::setfunc(40, 16, 81, 1);
+	}
 }
 
 
@@ -965,8 +1061,11 @@ void beijingyuzhi::OnBnClickedButton37()
 		UpdateData(FALSE);
 		beijingyuzhisheding[5] = m_double6;
 	}
-	datatestDPU[4] = beijingyuzhisheding[5];
-	CMyPublicData::setfunc(42, 16, 81, 1);
+	if (modsd[10] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[5];
+		CMyPublicData::setfunc(42, 16, 81, 1);
+	}
 }
 
 
@@ -986,8 +1085,11 @@ void beijingyuzhi::OnBnClickedButton38()
 		UpdateData(FALSE);
 		beijingyuzhisheding[5] = m_double6;
 	}
-	datatestDPU[4] = beijingyuzhisheding[5];
-	CMyPublicData::setfunc(42, 16, 81, 1);
+	if (modsd[10] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[5];
+		CMyPublicData::setfunc(42, 16, 81, 1);
+	}
 }
 
 
@@ -1007,8 +1109,11 @@ void beijingyuzhi::OnBnClickedButton39()
 		UpdateData(FALSE);
 		beijingyuzhisheding[6] = m_double7;
 	}
-	datatestDPU[4] = beijingyuzhisheding[6];
-	CMyPublicData::setfunc(44, 16, 81, 1);
+	if (modsd[12] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[6];
+		CMyPublicData::setfunc(44, 16, 81, 1);
+	}
 }
 
 
@@ -1028,8 +1133,11 @@ void beijingyuzhi::OnBnClickedButton40()
 		UpdateData(FALSE);
 		beijingyuzhisheding[6] = m_double7;
 	}
-	datatestDPU[4] = beijingyuzhisheding[6];
-	CMyPublicData::setfunc(44, 16, 81, 1);
+	if (modsd[12] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[6];
+		CMyPublicData::setfunc(44, 16, 81, 1);
+	}
 }
 
 
@@ -1049,8 +1157,11 @@ void beijingyuzhi::OnBnClickedButton49()
 		UpdateData(FALSE);
 		beijingyuzhisheding[7] = m_double8;
 	}
-	datatestDPU[4] = beijingyuzhisheding[7];
-	CMyPublicData::setfunc(46, 16, 81, 1);
+	if (modsd[14] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[7];
+		CMyPublicData::setfunc(46, 16, 81, 1);
+	}
 }
 
 
@@ -1070,8 +1181,11 @@ void beijingyuzhi::OnBnClickedButton50()
 		UpdateData(FALSE);
 		beijingyuzhisheding[7] = m_double8;
 	}
-	datatestDPU[4] = beijingyuzhisheding[7];
-	CMyPublicData::setfunc(46, 16, 81, 1);
+	if (modsd[14] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[7];
+		CMyPublicData::setfunc(46, 16, 81, 1);
+	}
 }
 
 
@@ -1091,8 +1205,11 @@ void beijingyuzhi::OnBnClickedButton83()
 		UpdateData(FALSE);
 		beijingyuzhisheding[8] = m_double9;
 	}
-	datatestDPU[4] = beijingyuzhisheding[8];
-	CMyPublicData::setfunc(48, 16, 81, 1);
+	if (modsd[16] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[8];
+		CMyPublicData::setfunc(48, 16, 81, 1);
+	}
 }
 
 
@@ -1112,8 +1229,11 @@ void beijingyuzhi::OnBnClickedButton84()
 		UpdateData(FALSE);
 		beijingyuzhisheding[8] = m_double9;
 	}
-	datatestDPU[4] = beijingyuzhisheding[8];
-	CMyPublicData::setfunc(48, 16, 81, 1);
+	if (modsd[16] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[8];
+		CMyPublicData::setfunc(48, 16, 81, 1);
+	}
 }
 
 
@@ -1133,8 +1253,11 @@ void beijingyuzhi::OnBnClickedButton120()
 		UpdateData(FALSE);
 		beijingyuzhisheding[9] = m_double10;
 	}
-	datatestDPU[4] = beijingyuzhisheding[9];
-	CMyPublicData::setfunc(50, 16, 81, 1);
+	if (modsd[18] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[9];
+		CMyPublicData::setfunc(50, 16, 81, 1);
+	}
 }
 
 
@@ -1154,8 +1277,11 @@ void beijingyuzhi::OnBnClickedButton122()
 		UpdateData(FALSE);
 		beijingyuzhisheding[9] = m_double10;
 	}
-	datatestDPU[4] = beijingyuzhisheding[9];
-	CMyPublicData::setfunc(50, 16, 81, 1);
+	if (modsd[18] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[9];
+		CMyPublicData::setfunc(50, 16, 81, 1);
+	}
 }
 
 
@@ -1175,8 +1301,11 @@ void beijingyuzhi::OnBnClickedButton14()
 		UpdateData(FALSE);
 		beijingyuzhisheding[11] = m_double12;
 	}
-	datatestDPU[4] = beijingyuzhisheding[11];
-	CMyPublicData::setfunc(35, 16, 81, 1);
+	if (modsd[3] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[11];
+		CMyPublicData::setfunc(35, 16, 81, 1);
+	}
 }
 
 
@@ -1196,8 +1325,11 @@ void beijingyuzhi::OnBnClickedButton15()
 		UpdateData(FALSE);
 		beijingyuzhisheding[11] = m_double12;
 	}
-	datatestDPU[4] = beijingyuzhisheding[11];
-	CMyPublicData::setfunc(35, 16, 81, 1);
+	if (modsd[3] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[11];
+		CMyPublicData::setfunc(35, 16, 81, 1);
+	}
 }
 
 
@@ -1217,8 +1349,11 @@ void beijingyuzhi::OnBnClickedButton51()
 		UpdateData(FALSE);
 		beijingyuzhisheding[12] = m_double13;
 	}
-	datatestDPU[4] = beijingyuzhisheding[12];
-	CMyPublicData::setfunc(37, 16, 81, 1);
+	if (modsd[5] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[12];
+		CMyPublicData::setfunc(37, 16, 81, 1);
+	}
 }
 
 
@@ -1238,8 +1373,11 @@ void beijingyuzhi::OnBnClickedButton52()
 		UpdateData(FALSE);
 		beijingyuzhisheding[12] = m_double13;
 	}
-	datatestDPU[4] = beijingyuzhisheding[12];
-	CMyPublicData::setfunc(37, 16, 81, 1);
+	if (modsd[5] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[12];
+		CMyPublicData::setfunc(37, 16, 81, 1);
+	}
 }
 
 
@@ -1259,8 +1397,11 @@ void beijingyuzhi::OnBnClickedButton53()
 		UpdateData(FALSE);
 		beijingyuzhisheding[13] = m_double14;
 	}
-	datatestDPU[4] = beijingyuzhisheding[13];
-	CMyPublicData::setfunc(39, 16, 81, 1);
+	if (modsd[7] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[13];
+		CMyPublicData::setfunc(39, 16, 81, 1);
+	}
 }
 
 
@@ -1280,8 +1421,11 @@ void beijingyuzhi::OnBnClickedButton54()
 		UpdateData(FALSE);
 		beijingyuzhisheding[13] = m_double14;
 	}
-	datatestDPU[4] = beijingyuzhisheding[13];
-	CMyPublicData::setfunc(39, 16, 81, 1);
+	if (modsd[7] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[13];
+		CMyPublicData::setfunc(39, 16, 81, 1);
+	}
 }
 
 
@@ -1301,8 +1445,11 @@ void beijingyuzhi::OnBnClickedButton70()
 		UpdateData(FALSE);
 		beijingyuzhisheding[14] = m_double15;
 	}
-	datatestDPU[4] = beijingyuzhisheding[14];
-	CMyPublicData::setfunc(41, 16, 81, 1);
+	if (modsd[9] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[14];
+		CMyPublicData::setfunc(41, 16, 81, 1);
+	}
 }
 
 
@@ -1322,8 +1469,11 @@ void beijingyuzhi::OnBnClickedButton71()
 		UpdateData(FALSE);
 		beijingyuzhisheding[14] = m_double15;
 	}
-	datatestDPU[4] = beijingyuzhisheding[14];
-	CMyPublicData::setfunc(41, 16, 81, 1);
+	if (modsd[9] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[14];
+		CMyPublicData::setfunc(41, 16, 81, 1);
+	}
 }
 
 
@@ -1343,8 +1493,11 @@ void beijingyuzhi::OnBnClickedButton73()
 		UpdateData(FALSE);
 		beijingyuzhisheding[15] = m_double16;
 	}
-	datatestDPU[4] = beijingyuzhisheding[15];
-	CMyPublicData::setfunc(43, 16, 81, 1);
+	if (modsd[11] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[15];
+		CMyPublicData::setfunc(43, 16, 81, 1);
+	}
 }
 
 
@@ -1364,8 +1517,11 @@ void beijingyuzhi::OnBnClickedButton74()
 		UpdateData(FALSE);
 		beijingyuzhisheding[15] = m_double16;
 	}
-	datatestDPU[4] = beijingyuzhisheding[15];
-	CMyPublicData::setfunc(43, 16, 81, 1);
+	if (modsd[11] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[15];
+		CMyPublicData::setfunc(43, 16, 81, 1);
+	}
 }
 
 
@@ -1385,8 +1541,11 @@ void beijingyuzhi::OnBnClickedButton76()
 		UpdateData(FALSE);
 		beijingyuzhisheding[16] = m_double17;
 	}
-	datatestDPU[4] = beijingyuzhisheding[16];
-	CMyPublicData::setfunc(45, 16, 81, 1);
+	if (modsd[13] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[16];
+		CMyPublicData::setfunc(45, 16, 81, 1);
+	}
 }
 
 
@@ -1406,8 +1565,11 @@ void beijingyuzhi::OnBnClickedButton77()
 		UpdateData(FALSE);
 		beijingyuzhisheding[16] = m_double17;
 	}
-	datatestDPU[4] = beijingyuzhisheding[16];
-	CMyPublicData::setfunc(45, 16, 81, 1);
+	if (modsd[13] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[16];
+		CMyPublicData::setfunc(45, 16, 81, 1);
+	}
 }
 
 
@@ -1427,8 +1589,11 @@ void beijingyuzhi::OnBnClickedButton79()
 		UpdateData(FALSE);
 		beijingyuzhisheding[17] = m_double18;
 	}
-	datatestDPU[4] = beijingyuzhisheding[17];
-	CMyPublicData::setfunc(47, 16, 81, 1);
+	if (modsd[15] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[17];
+		CMyPublicData::setfunc(47, 16, 81, 1);
+	}
 }
 
 
@@ -1448,8 +1613,11 @@ void beijingyuzhi::OnBnClickedButton80()
 		UpdateData(FALSE);
 		beijingyuzhisheding[17] = m_double18;
 	}
-	datatestDPU[4] = beijingyuzhisheding[17];
-	CMyPublicData::setfunc(47, 16, 81, 1);
+	if (modsd[15] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[17];
+		CMyPublicData::setfunc(47, 16, 81, 1);
+	}
 }
 
 
@@ -1469,8 +1637,11 @@ void beijingyuzhi::OnBnClickedButton124()
 		UpdateData(FALSE);
 		beijingyuzhisheding[18] = m_double19;
 	}
-	datatestDPU[4] = beijingyuzhisheding[18];
-	CMyPublicData::setfunc(49, 16, 81, 1);
+	if (modsd[17] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[18];
+		CMyPublicData::setfunc(49, 16, 81, 1);
+	}
 }
 
 
@@ -1490,8 +1661,11 @@ void beijingyuzhi::OnBnClickedButton85()
 		UpdateData(FALSE);
 		beijingyuzhisheding[18] = m_double19;
 	}
-	datatestDPU[4] = beijingyuzhisheding[18];
-	CMyPublicData::setfunc(49, 16, 81, 1);
+	if (modsd[17] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[18];
+		CMyPublicData::setfunc(49, 16, 81, 1);
+	}
 }
 
 
@@ -1511,8 +1685,11 @@ void beijingyuzhi::OnBnClickedButton125()
 		UpdateData(FALSE);
 		beijingyuzhisheding[19] = m_double20;
 	}
-	datatestDPU[4] = beijingyuzhisheding[19];
-	CMyPublicData::setfunc(51, 16, 81, 1);
+	if (modsd[19] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[19];
+		CMyPublicData::setfunc(51, 16, 81, 1);
+	}
 }
 
 
@@ -1532,6 +1709,9 @@ void beijingyuzhi::OnBnClickedButton126()
 		UpdateData(FALSE);
 		beijingyuzhisheding[19] = m_double20;
 	}
-	datatestDPU[4] = beijingyuzhisheding[19];
-	CMyPublicData::setfunc(51, 16, 81, 1);
+	if (modsd[19] != L"OFF")
+	{
+		datatestDPU[4] = beijingyuzhisheding[19];
+		CMyPublicData::setfunc(51, 16, 81, 1);
+	}
 }

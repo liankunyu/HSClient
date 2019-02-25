@@ -138,8 +138,11 @@ void yansehangmianji::OnBnClickedButton1()
 		UpdateData(FALSE);
 		yansehangmianjisd[0] = m_double1;
 	}
-	datatestDPU[4] = m_double1;
-	CMyPublicData::setfunc(32, 16, 20, 1);
+	if (modsd[0] != L"OFF")
+	{
+		datatestDPU[4] = m_double1;
+		CMyPublicData::setfunc(32, 16, 20, 1);
+	}
 }
 
 
@@ -159,8 +162,11 @@ void yansehangmianji::OnBnClickedButton2()
 		UpdateData(FALSE);
 		yansehangmianjisd[0] = m_double1;
 	}
-	datatestDPU[4] = m_double1;
-	CMyPublicData::setfunc(32, 16, 20, 1);
+	if (modsd[0] != L"OFF")
+	{
+		datatestDPU[4] = m_double1;
+		CMyPublicData::setfunc(32, 16, 20, 1);
+	}
 }
 
 
@@ -181,8 +187,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			yansehangmianjisd[0] = m_double1;
 		}
-		datatestDPU[4] = yansehangmianjisd[0];
-		CMyPublicData::setfunc(32, 16, 20, 1);
+		if (modsd[0] != L"OFF")
+		{
+			datatestDPU[4] = yansehangmianjisd[0];
+			CMyPublicData::setfunc(32, 16, 20, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -201,8 +210,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 				UpdateData(FALSE);
 				yansehangmianjisd[1] = m_double2;
 			}
-			datatestDPU[4] = yansehangmianjisd[1];
-			CMyPublicData::setfunc(34, 16, 20, 1);
+			if (modsd[2] != L"OFF")
+			{
+				datatestDPU[4] = yansehangmianjisd[1];
+				CMyPublicData::setfunc(34, 16, 20, 1);
+			}
 			return TRUE;
 		}
 		else
@@ -221,8 +233,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 					UpdateData(FALSE);
 					yansehangmianjisd[2] = m_double3;
 				}
-				datatestDPU[4] = yansehangmianjisd[2];
-				CMyPublicData::setfunc(36, 16, 20, 1);
+				if (modsd[4] != L"OFF")
+				{
+					datatestDPU[4] = yansehangmianjisd[2];
+					CMyPublicData::setfunc(36, 16, 20, 1);
+				}
 				return TRUE;
 			}
 			else
@@ -241,8 +256,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 						UpdateData(FALSE);
 						yansehangmianjisd[3] = m_double4;
 					}
-					datatestDPU[4] = yansehangmianjisd[3];
-					CMyPublicData::setfunc(38, 16, 20, 1);
+					if (modsd[6] != L"OFF")
+					{
+						datatestDPU[4] = yansehangmianjisd[3];
+						CMyPublicData::setfunc(38, 16, 20, 1);
+					}
 					return TRUE;
 				}
 				else
@@ -261,8 +279,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 							UpdateData(FALSE);
 							yansehangmianjisd[4] = m_double5;
 						}
-						datatestDPU[4] = yansehangmianjisd[4];
-						CMyPublicData::setfunc(40, 16, 20, 1);
+						if (modsd[8] != L"OFF")
+						{
+							datatestDPU[4] = yansehangmianjisd[4];
+							CMyPublicData::setfunc(40, 16, 20, 1);
+						}
 						return TRUE;
 					}
 					else
@@ -281,8 +302,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 								UpdateData(FALSE);
 								yansehangmianjisd[5] = m_double6;
 							}
-							datatestDPU[4] = yansehangmianjisd[5];
-							CMyPublicData::setfunc(42, 16, 20, 1);
+							if (modsd[10] != L"OFF")
+							{
+								datatestDPU[4] = yansehangmianjisd[5];
+								CMyPublicData::setfunc(42, 16, 20, 1);
+							}
 							return TRUE;
 						}
 						else
@@ -301,8 +325,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 									UpdateData(FALSE);
 									yansehangmianjisd[6] = m_double7;
 								}
-								datatestDPU[4] = yansehangmianjisd[6];
-								CMyPublicData::setfunc(44, 16, 20, 1);
+								if (modsd[12] != L"OFF")
+								{
+									datatestDPU[4] = yansehangmianjisd[6];
+									CMyPublicData::setfunc(44, 16, 20, 1);
+								}
 								return TRUE;
 							}
 							else
@@ -321,8 +348,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 										UpdateData(FALSE);
 										yansehangmianjisd[7] = m_double8;
 									}
-									datatestDPU[4] = yansehangmianjisd[7];
-									CMyPublicData::setfunc(46, 16, 20, 1);
+									if (modsd[14] != L"OFF")
+									{
+										datatestDPU[4] = yansehangmianjisd[7];
+										CMyPublicData::setfunc(46, 16, 20, 1);
+									}
 									return TRUE;
 								}
 								else
@@ -341,8 +371,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 											UpdateData(FALSE);
 											yansehangmianjisd[8] = m_double9;
 										}
-										datatestDPU[4] = yansehangmianjisd[8];
-										CMyPublicData::setfunc(48, 16, 20, 1);
+										if (modsd[16] != L"OFF")
+										{
+											datatestDPU[4] = yansehangmianjisd[8];
+											CMyPublicData::setfunc(48, 16, 20, 1);
+										}
 										return TRUE;
 									}
 									else
@@ -361,8 +394,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 												UpdateData(FALSE);
 												yansehangmianjisd[9] = m_double10;
 											}
-											datatestDPU[4] = yansehangmianjisd[9];
-											CMyPublicData::setfunc(50, 16, 20, 1);
+											if (modsd[18] != L"OFF")
+											{
+												datatestDPU[4] = yansehangmianjisd[9];
+												CMyPublicData::setfunc(50, 16, 20, 1);
+											}
 											return TRUE;
 										}
 										else
@@ -381,8 +417,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 													UpdateData(FALSE);
 													yansehangmianjisd[10] = m_double11;
 												}
-												datatestDPU[4] = yansehangmianjisd[10];
-												CMyPublicData::setfunc(33, 16, 20, 1);
+												if (modsd[1] != L"OFF")
+												{
+													datatestDPU[4] = yansehangmianjisd[10];
+													CMyPublicData::setfunc(33, 16, 20, 1);
+												}
 												return TRUE;
 											}
 											else
@@ -401,8 +440,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 														UpdateData(FALSE);
 														yansehangmianjisd[11] = m_double12;
 													}
-													datatestDPU[4] = yansehangmianjisd[11];
-													CMyPublicData::setfunc(35, 16, 20, 1);
+													if (modsd[3] != L"OFF")
+													{
+														datatestDPU[4] = yansehangmianjisd[11];
+														CMyPublicData::setfunc(35, 16, 20, 1);
+													}
 													return TRUE;
 												}
 												else
@@ -421,8 +463,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 															UpdateData(FALSE);
 															yansehangmianjisd[12] = m_double13;
 														}
-														datatestDPU[4] = yansehangmianjisd[12];
-														CMyPublicData::setfunc(37, 16, 20, 1);
+														if (modsd[5] != L"OFF")
+														{
+															datatestDPU[4] = yansehangmianjisd[12];
+															CMyPublicData::setfunc(37, 16, 20, 1);
+														}
 														return TRUE;
 													}
 													else
@@ -441,8 +486,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 																UpdateData(FALSE);
 																yansehangmianjisd[13] = m_double14;
 															}
-															datatestDPU[4] = yansehangmianjisd[13];
-															CMyPublicData::setfunc(39, 16, 20, 1);
+															if (modsd[7] != L"OFF")
+															{
+																datatestDPU[4] = yansehangmianjisd[13];
+																CMyPublicData::setfunc(39, 16, 20, 1);
+															}
 															return TRUE;
 														}
 														else
@@ -461,8 +509,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 																	UpdateData(FALSE);
 																	yansehangmianjisd[14] = m_double15;
 																}
-																datatestDPU[4] = yansehangmianjisd[14];
-																CMyPublicData::setfunc(41, 16, 20, 1);
+																if (modsd[9] != L"OFF")
+																{
+																	datatestDPU[4] = yansehangmianjisd[14];
+																	CMyPublicData::setfunc(41, 16, 20, 1);
+																}
 																return TRUE;
 															}
 															else
@@ -481,8 +532,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 																		UpdateData(FALSE);
 																		yansehangmianjisd[15] = m_double16;
 																	}
-																	datatestDPU[4] = yansehangmianjisd[15];
-																	CMyPublicData::setfunc(43, 16, 20, 1);
+																	if (modsd[11] != L"OFF")
+																	{
+																		datatestDPU[4] = yansehangmianjisd[15];
+																		CMyPublicData::setfunc(43, 16, 20, 1);
+																	}
 																	return TRUE;
 																}
 																else
@@ -501,8 +555,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 																			UpdateData(FALSE);
 																			yansehangmianjisd[16] = m_double17;
 																		}
-																		datatestDPU[4] = yansehangmianjisd[16];
-																		CMyPublicData::setfunc(45, 16, 20, 1);
+																		if (modsd[13] != L"OFF")
+																		{
+																			datatestDPU[4] = yansehangmianjisd[16];
+																			CMyPublicData::setfunc(45, 16, 20, 1);
+																		}
 																		return TRUE;
 																	}
 																	else
@@ -521,8 +578,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 																				UpdateData(FALSE);
 																				yansehangmianjisd[17] = m_double18;
 																			}
-																			datatestDPU[4] = yansehangmianjisd[17];
-																			CMyPublicData::setfunc(47, 16, 20, 1);
+																			if (modsd[15] != L"OFF")
+																			{
+																				datatestDPU[4] = yansehangmianjisd[17];
+																				CMyPublicData::setfunc(47, 16, 20, 1);
+																			}
 																			return TRUE;
 																		}
 																		else
@@ -541,8 +601,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 																					UpdateData(FALSE);
 																					yansehangmianjisd[18] = m_double19;
 																				}
-																				datatestDPU[4] = yansehangmianjisd[18];
-																				CMyPublicData::setfunc(49, 16, 20, 1);
+																				if (modsd[17] != L"OFF")
+																				{
+																					datatestDPU[4] = yansehangmianjisd[18];
+																					CMyPublicData::setfunc(49, 16, 20, 1);
+																				}
 																				return TRUE;
 																			}
 																			else
@@ -561,8 +624,11 @@ BOOL yansehangmianji::PreTranslateMessage(MSG* pMsg)
 																						UpdateData(FALSE);
 																						yansehangmianjisd[19] = m_double20;
 																					}
-																					datatestDPU[4] = yansehangmianjisd[12];
-																					CMyPublicData::setfunc(51, 16, 20, 1);
+																					if (modsd[19] != L"OFF")
+																					{
+																						datatestDPU[4] = yansehangmianjisd[12];
+																						CMyPublicData::setfunc(51, 16, 20, 1);
+																					}
 																					return TRUE;
 																				}
 																			}
@@ -709,8 +775,11 @@ void yansehangmianji::OnBnClickedButton3()
 		UpdateData(FALSE);
 		yansehangmianjisd[1] = m_double2;
 	}
-	datatestDPU[4] = yansehangmianjisd[1];
-	CMyPublicData::setfunc(34, 16, 20, 1);
+	if (modsd[2] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[1];
+		CMyPublicData::setfunc(34, 16, 20, 1);
+	}
 }
 
 
@@ -730,8 +799,11 @@ void yansehangmianji::OnBnClickedButton13()
 		UpdateData(FALSE);
 		yansehangmianjisd[10] = m_double11;
 	}
-	datatestDPU[4] = yansehangmianjisd[10];
-	CMyPublicData::setfunc(33, 16, 20, 1);
+	if (modsd[1] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[10];
+		CMyPublicData::setfunc(33, 16, 20, 1);
+	}
 }
 
 
@@ -751,8 +823,11 @@ void yansehangmianji::OnBnClickedButton14()
 		UpdateData(FALSE);
 		yansehangmianjisd[10] = m_double11;
 	}
-	datatestDPU[4] = m_double11;
-	CMyPublicData::setfunc(33, 16, 20, 1);
+	if (modsd[1] != L"OFF")
+	{
+		datatestDPU[4] = m_double11;
+		CMyPublicData::setfunc(33, 16, 20, 1);
+	}
 }
 
 
@@ -828,8 +903,11 @@ void yansehangmianji::OnBnClickedButton56()
 		UpdateData(FALSE);
 		yansehangmianjisd[6] = m_double7;
 	}
-	datatestDPU[4] = yansehangmianjisd[6];
-	CMyPublicData::setfunc(44, 16, 20, 1);
+	if (modsd[12] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[6];
+		CMyPublicData::setfunc(44, 16, 20, 1);
+	}
 }
 
 
@@ -849,8 +927,11 @@ void yansehangmianji::OnBnClickedButton4()
 		UpdateData(FALSE);
 		yansehangmianjisd[1] = m_double2;
 	}
-	datatestDPU[4] = yansehangmianjisd[1];
-	CMyPublicData::setfunc(34, 16, 20, 1);
+	if (modsd[2] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[1];
+		CMyPublicData::setfunc(34, 16, 20, 1);
+	}
 }
 
 
@@ -870,8 +951,11 @@ void yansehangmianji::OnBnClickedButton5()
 		UpdateData(FALSE);
 		yansehangmianjisd[2] = m_double3;
 	}
-	datatestDPU[4] = yansehangmianjisd[2];
-	CMyPublicData::setfunc(36, 16, 20, 1);
+	if (modsd[4] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[2];
+		CMyPublicData::setfunc(36, 16, 20, 1);
+	}
 }
 
 
@@ -891,8 +975,11 @@ void yansehangmianji::OnBnClickedButton6()
 		UpdateData(FALSE);
 		yansehangmianjisd[2] = m_double3;
 	}
-	datatestDPU[4] = yansehangmianjisd[2];
-	CMyPublicData::setfunc(36, 16, 20, 1);
+	if (modsd[4] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[2];
+		CMyPublicData::setfunc(36, 16, 20, 1);
+	}
 }
 
 
@@ -912,8 +999,11 @@ void yansehangmianji::OnBnClickedButton7()
 		UpdateData(FALSE);
 		yansehangmianjisd[3] = m_double4;
 	}
-	datatestDPU[4] = yansehangmianjisd[3];
-	CMyPublicData::setfunc(38, 16, 20, 1);
+	if (modsd[6] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[3];
+		CMyPublicData::setfunc(38, 16, 20, 1);
+	}
 }
 
 
@@ -933,8 +1023,11 @@ void yansehangmianji::OnBnClickedButton8()
 		UpdateData(FALSE);
 		yansehangmianjisd[3] = m_double4;
 	}
-	datatestDPU[4] = yansehangmianjisd[3];
-	CMyPublicData::setfunc(38, 16, 20, 1);
+	if (modsd[6] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[3];
+		CMyPublicData::setfunc(38, 16, 20, 1);
+	}
 }
 
 
@@ -954,8 +1047,11 @@ void yansehangmianji::OnBnClickedButton9()
 		UpdateData(FALSE);
 		yansehangmianjisd[4] = m_double5;
 	}
-	datatestDPU[4] = yansehangmianjisd[4];
-	CMyPublicData::setfunc(40, 16, 20, 1);
+	if (modsd[8] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[4];
+		CMyPublicData::setfunc(40, 16, 20, 1);
+	}
 }
 
 
@@ -975,8 +1071,11 @@ void yansehangmianji::OnBnClickedButton10()
 		UpdateData(FALSE);
 		yansehangmianjisd[4] = m_double5;
 	}
-	datatestDPU[4] = yansehangmianjisd[4];
-	CMyPublicData::setfunc(40, 16, 20, 1);
+	if (modsd[8] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[4];
+		CMyPublicData::setfunc(40, 16, 20, 1);
+	}
 }
 
 
@@ -996,8 +1095,11 @@ void yansehangmianji::OnBnClickedButton32()
 		UpdateData(FALSE);
 		yansehangmianjisd[5] = m_double6;
 	}
-	datatestDPU[4] = yansehangmianjisd[5];
-	CMyPublicData::setfunc(42, 16, 20, 1);
+	if (modsd[10] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[5];
+		CMyPublicData::setfunc(42, 16, 20, 1);
+	}
 }
 
 
@@ -1017,8 +1119,11 @@ void yansehangmianji::OnBnClickedButton37()
 		UpdateData(FALSE);
 		yansehangmianjisd[5] = m_double6;
 	}
-	datatestDPU[4] = yansehangmianjisd[5];
-	CMyPublicData::setfunc(42, 16, 20, 1);
+	if (modsd[10] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[5];
+		CMyPublicData::setfunc(42, 16, 20, 1);
+	}
 }
 
 
@@ -1038,8 +1143,11 @@ void yansehangmianji::OnBnClickedButton39()
 		UpdateData(FALSE);
 		yansehangmianjisd[6] = m_double7;
 	}
-	datatestDPU[4] = yansehangmianjisd[6];
-	CMyPublicData::setfunc(44, 16, 20, 1);
+	if (modsd[12] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[6];
+		CMyPublicData::setfunc(44, 16, 20, 1);
+	}
 }
 
 
@@ -1059,8 +1167,11 @@ void yansehangmianji::OnBnClickedButton58()
 		UpdateData(FALSE);
 		yansehangmianjisd[7] = m_double8;
 	}
-	datatestDPU[4] = yansehangmianjisd[7];
-	CMyPublicData::setfunc(46, 16, 20, 1);
+	if (modsd[14] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[7];
+		CMyPublicData::setfunc(46, 16, 20, 1);
+	}
 }
 
 
@@ -1080,8 +1191,11 @@ void yansehangmianji::OnBnClickedButton49()
 		UpdateData(FALSE);
 		yansehangmianjisd[7] = m_double8;
 	}
-	datatestDPU[4] = yansehangmianjisd[7];
-	CMyPublicData::setfunc(46, 16, 20, 1);
+	if (modsd[14] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[7];
+		CMyPublicData::setfunc(46, 16, 20, 1);
+	}
 }
 
 
@@ -1101,8 +1215,11 @@ void yansehangmianji::OnBnClickedButton59()
 		UpdateData(FALSE);
 		yansehangmianjisd[8] = m_double9;
 	}
-	datatestDPU[4] = yansehangmianjisd[8];
-	CMyPublicData::setfunc(48, 16, 20, 1);
+	if (modsd[16] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[8];
+		CMyPublicData::setfunc(48, 16, 20, 1);
+	}
 }
 
 
@@ -1122,8 +1239,11 @@ void yansehangmianji::OnBnClickedButton83()
 		UpdateData(FALSE);
 		yansehangmianjisd[8] = m_double9;
 	}
-	datatestDPU[4] = yansehangmianjisd[8];
-	CMyPublicData::setfunc(48, 16, 20, 1);
+	if (modsd[16] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[8];
+		CMyPublicData::setfunc(48, 16, 20, 1);
+	}
 }
 
 
@@ -1143,8 +1263,11 @@ void yansehangmianji::OnBnClickedButton60()
 		UpdateData(FALSE);
 		yansehangmianjisd[9] = m_double10;
 	}
-	datatestDPU[4] = yansehangmianjisd[9];
-	CMyPublicData::setfunc(50, 16, 20, 1);
+	if (modsd[18] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[9];
+		CMyPublicData::setfunc(50, 16, 20, 1);
+	}
 }
 
 
@@ -1164,8 +1287,11 @@ void yansehangmianji::OnBnClickedButton120()
 		UpdateData(FALSE);
 		yansehangmianjisd[9] = m_double10;
 	}
-	datatestDPU[4] = yansehangmianjisd[9];
-	CMyPublicData::setfunc(50, 16, 20, 1);
+	if (modsd[18] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[9];
+		CMyPublicData::setfunc(50, 16, 20, 1);
+	}
 }
 
 
@@ -1197,8 +1323,11 @@ void yansehangmianji::OnBnClickedButton64()
 		UpdateData(FALSE);
 		yansehangmianjisd[11] = m_double12;
 	}
-	datatestDPU[4] = yansehangmianjisd[11];
-	CMyPublicData::setfunc(35, 16, 20, 1);
+	if (modsd[3] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[11];
+		CMyPublicData::setfunc(35, 16, 20, 1);
+	}
 }
 
 
@@ -1218,8 +1347,11 @@ void yansehangmianji::OnBnClickedButton51()
 		UpdateData(FALSE);
 		yansehangmianjisd[11] = m_double12;
 	}
-	datatestDPU[4] = yansehangmianjisd[11];
-	CMyPublicData::setfunc(35, 16, 20, 1);
+	if (modsd[3] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[11];
+		CMyPublicData::setfunc(35, 16, 20, 1);
+	}
 }
 
 
@@ -1239,8 +1371,11 @@ void yansehangmianji::OnBnClickedButton66()
 		UpdateData(FALSE);
 		yansehangmianjisd[12] = m_double13;
 	}
-	datatestDPU[4] = yansehangmianjisd[12];
-	CMyPublicData::setfunc(37, 16, 20, 1);
+	if (modsd[5] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[12];
+		CMyPublicData::setfunc(37, 16, 20, 1);
+	}
 }
 
 
@@ -1260,8 +1395,11 @@ void yansehangmianji::OnBnClickedButton53()
 		UpdateData(FALSE);
 		yansehangmianjisd[12] = m_double13;
 	}
-	datatestDPU[4] = yansehangmianjisd[12];
-	CMyPublicData::setfunc(37, 16, 20, 1);
+	if (modsd[5] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[12];
+		CMyPublicData::setfunc(37, 16, 20, 1);
+	}
 }
 
 
@@ -1281,8 +1419,11 @@ void yansehangmianji::OnBnClickedButton69()
 		UpdateData(FALSE);
 		yansehangmianjisd[13] = m_double14;
 	}
-	datatestDPU[4] = yansehangmianjisd[13];
-	CMyPublicData::setfunc(39, 16, 20, 1);
+	if (modsd[7] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[13];
+		CMyPublicData::setfunc(39, 16, 20, 1);
+	}
 }
 
 
@@ -1302,8 +1443,11 @@ void yansehangmianji::OnBnClickedButton70()
 		UpdateData(FALSE);
 		yansehangmianjisd[13] = m_double14;
 	}
-	datatestDPU[4] = yansehangmianjisd[13];
-	CMyPublicData::setfunc(39, 16, 20, 1);
+	if (modsd[7] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[13];
+		CMyPublicData::setfunc(39, 16, 20, 1);
+	}
 }
 
 
@@ -1323,8 +1467,11 @@ void yansehangmianji::OnBnClickedButton72()
 		UpdateData(FALSE);
 		yansehangmianjisd[14] = m_double15;
 	}
-	datatestDPU[4] = yansehangmianjisd[14];
-	CMyPublicData::setfunc(41, 16, 20, 1);
+	if (modsd[9] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[14];
+		CMyPublicData::setfunc(41, 16, 20, 1);
+	}
 }
 
 
@@ -1344,8 +1491,11 @@ void yansehangmianji::OnBnClickedButton73()
 		UpdateData(FALSE);
 		yansehangmianjisd[14] = m_double15;
 	}
-	datatestDPU[4] = yansehangmianjisd[14];
-	CMyPublicData::setfunc(41, 16, 20, 1);
+	if (modsd[9] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[14];
+		CMyPublicData::setfunc(41, 16, 20, 1);
+	}
 }
 
 
@@ -1365,8 +1515,11 @@ void yansehangmianji::OnBnClickedButton75()
 		UpdateData(FALSE);
 		yansehangmianjisd[15] = m_double16;
 	}
-	datatestDPU[4] = yansehangmianjisd[15];
-	CMyPublicData::setfunc(43, 16, 20, 1);
+	if (modsd[11] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[15];
+		CMyPublicData::setfunc(43, 16, 20, 1);
+	}
 }
 
 
@@ -1386,8 +1539,11 @@ void yansehangmianji::OnBnClickedButton76()
 		UpdateData(FALSE);
 		yansehangmianjisd[15] = m_double16;
 	}
-	datatestDPU[4] = yansehangmianjisd[15];
-	CMyPublicData::setfunc(43, 16, 20, 1);
+	if (modsd[11] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[15];
+		CMyPublicData::setfunc(43, 16, 20, 1);
+	}
 }
 
 
@@ -1407,8 +1563,11 @@ void yansehangmianji::OnBnClickedButton78()
 		UpdateData(FALSE);
 		yansehangmianjisd[16] = m_double17;
 	}
-	datatestDPU[4] = yansehangmianjisd[16];
-	CMyPublicData::setfunc(45, 16, 20, 1);
+	if (modsd[13] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[16];
+		CMyPublicData::setfunc(45, 16, 20, 1);
+	}
 }
 
 
@@ -1428,8 +1587,11 @@ void yansehangmianji::OnBnClickedButton79()
 		UpdateData(FALSE);
 		yansehangmianjisd[16] = m_double17;
 	}
-	datatestDPU[4] = yansehangmianjisd[16];
-	CMyPublicData::setfunc(45, 16, 20, 1);
+	if (modsd[13] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[16];
+		CMyPublicData::setfunc(45, 16, 20, 1);
+	}
 }
 
 
@@ -1449,8 +1611,11 @@ void yansehangmianji::OnBnClickedButton81()
 		UpdateData(FALSE);
 		yansehangmianjisd[17] = m_double18;
 	}
-	datatestDPU[4] = yansehangmianjisd[17];
-	CMyPublicData::setfunc(47, 16, 20, 1);
+	if (modsd[15] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[17];
+		CMyPublicData::setfunc(47, 16, 20, 1);
+	}
 }
 
 
@@ -1470,8 +1635,11 @@ void yansehangmianji::OnBnClickedButton82()
 		UpdateData(FALSE);
 		yansehangmianjisd[17] = m_double18;
 	}
-	datatestDPU[4] = yansehangmianjisd[17];
-	CMyPublicData::setfunc(47, 16, 20, 1);
+	if (modsd[15] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[17];
+		CMyPublicData::setfunc(47, 16, 20, 1);
+	}
 }
 
 
@@ -1491,8 +1659,11 @@ void yansehangmianji::OnBnClickedButton94()
 		UpdateData(FALSE);
 		yansehangmianjisd[18] = m_double19;
 	}
-	datatestDPU[4] = yansehangmianjisd[18];
-	CMyPublicData::setfunc(49, 16, 20, 1);
+	if (modsd[17] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[18];
+		CMyPublicData::setfunc(49, 16, 20, 1);
+	}
 }
 
 
@@ -1512,8 +1683,11 @@ void yansehangmianji::OnBnClickedButton86()
 		UpdateData(FALSE);
 		yansehangmianjisd[18] = m_double19;
 	}
-	datatestDPU[4] = yansehangmianjisd[18];
-	CMyPublicData::setfunc(49, 16, 20, 1);
+	if (modsd[17] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[18];
+		CMyPublicData::setfunc(49, 16, 20, 1);
+	}
 }
 
 
@@ -1533,8 +1707,11 @@ void yansehangmianji::OnBnClickedButton88()
 		UpdateData(FALSE);
 		yansehangmianjisd[19] = m_double20;
 	}
-	datatestDPU[4] = yansehangmianjisd[19];
-	CMyPublicData::setfunc(51, 16, 20, 1);
+	if (modsd[19] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[19];
+		CMyPublicData::setfunc(51, 16, 20, 1);
+	}
 }
 
 
@@ -1554,8 +1731,11 @@ void yansehangmianji::OnBnClickedButton129()
 		UpdateData(FALSE);
 		yansehangmianjisd[19] = m_double20;
 	}
-	datatestDPU[4] = yansehangmianjisd[19];
-	CMyPublicData::setfunc(51, 16, 20, 1);
+	if (modsd[19] != L"OFF")
+	{
+		datatestDPU[4] = yansehangmianjisd[19];
+		CMyPublicData::setfunc(51, 16, 20, 1);
+	}
 }
 
 

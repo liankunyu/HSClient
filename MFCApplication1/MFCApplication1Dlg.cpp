@@ -516,6 +516,79 @@ void CMFCApplication1Dlg::OnBnClickedTiaoshizhuanyongButton()
 		tiaoshi ts;
 		ts.DoModal();
 	}
+	//判断是否修改了语言，修改就刷新主界面
+	if (SWlang == 1)
+	{
+		const char* yuyan;
+		CString cstr;
+		opXML opx(lang);
+		opx.QueryNode_Text("num1701", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_KEHU_STATIC)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1702", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_DAOJISHI_STATIC)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1703", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_TIAN)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1704", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_DAOQI)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1705", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_LIULIANGSHEDING_BUTTON)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1706", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_LINGMINDU_BUTTON)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1707", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_MIANJISHEDING_BUTTON)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1708", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_QINGHUISHEDING_BUTTON)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1709", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_CHANGJIANWENTI_BUTTON)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1710", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_MOSHIXUANZE_BUTTON)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1711", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_FAMENCESHI_BUTTON)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1712", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_YANSEMINGAN_BUTTON)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1713", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_TIAOSHIZHUANYONG_BUTTON)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1714", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_TONGXUNZHUANGTAI_BUTTON)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1715", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_KAISHIDA)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1716", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_TINGZHIDA2)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1717", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDCANCEL)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1720", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_STATIC16)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1721", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_MINGZI_STATIC)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1722", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_DIZHIZHI_STATIC)->SetWindowText(cstr);
+		opx.QueryNode_Text("num1723", yuyan);
+		cstr = opx.UTF8ToUnicode(yuyan);
+		GetDlgItem(IDC_DIANHUA_STATIC)->SetWindowText(cstr);
+		opx.SaveFile();
+		SWlang = 0;
+		UpdateData(FALSE);
+	}
 }
 
 
@@ -645,78 +718,6 @@ void CMFCApplication1Dlg::OnTimer(UINT_PTR nIDEvent)
 	}
 	if (nIDEvent == 2)
 	{
-		if (SWlang==1)
-		{
-			const char* yuyan;
-			CString cstr;
-			opXML opx(lang);
-			opx.QueryNode_Text("num1701", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_KEHU_STATIC)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1702", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_DAOJISHI_STATIC)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1703", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_TIAN)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1704", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_DAOQI)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1705", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_LIULIANGSHEDING_BUTTON)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1706", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_LINGMINDU_BUTTON)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1707", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_MIANJISHEDING_BUTTON)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1708", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_QINGHUISHEDING_BUTTON)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1709", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_CHANGJIANWENTI_BUTTON)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1710", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_MOSHIXUANZE_BUTTON)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1711", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_FAMENCESHI_BUTTON)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1712", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_YANSEMINGAN_BUTTON)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1713", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_TIAOSHIZHUANYONG_BUTTON)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1714", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_TONGXUNZHUANGTAI_BUTTON)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1715", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_KAISHIDA)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1716", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_TINGZHIDA2)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1717", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDCANCEL)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1720", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_STATIC16)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1721", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_MINGZI_STATIC)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1722", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_DIZHIZHI_STATIC)->SetWindowText(cstr);
-			opx.QueryNode_Text("num1723", yuyan);
-			cstr = opx.UTF8ToUnicode(yuyan);
-			GetDlgItem(IDC_DIANHUA_STATIC)->SetWindowText(cstr);
-			opx.SaveFile();
-			SWlang = 0;
-			UpdateData(FALSE);
-		}
 		if (fanhuizhi == (-1))
 		{
 			fanhuizhi = 0;

@@ -117,12 +117,9 @@ void caitushezhi::OnBnClickedButton1()
 		caitu[0] = m_double1;
 	}
 	datatestDPU[4] = caitu[0];
-	for (int i=1;i<=20;i++)
+	if (modsd[flag_num - 1] != L"OFF")
 	{
-		if (flag_num == i)
-		{
-			CMyPublicData::setfunc(31+i, 16, 347, 1);
-		}
+		CMyPublicData::setfunc(31 + flag_num, 16, 347, 1);
 	}
 }
 
@@ -144,12 +141,9 @@ void caitushezhi::OnBnClickedButton2()
 		caitu[0] = m_double1;
 	}
 	datatestDPU[4] = caitu[0];
-	for (int i = 1; i <= 20; i++)
+	if (modsd[flag_num - 1] != L"OFF")
 	{
-		if (flag_num == i)
-		{
-			CMyPublicData::setfunc(31 + i, 16, 347, 1);
-		}
+		CMyPublicData::setfunc(31 + flag_num, 16, 347, 1);
 	}
 }
 
@@ -171,13 +165,9 @@ void caitushezhi::OnBnClickedButton3()
 		caitu[1] = m_double2;
 	}
 	datatestDPU[4] = caitu[1];
-
-	for (int i = 1; i <= 20; i++)
+	if (modsd[flag_num - 1] != L"OFF")
 	{
-		if (flag_num == i)
-		{
-			CMyPublicData::setfunc(31 + i, 16, 348, 1);
-		}
+		CMyPublicData::setfunc(31 + flag_num, 16, 348, 1);
 	}
 }
 
@@ -199,12 +189,9 @@ void caitushezhi::OnBnClickedButton4()
 		caitu[1] = m_double2;
 	}
 	datatestDPU[4] = caitu[1];
-	for (int i = 1; i <= 20; i++)
+	if (modsd[flag_num - 1] != L"OFF")
 	{
-		if (flag_num == i)
-		{
-			CMyPublicData::setfunc(31 + i, 16, 348, 1);
-		}
+		CMyPublicData::setfunc(31 + flag_num, 16, 348, 1);
 	}
 }
 
@@ -226,12 +213,9 @@ void caitushezhi::OnBnClickedButton6()
 		caitu[2] = m_double3;
 	}
 	datatestDPU[4] = caitu[2];
-	for (int i = 1; i <= 20; i++)
+	if (modsd[flag_num - 1] != L"OFF")
 	{
-		if (flag_num == i)
-		{
-			CMyPublicData::setfunc(31 + i, 16, 349, 1);
-		}
+		CMyPublicData::setfunc(31 + flag_num, 16, 349, 1);
 	}
 }
 
@@ -253,12 +237,9 @@ void caitushezhi::OnBnClickedButton5()
 		caitu[2] = m_double3;
 	}
 	datatestDPU[4] = caitu[2];
-	for (int i = 1; i <= 20; i++)
+	if (modsd[flag_num - 1] != L"OFF")
 	{
-		if (flag_num == i)
-		{
-			CMyPublicData::setfunc(31 + i, 16, 349, 1);
-		}
+		CMyPublicData::setfunc(31 + flag_num, 16, 349, 1);
 	}
 }
 
@@ -280,12 +261,9 @@ void caitushezhi::OnBnClickedButton7()
 		caitu[3] = m_double4;
 	}
 	datatestDPU[4] = caitu[3];
-	for (int i = 1; i <= 20; i++)
+	if (modsd[flag_num - 1] != L"OFF")
 	{
-		if (flag_num == i)
-		{
-			CMyPublicData::setfunc(31 + i, 16, 382, 1);
-		}
+		CMyPublicData::setfunc(31 + flag_num, 16, 382, 1);
 	}
 }
 
@@ -307,12 +285,9 @@ void caitushezhi::OnBnClickedButton8()
 		caitu[3] = m_double4;
 	}
 	datatestDPU[4] = caitu[3];
-	for (int i = 1; i <= 20; i++)
+	if (modsd[flag_num - 1] != L"OFF")
 	{
-		if (flag_num == i)
-		{
-			CMyPublicData::setfunc(31 + i, 16, 382, 1);
-		}
+		CMyPublicData::setfunc(31 + flag_num, 16, 382, 1);
 	}
 }
 
@@ -334,12 +309,9 @@ void caitushezhi::OnBnClickedButton9()
 		caitu[4] = m_double5;
 	}
 	datatestDPU[4] = caitu[4];
-	for (int i = 1; i <= 20; i++)
+	if (modsd[flag_num - 1] != L"OFF")
 	{
-		if (flag_num == i)
-		{
-			CMyPublicData::setfunc(31 + i, 16, 383, 1);
-		}
+		CMyPublicData::setfunc(31 + flag_num, 16, 383, 1);
 	}
 }
 
@@ -361,12 +333,9 @@ void caitushezhi::OnBnClickedButton10()
 		caitu[4] = m_double5;
 	}
 	datatestDPU[4] = caitu[4];
-	for (int i = 1; i <= 20; i++)
+	if (modsd[flag_num - 1] != L"OFF")
 	{
-		if (flag_num == i)
-		{
-			CMyPublicData::setfunc(31 + i, 16, 383, 1);
-		}
+		CMyPublicData::setfunc(31 + flag_num, 16, 383, 1);
 	}
 }
 
@@ -392,8 +361,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			caitu[0] = m_double1;
 		}
-		datatestDPU[4] = caitu[0];
-		CMyPublicData::setfunc(31+flag_num, 16, 347, 1);
+		if (modsd[flag_num - 1] != L"OFF")
+		{
+			datatestDPU[4] = caitu[0];
+			CMyPublicData::setfunc(31 + flag_num, 16, 347, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -414,8 +386,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 				caitu[1] = m_double2;
 				//blingmin[1] = m_double2;
 			}
-			datatestDPU[4] = caitu[1];
-			CMyPublicData::setfunc(31+flag_num, 16, 348, 1);
+			if (modsd[flag_num - 1] != L"OFF")
+			{
+				datatestDPU[4] = caitu[1];
+				CMyPublicData::setfunc(31 + flag_num, 16, 348, 1);
+			}
 			return TRUE;
 		}
 		else
@@ -435,8 +410,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 					//blingmin[2] = m_double3;
 					caitu[2] = m_double3;
 				}
-				datatestDPU[4] = caitu[2];
-				CMyPublicData::setfunc(31 + flag_num , 16, 349, 1);
+				if (modsd[flag_num - 1] != L"OFF")
+				{
+					datatestDPU[4] = caitu[2];
+					CMyPublicData::setfunc(31 + flag_num, 16, 349, 1);
+				}
 				return TRUE;
 			}
 			else
@@ -455,8 +433,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 						UpdateData(FALSE);
 						caitu[3] = m_double4;
 					}
-					datatestDPU[4] = caitu[3];
-					CMyPublicData::setfunc(31+flag_num, 16, 382, 1);
+					if (modsd[flag_num - 1] != L"OFF")
+					{
+						datatestDPU[4] = caitu[3];
+						CMyPublicData::setfunc(31 + flag_num, 16, 382, 1);
+					}
 					return TRUE;
 				}
 				else
@@ -476,8 +457,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 							//blingmin[4] = m_double5;
 							caitu[4] = m_double5;
 						}
-						datatestDPU[4] = caitu[4];
-						CMyPublicData::setfunc(31+flag_num, 16, 383, 1);
+						if (modsd[flag_num - 1] != L"OFF")
+						{
+							datatestDPU[4] = caitu[4];
+							CMyPublicData::setfunc(31 + flag_num, 16, 383, 1);
+						}
 						return TRUE;
 					}
 					else
@@ -496,8 +480,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 								UpdateData(FALSE);
 								caitu[5] = m_double6;
 							}
-							datatestDPU[4] = caitu[5];
-							CMyPublicData::setfunc(32, 16, 118, 1);
+							if (modsd[0] != L"OFF")
+							{
+								datatestDPU[4] = caitu[5];
+								CMyPublicData::setfunc(32, 16, 118, 1);
+							}
 							return TRUE;
 						}
 						else
@@ -516,8 +503,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 									UpdateData(FALSE);
 									caitu[6] = m_double7;
 								}
-								datatestDPU[4] = caitu[6];
-								CMyPublicData::setfunc(34, 16, 118, 1);
+								if (modsd[2] != L"OFF")
+								{
+									datatestDPU[4] = caitu[6];
+									CMyPublicData::setfunc(34, 16, 118, 1);
+								}
 								return TRUE;
 							}
 							else
@@ -536,8 +526,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 										UpdateData(FALSE);
 										caitu[7] = m_double8;
 									}
-									datatestDPU[4] = caitu[7];
-									CMyPublicData::setfunc(36, 16, 118, 1);
+									if (modsd[4] != L"OFF")
+									{
+										datatestDPU[4] = caitu[7];
+										CMyPublicData::setfunc(36, 16, 118, 1);
+									}
 									return TRUE;
 								}
 								else
@@ -556,8 +549,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 											UpdateData(FALSE);
 											caitu[8] = m_double9;
 										}
-										datatestDPU[4] = caitu[8];
-										CMyPublicData::setfunc(38, 16, 118, 1);
+										if (modsd[6] != L"OFF")
+										{
+											datatestDPU[4] = caitu[8];
+											CMyPublicData::setfunc(38, 16, 118, 1);
+										}
 										return TRUE;
 									}
 									else
@@ -576,8 +572,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 												UpdateData(FALSE);
 												caitu[9] = m_double10;
 											}
-											datatestDPU[4] = caitu[9];
-											CMyPublicData::setfunc(40, 16, 118, 1);
+											if (modsd[8] != L"OFF")
+											{
+												datatestDPU[4] = caitu[9];
+												CMyPublicData::setfunc(40, 16, 118, 1);
+											}
 											return TRUE;
 										}
 										else
@@ -596,8 +595,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 													UpdateData(FALSE);
 													caitu[10] = m_double11;
 												}
-												datatestDPU[4] = caitu[10];
-												CMyPublicData::setfunc(42, 16, 118, 1);
+												if (modsd[10] != L"OFF")
+												{
+													datatestDPU[4] = caitu[10];
+													CMyPublicData::setfunc(42, 16, 118, 1);
+												}
 												return TRUE;
 											}
 											else
@@ -616,8 +618,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 														UpdateData(FALSE);
 														caitu[11] = m_double12;
 													}
-													datatestDPU[4] = caitu[11];
-													CMyPublicData::setfunc(44, 16, 118, 1);
+													if (modsd[12] != L"OFF")
+													{
+														datatestDPU[4] = caitu[11];
+														CMyPublicData::setfunc(44, 16, 118, 1);
+													}
 													return TRUE;
 												}
 												else
@@ -636,8 +641,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 															UpdateData(FALSE);
 															caitu[12] = m_double13;
 														}
-														datatestDPU[4] = caitu[12];
-														CMyPublicData::setfunc(46, 16, 118, 1);
+														if (modsd[14] != L"OFF")
+														{
+															datatestDPU[4] = caitu[12];
+															CMyPublicData::setfunc(46, 16, 118, 1);
+														}
 														return TRUE;
 													}
 													else
@@ -656,8 +664,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 																UpdateData(FALSE);
 																caitu[13] = m_double14;
 															}
-															datatestDPU[4] = caitu[13];
-															CMyPublicData::setfunc(48, 16, 118, 1);
+															if (modsd[16] != L"OFF")
+															{
+																datatestDPU[4] = caitu[13];
+																CMyPublicData::setfunc(48, 16, 118, 1);
+															}
 															return TRUE;
 														}
 														else
@@ -676,8 +687,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 																	UpdateData(FALSE);
 																	caitu[14] = m_double15;
 																}
-																datatestDPU[4] = caitu[14];
-																CMyPublicData::setfunc(50, 16, 118, 1);
+																if (modsd[18] != L"OFF")
+																{
+																	datatestDPU[4] = caitu[14];
+																	CMyPublicData::setfunc(50, 16, 118, 1);
+																}
 																return TRUE;
 															}
 															else
@@ -696,8 +710,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 																		UpdateData(FALSE);
 																		caitu[15] = m_double16;
 																	}
-																	datatestDPU[4] = caitu[15];
-																	CMyPublicData::setfunc(33, 16, 118, 1);
+																	if (modsd[1] != L"OFF")
+																	{
+																		datatestDPU[4] = caitu[15];
+																		CMyPublicData::setfunc(33, 16, 118, 1);
+																	}
 																	return TRUE;
 																}
 																else
@@ -716,8 +733,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 																			UpdateData(FALSE);
 																			caitu[16] = m_double17;
 																		}
-																		datatestDPU[4] = caitu[16];
-																		CMyPublicData::setfunc(35, 16, 118, 1);
+																		if (modsd[3] != L"OFF")
+																		{
+																			datatestDPU[4] = caitu[16];
+																			CMyPublicData::setfunc(35, 16, 118, 1);
+																		}
 																		return TRUE;
 																	}
 																	else
@@ -736,8 +756,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 																				UpdateData(FALSE);
 																				caitu[17] = m_double18;
 																			}
-																			datatestDPU[4] = caitu[17];
-																			CMyPublicData::setfunc(37, 16, 118, 1);
+																			if (modsd[5] != L"OFF")
+																			{
+																				datatestDPU[4] = caitu[17];
+																				CMyPublicData::setfunc(37, 16, 118, 1);
+																			}
 																			return TRUE;
 																		}
 																		else
@@ -756,8 +779,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 																					UpdateData(FALSE);
 																					caitu[18] = m_double19;
 																				}
-																				datatestDPU[4] = caitu[18];
-																				CMyPublicData::setfunc(39, 16, 118, 1);
+																				if (modsd[7] != L"OFF")
+																				{
+																					datatestDPU[4] = caitu[18];
+																					CMyPublicData::setfunc(39, 16, 118, 1);
+																				}
 																				return TRUE;
 																			}
 																			else
@@ -776,8 +802,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 																						UpdateData(FALSE);
 																						caitu[19] = m_double20;
 																					}
-																					datatestDPU[4] = caitu[19];
-																					CMyPublicData::setfunc(41, 16, 118, 1);
+																					if (modsd[9] != L"OFF")
+																					{
+																						datatestDPU[4] = caitu[19];
+																						CMyPublicData::setfunc(41, 16, 118, 1);
+																					}
 																					return TRUE;
 																				}
 																				else
@@ -796,8 +825,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 																							UpdateData(FALSE);
 																							caitu[20] = m_double21;
 																						}
-																						datatestDPU[4] = caitu[20];
-																						CMyPublicData::setfunc(43, 16, 118, 1);
+																						if (modsd[11] != L"OFF")
+																						{
+																							datatestDPU[4] = caitu[20];
+																							CMyPublicData::setfunc(43, 16, 118, 1);
+																						}
 																						return TRUE;
 																					}
 																					else
@@ -816,8 +848,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 																								UpdateData(FALSE);
 																								caitu[21] = m_double22;
 																							}
-																							datatestDPU[4] = caitu[21];
-																							CMyPublicData::setfunc(45, 16, 118, 1);
+																							if (modsd[13] != L"OFF")
+																							{
+																								datatestDPU[4] = caitu[21];
+																								CMyPublicData::setfunc(45, 16, 118, 1);
+																							}
 																							return TRUE;
 																						}
 																						else
@@ -836,8 +871,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 																									UpdateData(FALSE);
 																									caitu[22] = m_double23;
 																								}
-																								datatestDPU[4] = caitu[22];
-																								CMyPublicData::setfunc(47, 16, 118, 1);
+																								if (modsd[15] != L"OFF")
+																								{
+																									datatestDPU[4] = caitu[22];
+																									CMyPublicData::setfunc(47, 16, 118, 1);
+																								}
 																								return TRUE;
 																							}
 																							else
@@ -856,8 +894,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 																										UpdateData(FALSE);
 																										caitu[23] = m_double24;
 																									}
-																									datatestDPU[4] = caitu[23];
-																									CMyPublicData::setfunc(49, 16, 118, 1);
+																									if (modsd[17] != L"OFF")
+																									{
+																										datatestDPU[4] = caitu[23];
+																										CMyPublicData::setfunc(49, 16, 118, 1);
+																									}
 																									return TRUE;
 																								}
 																								else
@@ -876,8 +917,11 @@ BOOL caitushezhi::PreTranslateMessage(MSG* pMsg)
 																											UpdateData(FALSE);
 																											caitu[24] = m_double25;
 																										}
-																										datatestDPU[4] = caitu[24];
-																										CMyPublicData::setfunc(51, 16, 118, 1);
+																										if (modsd[19] != L"OFF")
+																										{
+																											datatestDPU[4] = caitu[24];
+																											CMyPublicData::setfunc(51, 16, 118, 1);
+																										}
 																										return TRUE;
 																									}
 																								}
@@ -1068,7 +1112,7 @@ void caitushezhi::OnBnClickedButton11()
 		photoNum = 32;
 		flag_num = 1;
 	}
-    if (ComChoosed == "b1")
+	if (ComChoosed == "b1")
 	{
 		photoNum = 33;
 		flag_num = 2;

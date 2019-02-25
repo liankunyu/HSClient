@@ -109,8 +109,14 @@ void Yanchi::OnBnClickedButton11()
 	for (int i=0 ;i<10;i++)
 	{
 		datatestDPU[4] = yanchisheding[10]+yanchisheding[i];
-		CMyPublicData::setfunc(32+2*i, 16, 5, 1);
-		CMyPublicData::setfunc(33 + 2*i, 16, 5, 1);
+		if (modsd[2*i] != L"OFF")
+		{
+			CMyPublicData::setfunc(32 + 2 * i, 16, 5, 1);
+		}
+		if (modsd[2 * i+1] != L"OFF")
+		{
+			CMyPublicData::setfunc(33 + 2 * i, 16, 5, 1);
+		}
 	}
 }
 
@@ -132,8 +138,14 @@ void Yanchi::OnBnClickedButton13()
 		yanchisheding[0] = m_double1_edit3;
 	}
 	datatestDPU[4] = yanchisheding[0] + yanchisheding[10];
-	CMyPublicData::setfunc(32, 16, 5, 1);
-	CMyPublicData::setfunc(33, 16, 5, 1);
+	if (modsd[0] != L"OFF")
+	{
+		CMyPublicData::setfunc(32, 16, 5, 1);
+	}
+	if (modsd[1] != L"OFF")
+	{
+		CMyPublicData::setfunc(33, 16, 5, 1);
+	}
 }
 
 
@@ -154,8 +166,14 @@ void Yanchi::OnBnClickedButton15()
 		yanchisheding[1] = m_double2_edit24;
 	}
 	datatestDPU[4] = yanchisheding[1] + yanchisheding[10];
-	CMyPublicData::setfunc(34, 16, 5, 1);
-	CMyPublicData::setfunc(35, 16, 5, 1);
+	if (modsd[2] != L"OFF")
+	{
+		CMyPublicData::setfunc(34, 16, 5, 1);
+	}
+	if (modsd[3] != L"OFF")
+	{
+		CMyPublicData::setfunc(35, 16, 5, 1);
+	}
 }
 
 
@@ -176,8 +194,14 @@ void Yanchi::OnBnClickedButton51()
 		yanchisheding[2] = m_double3_edit34;
 	}
 	datatestDPU[4] = yanchisheding[2] + yanchisheding[10];
-	CMyPublicData::setfunc(36, 16, 5, 1);
-	CMyPublicData::setfunc(37, 16, 5, 1);
+	if (modsd[4] != L"OFF")
+	{
+		CMyPublicData::setfunc(36, 16, 5, 1);
+	}
+	if (modsd[5] != L"OFF")
+	{
+		CMyPublicData::setfunc(37, 16, 5, 1);
+	}
 }
 
 
@@ -198,8 +222,14 @@ void Yanchi::OnBnClickedButton66()
 		yanchisheding[3] = m_double4_edit35;
 	}
 	datatestDPU[4] = yanchisheding[3] + yanchisheding[10];
-	CMyPublicData::setfunc(38, 16, 5, 1);
-	CMyPublicData::setfunc(39, 16, 5, 1);
+	if (modsd[6] != L"OFF")
+	{
+		CMyPublicData::setfunc(38, 16, 5, 1);
+	}
+	if (modsd[7] != L"OFF")
+	{
+		CMyPublicData::setfunc(39, 16, 5, 1);
+	}
 }
 
 
@@ -220,8 +250,14 @@ void Yanchi::OnBnClickedButton68()
 		yanchisheding[4] = m_double5_edit36;
 	}
 	datatestDPU[4] = yanchisheding[4] + yanchisheding[10];
-	CMyPublicData::setfunc(40, 16, 5, 1);
-	CMyPublicData::setfunc(41, 16, 5, 1);
+	if (modsd[8] != L"OFF")
+	{
+		CMyPublicData::setfunc(40, 16, 5, 1);
+	}
+	if (modsd[9] != L"OFF")
+	{
+		CMyPublicData::setfunc(41, 16, 5, 1);
+	}
 }
 
 
@@ -242,8 +278,14 @@ void Yanchi::OnBnClickedButton70()
 		yanchisheding[5] = m_double6_edit37;
 	}
 	datatestDPU[4] = yanchisheding[5] + yanchisheding[10];
-	CMyPublicData::setfunc(42, 16, 5, 1);
-	CMyPublicData::setfunc(43, 16, 5, 1);
+	if (modsd[10] != L"OFF")
+	{
+		CMyPublicData::setfunc(42, 16, 5, 1);
+	}
+	if (modsd[11] != L"OFF")
+	{
+		CMyPublicData::setfunc(43, 16, 5, 1);
+	}
 }
 
 
@@ -265,8 +307,14 @@ BOOL Yanchi::PreTranslateMessage(MSG* pMsg)
 			yanchisheding[0] = m_double1_edit3;
 		}
 		datatestDPU[4] = yanchisheding[0] + yanchisheding[10];
-		CMyPublicData::setfunc(32, 16, 5, 1);
-		CMyPublicData::setfunc(33, 16, 5, 1);
+		if (modsd[0] != L"OFF")
+		{
+			CMyPublicData::setfunc(32, 16, 5, 1);
+		}
+		if (modsd[1] != L"OFF")
+		{
+			CMyPublicData::setfunc(33, 16, 5, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -288,8 +336,14 @@ BOOL Yanchi::PreTranslateMessage(MSG* pMsg)
 			yanchisheding[1] = m_double2_edit24;
 		}
 		datatestDPU[4] = yanchisheding[1] + yanchisheding[10];
-		CMyPublicData::setfunc(34, 16, 5, 1);
-		CMyPublicData::setfunc(35, 16, 5, 1);
+		if (modsd[2] != L"OFF")
+		{
+			CMyPublicData::setfunc(34, 16, 5, 1);
+		}
+		if (modsd[3] != L"OFF")
+		{
+			CMyPublicData::setfunc(35, 16, 5, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -311,8 +365,14 @@ BOOL Yanchi::PreTranslateMessage(MSG* pMsg)
 			yanchisheding[2] = m_double3_edit34;
 		}
 		datatestDPU[4] = yanchisheding[2] + yanchisheding[10];
-		CMyPublicData::setfunc(36, 16, 5, 1);
-		CMyPublicData::setfunc(37, 16, 5, 1);
+		if (modsd[4] != L"OFF")
+		{
+			CMyPublicData::setfunc(36, 16, 5, 1);
+		}
+		if (modsd[5] != L"OFF")
+		{
+			CMyPublicData::setfunc(37, 16, 5, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -334,8 +394,14 @@ BOOL Yanchi::PreTranslateMessage(MSG* pMsg)
 			yanchisheding[3] = m_double4_edit35;
 		}
 		datatestDPU[4] = yanchisheding[3] + yanchisheding[10];
-		CMyPublicData::setfunc(38, 16, 5, 1);
-		CMyPublicData::setfunc(39, 16, 5, 1);
+		if (modsd[6] != L"OFF")
+		{
+			CMyPublicData::setfunc(38, 16, 5, 1);
+		}
+		if (modsd[7] != L"OFF")
+		{
+			CMyPublicData::setfunc(39, 16, 5, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -357,8 +423,14 @@ BOOL Yanchi::PreTranslateMessage(MSG* pMsg)
 			yanchisheding[4] = m_double5_edit36;
 		}
 		datatestDPU[4] = yanchisheding[4] + yanchisheding[10];
-		CMyPublicData::setfunc(40, 16, 5, 1);
-		CMyPublicData::setfunc(41, 16, 5, 1);
+		if (modsd[8] != L"OFF")
+		{
+			CMyPublicData::setfunc(40, 16, 5, 1);
+		}
+		if (modsd[9] != L"OFF")
+		{
+			CMyPublicData::setfunc(41, 16, 5, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -380,8 +452,14 @@ BOOL Yanchi::PreTranslateMessage(MSG* pMsg)
 			yanchisheding[5] = m_double6_edit37;
 		}
 		datatestDPU[4] = yanchisheding[5] + yanchisheding[10];
-		CMyPublicData::setfunc(42, 16, 5, 1);
-		CMyPublicData::setfunc(43, 16, 5, 1);
+		if (modsd[10] != L"OFF")
+		{
+			CMyPublicData::setfunc(42, 16, 5, 1);
+		}
+		if (modsd[11] != L"OFF")
+		{
+			CMyPublicData::setfunc(43, 16, 5, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -403,8 +481,14 @@ BOOL Yanchi::PreTranslateMessage(MSG* pMsg)
 			yanchisheding[6] = m_double33;
 		}
 		datatestDPU[4] = yanchisheding[6] + yanchisheding[10];
-		CMyPublicData::setfunc(44, 16, 5, 1);
-		CMyPublicData::setfunc(45, 16, 5, 1);
+		if (modsd[12] != L"OFF")
+		{
+			CMyPublicData::setfunc(44, 16, 5, 1);
+		}
+		if (modsd[13] != L"OFF")
+		{
+			CMyPublicData::setfunc(45, 16, 5, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -426,8 +510,14 @@ BOOL Yanchi::PreTranslateMessage(MSG* pMsg)
 			yanchisheding[7] = m_double8_edit39;
 		}
 		datatestDPU[4] = yanchisheding[7] + yanchisheding[10];
-		CMyPublicData::setfunc(46, 16, 5, 1);
-		CMyPublicData::setfunc(47, 16, 5, 1);
+		if (modsd[14] != L"OFF")
+		{
+			CMyPublicData::setfunc(46, 16, 5, 1);
+		}
+		if (modsd[15] != L"OFF")
+		{
+			CMyPublicData::setfunc(47, 16, 5, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -449,8 +539,14 @@ BOOL Yanchi::PreTranslateMessage(MSG* pMsg)
 			yanchisheding[8] = m_double9_edit45;
 		}
 		datatestDPU[4] = yanchisheding[8] + yanchisheding[10];
-		CMyPublicData::setfunc(48, 16, 5, 1);
-		CMyPublicData::setfunc(49, 16, 5, 1);
+		if (modsd[16] != L"OFF")
+		{
+			CMyPublicData::setfunc(48, 16, 5, 1);
+		}
+		if (modsd[17] != L"OFF")
+		{
+			CMyPublicData::setfunc(49, 16, 5, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -472,8 +568,14 @@ BOOL Yanchi::PreTranslateMessage(MSG* pMsg)
 			yanchisheding[9] = m_double10_edit46;
 		}
 		datatestDPU[4] = yanchisheding[9] + yanchisheding[10];
-		CMyPublicData::setfunc(50, 16, 5, 1);
-		CMyPublicData::setfunc(51, 16, 5, 1);
+		if (modsd[18] != L"OFF")
+		{
+			CMyPublicData::setfunc(50, 16, 5, 1);
+		}
+		if (modsd[19] != L"OFF")
+		{
+			CMyPublicData::setfunc(51, 16, 5, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -497,8 +599,14 @@ BOOL Yanchi::PreTranslateMessage(MSG* pMsg)
 		for (int i = 0; i < 10; i++)
 		{
 			datatestDPU[4] = yanchisheding[10] + yanchisheding[i];
-			CMyPublicData::setfunc(32 + 2 * i, 16, 5, 1);
-			CMyPublicData::setfunc(33 + 2 * i, 16, 5, 1);
+			if (modsd[2 * i] != L"OFF")
+			{
+				CMyPublicData::setfunc(32 + 2 * i, 16, 5, 1);
+			}
+			if (modsd[2 * i + 1] != L"OFF")
+			{
+				CMyPublicData::setfunc(33 + 2 * i, 16, 5, 1);
+			}
 		}
 		return TRUE;
 	}
@@ -522,9 +630,15 @@ void Yanchi::OnBnClickedButton72()
 		UpdateData(FALSE);
 		yanchisheding[6] = m_double33;
 	}
-	datatestDPU[4] = yanchisheding[6] + yanchisheding[10];
-	CMyPublicData::setfunc(44, 16, 5, 1);
-	CMyPublicData::setfunc(45, 16, 5, 1);
+	datatestDPU[4] = yanchisheding[6] + yanchisheding[10];	
+	if (modsd[12] != L"OFF")
+	{
+		CMyPublicData::setfunc(44, 16, 5, 1);
+	}
+	if (modsd[13] != L"OFF")
+	{
+		CMyPublicData::setfunc(45, 16, 5, 1);
+	}
 }
 
 
@@ -545,8 +659,14 @@ void Yanchi::OnBnClickedButton74()
 		yanchisheding[7] = m_double8_edit39;
 	}
 	datatestDPU[4] = yanchisheding[7] + yanchisheding[10];
-	CMyPublicData::setfunc(46, 16, 5, 1);
-	CMyPublicData::setfunc(47, 16, 5, 1);
+	if (modsd[14] != L"OFF")
+	{
+		CMyPublicData::setfunc(46, 16, 5, 1);
+	}
+	if (modsd[15] != L"OFF")
+	{
+		CMyPublicData::setfunc(47, 16, 5, 1);
+	}
 }
 
 
@@ -567,8 +687,14 @@ void Yanchi::OnBnClickedButton76()
 		yanchisheding[8] = m_double9_edit45;
 	}
 	datatestDPU[4] = yanchisheding[8] + yanchisheding[10];
-	CMyPublicData::setfunc(48, 16, 5, 1);
-	CMyPublicData::setfunc(49, 16, 5, 1);
+	if (modsd[16] != L"OFF")
+	{
+		CMyPublicData::setfunc(48, 16, 5, 1);
+	}
+	if (modsd[17] != L"OFF")
+	{
+		CMyPublicData::setfunc(49, 16, 5, 1);
+	}
 }
 
 
@@ -589,8 +715,14 @@ void Yanchi::OnBnClickedButton78()
 		yanchisheding[9] = m_double10_edit46;
 	}
 	datatestDPU[4] = yanchisheding[9] + yanchisheding[10];
-	CMyPublicData::setfunc(50, 16, 5, 1);
-	CMyPublicData::setfunc(51, 16, 5, 1);
+	if (modsd[18] != L"OFF")
+	{
+		CMyPublicData::setfunc(50, 16, 5, 1);
+	}
+	if (modsd[19] != L"OFF")
+	{
+		CMyPublicData::setfunc(51, 16, 5, 1);
+	}
 }
 
 
@@ -611,8 +743,14 @@ void Yanchi::OnBnClickedButton14()
 		yanchisheding[0] = m_double1_edit3;
 	}
 	datatestDPU[4] = yanchisheding[0] + yanchisheding[10];
-	CMyPublicData::setfunc(32, 16, 5, 1);
-	CMyPublicData::setfunc(33, 16, 5, 1);
+	if (modsd[0] != L"OFF")
+	{
+		CMyPublicData::setfunc(32, 16, 5, 1);
+	}
+	if (modsd[1] != L"OFF")
+	{
+		CMyPublicData::setfunc(33, 16, 5, 1);
+	}
 }
 
 
@@ -633,8 +771,14 @@ void Yanchi::OnBnClickedButton64()
 		yanchisheding[1] = m_double2_edit24;
 	}
 	datatestDPU[4] = yanchisheding[1] + yanchisheding[10];
-	CMyPublicData::setfunc(34, 16, 5, 1);
-	CMyPublicData::setfunc(35, 16, 5, 1);
+	if (modsd[2] != L"OFF")
+	{
+		CMyPublicData::setfunc(34, 16, 5, 1);
+	}
+	if (modsd[3] != L"OFF")
+	{
+		CMyPublicData::setfunc(35, 16, 5, 1);
+	}
 }
 
 
@@ -655,8 +799,14 @@ void Yanchi::OnBnClickedButton65()
 		yanchisheding[2] = m_double3_edit34;
 	}
 	datatestDPU[4] = yanchisheding[2] + yanchisheding[10];
-	CMyPublicData::setfunc(36, 16, 5, 1);
-	CMyPublicData::setfunc(37, 16, 5, 1);
+	if (modsd[4] != L"OFF")
+	{
+		CMyPublicData::setfunc(36, 16, 5, 1);
+	}
+	if (modsd[5] != L"OFF")
+	{
+		CMyPublicData::setfunc(37, 16, 5, 1);
+	}
 }
 
 
@@ -677,8 +827,14 @@ void Yanchi::OnBnClickedButton67()
 		yanchisheding[3] = m_double4_edit35;
 	}
 	datatestDPU[4] = yanchisheding[3] + yanchisheding[10];
-	CMyPublicData::setfunc(38, 16, 5, 1);
-	CMyPublicData::setfunc(39, 16, 5, 1);
+	if (modsd[6] != L"OFF")
+	{
+		CMyPublicData::setfunc(38, 16, 5, 1);
+	}
+	if (modsd[7] != L"OFF")
+	{
+		CMyPublicData::setfunc(39, 16, 5, 1);
+	}
 }
 
 
@@ -699,8 +855,14 @@ void Yanchi::OnBnClickedButton69()
 		yanchisheding[4] = m_double5_edit36;
 	}
 	datatestDPU[4] = yanchisheding[4] + yanchisheding[10];
-	CMyPublicData::setfunc(40, 16, 5, 1);
-	CMyPublicData::setfunc(41, 16, 5, 1);
+	if (modsd[8] != L"OFF")
+	{
+		CMyPublicData::setfunc(40, 16, 5, 1);
+	}
+	if (modsd[9] != L"OFF")
+	{
+		CMyPublicData::setfunc(41, 16, 5, 1);
+	}
 }
 
 
@@ -721,8 +883,14 @@ void Yanchi::OnBnClickedButton71()
 		yanchisheding[5] = m_double6_edit37;
 	}
 	datatestDPU[4] = yanchisheding[5] + yanchisheding[10];
-	CMyPublicData::setfunc(42, 16, 5, 1);
-	CMyPublicData::setfunc(43, 16, 5, 1);
+	if (modsd[10] != L"OFF")
+	{
+		CMyPublicData::setfunc(42, 16, 5, 1);
+	}
+	if (modsd[11] != L"OFF")
+	{
+		CMyPublicData::setfunc(43, 16, 5, 1);
+	}
 }
 
 
@@ -743,8 +911,14 @@ void Yanchi::OnBnClickedButton73()
 		yanchisheding[6] = m_double33;
 	}
 	datatestDPU[4] = yanchisheding[6] + yanchisheding[10];
-	CMyPublicData::setfunc(44, 16, 5, 1);
-	CMyPublicData::setfunc(45, 16, 5, 1);
+	if (modsd[12] != L"OFF")
+	{
+		CMyPublicData::setfunc(44, 16, 5, 1);
+	}
+	if (modsd[13] != L"OFF")
+	{
+		CMyPublicData::setfunc(45, 16, 5, 1);
+	}
 }
 
 
@@ -765,8 +939,14 @@ void Yanchi::OnBnClickedButton75()
 		yanchisheding[7] = m_double8_edit39;
 	}
 	datatestDPU[4] = yanchisheding[7] + yanchisheding[10];
-	CMyPublicData::setfunc(46, 16, 5, 1);
-	CMyPublicData::setfunc(47, 16, 5, 1);
+	if (modsd[14] != L"OFF")
+	{
+		CMyPublicData::setfunc(46, 16, 5, 1);
+	}
+	if (modsd[15] != L"OFF")
+	{
+		CMyPublicData::setfunc(47, 16, 5, 1);
+	}
 }
 
 
@@ -787,8 +967,14 @@ void Yanchi::OnBnClickedButton77()
 		yanchisheding[8] = m_double9_edit45;
 	}
 	datatestDPU[4] = yanchisheding[8] + yanchisheding[10];
-	CMyPublicData::setfunc(48, 16, 5, 1);
-	CMyPublicData::setfunc(49, 16, 5, 1);
+	if (modsd[16] != L"OFF")
+	{
+		CMyPublicData::setfunc(48, 16, 5, 1);
+	}
+	if (modsd[17] != L"OFF")
+	{
+		CMyPublicData::setfunc(49, 16, 5, 1);
+	}
 }
 
 
@@ -809,8 +995,14 @@ void Yanchi::OnBnClickedButton79()
 		yanchisheding[9] = m_double10_edit46;
 	}
 	datatestDPU[4] = yanchisheding[9] + yanchisheding[10];
-	CMyPublicData::setfunc(50, 16, 5, 1);
-	CMyPublicData::setfunc(51, 16, 5, 1);
+	if (modsd[18] != L"OFF")
+	{
+		CMyPublicData::setfunc(50, 16, 5, 1);
+	}
+	if (modsd[19] != L"OFF")
+	{
+		CMyPublicData::setfunc(51, 16, 5, 1);
+	}
 }
 
 
@@ -833,8 +1025,14 @@ void Yanchi::OnBnClickedButton12()
 	for (int i = 0; i < 10; i++)
 	{
 		datatestDPU[4] = yanchisheding[10] + yanchisheding[i];
-		CMyPublicData::setfunc(32 + 2 * i, 16, 5, 1);
-		CMyPublicData::setfunc(33 + 2 * i, 16, 5, 1);
+		if (modsd[2 * i] != L"OFF")
+		{
+			CMyPublicData::setfunc(32 + 2 * i, 16, 5, 1);
+		}
+		if (modsd[2 * i + 1] != L"OFF")
+		{
+			CMyPublicData::setfunc(33 + 2 * i, 16, 5, 1);
+		}
 	}
 }
 
