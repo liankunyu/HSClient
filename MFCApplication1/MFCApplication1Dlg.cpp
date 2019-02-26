@@ -451,7 +451,9 @@ void CMFCApplication1Dlg::OnBnClickedMoshixuanzeButton()
 	KillTimer(2);  //暂时关闭主界面的通信异常判断，防止多次出现提示界面
 	Moshixuanze moshi;
 	moshi.DoModal();
+	ModelSize = m_moshi;    //将当前色选方案赋值给ModelSize编辑框
 	SetTimer(2, 2000, NULL); //开启定时器
+	UpdateData(FALSE);
 }
 
 
@@ -677,7 +679,7 @@ void CMFCApplication1Dlg::OnTimer(UINT_PTR nIDEvent)
 	// TODO: 在此添加消息处理程序代码和/或调用默认值
 	if (nIDEvent == 1)
 	{
-		ModelSize = m_moshi;    //将当前色选方案赋值给ModelSize编辑框
+		
 		if (m_Int<0)
 		{
 			KillTimer(1);

@@ -3386,35 +3386,69 @@ void CMyPublicData::readXML(string str)
 	//	CMyPublicData::setfunc(32, 16, i * 50 + 1, 50);
 	//	CMyPublicData::setfunc(33, 16, i * 50 + 1, 50);
 	//}
+
+	////一次写入100个
+	//for (int i = 0; i < 20; i++)
+	//{
+	//	if (modsd[i] != "OFF")
+	//	{
+	//		if (tongxincuowu[i + 1] != (-1))
+	//		{
+	//			for (int j = 0; j < 100; j++)
+	//			{
+	//				datatestDPU[j + 4] = allData[i + 1][1 + j];
+	//			}
+	//			setfunc(32 + i, 16, 1, 100);
+	//			//for (int j = 0; j < 50; j++)
+	//			//{
+	//			//	datatestDPU[j + 4] = allData[i + 1][51+ j];
+	//			//}
+	//			//CMyPublicData::setfunc(32 + i, 16, 51, 50);
+	//			for (int j = 0; j < 100; j++)
+	//			{
+	//				datatestDPU[j + 4] = allData[i + 1][101 + j];
+	//			}
+	//			setfunc(32 + i, 16, 101, 100);
+	//			//for (int j = 0; j < 50; j++)
+	//			//{
+	//			//	datatestDPU[j + 4] = allData[i + 1][151 + j];
+	//			//}
+	//			//CMyPublicData::setfunc(32 + i, 16,151, 50);
+	//		}
+	//	}
+	//}
+
+	//一次写入50个
 	for (int i = 0; i < 20; i++)
 	{
 		if (modsd[i] != "OFF")
 		{
 			if (tongxincuowu[i + 1] != (-1))
 			{
-				for (int j = 0; j < 100; j++)
+				for (int j = 0; j < 50; j++)
 				{
 					datatestDPU[j + 4] = allData[i + 1][1 + j];
 				}
-				setfunc(32 + i, 16, 1, 100);
-				//for (int j = 0; j < 50; j++)
-				//{
-				//	datatestDPU[j + 4] = allData[i + 1][51+ j];
-				//}
-				//CMyPublicData::setfunc(32 + i, 16, 51, 50);
-				for (int j = 0; j < 100; j++)
+				CMyPublicData::setfunc(32 + i, 16, 1, 50);
+				for (int j = 0; j < 50; j++)
+				{
+					datatestDPU[j + 4] = allData[i + 1][51 + j];
+				}
+				CMyPublicData::setfunc(32 + i, 16, 51, 50);
+				for (int j = 0; j < 50; j++)
 				{
 					datatestDPU[j + 4] = allData[i + 1][101 + j];
 				}
-				setfunc(32 + i, 16, 101, 100);
-				//for (int j = 0; j < 50; j++)
-				//{
-				//	datatestDPU[j + 4] = allData[i + 1][151 + j];
-				//}
-				//CMyPublicData::setfunc(32 + i, 16,151, 50);
+				CMyPublicData::setfunc(32 + i, 16, 101, 50);
+				for (int j = 0; j < 50; j++)
+				{
+					datatestDPU[j + 4] = allData[i + 1][151 + j];
+				}
+				CMyPublicData::setfunc(32 + i, 16, 151, 50);
 			}
 		}
 	}
+
 
 	for (int i = 0; i < 20; i++)
 	{
