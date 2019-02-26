@@ -145,7 +145,7 @@ void modsheding::OnBnClickedButton2()
 		UpdateData(FALSE);
 		return;
 	}
-	if (cstr==L"1")
+	if (cstr == L"1")
 	{
 		cstr = L"2";
 		GetDlgItem(IDC_BUTTON2)->SetWindowText(cstr);
@@ -292,15 +292,15 @@ BOOL modsheding::OnInitDialog()
 	GetDlgItem(IDC_BUTTON62)->SetWindowText(modsd[19]);
 	GetDlgItem(IDC_BUTTON1)->SetWindowText(modsd[20]);
 
-	if (addSW==1)
+	if (addSW == 1)
 	{
 		GetDlgItem(IDC_BUTTON4)->SetWindowText(L"RGB1");
 	}
-	if (addSW==2)
+	if (addSW == 2)
 	{
 		GetDlgItem(IDC_BUTTON4)->SetWindowText(L"RGB2");
 	}
-	hBitmap = LoadBitmap(AfxGetInstanceHandle(),MAKEINTRESOURCE(IDB_BITMAP1));// IDB_BITMAP1为资源图片ID  
+	hBitmap = LoadBitmap(AfxGetInstanceHandle(), MAKEINTRESOURCE(IDB_BITMAP1));// IDB_BITMAP1为资源图片ID  
 	m_button1.SetBitmap(hBitmap);
 	hBitmap = LoadBitmap(AfxGetInstanceHandle(), MAKEINTRESOURCE(IDB_BITMAP2));// IDB_BITMAP1为资源图片ID  
 	m_button2.SetBitmap(hBitmap);
@@ -1154,11 +1154,11 @@ void modsheding::OnBnClickedButton4()
 	GetDlgItem(IDC_BUTTON4)->EnableWindow(FALSE);
 	CString cstr;
 	GetDlgItem(IDC_BUTTON4)->GetWindowText(cstr);
-	if (cstr==L"RGB1")
+	if (cstr == L"RGB1")
 	{
 		addSW = 2;
 		GetDlgItem(IDC_BUTTON4)->SetWindowText(L"RGB2");
-		for (int i=0;i<6;i++)
+		for (int i = 0; i < 6; i++)
 		{
 			rlingmin[2 * i] = 0;
 			rlingmin[2 * i + 1] = 245;
@@ -1189,7 +1189,7 @@ void modsheding::OnBnClickedButton4()
 			hunlingminf[30 + j] = 10;
 		}
 	}
-	if (cstr==L"RGB2")
+	if (cstr == L"RGB2")
 	{
 		addSW = 1;
 		GetDlgItem(IDC_BUTTON4)->SetWindowText(L"RGB1");
@@ -1224,6 +1224,7 @@ void modsheding::OnBnClickedButton4()
 			hunlingminf[30 + j] = 0;
 		}
 	}
+	CMyPublicData::setfunc(10, 3, 9, 1);
 	CMyPublicData::bit_set(10, 9, 6, false);                     //阀电源初始化前先关闭
 	for (int i = 0; i < 10; i++)                                 //通道流量调整
 	{
@@ -1253,6 +1254,7 @@ void modsheding::OnBnClickedButton4()
 		datatestDPU[i + 4] = allData[0][i + 10];
 	}
 	CMyPublicData::setfunc(10, 16, 10, 30);
+	CMyPublicData::setfunc(10, 3, 9, 1);
 	CMyPublicData::bit_set(10, 9, 8, true);
 
 
@@ -1676,7 +1678,7 @@ void modsheding::OnBnClickedButton4()
 	//CMyPublicData::setfunc(33, 16, 351, 8);
 	for (int i = 0; i < 20; i++)
 	{
-		if (modsd[i]!=L"OFF")
+		if (modsd[i] != L"OFF")
 		{
 			for (int j = 0; j < 8; j++)
 			{
@@ -1685,6 +1687,7 @@ void modsheding::OnBnClickedButton4()
 			CMyPublicData::setfunc(32 + i, 16, 351, 8);
 		}
 	}
+	CMyPublicData::setfunc(10, 3, 9, 1);
 	CMyPublicData::bit_set(10, 9, 6, true);               //阀电源最后开启
 	GetDlgItem(IDC_BUTTON4)->EnableWindow(TRUE);
 	m_Tip = "num6613";//传入节点名
@@ -1705,18 +1708,18 @@ void modsheding::OnBnClickedButton5()
 void modsheding::OnBnClickedButton6()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	if (modsd[0]!=L"OFF")
+	if (modsd[0] != L"OFF")
 	{
 		CMyPublicData::setfunc(32, 3, 1, 1);
-		if (fanhuizhi==(-1))
+		if (fanhuizhi == (-1))
 		{
-			
+
 			if (modsd[1] != L"OFF")
 			{
 				CMyPublicData::setfunc(33, 3, 1, 1);
 				if (fanhuizhi == (-1))
 				{
-					
+
 				}
 				else
 				{
@@ -1742,7 +1745,7 @@ void modsheding::OnBnClickedButton6()
 			CMyPublicData::setfunc(33, 3, 1, 1);
 			if (fanhuizhi == (-1))
 			{
-				
+
 			}
 			else
 			{
@@ -1764,13 +1767,13 @@ void modsheding::OnBnClickedButton7()
 		CMyPublicData::setfunc(34, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
-			
+
 			if (modsd[3] != L"OFF")
 			{
 				CMyPublicData::setfunc(35, 3, 1, 1);
 				if (fanhuizhi == (-1))
 				{
-					
+
 				}
 				else
 				{
@@ -1796,7 +1799,7 @@ void modsheding::OnBnClickedButton7()
 			CMyPublicData::setfunc(35, 3, 1, 1);
 			if (fanhuizhi == (-1))
 			{
-				
+
 			}
 			else
 			{
@@ -1818,13 +1821,13 @@ void modsheding::OnBnClickedButton8()
 		CMyPublicData::setfunc(36, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
-			
+
 			if (modsd[5] != L"OFF")
 			{
 				CMyPublicData::setfunc(37, 3, 1, 1);
 				if (fanhuizhi == (-1))
 				{
-					
+
 				}
 				else
 				{
@@ -1850,7 +1853,7 @@ void modsheding::OnBnClickedButton8()
 			CMyPublicData::setfunc(37, 3, 1, 1);
 			if (fanhuizhi == (-1))
 			{
-				
+
 			}
 			else
 			{
@@ -1872,13 +1875,13 @@ void modsheding::OnBnClickedButton9()
 		CMyPublicData::setfunc(38, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
-			
+
 			if (modsd[7] != L"OFF")
 			{
 				CMyPublicData::setfunc(39, 3, 1, 1);
 				if (fanhuizhi == (-1))
 				{
-					
+
 				}
 				else
 				{
@@ -1904,7 +1907,7 @@ void modsheding::OnBnClickedButton9()
 			CMyPublicData::setfunc(39, 3, 1, 1);
 			if (fanhuizhi == (-1))
 			{
-				
+
 			}
 			else
 			{
@@ -1926,13 +1929,13 @@ void modsheding::OnBnClickedButton10()
 		CMyPublicData::setfunc(40, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
-			
+
 			if (modsd[9] != L"OFF")
 			{
 				CMyPublicData::setfunc(41, 3, 1, 1);
 				if (fanhuizhi == (-1))
 				{
-					
+
 				}
 				else
 				{
@@ -1958,7 +1961,7 @@ void modsheding::OnBnClickedButton10()
 			CMyPublicData::setfunc(41, 3, 1, 1);
 			if (fanhuizhi == (-1))
 			{
-				
+
 			}
 			else
 			{
@@ -1980,13 +1983,13 @@ void modsheding::OnBnClickedButton57()
 		CMyPublicData::setfunc(42, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
-			
+
 			if (modsd[11] != L"OFF")
 			{
 				CMyPublicData::setfunc(43, 3, 1, 1);
 				if (fanhuizhi == (-1))
 				{
-					
+
 				}
 				else
 				{
@@ -2012,7 +2015,7 @@ void modsheding::OnBnClickedButton57()
 			CMyPublicData::setfunc(43, 3, 1, 1);
 			if (fanhuizhi == (-1))
 			{
-				
+
 			}
 			else
 			{
@@ -2034,13 +2037,13 @@ void modsheding::OnBnClickedButton33()
 		CMyPublicData::setfunc(44, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
-			
+
 			if (modsd[13] != L"OFF")
 			{
 				CMyPublicData::setfunc(45, 3, 1, 1);
 				if (fanhuizhi == (-1))
 				{
-					
+
 				}
 				else
 				{
@@ -2066,7 +2069,7 @@ void modsheding::OnBnClickedButton33()
 			CMyPublicData::setfunc(45, 3, 1, 1);
 			if (fanhuizhi == (-1))
 			{
-				
+
 			}
 			else
 			{
@@ -2088,13 +2091,13 @@ void modsheding::OnBnClickedButton34()
 		CMyPublicData::setfunc(46, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
-			
+
 			if (modsd[15] != L"OFF")
 			{
 				CMyPublicData::setfunc(47, 3, 1, 1);
 				if (fanhuizhi == (-1))
 				{
-					
+
 				}
 				else
 				{
@@ -2120,7 +2123,7 @@ void modsheding::OnBnClickedButton34()
 			CMyPublicData::setfunc(47, 3, 1, 1);
 			if (fanhuizhi == (-1))
 			{
-				
+
 			}
 			else
 			{
@@ -2142,13 +2145,13 @@ void modsheding::OnBnClickedButton35()
 		CMyPublicData::setfunc(48, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
-			
+
 			if (modsd[17] != L"OFF")
 			{
 				CMyPublicData::setfunc(49, 3, 1, 1);
 				if (fanhuizhi == (-1))
 				{
-					
+
 				}
 				else
 				{
@@ -2174,7 +2177,7 @@ void modsheding::OnBnClickedButton35()
 			CMyPublicData::setfunc(49, 3, 1, 1);
 			if (fanhuizhi == (-1))
 			{
-				
+
 			}
 			else
 			{
@@ -2196,13 +2199,13 @@ void modsheding::OnBnClickedButton43()
 		CMyPublicData::setfunc(50, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
-			
+
 			if (modsd[19] != L"OFF")
 			{
 				CMyPublicData::setfunc(51, 3, 1, 1);
 				if (fanhuizhi == (-1))
 				{
-					
+
 				}
 				else
 				{
@@ -2228,7 +2231,7 @@ void modsheding::OnBnClickedButton43()
 			CMyPublicData::setfunc(51, 3, 1, 1);
 			if (fanhuizhi == (-1))
 			{
-				
+
 			}
 			else
 			{

@@ -82,9 +82,9 @@ BEGIN_MESSAGE_MAP(Famenceshi, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON15, &Famenceshi::OnBnClickedButton15)
 	ON_BN_CLICKED(IDC_BUTTON17, &Famenceshi::OnBnClickedButton17)
 	ON_BN_CLICKED(IDCANCEL, &Famenceshi::OnBnClickedCancel)
-//	ON_WM_TIMER()
-ON_BN_CLICKED(IDC_BUTTON62, &Famenceshi::OnBnClickedButton62)
-ON_BN_CLICKED(IDC_BUTTON128, &Famenceshi::OnBnClickedButton128)
+	//	ON_WM_TIMER()
+	ON_BN_CLICKED(IDC_BUTTON62, &Famenceshi::OnBnClickedButton62)
+	ON_BN_CLICKED(IDC_BUTTON128, &Famenceshi::OnBnClickedButton128)
 END_MESSAGE_MAP()
 
 
@@ -100,7 +100,7 @@ void Famenceshi::OnBnClickedButton9()
 	if (1 <= m_double1&& m_double1 <= 10)
 	{
 		famen[0] = m_double1;
-		xiangjixuanze = 29 + flag_num + m_double1* 2; //获得选择的相机编号
+		xiangjixuanze = 29 + flag_num + m_double1 * 2; //获得选择的相机编号
 		UpdateData(FALSE);
 	}
 	else
@@ -109,7 +109,7 @@ void Famenceshi::OnBnClickedButton9()
 		famen[0] = m_double1;
 		UpdateData(FALSE);
 	}
-	if (modsd[xiangjixuanze-32]!="OFF")
+	if (modsd[xiangjixuanze - 32] != "OFF")
 	{
 		datatestDPU[4] = famen[40];     //famnen[40]保存的是选择的相机工作状态 0为停止工作 1为正常工作
 		CMyPublicData::setfunc(xiangjixuanze, 16, 1, 1);
@@ -138,7 +138,7 @@ void Famenceshi::OnBnClickedButton35()
 		UpdateData(FALSE);
 		famen[1] = m_double2;
 	}
-	if (modsd[xiangjixuanze-32]!="OFF")
+	if (modsd[xiangjixuanze - 32] != "OFF")
 	{
 		datatestDPU[4] = famen[40];
 		CMyPublicData::setfunc(xiangjixuanze, 16, 1, 1);
@@ -175,7 +175,7 @@ void Famenceshi::OnBnClickedButton8()
 	ShutDown(famen[0], famen[1]);
 	UpdateData(TRUE);
 	m_double1--;
-	if (1<= m_double1&& m_double1 <= 10)
+	if (1 <= m_double1&& m_double1 <= 10)
 	{
 		UpdateData(FALSE);
 		xiangjixuanze = 29 + flag_num + m_double1 * 2; //获得选择的相机编号
@@ -311,10 +311,13 @@ BOOL Famenceshi::PreTranslateMessage(MSG* pMsg)
 		CMyPublicData::calculate(m_double1, famen, 0, dlg, 10, 1);
 		UpdateData(FALSE);
 		xiangjixuanze = 29 + flag_num + m_double1 * 2; //获得选择的相机编号
-		datatestDPU[4] = famen[40];
-		CMyPublicData::setfunc(xiangjixuanze, 16, 1, 1);
-		datatestDPU[4] = famen[1];
-		CMyPublicData::setfunc(xiangjixuanze, 16, 13, 1);
+		if (modsd[xiangjixuanze - 32] != "OFF")
+		{
+			datatestDPU[4] = famen[40];
+			CMyPublicData::setfunc(xiangjixuanze, 16, 1, 1);
+			datatestDPU[4] = famen[1];
+			CMyPublicData::setfunc(xiangjixuanze, 16, 13, 1);
+		}
 		//datatestDPU[4] = famen[0];
 		//CMyPublicData::setfunc(xiangjixuanze, 16, 10, 1);
 		return TRUE;
@@ -329,10 +332,13 @@ BOOL Famenceshi::PreTranslateMessage(MSG* pMsg)
 			CInputDlg dlg;
 			CMyPublicData::calculate(m_double2, famen, 1, dlg, 64, 1);
 			UpdateData(FALSE);
-			datatestDPU[4] = famen[40];
-			CMyPublicData::setfunc(xiangjixuanze, 16, 1, 1);
-			datatestDPU[4] = famen[1];
-			CMyPublicData::setfunc(xiangjixuanze, 16, 13, 1);
+			if (modsd[xiangjixuanze - 32] != "OFF")
+			{
+				datatestDPU[4] = famen[40];
+				CMyPublicData::setfunc(xiangjixuanze, 16, 1, 1);
+				datatestDPU[4] = famen[1];
+				CMyPublicData::setfunc(xiangjixuanze, 16, 13, 1);
+			}
 			//datatestDPU[4] = famen[1];
 			//CMyPublicData::setfunc(xiangjixuanze, 16, 13, 1);
 			return TRUE;
@@ -347,8 +353,11 @@ BOOL Famenceshi::PreTranslateMessage(MSG* pMsg)
 				CInputDlg dlg;
 				CMyPublicData::calculate(m_double3, famen, 2, dlg, 255, 0);
 				UpdateData(FALSE);
-				datatestDPU[4] = famen[2];
-				CMyPublicData::setfunc(xiangjixuanze, 16, 12, 1);
+				if (modsd[xiangjixuanze - 32] != "OFF")
+				{
+					datatestDPU[4] = famen[2];
+					CMyPublicData::setfunc(xiangjixuanze, 16, 12, 1);
+				}
 				return TRUE;
 			}
 			else
@@ -403,8 +412,11 @@ BOOL Famenceshi::PreTranslateMessage(MSG* pMsg)
 							UpdateData(FALSE);
 							for (int i = 0; i < 20; i++)
 							{
-								datatestDPU[4] = famen[5];
-								CMyPublicData::setfunc(32 + i, 16, 9, 1);
+								if (modsd[i] != "OFF")
+								{
+									datatestDPU[4] = famen[5];
+									CMyPublicData::setfunc(32 + i, 16, 9, 1);
+								}
 							}
 							return TRUE;
 						}
@@ -522,7 +534,7 @@ BOOL Famenceshi::OnInitDialog()
 	if (famencs == true)
 	{
 		flag_num = famen[41];
-		if (famen[41]==2)
+		if (famen[41] == 2)
 		{
 			opx.QueryNode_Text("num0725", yuyan);
 			cstr = opx.UTF8ToUnicode(yuyan);
@@ -536,7 +548,7 @@ BOOL Famenceshi::OnInitDialog()
 		{
 			m_combox1.SetCurSel(0);
 		}
-		if (famen[40]==2)
+		if (famen[40] == 2)
 		{
 			m_combox1.SetCurSel(2);
 		}
@@ -634,12 +646,12 @@ void Famenceshi::OnBnClickedButton59()
 		UpdateData(FALSE);
 		famen[3] = m_double4;
 	}
-	for (int i=0;i<20;i++)
+	for (int i = 0; i < 20; i++)
 	{
 		if (modsd[i] == "1")//判断相机选择的是什么模式
 		{
 			datatestDPU[4] = famen[3];
-			CMyPublicData::setfunc(32+i, 16, 4, 1);
+			CMyPublicData::setfunc(32 + i, 16, 4, 1);
 		}
 	}
 }
@@ -744,8 +756,11 @@ void Famenceshi::OnBnClickedButton61()
 	}
 	for (int i = 0; i < 20; i++)
 	{
+		if (modsd[i] != "OFF")
+		{
 			datatestDPU[4] = famen[5];
 			CMyPublicData::setfunc(32 + i, 16, 9, 1);
+		}
 	}
 }
 
@@ -768,8 +783,11 @@ void Famenceshi::OnBnClickedButton120()
 	}
 	for (int i = 0; i < 20; i++)
 	{
-		datatestDPU[4] = famen[5];
-		CMyPublicData::setfunc(32 + i, 16, 9, 1);
+		if (modsd[i] != "OFF")
+		{
+			datatestDPU[4] = famen[5];
+			CMyPublicData::setfunc(32 + i, 16, 9, 1);
+		}
 	}
 }
 
@@ -807,8 +825,11 @@ void Famenceshi::OnCbnSelchangeCombo1()
 void Famenceshi::OnBnClickedButton14()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	datatestDPU[4] = 1;
-	CMyPublicData::setfunc(xiangjixuanze, 16, 1, 1);
+	if (modsd[xiangjixuanze - 32] != "OFF")
+	{
+		datatestDPU[4] = 1;
+		CMyPublicData::setfunc(xiangjixuanze, 16, 1, 1);
+	}
 	m_combox1.SetCurSel(0);
 	famen[40] = 1;
 }
@@ -818,7 +839,7 @@ void Famenceshi::OnBnClickedButton10()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	xiangjixuanze = 29 + flag_num + famen[0] * 2; //获得选择的相机编号
-	if (modsd[xiangjixuanze-32]!="OFF")
+	if (modsd[xiangjixuanze - 32] != "OFF")
 	{
 		datatestDPU[4] = 3;
 		CMyPublicData::setfunc(xiangjixuanze, 16, 1, 1);
@@ -850,8 +871,11 @@ void Famenceshi::OnBnClickedButton56()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	xiangjixuanze = 29 + flag_num + famen[0] * 2; //获得选择的相机编号
-	datatestDPU[4] = 0;
-	CMyPublicData::setfunc(xiangjixuanze, 16, 1, 1);
+	if (modsd[xiangjixuanze - 32] != "OFF")
+	{
+		datatestDPU[4] = 0;
+		CMyPublicData::setfunc(xiangjixuanze, 16, 1, 1);
+	}
 	m_combox1.SetCurSel(3);
 	famen[40] = 0;
 }
@@ -886,7 +910,7 @@ void Famenceshi::OnBnClickedButton17()
 		opx.QueryNode_Text("num0724", yuyan);
 		cstr = opx.UTF8ToUnicode(yuyan);
 		GetDlgItem(IDC_BUTTON17)->SetWindowText(cstr);
-		flag_num =1;
+		flag_num = 1;
 		xiangjixuanze = 29 + flag_num + m_double1 * 2; //获得选择的相机编号
 		UpdateData(FALSE);
 	}
@@ -899,7 +923,7 @@ void Famenceshi::OnBnClickedButton17()
 		xiangjixuanze = 29 + flag_num + m_double1 * 2; //获得选择的相机编号
 		UpdateData(FALSE);
 	}
-	if (modsd[xiangjixuanze-32]!="OFF")
+	if (modsd[xiangjixuanze - 32] != "OFF")
 	{
 		datatestDPU[4] = famen[40];     //famnen[40]保存的是选择的相机工作状态 0为停止工作 1为正常工作
 		CMyPublicData::setfunc(xiangjixuanze, 16, 1, 1);
@@ -915,11 +939,11 @@ void Famenceshi::OnBnClickedButton17()
 void Famenceshi::OnBnClickedCancel()
 {
 	xiangjixuanze = 29 + flag_num + famen[0] * 2;
-	if (modsd[xiangjixuanze-32] != "OFF")
+	if (modsd[xiangjixuanze - 32] != "OFF")
 	{
 		ShutDown(famen[0], famen[1]);
 	}
-	if (flag_num==1)
+	if (flag_num == 1)
 	{
 		famen[41] = 1;
 	}
@@ -961,8 +985,11 @@ void Famenceshi::OnBnClickedCancel()
 void  Famenceshi::ShutDown(double dao, double kong)
 {
 	xiangjixuanze = 29 + flag_num + dao * 2;
-	datatestDPU[4] = 0;
-	CMyPublicData::setfunc(xiangjixuanze, 16, 1, 1);
+	if (modsd[xiangjixuanze-32] != "OFF") //先判断相机是否处于开启状态
+	{
+		datatestDPU[4] = 0;
+		CMyPublicData::setfunc(xiangjixuanze, 16, 1, 1);
+	}
 }
 
 

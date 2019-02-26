@@ -143,8 +143,11 @@ void Rzengyi::OnBnClickedButton12()
 		UpdateData(FALSE);
 		rzengyi[0] = m_double1;
 	}
-	datatestDPU[4] = rzengyi[0];
-	CMyPublicData::setfunc(32, 16, 70, 1);
+	if (modsd[0] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[0];
+		CMyPublicData::setfunc(32, 16, 70, 1);
+	}
 }
 
 
@@ -164,8 +167,11 @@ void Rzengyi::OnBnClickedButton14()
 		UpdateData(FALSE);
 		rzengyi[1] = m_double2;
 	}
-	datatestDPU[4] = rzengyi[1];
-	CMyPublicData::setfunc(34, 16, 70, 1);
+	if (modsd[2] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[1];
+		CMyPublicData::setfunc(34, 16, 70, 1);
+	}
 }
 
 
@@ -185,8 +191,11 @@ void Rzengyi::OnBnClickedButton64()
 		UpdateData(FALSE);
 		rzengyi[2] = m_double3;
 	}
-	datatestDPU[4] = rzengyi[2];
-	CMyPublicData::setfunc(36, 16, 70, 1);
+	if (modsd[4] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[2];
+		CMyPublicData::setfunc(36, 16, 70, 1);
+	}
 }
 
 
@@ -206,8 +215,11 @@ void Rzengyi::OnBnClickedButton65()
 		UpdateData(FALSE);
 		rzengyi[3] = m_double4;
 	}
-	datatestDPU[4] = rzengyi[3];
-	CMyPublicData::setfunc(38, 16, 70, 1);
+	if (modsd[6] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[3];
+		CMyPublicData::setfunc(38, 16, 70, 1);
+	}
 }
 
 
@@ -227,8 +239,11 @@ void Rzengyi::OnBnClickedButton67()
 		UpdateData(FALSE);
 		rzengyi[4] = m_double5;
 	}
-	datatestDPU[4] = rzengyi[4];
-	CMyPublicData::setfunc(40, 16, 70, 1);
+	if (modsd[8] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[4];
+		CMyPublicData::setfunc(40, 16, 70, 1);
+	}
 }
 
 
@@ -248,8 +263,11 @@ void Rzengyi::OnBnClickedButton69()
 		UpdateData(FALSE);
 		rzengyi[5] = m_double6;
 	}
-	datatestDPU[4] = rzengyi[5];
-	CMyPublicData::setfunc(42, 16, 70, 1);
+	if (modsd[10] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[5];
+		CMyPublicData::setfunc(42, 16, 70, 1);
+	}
 }
 
 
@@ -269,8 +287,11 @@ void Rzengyi::OnBnClickedButton71()
 		UpdateData(FALSE);
 		rzengyi[10] = m_double11;
 	}
-	datatestDPU[4] = rzengyi[10];
-	CMyPublicData::setfunc(33, 16, 70, 1);
+	if (modsd[1] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[10];
+		CMyPublicData::setfunc(33, 16, 70, 1);
+	}
 }
 
 
@@ -290,8 +311,11 @@ void Rzengyi::OnBnClickedButton73()
 		UpdateData(FALSE);
 		rzengyi[11] = m_double12;
 	}
-	datatestDPU[4] = rzengyi[11];
-	CMyPublicData::setfunc(35, 16, 70, 1);
+	if (modsd[3] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[11];
+		CMyPublicData::setfunc(35, 16, 70, 1);
+	}
 }
 
 
@@ -311,8 +335,11 @@ void Rzengyi::OnBnClickedButton75()
 		UpdateData(FALSE);
 		rzengyi[12] = m_double13;
 	}
-	datatestDPU[4] = rzengyi[12];
-	CMyPublicData::setfunc(37, 16, 70, 1);
+	if (modsd[5] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[12];
+		CMyPublicData::setfunc(37, 16, 70, 1);
+	}
 }
 
 
@@ -332,8 +359,11 @@ void Rzengyi::OnBnClickedButton77()
 		UpdateData(FALSE);
 		rzengyi[13] = m_double14;
 	}
-	datatestDPU[4] = rzengyi[13];
-	CMyPublicData::setfunc(39, 16, 70, 1);
+	if (modsd[7] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[13];
+		CMyPublicData::setfunc(39, 16, 70, 1);
+	}
 }
 
 
@@ -353,8 +383,11 @@ void Rzengyi::OnBnClickedButton79()
 		UpdateData(FALSE);
 		rzengyi[14] = m_double15;
 	}
-	datatestDPU[4] = rzengyi[14];
-	CMyPublicData::setfunc(41, 16, 70, 1);
+	if (modsd[9] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[14];
+		CMyPublicData::setfunc(41, 16, 70, 1);
+	}
 }
 
 
@@ -374,8 +407,11 @@ void Rzengyi::OnBnClickedButton81()
 		UpdateData(FALSE);
 		rzengyi[15] = m_double16;
 	}
-	datatestDPU[4] = rzengyi[15];
-	CMyPublicData::setfunc(43, 16, 70, 1);
+	if (modsd[11] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[15];
+		CMyPublicData::setfunc(43, 16, 70, 1);
+	}
 }
 
 
@@ -395,8 +431,11 @@ void Rzengyi::OnBnClickedButton13()
 		UpdateData(FALSE);
 		rzengyi[0] = m_double1;
 	}
-	datatestDPU[4] = rzengyi[0];
-	CMyPublicData::setfunc(32, 16, 70, 1);
+	if (modsd[0] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[0];
+		CMyPublicData::setfunc(32, 16, 70, 1);
+	}
 }
 
 
@@ -416,8 +455,11 @@ void Rzengyi::OnBnClickedButton15()
 		UpdateData(FALSE);
 		rzengyi[1] = m_double2;
 	}
-	datatestDPU[4] = rzengyi[1];
-	CMyPublicData::setfunc(34, 16, 70, 1);
+	if (modsd[2] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[1];
+		CMyPublicData::setfunc(34, 16, 70, 1);
+	}
 }
 
 
@@ -437,8 +479,11 @@ void Rzengyi::OnBnClickedButton51()
 		UpdateData(FALSE);
 		rzengyi[2] = m_double3;
 	}
-	datatestDPU[4] = rzengyi[2];
-	CMyPublicData::setfunc(36, 16, 70, 1);
+	if (modsd[4] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[2];
+		CMyPublicData::setfunc(36, 16, 70, 1);
+	}
 }
 
 
@@ -458,8 +503,11 @@ void Rzengyi::OnBnClickedButton66()
 		UpdateData(FALSE);
 		rzengyi[3] = m_double4;
 	}
-	datatestDPU[4] = rzengyi[3];
-	CMyPublicData::setfunc(38, 16, 70, 1);
+	if (modsd[6] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[3];
+		CMyPublicData::setfunc(38, 16, 70, 1);
+	}
 }
 
 
@@ -479,8 +527,11 @@ void Rzengyi::OnBnClickedButton68()
 		UpdateData(FALSE);
 		rzengyi[4] = m_double5;
 	}
-	datatestDPU[4] = rzengyi[4];
-	CMyPublicData::setfunc(40, 16, 70, 1);
+	if (modsd[8] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[4];
+		CMyPublicData::setfunc(40, 16, 70, 1);
+	}
 }
 
 
@@ -500,8 +551,11 @@ void Rzengyi::OnBnClickedButton70()
 		UpdateData(FALSE);
 		rzengyi[5] = m_double6;
 	}
-	datatestDPU[4] = rzengyi[5];
-	CMyPublicData::setfunc(42, 16, 70, 1);
+	if (modsd[10] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[5];
+		CMyPublicData::setfunc(42, 16, 70, 1);
+	}
 }
 
 
@@ -521,8 +575,11 @@ void Rzengyi::OnBnClickedButton72()
 		UpdateData(FALSE);
 		rzengyi[10] = m_double11;
 	}
-	datatestDPU[4] = rzengyi[10];
-	CMyPublicData::setfunc(33, 16, 70, 1);
+	if (modsd[1] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[10];
+		CMyPublicData::setfunc(33, 16, 70, 1);
+	}
 }
 
 
@@ -542,8 +599,11 @@ void Rzengyi::OnBnClickedButton74()
 		UpdateData(FALSE);
 		rzengyi[11] = m_double12;
 	}
-	datatestDPU[4] = rzengyi[11];
-	CMyPublicData::setfunc(35, 16, 70, 1);
+	if (modsd[3] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[11];
+		CMyPublicData::setfunc(35, 16, 70, 1);
+	}
 }
 
 
@@ -563,8 +623,11 @@ void Rzengyi::OnBnClickedButton76()
 		UpdateData(FALSE);
 		rzengyi[12] = m_double13;
 	}
-	datatestDPU[4] = rzengyi[12];
-	CMyPublicData::setfunc(37, 16, 70, 1);
+	if (modsd[5] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[12];
+		CMyPublicData::setfunc(37, 16, 70, 1);
+	}
 }
 
 
@@ -584,8 +647,11 @@ void Rzengyi::OnBnClickedButton78()
 		UpdateData(FALSE);
 		rzengyi[13] = m_double14;
 	}
-	datatestDPU[4] = rzengyi[13];
-	CMyPublicData::setfunc(39, 16, 70, 1);
+	if (modsd[7] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[13];
+		CMyPublicData::setfunc(39, 16, 70, 1);
+	}
 }
 
 
@@ -605,8 +671,11 @@ void Rzengyi::OnBnClickedButton80()
 		UpdateData(FALSE);
 		rzengyi[14] = m_double15;
 	}
-	datatestDPU[4] = rzengyi[14];
-	CMyPublicData::setfunc(41, 16, 70, 1);
+	if (modsd[9] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[14];
+		CMyPublicData::setfunc(41, 16, 70, 1);
+	}
 }
 
 
@@ -626,8 +695,11 @@ void Rzengyi::OnBnClickedButton82()
 		UpdateData(FALSE);
 		rzengyi[15] = m_double16;
 	}
-	datatestDPU[4] = rzengyi[15];
-	CMyPublicData::setfunc(43, 16, 70, 1);
+	if (modsd[11] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[15];
+		CMyPublicData::setfunc(43, 16, 70, 1);
+	}
 }
 
 
@@ -647,8 +719,11 @@ void Rzengyi::OnBnClickedButton85()
 		UpdateData(FALSE);
 		rzengyi[6] = m_double7;
 	}
-	datatestDPU[4] = rzengyi[6];
-	CMyPublicData::setfunc(44, 16, 70, 1);
+	if (modsd[12] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[6];
+		CMyPublicData::setfunc(44, 16, 70, 1);
+	}
 }
 
 
@@ -668,8 +743,11 @@ void Rzengyi::OnBnClickedButton86()
 		UpdateData(FALSE);
 		rzengyi[7] = m_double8;
 	}
-	datatestDPU[4] = rzengyi[7];
-	CMyPublicData::setfunc(46, 16, 70, 1);
+	if (modsd[14] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[7];
+		CMyPublicData::setfunc(46, 16, 70, 1);
+	}
 }
 
 
@@ -689,8 +767,11 @@ void Rzengyi::OnBnClickedButton88()
 		UpdateData(FALSE);
 		rzengyi[8] = m_double9;
 	}
-	datatestDPU[4] = rzengyi[8];
-	CMyPublicData::setfunc(48, 16, 70, 1);
+	if (modsd[16] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[8];
+		CMyPublicData::setfunc(48, 16, 70, 1);
+	}
 }
 
 
@@ -710,8 +791,11 @@ void Rzengyi::OnBnClickedButton98()
 		UpdateData(FALSE);
 		rzengyi[9] = m_double10;
 	}
-	datatestDPU[4] = rzengyi[9];
-	CMyPublicData::setfunc(50, 16, 70, 1);
+	if (modsd[18] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[9];
+		CMyPublicData::setfunc(50, 16, 70, 1);
+	}
 }
 
 
@@ -731,8 +815,11 @@ void Rzengyi::OnBnClickedButton100()
 		UpdateData(FALSE);
 		rzengyi[16] = m_double17;
 	}
-	datatestDPU[4] = rzengyi[16];
-	CMyPublicData::setfunc(45, 16, 70, 1);
+	if (modsd[13] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[16];
+		CMyPublicData::setfunc(45, 16, 70, 1);
+	}
 }
 
 
@@ -752,8 +839,11 @@ void Rzengyi::OnBnClickedButton102()
 		UpdateData(FALSE);
 		rzengyi[17] = m_double18;
 	}
-	datatestDPU[4] = rzengyi[17];
-	CMyPublicData::setfunc(47, 16, 70, 1);
+	if (modsd[15] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[17];
+		CMyPublicData::setfunc(47, 16, 70, 1);
+	}
 }
 
 
@@ -773,8 +863,11 @@ void Rzengyi::OnBnClickedButton106()
 		UpdateData(FALSE);
 		rzengyi[18] = m_double19;
 	}
-	datatestDPU[4] = rzengyi[18];
-	CMyPublicData::setfunc(49, 16, 70, 1);
+	if (modsd[17] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[18];
+		CMyPublicData::setfunc(49, 16, 70, 1);
+	}
 }
 
 
@@ -794,8 +887,11 @@ void Rzengyi::OnBnClickedButton108()
 		UpdateData(FALSE);
 		rzengyi[19] = m_double20;
 	}
-	datatestDPU[4] = rzengyi[19];
-	CMyPublicData::setfunc(51, 16, 70, 1);
+	if (modsd[19] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[19];
+		CMyPublicData::setfunc(51, 16, 70, 1);
+	}
 }
 
 
@@ -815,8 +911,11 @@ void Rzengyi::OnBnClickedButton94()
 		UpdateData(FALSE);
 		rzengyi[6] = m_double7;
 	}
-	datatestDPU[4] = rzengyi[6];
-	CMyPublicData::setfunc(44, 16, 70, 1);
+	if (modsd[12] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[6];
+		CMyPublicData::setfunc(44, 16, 70, 1);
+	}
 }
 
 
@@ -836,8 +935,11 @@ void Rzengyi::OnBnClickedButton87()
 		UpdateData(FALSE);
 		rzengyi[7] = m_double8;
 	}
-	datatestDPU[4] = rzengyi[7];
-	CMyPublicData::setfunc(46, 16, 70, 1);
+	if (modsd[14] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[7];
+		CMyPublicData::setfunc(46, 16, 70, 1);
+	}
 }
 
 
@@ -857,8 +959,11 @@ void Rzengyi::OnBnClickedButton89()
 		UpdateData(FALSE);
 		rzengyi[8] = m_double9;
 	}
-	datatestDPU[4] = rzengyi[8];
-	CMyPublicData::setfunc(48, 16, 70, 1);
+	if (modsd[16] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[8];
+		CMyPublicData::setfunc(48, 16, 70, 1);
+	}
 }
 
 
@@ -878,8 +983,11 @@ void Rzengyi::OnBnClickedButton99()
 		UpdateData(FALSE);
 		rzengyi[9] = m_double10;
 	}
-	datatestDPU[4] = rzengyi[9];
-	CMyPublicData::setfunc(50, 16, 70, 1);
+	if (modsd[18] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[9];
+		CMyPublicData::setfunc(50, 16, 70, 1);
+	}
 }
 
 
@@ -899,8 +1007,11 @@ void Rzengyi::OnBnClickedButton101()
 		UpdateData(FALSE);
 		rzengyi[16] = m_double17;
 	}
-	datatestDPU[4] = rzengyi[16];
-	CMyPublicData::setfunc(45, 16, 70, 1);
+	if (modsd[13] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[16];
+		CMyPublicData::setfunc(45, 16, 70, 1);
+	}
 }
 
 
@@ -920,8 +1031,11 @@ void Rzengyi::OnBnClickedButton103()
 		UpdateData(FALSE);
 		rzengyi[17] = m_double18;
 	}
-	datatestDPU[4] = rzengyi[17];
-	CMyPublicData::setfunc(47, 16, 70, 1);
+	if (modsd[15] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[17];
+		CMyPublicData::setfunc(47, 16, 70, 1);
+	}
 }
 
 
@@ -941,8 +1055,11 @@ void Rzengyi::OnBnClickedButton107()
 		UpdateData(FALSE);
 		rzengyi[18] = m_double19;
 	}
-	datatestDPU[4] = rzengyi[18];
-	CMyPublicData::setfunc(49, 16, 70, 1);
+	if (modsd[17] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[18];
+		CMyPublicData::setfunc(49, 16, 70, 1);
+	}
 }
 
 
@@ -962,8 +1079,11 @@ void Rzengyi::OnBnClickedButton109()
 		UpdateData(FALSE);
 		rzengyi[19] = m_double20;
 	}
-	datatestDPU[4] = rzengyi[19];
-	CMyPublicData::setfunc(51, 16, 70, 1);
+	if (modsd[19] != L"OFF")
+	{
+		datatestDPU[4] = rzengyi[19];
+		CMyPublicData::setfunc(51, 16, 70, 1);
+	}
 }
 
 
@@ -984,8 +1104,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[0] = m_double1;
 		}
-		datatestDPU[4] = rzengyi[0];
-		CMyPublicData::setfunc(32, 16, 70, 1);
+		if (modsd[0] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[0];
+			CMyPublicData::setfunc(32, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1006,8 +1129,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[1] = m_double2;
 		}
-		datatestDPU[4] = rzengyi[1];
-		CMyPublicData::setfunc(34, 16, 70, 1);
+		if (modsd[2] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[1];
+			CMyPublicData::setfunc(34, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1028,8 +1154,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[2] = m_double3;
 		}
-		datatestDPU[4] = rzengyi[2];
-		CMyPublicData::setfunc(36, 16, 70, 1);
+		if (modsd[4] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[2];
+			CMyPublicData::setfunc(36, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1050,8 +1179,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[3] = m_double4;
 		}
-		datatestDPU[4] = rzengyi[3];
-		CMyPublicData::setfunc(38, 16, 70, 1);
+		if (modsd[6] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[3];
+			CMyPublicData::setfunc(38, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1072,8 +1204,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[4] = m_double5;
 		}
-		datatestDPU[4] = rzengyi[4];
-		CMyPublicData::setfunc(40, 16, 70, 1);
+		if (modsd[8] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[4];
+			CMyPublicData::setfunc(40, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1094,8 +1229,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[5] = m_double6;
 		}
-		datatestDPU[4] = rzengyi[5];
-		CMyPublicData::setfunc(42, 16, 70, 1);
+		if (modsd[10] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[5];
+			CMyPublicData::setfunc(42, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1116,8 +1254,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[6] = m_double7;
 		}
-		datatestDPU[4] = rzengyi[6];
-		CMyPublicData::setfunc(44, 16, 70, 1);
+		if (modsd[12] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[6];
+			CMyPublicData::setfunc(44, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1138,8 +1279,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[7] = m_double8;
 		}
-		datatestDPU[4] = rzengyi[7];
-		CMyPublicData::setfunc(46, 16, 70, 1);
+		if (modsd[14] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[7];
+			CMyPublicData::setfunc(46, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1160,8 +1304,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[8] = m_double9;
 		}
-		datatestDPU[4] = rzengyi[8];
-		CMyPublicData::setfunc(48, 16, 70, 1);
+		if (modsd[16] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[8];
+			CMyPublicData::setfunc(48, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1182,8 +1329,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[9] = m_double10;
 		}
-		datatestDPU[4] = rzengyi[9];
-		CMyPublicData::setfunc(50, 16, 70, 1);
+		if (modsd[18] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[9];
+			CMyPublicData::setfunc(50, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1204,8 +1354,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[10] = m_double11;
 		}
-		datatestDPU[4] = rzengyi[10];
-		CMyPublicData::setfunc(33, 16, 70, 1);
+		if (modsd[1] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[10];
+			CMyPublicData::setfunc(33, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1226,8 +1379,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[11] = m_double12;
 		}
-		datatestDPU[4] = rzengyi[11];
-		CMyPublicData::setfunc(35, 16, 70, 1);
+		if (modsd[3] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[11];
+			CMyPublicData::setfunc(35, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1248,8 +1404,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[12] = m_double13;
 		}
-		datatestDPU[4] = rzengyi[12];
-		CMyPublicData::setfunc(37, 16, 70, 1);
+		if (modsd[5] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[12];
+			CMyPublicData::setfunc(37, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1270,8 +1429,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[13] = m_double14;
 		}
-		datatestDPU[4] = rzengyi[13];
-		CMyPublicData::setfunc(39, 16, 70, 1);
+		if (modsd[7] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[13];
+			CMyPublicData::setfunc(39, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1292,8 +1454,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[14] = m_double15;
 		}
-		datatestDPU[4] = rzengyi[14];
-		CMyPublicData::setfunc(41, 16, 70, 1);
+		if (modsd[9] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[14];
+			CMyPublicData::setfunc(41, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1314,8 +1479,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[15] = m_double16;
 		}
-		datatestDPU[4] = rzengyi[15];
-		CMyPublicData::setfunc(43, 16, 70, 1);
+		if (modsd[11] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[15];
+			CMyPublicData::setfunc(43, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1336,8 +1504,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[16] = m_double17;
 		}
-		datatestDPU[4] = rzengyi[16];
-		CMyPublicData::setfunc(45, 16, 70, 1);
+		if (modsd[13] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[16];
+			CMyPublicData::setfunc(45, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1358,8 +1529,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[17] = m_double18;
 		}
-		datatestDPU[4] = rzengyi[17];
-		CMyPublicData::setfunc(47, 16, 70, 1);
+		if (modsd[15] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[17];
+			CMyPublicData::setfunc(47, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1380,8 +1554,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[18] = m_double19;
 		}
-		datatestDPU[4] = rzengyi[18];
-		CMyPublicData::setfunc(49, 16, 70, 1);
+		if (modsd[17] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[18];
+			CMyPublicData::setfunc(49, 16, 70, 1);
+		}
 		return TRUE;
 	}
 	else
@@ -1401,8 +1578,11 @@ BOOL Rzengyi::PreTranslateMessage(MSG* pMsg)
 			UpdateData(FALSE);
 			rzengyi[19] = m_double20;
 		}
-		datatestDPU[4] = rzengyi[19];
-		CMyPublicData::setfunc(51, 16, 70, 1);
+		if (modsd[19] != L"OFF")
+		{
+			datatestDPU[4] = rzengyi[19];
+			CMyPublicData::setfunc(51, 16, 70, 1);
+		}
 		return TRUE;
 	}
 
