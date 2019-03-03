@@ -3354,22 +3354,22 @@ void CMyPublicData::readXML(string str)
 			allData[2 * i + 1][358] = allData[2 * i + 1][79];
 			allData[2 * i + 2][358] = allData[2 * i + 2][79];
 
-			allData[2 * i + 1][64] = 0;
-			allData[2 * i + 2][64] = 0;
-			allData[2 * i + 1][65] = 0;
-			allData[2 * i + 2][65] = 0;
-			allData[2 * i + 1][66] = 0;
-			allData[2 * i + 2][66] = 0;
-			allData[2 * i + 1][67] = 0;
-			allData[2 * i + 2][67] = 0;
-			allData[2 * i + 1][68] = 0;
-			allData[2 * i + 2][68] = 0;
-			allData[2 * i + 1][69] = 0;
-			allData[2 * i + 2][69] = 0;
-			allData[2 * i + 1][78] = 0;
-			allData[2 * i + 2][78] = 0;
-			allData[2 * i + 1][79] = 0;
-			allData[2 * i + 2][79] = 0;
+			allData[2 * i + 1][64] = 7;
+			allData[2 * i + 2][64] = 7;
+			allData[2 * i + 1][65] = 7;
+			allData[2 * i + 2][65] = 7;
+			allData[2 * i + 1][66] = 7;
+			allData[2 * i + 2][66] = 7;
+			allData[2 * i + 1][67] = 7;
+			allData[2 * i + 2][67] = 7;
+			allData[2 * i + 1][68] = 7;
+			allData[2 * i + 2][68] = 7;
+			allData[2 * i + 1][69] = 7;
+			allData[2 * i + 2][69] = 7;
+			allData[2 * i + 1][78] = 7;
+			allData[2 * i + 2][78] = 7;
+			allData[2 * i + 1][79] = 7;
+			allData[2 * i + 2][79] = 7;
 		}
 	}
 

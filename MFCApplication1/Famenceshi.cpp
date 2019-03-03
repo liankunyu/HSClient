@@ -164,8 +164,11 @@ void Famenceshi::OnBnClickedButton38()
 		UpdateData(FALSE);
 		famen[2] = m_double3;
 	}
-	datatestDPU[4] = famen[2];
-	CMyPublicData::setfunc(xiangjixuanze, 16, 12, 1);
+	if (modsd[xiangjixuanze - 32] != "OFF")
+	{
+		datatestDPU[4] = famen[2];
+		CMyPublicData::setfunc(xiangjixuanze, 16, 12, 1);
+	}
 }
 
 
@@ -242,8 +245,11 @@ void Famenceshi::OnBnClickedButton55()
 		UpdateData(FALSE);
 		famen[2] = m_double3;
 	}
-	datatestDPU[4] = famen[2];
-	CMyPublicData::setfunc(xiangjixuanze, 16, 12, 1);
+	if (modsd[xiangjixuanze - 32] != "OFF")
+	{
+		datatestDPU[4] = famen[2];
+		CMyPublicData::setfunc(xiangjixuanze, 16, 12, 1);
+	}
 }
 
 
