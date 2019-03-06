@@ -266,7 +266,7 @@ void moshixuanzesan::OnClose()
 void moshixuanzesan::ReadXML(string str)
 {
 	//读取XML文件数据值
-	CMyPublicData::readXML(str);
+	CMyPublicData::MreadXML(str);
 	
 	for (int i = 0; i < 21; i++)
 	{

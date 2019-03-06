@@ -336,7 +336,7 @@ double Moshixuanze::atoi(const char* str)
 
 void Moshixuanze::ReadXML(string str)
 {
-	CMyPublicData::readXML(str);
+	CMyPublicData::MreadXML(str);
 
 	for (int i = 0; i < 21; i++)
 	{

@@ -484,7 +484,8 @@ bool CMyPublicData::bit_read(int sl, int ad, int bit_ad)
 }
 
 
-//读取XML文件中存储的数据信息并下发
+
+//主界面读取XML文件中存储的数据信息并下发
 void CMyPublicData::readXML(string str)
 {
 	const char* number1;
@@ -2898,7 +2899,7 @@ void CMyPublicData::readXML(string str)
 	////{
 	////	CMyPublicData::setfunc(32, 16, i * 50 + 1, 50);
 	////}
- 	CMyPublicData::setfunc(10, 3, 9, 1);
+	CMyPublicData::setfunc(10, 3, 9, 1);
 	if (fanhuizhi == (-1))
 	{
 		tongxincuowu[0] = -1;
@@ -3472,6 +3473,2993 @@ void CMyPublicData::readXML(string str)
 	fanhuizhi = 0; //用完后重置为0
 }
 
+//模式选择界面读取XML文件中存储的数据信息并下发
+void CMyPublicData::MreadXML(string str)
+{
+	const char* number1;
+	opXML  opx2(str);
+	opx2.QueryNode_Text("num0001", number1);
+	beijingban[0] = atoi(number1);
+	opx2.QueryNode_Text("num0002", number1);
+	beijingban[1] = atoi(number1);
+	opx2.QueryNode_Text("num0003", number1);
+	beijingban[2] = atoi(number1);
+	opx2.QueryNode_Text("num0004", number1);
+	beijingban[3] = atoi(number1);
+
+
+
+	opx2.QueryNode_Text("num0101", number1);
+	beijingyuzhisheding[0] = atoi(number1);
+	opx2.QueryNode_Text("num0102", number1);
+	beijingyuzhisheding[1] = atoi(number1);
+	opx2.QueryNode_Text("num0103", number1);
+	beijingyuzhisheding[2] = atoi(number1);
+	opx2.QueryNode_Text("num0104", number1);
+	beijingyuzhisheding[3] = atoi(number1);
+	opx2.QueryNode_Text("num0105", number1);
+	beijingyuzhisheding[4] = atoi(number1);
+	opx2.QueryNode_Text("num0106", number1);
+	beijingyuzhisheding[5] = atoi(number1);
+	opx2.QueryNode_Text("num0107", number1);
+	beijingyuzhisheding[6] = atoi(number1);
+	opx2.QueryNode_Text("num0108", number1);
+	beijingyuzhisheding[7] = atoi(number1);
+	opx2.QueryNode_Text("num0109", number1);
+	beijingyuzhisheding[8] = atoi(number1);
+	opx2.QueryNode_Text("num0110", number1);
+	beijingyuzhisheding[9] = atoi(number1);
+	opx2.QueryNode_Text("num0111", number1);
+	beijingyuzhisheding[10] = atoi(number1);
+	opx2.QueryNode_Text("num0112", number1);
+	beijingyuzhisheding[11] = atoi(number1);
+	opx2.QueryNode_Text("num0113", number1);
+	beijingyuzhisheding[12] = atoi(number1);
+	opx2.QueryNode_Text("num0114", number1);
+	beijingyuzhisheding[13] = atoi(number1);
+	opx2.QueryNode_Text("num0115", number1);
+	beijingyuzhisheding[14] = atoi(number1);
+	opx2.QueryNode_Text("num0116", number1);
+	beijingyuzhisheding[15] = atoi(number1);
+	opx2.QueryNode_Text("num0117", number1);
+	beijingyuzhisheding[16] = atoi(number1);
+	opx2.QueryNode_Text("num0118", number1);
+	beijingyuzhisheding[17] = atoi(number1);
+	opx2.QueryNode_Text("num0119", number1);
+	beijingyuzhisheding[18] = atoi(number1);
+	opx2.QueryNode_Text("num0120", number1);
+	beijingyuzhisheding[19] = atoi(number1);
+
+	opx2.QueryNode_Text("num0201", number1);
+	blingmin[0] = atoi(number1);
+	opx2.QueryNode_Text("num0202", number1);
+	blingmin[1] = atoi(number1);
+	opx2.QueryNode_Text("num0203", number1);
+	blingmin[2] = atoi(number1);
+	opx2.QueryNode_Text("num0204", number1);
+	blingmin[3] = atoi(number1);
+	opx2.QueryNode_Text("num0205", number1);
+	blingmin[4] = atoi(number1);
+	opx2.QueryNode_Text("num0206", number1);
+	blingmin[5] = atoi(number1);
+	opx2.QueryNode_Text("num0207", number1);
+	blingmin[6] = atoi(number1);
+	opx2.QueryNode_Text("num0208", number1);
+	blingmin[7] = atoi(number1);
+	opx2.QueryNode_Text("num0209", number1);
+	blingmin[8] = atoi(number1);
+	opx2.QueryNode_Text("num0210", number1);
+	blingmin[9] = atoi(number1);
+	opx2.QueryNode_Text("num0211", number1);
+	blingmin[10] = atoi(number1);
+	opx2.QueryNode_Text("num0212", number1);
+	blingmin[11] = atoi(number1);
+
+
+
+	opx2.QueryNode_Text("num0301", number1);
+	bzengyisheding[0] = atoi(number1);
+	opx2.QueryNode_Text("num0302", number1);
+	bzengyisheding[1] = atoi(number1);
+	opx2.QueryNode_Text("num0303", number1);
+	bzengyisheding[2] = atoi(number1);
+	opx2.QueryNode_Text("num0304", number1);
+	bzengyisheding[3] = atoi(number1);
+	opx2.QueryNode_Text("num0305", number1);
+	bzengyisheding[4] = atoi(number1);
+	opx2.QueryNode_Text("num0306", number1);
+	bzengyisheding[5] = atoi(number1);
+	opx2.QueryNode_Text("num0307", number1);
+	bzengyisheding[6] = atoi(number1);
+	opx2.QueryNode_Text("num0308", number1);
+	bzengyisheding[7] = atoi(number1);
+	opx2.QueryNode_Text("num0309", number1);
+	bzengyisheding[8] = atoi(number1);
+	opx2.QueryNode_Text("num0310", number1);
+	bzengyisheding[9] = atoi(number1);
+	opx2.QueryNode_Text("num0311", number1);
+	bzengyisheding[10] = atoi(number1);
+	opx2.QueryNode_Text("num0312", number1);
+	bzengyisheding[11] = atoi(number1);
+	opx2.QueryNode_Text("num0313", number1);
+	bzengyisheding[12] = atoi(number1);
+	opx2.QueryNode_Text("num0314", number1);
+	bzengyisheding[13] = atoi(number1);
+	opx2.QueryNode_Text("num0315", number1);
+	bzengyisheding[14] = atoi(number1);
+	opx2.QueryNode_Text("num0316", number1);
+	bzengyisheding[15] = atoi(number1);
+	opx2.QueryNode_Text("num0317", number1);
+	bzengyisheding[16] = atoi(number1);
+	opx2.QueryNode_Text("num0318", number1);
+	bzengyisheding[17] = atoi(number1);
+	opx2.QueryNode_Text("num0319", number1);
+	bzengyisheding[18] = atoi(number1);
+	opx2.QueryNode_Text("num0320", number1);
+	bzengyisheding[19] = atoi(number1);
+
+
+	opx2.QueryNode_Text("num0401", number1);
+	caitu[0] = atoi(number1);
+	opx2.QueryNode_Text("num0402", number1);
+	caitu[1] = atoi(number1);
+	opx2.QueryNode_Text("num0403", number1);
+	caitu[2] = atoi(number1);
+	opx2.QueryNode_Text("num0404", number1);
+	caitu[3] = atoi(number1);
+	opx2.QueryNode_Text("num0405", number1);
+	caitu[4] = atoi(number1);
+	opx2.QueryNode_Text("num0406", number1);
+	caitu[5] = atoi(number1);
+	opx2.QueryNode_Text("num0407", number1);
+	caitu[6] = atoi(number1);
+	opx2.QueryNode_Text("num0408", number1);
+	caitu[7] = atoi(number1);
+	opx2.QueryNode_Text("num0409", number1);
+	caitu[8] = atoi(number1);
+	opx2.QueryNode_Text("num0410", number1);
+	caitu[9] = atoi(number1);
+	opx2.QueryNode_Text("num0411", number1);
+	caitu[10] = atoi(number1);
+	opx2.QueryNode_Text("num0412", number1);
+	caitu[11] = atoi(number1);
+	opx2.QueryNode_Text("num0413", number1);
+	caitu[12] = atoi(number1);
+	opx2.QueryNode_Text("num0414", number1);
+	caitu[13] = atoi(number1);
+	opx2.QueryNode_Text("num0415", number1);
+	caitu[14] = atoi(number1);
+	opx2.QueryNode_Text("num0416", number1);
+	caitu[15] = atoi(number1);
+	opx2.QueryNode_Text("num0417", number1);
+	caitu[16] = atoi(number1);
+	opx2.QueryNode_Text("num0418", number1);
+	caitu[17] = atoi(number1);
+	opx2.QueryNode_Text("num0419", number1);
+	caitu[18] = atoi(number1);
+	opx2.QueryNode_Text("num0420", number1);
+	caitu[19] = atoi(number1);
+	opx2.QueryNode_Text("num0421", number1);
+	caitu[20] = atoi(number1);
+	opx2.QueryNode_Text("num0422", number1);
+	caitu[21] = atoi(number1);
+	opx2.QueryNode_Text("num0423", number1);
+	caitu[22] = atoi(number1);
+	opx2.QueryNode_Text("num0424", number1);
+	caitu[23] = atoi(number1);
+	opx2.QueryNode_Text("num0425", number1);
+	caitu[24] = atoi(number1);
+
+	////获得服务器IP和Port
+	//opx2.QueryNode_Text("serverIP", number1);
+	//server_IP = number1;
+	//opx2.QueryNode_Text("serverPort", number1);
+	//server_Port = number1;
+	////获得最后一次选择的语言
+	//opx2.QueryNode_Text("lastlang", number1);
+	//lang = number1; 
+
+	opx2.QueryNode_Text("num0501", number1);
+	famen[0] = atoi(number1);
+	opx2.QueryNode_Text("num0502", number1);
+	famen[1] = atoi(number1);
+	opx2.QueryNode_Text("num0503", number1);
+	famen[2] = atoi(number1);
+	opx2.QueryNode_Text("num0504", number1);
+	famen[3] = atoi(number1);
+	opx2.QueryNode_Text("num0505", number1);
+	famen[4] = atoi(number1);
+	opx2.QueryNode_Text("num0506", number1);
+	famen[5] = atoi(number1);
+	opx2.QueryNode_Text("num0507", number1);
+	famen[6] = atoi(number1);
+
+
+	opx2.QueryNode_Text("num0601", number1);
+	fuzhugongneng[0] = atoi(number1);
+	opx2.QueryNode_Text("num0602", number1);
+	fuzhugongneng[1] = atoi(number1);
+	opx2.QueryNode_Text("num0603", number1);
+	fuzhugongneng[2] = atoi(number1);
+	opx2.QueryNode_Text("num0604", number1);
+	fuzhugongneng[3] = atoi(number1);
+
+	opx2.QueryNode_Text("num0621", number1);
+	fuzhusd[0] = number1;
+	opx2.QueryNode_Text("num0622", number1);
+	fuzhusd[1] = number1;
+	opx2.QueryNode_Text("num0623", number1);
+	fuzhusd[2] = number1;
+	opx2.QueryNode_Text("num0624", number1);
+	fuzhusd[3] = number1;
+	opx2.QueryNode_Text("num0625", number1);
+	fuzhusd[4] = number1;
+	opx2.QueryNode_Text("num0626", number1);
+	fuzhusd[5] = number1;
+
+
+
+	opx2.QueryNode_Text("num0701", number1);
+	glingmin[0] = atoi(number1);
+	opx2.QueryNode_Text("num0702", number1);
+	glingmin[1] = atoi(number1);
+	opx2.QueryNode_Text("num0703", number1);
+	glingmin[2] = atoi(number1);
+	opx2.QueryNode_Text("num0704", number1);
+	glingmin[3] = atoi(number1);
+	opx2.QueryNode_Text("num0705", number1);
+	glingmin[4] = atoi(number1);
+	opx2.QueryNode_Text("num0706", number1);
+	glingmin[5] = atoi(number1);
+	opx2.QueryNode_Text("num0707", number1);
+	glingmin[6] = atoi(number1);
+	opx2.QueryNode_Text("num0708", number1);
+	glingmin[7] = atoi(number1);
+	opx2.QueryNode_Text("num0709", number1);
+	glingmin[8] = atoi(number1);
+	opx2.QueryNode_Text("num0710", number1);
+	glingmin[9] = atoi(number1);
+	opx2.QueryNode_Text("num0711", number1);
+	glingmin[10] = atoi(number1);
+	opx2.QueryNode_Text("num0712", number1);
+	glingmin[11] = atoi(number1);
+
+
+	opx2.QueryNode_Text("num0801", number1);
+	gzengyisheding[0] = atoi(number1);
+	opx2.QueryNode_Text("num0802", number1);
+	gzengyisheding[1] = atoi(number1);
+	opx2.QueryNode_Text("num0803", number1);
+	gzengyisheding[2] = atoi(number1);
+	opx2.QueryNode_Text("num0804", number1);
+	gzengyisheding[3] = atoi(number1);
+	opx2.QueryNode_Text("num0805", number1);
+	gzengyisheding[4] = atoi(number1);
+	opx2.QueryNode_Text("num0806", number1);
+	gzengyisheding[5] = atoi(number1);
+	opx2.QueryNode_Text("num0807", number1);
+	gzengyisheding[6] = atoi(number1);
+	opx2.QueryNode_Text("num0808", number1);
+	gzengyisheding[7] = atoi(number1);
+	opx2.QueryNode_Text("num0809", number1);
+	gzengyisheding[8] = atoi(number1);
+	opx2.QueryNode_Text("num0810", number1);
+	gzengyisheding[9] = atoi(number1);
+	opx2.QueryNode_Text("num0811", number1);
+	gzengyisheding[10] = atoi(number1);
+	opx2.QueryNode_Text("num0812", number1);
+	gzengyisheding[11] = atoi(number1);
+	opx2.QueryNode_Text("num0813", number1);
+	gzengyisheding[12] = atoi(number1);
+	opx2.QueryNode_Text("num0814", number1);
+	gzengyisheding[13] = atoi(number1);
+	opx2.QueryNode_Text("num0815", number1);
+	gzengyisheding[14] = atoi(number1);
+	opx2.QueryNode_Text("num0816", number1);
+	gzengyisheding[15] = atoi(number1);
+	opx2.QueryNode_Text("num0817", number1);
+	gzengyisheding[16] = atoi(number1);
+	opx2.QueryNode_Text("num0818", number1);
+	gzengyisheding[17] = atoi(number1);
+	opx2.QueryNode_Text("num0819", number1);
+	gzengyisheding[18] = atoi(number1);
+	opx2.QueryNode_Text("num0820", number1);
+	gzengyisheding[19] = atoi(number1);
+
+
+
+	opx2.QueryNode_Text("num0901", number1);
+	hunselingmin[0] = atoi(number1);
+	opx2.QueryNode_Text("num0902", number1);
+	hunselingmin[1] = atoi(number1);
+	opx2.QueryNode_Text("num0903", number1);
+	hunselingmin[2] = atoi(number1);
+	opx2.QueryNode_Text("num0904", number1);
+	hunselingmin[3] = atoi(number1);
+	opx2.QueryNode_Text("num0905", number1);
+	hunselingmin[4] = atoi(number1);
+	opx2.QueryNode_Text("num0906", number1);
+	hunselingmin[5] = atoi(number1);
+	opx2.QueryNode_Text("num0907", number1);
+	hunselingmin[6] = atoi(number1);
+	opx2.QueryNode_Text("num0908", number1);
+	hunselingmin[7] = atoi(number1);
+	opx2.QueryNode_Text("num0909", number1);
+	hunselingmin[8] = atoi(number1);
+	opx2.QueryNode_Text("num0910", number1);
+	hunselingmin[9] = atoi(number1);
+	opx2.QueryNode_Text("num0911", number1);
+	hunselingmin[10] = atoi(number1);
+	opx2.QueryNode_Text("num0912", number1);
+	hunselingmin[11] = atoi(number1);
+	opx2.QueryNode_Text("num0921", number1);
+	hunselingmin[20] = atoi(number1);
+	opx2.QueryNode_Text("num0922", number1);
+	hunselingmin[21] = atoi(number1);
+
+
+
+	opx2.QueryNode_Text("num1001", number1);
+	liuliang[0] = atoi(number1);
+	opx2.QueryNode_Text("num1002", number1);
+	liuliang[1] = atoi(number1);
+	opx2.QueryNode_Text("num1003", number1);
+	liuliang[2] = atoi(number1);
+	opx2.QueryNode_Text("num1004", number1);
+	liuliang[3] = atoi(number1);
+	opx2.QueryNode_Text("num1005", number1);
+	liuliang[4] = atoi(number1);
+	opx2.QueryNode_Text("num1006", number1);
+	liuliang[5] = atoi(number1);
+	opx2.QueryNode_Text("num1007", number1);
+	liuliang[6] = atoi(number1);
+	opx2.QueryNode_Text("num1008", number1);
+	liuliang[7] = atoi(number1);
+	opx2.QueryNode_Text("num1009", number1);
+	liuliang[8] = atoi(number1);
+	opx2.QueryNode_Text("num1010", number1);
+	liuliang[9] = atoi(number1);
+	opx2.QueryNode_Text("num1011", number1);
+	liuliang[10] = atoi(number1);
+	opx2.QueryNode_Text("num1012", number1);
+	liuliang[11] = atoi(number1);
+	opx2.QueryNode_Text("num1013", number1);
+	liuliang[12] = atoi(number1);
+
+
+
+	opx2.QueryNode_Text("num1101", number1);
+	mian[0] = atoi(number1);
+	opx2.QueryNode_Text("num1102", number1);
+	mian[1] = atoi(number1);
+	opx2.QueryNode_Text("num1103", number1);
+	mian[2] = atoi(number1);
+	opx2.QueryNode_Text("num1104", number1);
+	mian[3] = atoi(number1);
+	opx2.QueryNode_Text("num1105", number1);
+	mian[4] = atoi(number1);
+	opx2.QueryNode_Text("num1106", number1);
+	mian[5] = atoi(number1);
+	opx2.QueryNode_Text("num1107", number1);
+	mian[6] = atoi(number1);
+	opx2.QueryNode_Text("num1108", number1);
+	mian[7] = atoi(number1);
+	opx2.QueryNode_Text("num1109", number1);
+	mian[8] = atoi(number1);
+	opx2.QueryNode_Text("num1110", number1);
+	mian[9] = atoi(number1);
+	opx2.QueryNode_Text("num1111", number1);
+	mian[10] = atoi(number1);
+	opx2.QueryNode_Text("num1112", number1);
+	mian[11] = atoi(number1);
+	opx2.QueryNode_Text("num1113", number1);
+	mian[12] = atoi(number1);
+	opx2.QueryNode_Text("num1114", number1);
+	mian[13] = atoi(number1);
+	opx2.QueryNode_Text("num1115", number1);
+	mian[14] = atoi(number1);
+	opx2.QueryNode_Text("num1116", number1);
+	mian[15] = atoi(number1);
+	opx2.QueryNode_Text("num1117", number1);
+	mian[16] = atoi(number1);
+	opx2.QueryNode_Text("num1118", number1);
+	mian[17] = atoi(number1);
+
+
+
+	opx2.QueryNode_Text("num1201", number1);
+	pingyisheding[0] = atoi(number1);
+	opx2.QueryNode_Text("num1202", number1);
+	pingyisheding[1] = atoi(number1);
+	opx2.QueryNode_Text("num1203", number1);
+	pingyisheding[2] = atoi(number1);
+	opx2.QueryNode_Text("num1204", number1);
+	pingyisheding[3] = atoi(number1);
+	opx2.QueryNode_Text("num1205", number1);
+	pingyisheding[4] = atoi(number1);
+	opx2.QueryNode_Text("num1206", number1);
+	pingyisheding[5] = atoi(number1);
+	opx2.QueryNode_Text("num1207", number1);
+	pingyisheding[6] = atoi(number1);
+	opx2.QueryNode_Text("num1208", number1);
+	pingyisheding[7] = atoi(number1);
+	opx2.QueryNode_Text("num1209", number1);
+	pingyisheding[8] = atoi(number1);
+	opx2.QueryNode_Text("num1210", number1);
+	pingyisheding[9] = atoi(number1);
+	opx2.QueryNode_Text("num1211", number1);
+	pingyisheding[10] = atoi(number1);
+	opx2.QueryNode_Text("num1212", number1);
+	pingyisheding[11] = atoi(number1);
+	opx2.QueryNode_Text("num1213", number1);
+	pingyisheding[12] = atoi(number1);
+	opx2.QueryNode_Text("num1214", number1);
+	pingyisheding[13] = atoi(number1);
+	opx2.QueryNode_Text("num1215", number1);
+	pingyisheding[14] = atoi(number1);
+	opx2.QueryNode_Text("num1216", number1);
+	pingyisheding[15] = atoi(number1);
+	opx2.QueryNode_Text("num1217", number1);
+	pingyisheding[16] = atoi(number1);
+	opx2.QueryNode_Text("num1218", number1);
+	pingyisheding[17] = atoi(number1);
+	opx2.QueryNode_Text("num1219", number1);
+	pingyisheding[18] = atoi(number1);
+	opx2.QueryNode_Text("num1220", number1);
+	pingyisheding[19] = atoi(number1);
+
+
+
+
+	opx2.QueryNode_Text("num1301", number1);
+	qinghui[0] = atoi(number1);
+	opx2.QueryNode_Text("num1302", number1);
+	qinghui[1] = atoi(number1);
+	opx2.QueryNode_Text("num1303", number1);
+	qinghui[2] = atoi(number1);
+
+
+	opx2.QueryNode_Text("num1401", number1);
+	quyu[0] = atoi(number1);
+	opx2.QueryNode_Text("num1402", number1);
+	quyu[1] = atoi(number1);
+	opx2.QueryNode_Text("num1403", number1);
+	quyu[2] = atoi(number1);
+	opx2.QueryNode_Text("num1404", number1);
+	quyu[3] = atoi(number1);
+	opx2.QueryNode_Text("num1405", number1);
+	quyu[4] = atoi(number1);
+	opx2.QueryNode_Text("num1406", number1);
+	quyu[5] = atoi(number1);
+	opx2.QueryNode_Text("num1407", number1);
+	quyu[6] = atoi(number1);
+	opx2.QueryNode_Text("num1408", number1);
+	quyu[7] = atoi(number1);
+	opx2.QueryNode_Text("num1409", number1);
+	quyu[8] = atoi(number1);
+	opx2.QueryNode_Text("num1410", number1);
+	quyu[9] = atoi(number1);
+	opx2.QueryNode_Text("num1411", number1);
+	quyu[10] = atoi(number1);
+	opx2.QueryNode_Text("num1412", number1);
+	quyu[11] = atoi(number1);
+
+
+
+	opx2.QueryNode_Text("num1501", number1);
+	rlingmin[0] = atoi(number1);
+	opx2.QueryNode_Text("num1502", number1);
+	rlingmin[1] = atoi(number1);
+	opx2.QueryNode_Text("num1503", number1);
+	rlingmin[2] = atoi(number1);
+	opx2.QueryNode_Text("num1504", number1);
+	rlingmin[3] = atoi(number1);
+	opx2.QueryNode_Text("num1505", number1);
+	rlingmin[4] = atoi(number1);
+	opx2.QueryNode_Text("num1506", number1);
+	rlingmin[5] = atoi(number1);
+	opx2.QueryNode_Text("num1507", number1);
+	rlingmin[6] = atoi(number1);
+	opx2.QueryNode_Text("num1508", number1);
+	rlingmin[7] = atoi(number1);
+	opx2.QueryNode_Text("num1509", number1);
+	rlingmin[8] = atoi(number1);
+	opx2.QueryNode_Text("num1510", number1);
+	rlingmin[9] = atoi(number1);
+	opx2.QueryNode_Text("num1511", number1);
+	rlingmin[10] = atoi(number1);
+	opx2.QueryNode_Text("num1512", number1);
+	rlingmin[11] = atoi(number1);
+
+
+	opx2.QueryNode_Text("num1601", number1);
+	rzengyi[0] = atoi(number1);
+	opx2.QueryNode_Text("num1602", number1);
+	rzengyi[1] = atoi(number1);
+	opx2.QueryNode_Text("num1603", number1);
+	rzengyi[2] = atoi(number1);
+	opx2.QueryNode_Text("num1604", number1);
+	rzengyi[3] = atoi(number1);
+	opx2.QueryNode_Text("num1605", number1);
+	rzengyi[4] = atoi(number1);
+	opx2.QueryNode_Text("num1606", number1);
+	rzengyi[5] = atoi(number1);
+	opx2.QueryNode_Text("num1607", number1);
+	rzengyi[6] = atoi(number1);
+	opx2.QueryNode_Text("num1608", number1);
+	rzengyi[7] = atoi(number1);
+	opx2.QueryNode_Text("num1609", number1);
+	rzengyi[8] = atoi(number1);
+	opx2.QueryNode_Text("num1610", number1);
+	rzengyi[9] = atoi(number1);
+	opx2.QueryNode_Text("num1611", number1);
+	rzengyi[10] = atoi(number1);
+	opx2.QueryNode_Text("num1612", number1);
+	rzengyi[11] = atoi(number1);
+	opx2.QueryNode_Text("num1613", number1);
+	rzengyi[12] = atoi(number1);
+	opx2.QueryNode_Text("num1614", number1);
+	rzengyi[13] = atoi(number1);
+	opx2.QueryNode_Text("num1615", number1);
+	rzengyi[14] = atoi(number1);
+	opx2.QueryNode_Text("num1616", number1);
+	rzengyi[15] = atoi(number1);
+	opx2.QueryNode_Text("num1617", number1);
+	rzengyi[16] = atoi(number1);
+	opx2.QueryNode_Text("num1618", number1);
+	rzengyi[17] = atoi(number1);
+	opx2.QueryNode_Text("num1619", number1);
+	rzengyi[18] = atoi(number1);
+	opx2.QueryNode_Text("num1620", number1);
+	rzengyi[19] = atoi(number1);
+
+
+
+
+	opx2.QueryNode_Text("num1701", number1);
+	shen[0] = atoi(number1);
+	opx2.QueryNode_Text("num1702", number1);
+	shen[1] = atoi(number1);
+	opx2.QueryNode_Text("num1703", number1);
+	shen[2] = atoi(number1);
+	opx2.QueryNode_Text("num1704", number1);
+	shen[3] = atoi(number1);
+	opx2.QueryNode_Text("num1705", number1);
+	shen[4] = atoi(number1);
+	opx2.QueryNode_Text("num1706", number1);
+	shen[5] = atoi(number1);
+	opx2.QueryNode_Text("num1707", number1);
+	shen[6] = atoi(number1);
+	opx2.QueryNode_Text("num1708", number1);
+	shen[7] = atoi(number1);
+	opx2.QueryNode_Text("num1709", number1);
+	shen[8] = atoi(number1);
+	opx2.QueryNode_Text("num1710", number1);
+	shen[9] = atoi(number1);
+	opx2.QueryNode_Text("num1711", number1);
+	shen[10] = atoi(number1);
+	opx2.QueryNode_Text("num1712", number1);
+	shen[11] = atoi(number1);
+
+
+	opx2.QueryNode_Text("num1801", number1);
+	vga[0] = atoi(number1);
+	opx2.QueryNode_Text("num1802", number1);
+	vga[1] = atoi(number1);
+	opx2.QueryNode_Text("num1803", number1);
+	vga[2] = atoi(number1);
+	opx2.QueryNode_Text("num1804", number1);
+	vga[3] = atoi(number1);
+
+	opx2.QueryNode_Text("num1821", number1);
+	vgasd[0] = number1;
+	opx2.QueryNode_Text("num1822", number1);
+	vgasd[1] = number1;
+	opx2.QueryNode_Text("num1823", number1);
+	vgasd[2] = number1;
+	opx2.QueryNode_Text("num1824", number1);
+	vgasd[3] = number1;
+	opx2.QueryNode_Text("num1825", number1);
+	vgasd[4] = number1;
+	opx2.QueryNode_Text("num1826", number1);
+	vgasd[5] = number1;
+	opx2.QueryNode_Text("num1827", number1);
+	vgasd[6] = number1;
+	opx2.QueryNode_Text("num1828", number1);
+	vgasd[7] = number1;
+	opx2.QueryNode_Text("num1829", number1);
+	vgasd[8] = number1;
+	opx2.QueryNode_Text("num1830", number1);
+	vgasd[9] = number1;
+	opx2.QueryNode_Text("num1831", number1);
+	vgasd[10] = number1;
+	opx2.QueryNode_Text("num1832", number1);
+	vgasd[11] = number1;
+	opx2.QueryNode_Text("num1833", number1);
+	vgasd[12] = number1;
+	opx2.QueryNode_Text("num1834", number1);
+	vgasd[13] = number1;
+	opx2.QueryNode_Text("num1835", number1);
+	vgasd[14] = number1;
+	opx2.QueryNode_Text("num1836", number1);
+	vgasd[15] = number1;
+	opx2.QueryNode_Text("num1837", number1);
+	vgasd[16] = number1;
+	opx2.QueryNode_Text("num1838", number1);
+	vgasd[17] = number1;
+	opx2.QueryNode_Text("num1839", number1);
+	vgasd[18] = number1;
+	opx2.QueryNode_Text("num1840", number1);
+	vgasd[19] = number1;
+
+
+	opx2.QueryNode_Text("num1901", number1);
+	xiangji[0] = atoi(number1);
+	opx2.QueryNode_Text("num1902", number1);
+	xiangji[1] = atoi(number1);
+	opx2.QueryNode_Text("num1903", number1);
+	xiangji[2] = atoi(number1);
+	opx2.QueryNode_Text("num1904", number1);
+	xiangji[3] = atoi(number1);
+	opx2.QueryNode_Text("num1905", number1);
+	xiangji[4] = atoi(number1);
+	opx2.QueryNode_Text("num1906", number1);
+	xiangji[5] = atoi(number1);
+	opx2.QueryNode_Text("num1907", number1);
+	xiangji[6] = atoi(number1);
+	opx2.QueryNode_Text("num1908", number1);
+	xiangji[7] = atoi(number1);
+	opx2.QueryNode_Text("num1909", number1);
+	xiangji[8] = atoi(number1);
+	opx2.QueryNode_Text("num1910", number1);
+	xiangji[9] = atoi(number1);
+	opx2.QueryNode_Text("num1911", number1);
+	xiangji[10] = atoi(number1);
+	opx2.QueryNode_Text("num1912", number1);
+	xiangji[11] = atoi(number1);
+	opx2.QueryNode_Text("num1913", number1);
+	xiangji[12] = atoi(number1);
+	opx2.QueryNode_Text("num1914", number1);
+	xiangji[13] = atoi(number1);
+	opx2.QueryNode_Text("num1915", number1);
+	xiangji[14] = atoi(number1);
+	opx2.QueryNode_Text("num1916", number1);
+	xiangji[15] = atoi(number1);
+	opx2.QueryNode_Text("num1917", number1);
+	xiangji[16] = atoi(number1);
+	opx2.QueryNode_Text("num1918", number1);
+	xiangji[17] = atoi(number1);
+	opx2.QueryNode_Text("num1919", number1);
+	xiangji[18] = atoi(number1);
+	opx2.QueryNode_Text("num1920", number1);
+	xiangji[19] = atoi(number1);
+	opx2.QueryNode_Text("num1921", number1);
+	xiangji[20] = atoi(number1);
+	opx2.QueryNode_Text("num1922", number1);
+	xiangji[21] = atoi(number1);
+	opx2.QueryNode_Text("num1923", number1);
+	xiangji[22] = atoi(number1);
+	opx2.QueryNode_Text("num1924", number1);
+	xiangji[23] = atoi(number1);
+	opx2.QueryNode_Text("num1925", number1);
+	xiangji[24] = atoi(number1);
+	opx2.QueryNode_Text("num1926", number1);
+	xiangji[25] = atoi(number1);
+	opx2.QueryNode_Text("num1927", number1);
+	xiangji[26] = atoi(number1);
+	opx2.QueryNode_Text("num1928", number1);
+	xiangji[27] = atoi(number1);
+	opx2.QueryNode_Text("num1929", number1);
+	xiangji[28] = atoi(number1);
+	opx2.QueryNode_Text("num1930", number1);
+	xiangji[29] = atoi(number1);
+	opx2.QueryNode_Text("num1931", number1);
+	xiangji[30] = atoi(number1);
+	opx2.QueryNode_Text("num1932", number1);
+	xiangji[31] = atoi(number1);
+	opx2.QueryNode_Text("num1933", number1);
+	xiangji[32] = atoi(number1);
+	opx2.QueryNode_Text("num1934", number1);
+	xiangji[33] = atoi(number1);
+	opx2.QueryNode_Text("num1935", number1);
+	xiangji[34] = atoi(number1);
+	opx2.QueryNode_Text("num1936", number1);
+	xiangji[35] = atoi(number1);
+	opx2.QueryNode_Text("num1937", number1);
+	xiangji[36] = atoi(number1);
+	opx2.QueryNode_Text("num1938", number1);
+	xiangji[37] = atoi(number1);
+	opx2.QueryNode_Text("num1939", number1);
+	xiangji[38] = atoi(number1);
+	opx2.QueryNode_Text("num1940", number1);
+	xiangji[39] = atoi(number1);
+	opx2.QueryNode_Text("num1941", number1);
+	xiangji[40] = atoi(number1);
+	opx2.QueryNode_Text("num1942", number1);
+	xiangji[41] = atoi(number1);
+	opx2.QueryNode_Text("num1943", number1);
+	xiangji[42] = atoi(number1);
+	opx2.QueryNode_Text("num1944", number1);
+	xiangji[43] = atoi(number1);
+	opx2.QueryNode_Text("num1945", number1);
+	xiangji[44] = atoi(number1);
+	opx2.QueryNode_Text("num1946", number1);
+	xiangji[45] = atoi(number1);
+	opx2.QueryNode_Text("num1947", number1);
+	xiangji[46] = atoi(number1);
+	opx2.QueryNode_Text("num1948", number1);
+	xiangji[47] = atoi(number1);
+	opx2.QueryNode_Text("num1949", number1);
+	xiangji[48] = atoi(number1);
+	opx2.QueryNode_Text("num1950", number1);
+	xiangji[49] = atoi(number1);
+	opx2.QueryNode_Text("num1951", number1);
+	xiangji[50] = atoi(number1);
+	opx2.QueryNode_Text("num1952", number1);
+	xiangji[51] = atoi(number1);
+	opx2.QueryNode_Text("num1953", number1);
+	xiangji[52] = atoi(number1);
+	opx2.QueryNode_Text("num1954", number1);
+	xiangji[53] = atoi(number1);
+	opx2.QueryNode_Text("num1955", number1);
+	xiangji[54] = atoi(number1);
+	opx2.QueryNode_Text("num1956", number1);
+	xiangji[55] = atoi(number1);
+	opx2.QueryNode_Text("num1957", number1);
+	xiangji[56] = atoi(number1);
+	opx2.QueryNode_Text("num1958", number1);
+	xiangji[57] = atoi(number1);
+	opx2.QueryNode_Text("num1959", number1);
+	xiangji[58] = atoi(number1);
+	opx2.QueryNode_Text("num1960", number1);
+	xiangji[59] = atoi(number1);
+	opx2.QueryNode_Text("num1961", number1);
+	xiangji[60] = atoi(number1);
+	opx2.QueryNode_Text("num1962", number1);
+	xiangji[61] = atoi(number1);
+	opx2.QueryNode_Text("num1963", number1);
+	xiangji[62] = atoi(number1);
+	opx2.QueryNode_Text("num1964", number1);
+	xiangji[63] = atoi(number1);
+	opx2.QueryNode_Text("num1965", number1);
+	xiangji[64] = atoi(number1);
+	opx2.QueryNode_Text("num1966", number1);
+	xiangji[65] = atoi(number1);
+	opx2.QueryNode_Text("num1967", number1);
+	xiangji[66] = atoi(number1);
+	opx2.QueryNode_Text("num1968", number1);
+	xiangji[67] = atoi(number1);
+	opx2.QueryNode_Text("num1969", number1);
+	xiangji[68] = atoi(number1);
+	opx2.QueryNode_Text("num1970", number1);
+	xiangji[69] = atoi(number1);
+	opx2.QueryNode_Text("num1971", number1);
+	xiangji[70] = atoi(number1);
+	opx2.QueryNode_Text("num1972", number1);
+	xiangji[71] = atoi(number1);
+	opx2.QueryNode_Text("num1973", number1);
+	xiangji[72] = atoi(number1);
+	opx2.QueryNode_Text("num1974", number1);
+	xiangji[73] = atoi(number1);
+	opx2.QueryNode_Text("num1975", number1);
+	xiangji[74] = atoi(number1);
+	opx2.QueryNode_Text("num1976", number1);
+	xiangji[75] = atoi(number1);
+	opx2.QueryNode_Text("num1977", number1);
+	xiangji[76] = atoi(number1);
+	opx2.QueryNode_Text("num1978", number1);
+	xiangji[77] = atoi(number1);
+	opx2.QueryNode_Text("num1979", number1);
+	xiangji[78] = atoi(number1);
+	opx2.QueryNode_Text("num1980", number1);
+	xiangji[79] = atoi(number1);
+	opx2.QueryNode_Text("num1981", number1);
+	xiangji[80] = atoi(number1);
+	opx2.QueryNode_Text("num1982", number1);
+	xiangji[81] = atoi(number1);
+	opx2.QueryNode_Text("num1983", number1);
+	xiangji[82] = atoi(number1);
+	opx2.QueryNode_Text("num1984", number1);
+	xiangji[83] = atoi(number1);
+	opx2.QueryNode_Text("num1985", number1);
+	xiangji[84] = atoi(number1);
+	opx2.QueryNode_Text("num1986", number1);
+	xiangji[85] = atoi(number1);
+	opx2.QueryNode_Text("num1987", number1);
+	xiangji[86] = atoi(number1);
+	opx2.QueryNode_Text("num1988", number1);
+	xiangji[87] = atoi(number1);
+	opx2.QueryNode_Text("num1989", number1);
+	xiangji[88] = atoi(number1);
+	opx2.QueryNode_Text("num1990", number1);
+	xiangji[89] = atoi(number1);
+	opx2.QueryNode_Text("num1991", number1);
+	xiangji[90] = atoi(number1);
+	opx2.QueryNode_Text("num1992", number1);
+	xiangji[91] = atoi(number1);
+	opx2.QueryNode_Text("num1993", number1);
+	xiangji[92] = atoi(number1);
+	opx2.QueryNode_Text("num1994", number1);
+	xiangji[93] = atoi(number1);
+	opx2.QueryNode_Text("num1995", number1);
+	xiangji[94] = atoi(number1);
+	opx2.QueryNode_Text("num1996", number1);
+	xiangji[95] = atoi(number1);
+	opx2.QueryNode_Text("num1997", number1);
+	xiangji[96] = atoi(number1);
+	opx2.QueryNode_Text("num1998", number1);
+	xiangji[97] = atoi(number1);
+	opx2.QueryNode_Text("num1999", number1);
+	xiangji[98] = atoi(number1);
+	opx2.QueryNode_Text("num19100", number1);
+	xiangji[99] = atoi(number1);
+
+
+
+	opx2.QueryNode_Text("num2001", number1);
+	yanchisheding[0] = atoi(number1);
+	opx2.QueryNode_Text("num2002", number1);
+	yanchisheding[1] = atoi(number1);
+	opx2.QueryNode_Text("num2003", number1);
+	yanchisheding[2] = atoi(number1);
+	opx2.QueryNode_Text("num2004", number1);
+	yanchisheding[3] = atoi(number1);
+	opx2.QueryNode_Text("num2005", number1);
+	yanchisheding[4] = atoi(number1);
+	opx2.QueryNode_Text("num2006", number1);
+	yanchisheding[5] = atoi(number1);
+	opx2.QueryNode_Text("num2007", number1);
+	yanchisheding[6] = atoi(number1);
+	opx2.QueryNode_Text("num2008", number1);
+	yanchisheding[7] = atoi(number1);
+	opx2.QueryNode_Text("num2009", number1);
+	yanchisheding[8] = atoi(number1);
+	opx2.QueryNode_Text("num2010", number1);
+	yanchisheding[9] = atoi(number1);
+	opx2.QueryNode_Text("num2011", number1);
+	yanchisheding[10] = atoi(number1);
+	opx2.QueryNode_Text("num2012", number1);
+	yanchisheding[11] = atoi(number1);
+
+
+
+
+	opx2.QueryNode_Text("num2101", number1);
+	yanse[0] = atoi(number1);
+	opx2.QueryNode_Text("num2102", number1);
+	yanse[1] = atoi(number1);
+	opx2.QueryNode_Text("num2103", number1);
+	yanse[2] = atoi(number1);
+	opx2.QueryNode_Text("num2104", number1);
+	yanse[3] = atoi(number1);
+	opx2.QueryNode_Text("num2105", number1);
+	yanse[4] = atoi(number1);
+	opx2.QueryNode_Text("num2106", number1);
+	yanse[5] = atoi(number1);
+	opx2.QueryNode_Text("num2107", number1);
+	yanse[6] = atoi(number1);
+	opx2.QueryNode_Text("num2108", number1);
+	yanse[7] = atoi(number1);
+	opx2.QueryNode_Text("num2109", number1);
+	yanse[8] = atoi(number1);
+	opx2.QueryNode_Text("num2110", number1);
+	yanse[9] = atoi(number1);
+	opx2.QueryNode_Text("num2111", number1);
+	yanse[10] = atoi(number1);
+	opx2.QueryNode_Text("num2112", number1);
+	yanse[11] = atoi(number1);
+
+
+	opx2.QueryNode_Text("num2201", number1);
+	huiduhuluesheding[0] = atoi(number1);
+	opx2.QueryNode_Text("num2202", number1);
+	huiduhuluesheding[1] = atoi(number1);
+	opx2.QueryNode_Text("num2203", number1);
+	huiduhuluesheding[2] = atoi(number1);
+	opx2.QueryNode_Text("num2204", number1);
+	huiduhuluesheding[3] = atoi(number1);
+	opx2.QueryNode_Text("num2205", number1);
+	huiduhuluesheding[4] = atoi(number1);
+	opx2.QueryNode_Text("num2206", number1);
+	huiduhuluesheding[5] = atoi(number1);
+	opx2.QueryNode_Text("num2207", number1);
+	huiduhuluesheding[6] = atoi(number1);
+	opx2.QueryNode_Text("num2208", number1);
+	huiduhuluesheding[7] = atoi(number1);
+	opx2.QueryNode_Text("num2209", number1);
+	huiduhuluesheding[8] = atoi(number1);
+	opx2.QueryNode_Text("num2210", number1);
+	huiduhuluesheding[9] = atoi(number1);
+	opx2.QueryNode_Text("num2211", number1);
+	huiduhuluesheding[10] = atoi(number1);
+	opx2.QueryNode_Text("num2212", number1);
+	huiduhuluesheding[11] = atoi(number1);
+	opx2.QueryNode_Text("num2213", number1);
+	huiduhuluesheding[12] = atoi(number1);
+	opx2.QueryNode_Text("num2214", number1);
+	huiduhuluesheding[13] = atoi(number1);
+	opx2.QueryNode_Text("num2215", number1);
+	huiduhuluesheding[14] = atoi(number1);
+	opx2.QueryNode_Text("num2216", number1);
+	huiduhuluesheding[15] = atoi(number1);
+	opx2.QueryNode_Text("num2217", number1);
+	huiduhuluesheding[16] = atoi(number1);
+	opx2.QueryNode_Text("num2218", number1);
+	huiduhuluesheding[17] = atoi(number1);
+	opx2.QueryNode_Text("num2219", number1);
+	huiduhuluesheding[18] = atoi(number1);
+	opx2.QueryNode_Text("num2220", number1);
+	huiduhuluesheding[19] = atoi(number1);
+
+	opx2.QueryNode_Text("num2301", number1);
+	huidu1sheding[0] = atoi(number1);
+	opx2.QueryNode_Text("num2302", number1);
+	huidu1sheding[1] = atoi(number1);
+	opx2.QueryNode_Text("num2303", number1);
+	huidu1sheding[2] = atoi(number1);
+	opx2.QueryNode_Text("num2304", number1);
+	huidu1sheding[3] = atoi(number1);
+	opx2.QueryNode_Text("num2305", number1);
+	huidu1sheding[4] = atoi(number1);
+	opx2.QueryNode_Text("num2306", number1);
+	huidu1sheding[5] = atoi(number1);
+	opx2.QueryNode_Text("num2307", number1);
+	huidu1sheding[6] = atoi(number1);
+	opx2.QueryNode_Text("num2308", number1);
+	huidu1sheding[7] = atoi(number1);
+	opx2.QueryNode_Text("num2309", number1);
+	huidu1sheding[8] = atoi(number1);
+	opx2.QueryNode_Text("num2310", number1);
+	huidu1sheding[9] = atoi(number1);
+	opx2.QueryNode_Text("num2311", number1);
+	huidu1sheding[10] = atoi(number1);
+	opx2.QueryNode_Text("num2312", number1);
+	huidu1sheding[11] = atoi(number1);
+
+
+
+	opx2.QueryNode_Text("num2401", number1);
+	huidu2sheding[0] = atoi(number1);
+	opx2.QueryNode_Text("num2402", number1);
+	huidu2sheding[1] = atoi(number1);
+	opx2.QueryNode_Text("num2403", number1);
+	huidu2sheding[2] = atoi(number1);
+	opx2.QueryNode_Text("num2404", number1);
+	huidu2sheding[3] = atoi(number1);
+	opx2.QueryNode_Text("num2405", number1);
+	huidu2sheding[4] = atoi(number1);
+	opx2.QueryNode_Text("num2406", number1);
+	huidu2sheding[5] = atoi(number1);
+	opx2.QueryNode_Text("num2407", number1);
+	huidu2sheding[6] = atoi(number1);
+	opx2.QueryNode_Text("num2408", number1);
+	huidu2sheding[7] = atoi(number1);
+	opx2.QueryNode_Text("num2409", number1);
+	huidu2sheding[8] = atoi(number1);
+	opx2.QueryNode_Text("num2410", number1);
+	huidu2sheding[9] = atoi(number1);
+	opx2.QueryNode_Text("num2411", number1);
+	huidu2sheding[10] = atoi(number1);
+	opx2.QueryNode_Text("num2412", number1);
+	huidu2sheding[11] = atoi(number1);
+
+
+	opx2.QueryNode_Text("num2501", number1);
+	mianjiweitiaosd[0] = atoi(number1);
+	opx2.QueryNode_Text("num2502", number1);
+	mianjiweitiaosd[1] = atoi(number1);
+	opx2.QueryNode_Text("num2503", number1);
+	mianjiweitiaosd[2] = atoi(number1);
+	opx2.QueryNode_Text("num2504", number1);
+	mianjiweitiaosd[3] = atoi(number1);
+	opx2.QueryNode_Text("num2505", number1);
+	mianjiweitiaosd[4] = atoi(number1);
+	opx2.QueryNode_Text("num2506", number1);
+	mianjiweitiaosd[5] = atoi(number1);
+	opx2.QueryNode_Text("num2507", number1);
+	mianjiweitiaosd[6] = atoi(number1);
+	opx2.QueryNode_Text("num2508", number1);
+	mianjiweitiaosd[7] = atoi(number1);
+	opx2.QueryNode_Text("num2509", number1);
+	mianjiweitiaosd[8] = atoi(number1);
+	opx2.QueryNode_Text("num2510", number1);
+	mianjiweitiaosd[9] = atoi(number1);
+	opx2.QueryNode_Text("num2511", number1);
+	mianjiweitiaosd[10] = atoi(number1);
+	opx2.QueryNode_Text("num2512", number1);
+	mianjiweitiaosd[11] = atoi(number1);
+	opx2.QueryNode_Text("num2513", number1);
+	mianjiweitiaosd[12] = atoi(number1);
+	opx2.QueryNode_Text("num2514", number1);
+	mianjiweitiaosd[13] = atoi(number1);
+	opx2.QueryNode_Text("num2515", number1);
+	mianjiweitiaosd[14] = atoi(number1);
+	opx2.QueryNode_Text("num2516", number1);
+	mianjiweitiaosd[15] = atoi(number1);
+	opx2.QueryNode_Text("num2517", number1);
+	mianjiweitiaosd[16] = atoi(number1);
+	opx2.QueryNode_Text("num2518", number1);
+	mianjiweitiaosd[17] = atoi(number1);
+	opx2.QueryNode_Text("num2519", number1);
+	mianjiweitiaosd[18] = atoi(number1);
+	opx2.QueryNode_Text("num2520", number1);
+	mianjiweitiaosd[19] = atoi(number1);
+
+
+
+	opx2.QueryNode_Text("num2601", number1);
+	quyusansd[0] = atoi(number1);
+	opx2.QueryNode_Text("num2602", number1);
+	quyusansd[1] = atoi(number1);
+	opx2.QueryNode_Text("num2603", number1);
+	quyusansd[2] = atoi(number1);
+	opx2.QueryNode_Text("num2604", number1);
+	quyusansd[3] = atoi(number1);
+	opx2.QueryNode_Text("num2605", number1);
+	quyusansd[4] = atoi(number1);
+	opx2.QueryNode_Text("num2606", number1);
+	quyusansd[5] = atoi(number1);
+	opx2.QueryNode_Text("num2607", number1);
+	quyusansd[6] = atoi(number1);
+	opx2.QueryNode_Text("num2608", number1);
+	quyusansd[7] = atoi(number1);
+	opx2.QueryNode_Text("num2609", number1);
+	quyusansd[8] = atoi(number1);
+	opx2.QueryNode_Text("num2610", number1);
+	quyusansd[9] = atoi(number1);
+	opx2.QueryNode_Text("num2611", number1);
+	quyusansd[10] = atoi(number1);
+	opx2.QueryNode_Text("num2612", number1);
+	quyusansd[11] = atoi(number1);
+
+
+	opx2.QueryNode_Text("num2701", number1);
+	quyusisd[0] = atoi(number1);
+	opx2.QueryNode_Text("num2702", number1);
+	quyusisd[1] = atoi(number1);
+	opx2.QueryNode_Text("num2703", number1);
+	quyusisd[2] = atoi(number1);
+	opx2.QueryNode_Text("num2704", number1);
+	quyusisd[3] = atoi(number1);
+	opx2.QueryNode_Text("num2705", number1);
+	quyusisd[4] = atoi(number1);
+	opx2.QueryNode_Text("num2706", number1);
+	quyusisd[5] = atoi(number1);
+	opx2.QueryNode_Text("num2707", number1);
+	quyusisd[6] = atoi(number1);
+	opx2.QueryNode_Text("num2708", number1);
+	quyusisd[7] = atoi(number1);
+	opx2.QueryNode_Text("num2709", number1);
+	quyusisd[8] = atoi(number1);
+	opx2.QueryNode_Text("num2710", number1);
+	quyusisd[9] = atoi(number1);
+	opx2.QueryNode_Text("num2711", number1);
+	quyusisd[10] = atoi(number1);
+	opx2.QueryNode_Text("num2712", number1);
+	quyusisd[11] = atoi(number1);
+
+
+
+	opx2.QueryNode_Text("num2801", number1);
+	quyuwusd[0] = atoi(number1);
+	opx2.QueryNode_Text("num2802", number1);
+	quyuwusd[1] = atoi(number1);
+	opx2.QueryNode_Text("num2803", number1);
+	quyuwusd[2] = atoi(number1);
+	opx2.QueryNode_Text("num2804", number1);
+	quyuwusd[3] = atoi(number1);
+	opx2.QueryNode_Text("num2805", number1);
+	quyuwusd[4] = atoi(number1);
+	opx2.QueryNode_Text("num2806", number1);
+	quyuwusd[5] = atoi(number1);
+	opx2.QueryNode_Text("num2807", number1);
+	quyuwusd[6] = atoi(number1);
+	opx2.QueryNode_Text("num2808", number1);
+	quyuwusd[7] = atoi(number1);
+	opx2.QueryNode_Text("num2809", number1);
+	quyuwusd[8] = atoi(number1);
+	opx2.QueryNode_Text("num2810", number1);
+	quyuwusd[9] = atoi(number1);
+	opx2.QueryNode_Text("num2811", number1);
+	quyuwusd[10] = atoi(number1);
+	opx2.QueryNode_Text("num2812", number1);
+	quyuwusd[11] = atoi(number1);
+
+
+	opx2.QueryNode_Text("num2901", number1);
+	shendu2[0] = atoi(number1);
+	opx2.QueryNode_Text("num2902", number1);
+	shendu2[1] = atoi(number1);
+	opx2.QueryNode_Text("num2903", number1);
+	shendu2[2] = atoi(number1);
+	opx2.QueryNode_Text("num2904", number1);
+	shendu2[3] = atoi(number1);
+	opx2.QueryNode_Text("num2905", number1);
+	shendu2[4] = atoi(number1);
+	opx2.QueryNode_Text("num2906", number1);
+	shendu2[5] = atoi(number1);
+	opx2.QueryNode_Text("num2907", number1);
+	shendu2[6] = atoi(number1);
+	opx2.QueryNode_Text("num2908", number1);
+	shendu2[7] = atoi(number1);
+	opx2.QueryNode_Text("num2909", number1);
+	shendu2[8] = atoi(number1);
+	opx2.QueryNode_Text("num2910", number1);
+	shendu2[9] = atoi(number1);
+	opx2.QueryNode_Text("num2911", number1);
+	shendu2[10] = atoi(number1);
+	opx2.QueryNode_Text("num2912", number1);
+	shendu2[11] = atoi(number1);
+
+
+
+	opx2.QueryNode_Text("num3001", number1);
+	xingxuanlingmindusd[0] = atoi(number1);
+	opx2.QueryNode_Text("num3002", number1);
+	xingxuanlingmindusd[1] = atoi(number1);
+	opx2.QueryNode_Text("num3003", number1);
+	xingxuanlingmindusd[2] = atoi(number1);
+	opx2.QueryNode_Text("num3004", number1);
+	xingxuanlingmindusd[3] = atoi(number1);
+	opx2.QueryNode_Text("num3005", number1);
+	xingxuanlingmindusd[4] = atoi(number1);
+	opx2.QueryNode_Text("num3006", number1);
+	xingxuanlingmindusd[5] = atoi(number1);
+	opx2.QueryNode_Text("num3007", number1);
+	xingxuanlingmindusd[6] = atoi(number1);
+	opx2.QueryNode_Text("num3008", number1);
+	xingxuanlingmindusd[7] = atoi(number1);
+	opx2.QueryNode_Text("num3009", number1);
+	xingxuanlingmindusd[8] = atoi(number1);
+	opx2.QueryNode_Text("num3010", number1);
+	xingxuanlingmindusd[9] = atoi(number1);
+	opx2.QueryNode_Text("num3011", number1);
+	xingxuanlingmindusd[10] = atoi(number1);
+	opx2.QueryNode_Text("num3012", number1);
+	xingxuanlingmindusd[11] = atoi(number1);
+	opx2.QueryNode_Text("num3013", number1);
+	xingxuanlingmindusd[12] = atoi(number1);
+	opx2.QueryNode_Text("num3014", number1);
+	xingxuanlingmindusd[13] = atoi(number1);
+	opx2.QueryNode_Text("num3015", number1);
+	xingxuanlingmindusd[14] = atoi(number1);
+	opx2.QueryNode_Text("num3016", number1);
+	xingxuanlingmindusd[15] = atoi(number1);
+	opx2.QueryNode_Text("num3017", number1);
+	xingxuanlingmindusd[16] = atoi(number1);
+	opx2.QueryNode_Text("num3018", number1);
+	xingxuanlingmindusd[17] = atoi(number1);
+	opx2.QueryNode_Text("num3019", number1);
+	xingxuanlingmindusd[18] = atoi(number1);
+	opx2.QueryNode_Text("num3020", number1);
+	xingxuanlingmindusd[19] = atoi(number1);
+
+
+
+	opx2.QueryNode_Text("num3101", number1);
+	xingxuansd[0] = atoi(number1);
+	opx2.QueryNode_Text("num3102", number1);
+	xingxuansd[1] = atoi(number1);
+	opx2.QueryNode_Text("num3103", number1);
+	xingxuansd[2] = atoi(number1);
+	opx2.QueryNode_Text("num3104", number1);
+	xingxuansd[3] = atoi(number1);
+	opx2.QueryNode_Text("num3105", number1);
+	xingxuansd[4] = atoi(number1);
+
+	opx2.QueryNode_Text("num3201", number1);
+	yansehangmianjisd[0] = atoi(number1);
+	opx2.QueryNode_Text("num3202", number1);
+	yansehangmianjisd[1] = atoi(number1);
+	opx2.QueryNode_Text("num3203", number1);
+	yansehangmianjisd[2] = atoi(number1);
+	opx2.QueryNode_Text("num3204", number1);
+	yansehangmianjisd[3] = atoi(number1);
+	opx2.QueryNode_Text("num3205", number1);
+	yansehangmianjisd[4] = atoi(number1);
+	opx2.QueryNode_Text("num3206", number1);
+	yansehangmianjisd[5] = atoi(number1);
+	opx2.QueryNode_Text("num3207", number1);
+	yansehangmianjisd[6] = atoi(number1);
+	opx2.QueryNode_Text("num3208", number1);
+	yansehangmianjisd[7] = atoi(number1);
+	opx2.QueryNode_Text("num3209", number1);
+	yansehangmianjisd[8] = atoi(number1);
+	opx2.QueryNode_Text("num3210", number1);
+	yansehangmianjisd[9] = atoi(number1);
+	opx2.QueryNode_Text("num3211", number1);
+	yansehangmianjisd[10] = atoi(number1);
+	opx2.QueryNode_Text("num3212", number1);
+	yansehangmianjisd[11] = atoi(number1);
+	opx2.QueryNode_Text("num3213", number1);
+	yansehangmianjisd[12] = atoi(number1);
+	opx2.QueryNode_Text("num3214", number1);
+	yansehangmianjisd[13] = atoi(number1);
+	opx2.QueryNode_Text("num3215", number1);
+	yansehangmianjisd[14] = atoi(number1);
+	opx2.QueryNode_Text("num3216", number1);
+	yansehangmianjisd[15] = atoi(number1);
+	opx2.QueryNode_Text("num3217", number1);
+	yansehangmianjisd[16] = atoi(number1);
+	opx2.QueryNode_Text("num3218", number1);
+	yansehangmianjisd[17] = atoi(number1);
+	opx2.QueryNode_Text("num3219", number1);
+	yansehangmianjisd[18] = atoi(number1);
+	opx2.QueryNode_Text("num3220", number1);
+	yansehangmianjisd[19] = atoi(number1);
+
+
+
+
+	opx2.QueryNode_Text("num3301", number1);
+	yanseminganqiangdusd[0] = atoi(number1);
+	opx2.QueryNode_Text("num3302", number1);
+	yanseminganqiangdusd[1] = atoi(number1);
+	opx2.QueryNode_Text("num3303", number1);
+	yanseminganqiangdusd[2] = atoi(number1);
+	opx2.QueryNode_Text("num3304", number1);
+	yanseminganqiangdusd[3] = atoi(number1);
+	opx2.QueryNode_Text("num3305", number1);
+	yanseminganqiangdusd[4] = atoi(number1);
+	opx2.QueryNode_Text("num3306", number1);
+	yanseminganqiangdusd[5] = atoi(number1);
+
+
+
+	/*opx2.QueryNode_Text("num3401", number1);
+	modsd[0] = number1;
+	opx2.QueryNode_Text("num3402", number1);
+	modsd[1] = number1;
+	opx2.QueryNode_Text("num3403", number1);
+	modsd[2] = number1;
+	opx2.QueryNode_Text("num3404", number1);
+	modsd[3] = number1;
+	opx2.QueryNode_Text("num3405", number1);
+	modsd[4] = number1;
+	opx2.QueryNode_Text("num3406", number1);
+	modsd[5] = number1;
+	opx2.QueryNode_Text("num3407", number1);
+	modsd[6] = number1;
+	opx2.QueryNode_Text("num3408", number1);
+	modsd[7] = number1;
+	opx2.QueryNode_Text("num3409", number1);
+	modsd[8] = number1;
+	opx2.QueryNode_Text("num3410", number1);
+	modsd[9] = number1;
+	opx2.QueryNode_Text("num3411", number1);
+	modsd[10] = number1;
+	opx2.QueryNode_Text("num3412", number1);
+	modsd[11] = number1;
+	opx2.QueryNode_Text("num3413", number1);
+	modsd[12] = number1;
+	opx2.QueryNode_Text("num3414", number1);
+	modsd[13] = number1;
+	opx2.QueryNode_Text("num3415", number1);
+	modsd[14] = number1;
+	opx2.QueryNode_Text("num3416", number1);
+	modsd[15] = number1;
+	opx2.QueryNode_Text("num3417", number1);
+	modsd[16] = number1;
+	opx2.QueryNode_Text("num3418", number1);
+	modsd[17] = number1;
+	opx2.QueryNode_Text("num3419", number1);
+	modsd[18] = number1;
+	opx2.QueryNode_Text("num3420", number1);
+	modsd[19] = number1;
+	opx2.QueryNode_Text("num3421", number1);
+	modsd[20] = number1;*/
+
+	/*opx2.QueryNode_Text("num3422", number1);
+	addSW = atoi(number1);*/
+
+
+	opx2.QueryNode_Text("num3501", number1);
+	liuliangsd[0] = number1;
+	opx2.QueryNode_Text("num3502", number1);
+	liuliangsd[1] = number1;
+	opx2.QueryNode_Text("num3503", number1);
+	liuliangsd[2] = number1;
+	opx2.QueryNode_Text("num3504", number1);
+	liuliangsd[3] = number1;
+	opx2.QueryNode_Text("num3505", number1);
+	liuliangsd[4] = number1;
+	opx2.QueryNode_Text("num3506", number1);
+	liuliangsd[5] = number1;
+	opx2.QueryNode_Text("num3507", number1);
+	liuliangsd[6] = number1;
+	opx2.QueryNode_Text("num3508", number1);
+	liuliangsd[7] = number1;
+	opx2.QueryNode_Text("num3509", number1);
+	liuliangsd[8] = number1;
+	opx2.QueryNode_Text("num3510", number1);
+	liuliangsd[9] = number1;
+
+
+	opx2.QueryNode_Text("num3601", number1);
+	blingminf[0] = atoi(number1);
+	opx2.QueryNode_Text("num3602", number1);
+	blingminf[1] = atoi(number1);
+	opx2.QueryNode_Text("num3603", number1);
+	blingminf[2] = atoi(number1);
+	opx2.QueryNode_Text("num3604", number1);
+	blingminf[3] = atoi(number1);
+	opx2.QueryNode_Text("num3605", number1);
+	blingminf[4] = atoi(number1);
+	opx2.QueryNode_Text("num3606", number1);
+	blingminf[5] = atoi(number1);
+	opx2.QueryNode_Text("num3607", number1);
+	blingminf[6] = atoi(number1);
+	opx2.QueryNode_Text("num3608", number1);
+	blingminf[7] = atoi(number1);
+	opx2.QueryNode_Text("num3609", number1);
+	blingminf[8] = atoi(number1);
+	opx2.QueryNode_Text("num3610", number1);
+	blingminf[9] = atoi(number1);
+	opx2.QueryNode_Text("num3611", number1);
+	blingminf[10] = atoi(number1);
+	opx2.QueryNode_Text("num3612", number1);
+	blingminf[11] = atoi(number1);
+	opx2.QueryNode_Text("num3613", number1);
+	blingminf[12] = atoi(number1);
+	opx2.QueryNode_Text("num3614", number1);
+	blingminf[13] = atoi(number1);
+	opx2.QueryNode_Text("num3615", number1);
+	blingminf[14] = atoi(number1);
+	opx2.QueryNode_Text("num3616", number1);
+	blingminf[15] = atoi(number1);
+	opx2.QueryNode_Text("num3617", number1);
+	blingminf[16] = atoi(number1);
+	opx2.QueryNode_Text("num3618", number1);
+	blingminf[17] = atoi(number1);
+	opx2.QueryNode_Text("num3619", number1);
+	blingminf[18] = atoi(number1);
+	opx2.QueryNode_Text("num3620", number1);
+	blingminf[19] = atoi(number1);
+	opx2.QueryNode_Text("num3621", number1);
+	blingminf[20] = atoi(number1);
+	opx2.QueryNode_Text("num3622", number1);
+	blingminf[21] = atoi(number1);
+	opx2.QueryNode_Text("num3623", number1);
+	blingminf[22] = atoi(number1);
+	opx2.QueryNode_Text("num3624", number1);
+	blingminf[23] = atoi(number1);
+	opx2.QueryNode_Text("num3625", number1);
+	blingminf[24] = atoi(number1);
+	opx2.QueryNode_Text("num3626", number1);
+	blingminf[25] = atoi(number1);
+	opx2.QueryNode_Text("num3627", number1);
+	blingminf[26] = atoi(number1);
+	opx2.QueryNode_Text("num3628", number1);
+	blingminf[27] = atoi(number1);
+	opx2.QueryNode_Text("num3629", number1);
+	blingminf[28] = atoi(number1);
+	opx2.QueryNode_Text("num3630", number1);
+	blingminf[29] = atoi(number1);
+	opx2.QueryNode_Text("num3631", number1);
+	blingminf[30] = atoi(number1);
+	opx2.QueryNode_Text("num3632", number1);
+	blingminf[31] = atoi(number1);
+	opx2.QueryNode_Text("num3633", number1);
+	blingminf[32] = atoi(number1);
+	opx2.QueryNode_Text("num3634", number1);
+	blingminf[33] = atoi(number1);
+	opx2.QueryNode_Text("num3635", number1);
+	blingminf[34] = atoi(number1);
+	opx2.QueryNode_Text("num3636", number1);
+	blingminf[35] = atoi(number1);
+	opx2.QueryNode_Text("num3637", number1);
+	blingminf[36] = atoi(number1);
+	opx2.QueryNode_Text("num3638", number1);
+	blingminf[37] = atoi(number1);
+	opx2.QueryNode_Text("num3639", number1);
+	blingminf[38] = atoi(number1);
+	opx2.QueryNode_Text("num3640", number1);
+	blingminf[39] = atoi(number1);
+
+
+	opx2.QueryNode_Text("num3701", number1);
+	glingminf[0] = atoi(number1);
+	opx2.QueryNode_Text("num3702", number1);
+	glingminf[1] = atoi(number1);
+	opx2.QueryNode_Text("num3703", number1);
+	glingminf[2] = atoi(number1);
+	opx2.QueryNode_Text("num3704", number1);
+	glingminf[3] = atoi(number1);
+	opx2.QueryNode_Text("num3705", number1);
+	glingminf[4] = atoi(number1);
+	opx2.QueryNode_Text("num3706", number1);
+	glingminf[5] = atoi(number1);
+	opx2.QueryNode_Text("num3707", number1);
+	glingminf[6] = atoi(number1);
+	opx2.QueryNode_Text("num3708", number1);
+	glingminf[7] = atoi(number1);
+	opx2.QueryNode_Text("num3709", number1);
+	glingminf[8] = atoi(number1);
+	opx2.QueryNode_Text("num3710", number1);
+	glingminf[9] = atoi(number1);
+	opx2.QueryNode_Text("num3711", number1);
+	glingminf[10] = atoi(number1);
+	opx2.QueryNode_Text("num3712", number1);
+	glingminf[11] = atoi(number1);
+	opx2.QueryNode_Text("num3713", number1);
+	glingminf[12] = atoi(number1);
+	opx2.QueryNode_Text("num3714", number1);
+	glingminf[13] = atoi(number1);
+	opx2.QueryNode_Text("num3715", number1);
+	glingminf[14] = atoi(number1);
+	opx2.QueryNode_Text("num3716", number1);
+	glingminf[15] = atoi(number1);
+	opx2.QueryNode_Text("num3717", number1);
+	glingminf[16] = atoi(number1);
+	opx2.QueryNode_Text("num3718", number1);
+	glingminf[17] = atoi(number1);
+	opx2.QueryNode_Text("num3719", number1);
+	glingminf[18] = atoi(number1);
+	opx2.QueryNode_Text("num3720", number1);
+	glingminf[19] = atoi(number1);
+	opx2.QueryNode_Text("num3721", number1);
+	glingminf[20] = atoi(number1);
+	opx2.QueryNode_Text("num3722", number1);
+	glingminf[21] = atoi(number1);
+	opx2.QueryNode_Text("num3723", number1);
+	glingminf[22] = atoi(number1);
+	opx2.QueryNode_Text("num3724", number1);
+	glingminf[23] = atoi(number1);
+	opx2.QueryNode_Text("num3725", number1);
+	glingminf[24] = atoi(number1);
+	opx2.QueryNode_Text("num3726", number1);
+	glingminf[25] = atoi(number1);
+	opx2.QueryNode_Text("num3727", number1);
+	glingminf[26] = atoi(number1);
+	opx2.QueryNode_Text("num3728", number1);
+	glingminf[27] = atoi(number1);
+	opx2.QueryNode_Text("num3729", number1);
+	glingminf[28] = atoi(number1);
+	opx2.QueryNode_Text("num3730", number1);
+	glingminf[29] = atoi(number1);
+	opx2.QueryNode_Text("num3731", number1);
+	glingminf[30] = atoi(number1);
+	opx2.QueryNode_Text("num3732", number1);
+	glingminf[31] = atoi(number1);
+	opx2.QueryNode_Text("num3733", number1);
+	glingminf[32] = atoi(number1);
+	opx2.QueryNode_Text("num3734", number1);
+	glingminf[33] = atoi(number1);
+	opx2.QueryNode_Text("num3735", number1);
+	glingminf[34] = atoi(number1);
+	opx2.QueryNode_Text("num3736", number1);
+	glingminf[35] = atoi(number1);
+	opx2.QueryNode_Text("num3737", number1);
+	glingminf[36] = atoi(number1);
+	opx2.QueryNode_Text("num3738", number1);
+	glingminf[37] = atoi(number1);
+	opx2.QueryNode_Text("num3739", number1);
+	glingminf[38] = atoi(number1);
+	opx2.QueryNode_Text("num3740", number1);
+	glingminf[39] = atoi(number1);
+
+
+
+
+	opx2.QueryNode_Text("num3801", number1);
+	rlingminf[0] = atoi(number1);
+	opx2.QueryNode_Text("num3802", number1);
+	rlingminf[1] = atoi(number1);
+	opx2.QueryNode_Text("num3803", number1);
+	rlingminf[2] = atoi(number1);
+	opx2.QueryNode_Text("num3804", number1);
+	rlingminf[3] = atoi(number1);
+	opx2.QueryNode_Text("num3805", number1);
+	rlingminf[4] = atoi(number1);
+	opx2.QueryNode_Text("num3806", number1);
+	rlingminf[5] = atoi(number1);
+	opx2.QueryNode_Text("num3807", number1);
+	rlingminf[6] = atoi(number1);
+	opx2.QueryNode_Text("num3808", number1);
+	rlingminf[7] = atoi(number1);
+	opx2.QueryNode_Text("num3809", number1);
+	rlingminf[8] = atoi(number1);
+	opx2.QueryNode_Text("num3810", number1);
+	rlingminf[9] = atoi(number1);
+	opx2.QueryNode_Text("num3811", number1);
+	rlingminf[10] = atoi(number1);
+	opx2.QueryNode_Text("num3812", number1);
+	rlingminf[11] = atoi(number1);
+	opx2.QueryNode_Text("num3813", number1);
+	rlingminf[12] = atoi(number1);
+	opx2.QueryNode_Text("num3814", number1);
+	rlingminf[13] = atoi(number1);
+	opx2.QueryNode_Text("num3815", number1);
+	rlingminf[14] = atoi(number1);
+	opx2.QueryNode_Text("num3816", number1);
+	rlingminf[15] = atoi(number1);
+	opx2.QueryNode_Text("num3817", number1);
+	rlingminf[16] = atoi(number1);
+	opx2.QueryNode_Text("num3818", number1);
+	rlingminf[17] = atoi(number1);
+	opx2.QueryNode_Text("num3819", number1);
+	rlingminf[18] = atoi(number1);
+	opx2.QueryNode_Text("num3820", number1);
+	rlingminf[19] = atoi(number1);
+	opx2.QueryNode_Text("num3821", number1);
+	rlingminf[20] = atoi(number1);
+	opx2.QueryNode_Text("num3822", number1);
+	rlingminf[21] = atoi(number1);
+	opx2.QueryNode_Text("num3823", number1);
+	rlingminf[22] = atoi(number1);
+	opx2.QueryNode_Text("num3824", number1);
+	rlingminf[23] = atoi(number1);
+	opx2.QueryNode_Text("num3825", number1);
+	rlingminf[24] = atoi(number1);
+	opx2.QueryNode_Text("num3826", number1);
+	rlingminf[25] = atoi(number1);
+	opx2.QueryNode_Text("num3827", number1);
+	rlingminf[26] = atoi(number1);
+	opx2.QueryNode_Text("num3828", number1);
+	rlingminf[27] = atoi(number1);
+	opx2.QueryNode_Text("num3829", number1);
+	rlingminf[28] = atoi(number1);
+	opx2.QueryNode_Text("num3830", number1);
+	rlingminf[29] = atoi(number1);
+	opx2.QueryNode_Text("num3831", number1);
+	rlingminf[30] = atoi(number1);
+	opx2.QueryNode_Text("num3832", number1);
+	rlingminf[31] = atoi(number1);
+	opx2.QueryNode_Text("num3833", number1);
+	rlingminf[32] = atoi(number1);
+	opx2.QueryNode_Text("num3834", number1);
+	rlingminf[33] = atoi(number1);
+	opx2.QueryNode_Text("num3835", number1);
+	rlingminf[34] = atoi(number1);
+	opx2.QueryNode_Text("num3836", number1);
+	rlingminf[35] = atoi(number1);
+	opx2.QueryNode_Text("num3837", number1);
+	rlingminf[36] = atoi(number1);
+	opx2.QueryNode_Text("num3838", number1);
+	rlingminf[37] = atoi(number1);
+	opx2.QueryNode_Text("num3839", number1);
+	rlingminf[38] = atoi(number1);
+	opx2.QueryNode_Text("num3840", number1);
+	rlingminf[39] = atoi(number1);
+
+
+	opx2.QueryNode_Text("num3901", number1);
+	hunlingminf[0] = atoi(number1);
+	opx2.QueryNode_Text("num3902", number1);
+	hunlingminf[1] = atoi(number1);
+	opx2.QueryNode_Text("num3903", number1);
+	hunlingminf[2] = atoi(number1);
+	opx2.QueryNode_Text("num3904", number1);
+	hunlingminf[3] = atoi(number1);
+	opx2.QueryNode_Text("num3905", number1);
+	hunlingminf[4] = atoi(number1);
+	opx2.QueryNode_Text("num3906", number1);
+	hunlingminf[5] = atoi(number1);
+	opx2.QueryNode_Text("num3907", number1);
+	hunlingminf[6] = atoi(number1);
+	opx2.QueryNode_Text("num3908", number1);
+	hunlingminf[7] = atoi(number1);
+	opx2.QueryNode_Text("num3909", number1);
+	hunlingminf[8] = atoi(number1);
+	opx2.QueryNode_Text("num3910", number1);
+	hunlingminf[9] = atoi(number1);
+	opx2.QueryNode_Text("num3911", number1);
+	hunlingminf[10] = atoi(number1);
+	opx2.QueryNode_Text("num3912", number1);
+	hunlingminf[11] = atoi(number1);
+	opx2.QueryNode_Text("num3913", number1);
+	hunlingminf[12] = atoi(number1);
+	opx2.QueryNode_Text("num3914", number1);
+	hunlingminf[13] = atoi(number1);
+	opx2.QueryNode_Text("num3915", number1);
+	hunlingminf[14] = atoi(number1);
+	opx2.QueryNode_Text("num3916", number1);
+	hunlingminf[15] = atoi(number1);
+	opx2.QueryNode_Text("num3917", number1);
+	hunlingminf[16] = atoi(number1);
+	opx2.QueryNode_Text("num3918", number1);
+	hunlingminf[17] = atoi(number1);
+	opx2.QueryNode_Text("num3919", number1);
+	hunlingminf[18] = atoi(number1);
+	opx2.QueryNode_Text("num3920", number1);
+	hunlingminf[19] = atoi(number1);
+	opx2.QueryNode_Text("num3921", number1);
+	hunlingminf[20] = atoi(number1);
+	opx2.QueryNode_Text("num3922", number1);
+	hunlingminf[21] = atoi(number1);
+	opx2.QueryNode_Text("num3923", number1);
+	hunlingminf[22] = atoi(number1);
+	opx2.QueryNode_Text("num3924", number1);
+	hunlingminf[23] = atoi(number1);
+	opx2.QueryNode_Text("num3925", number1);
+	hunlingminf[24] = atoi(number1);
+	opx2.QueryNode_Text("num3926", number1);
+	hunlingminf[25] = atoi(number1);
+	opx2.QueryNode_Text("num3927", number1);
+	hunlingminf[26] = atoi(number1);
+	opx2.QueryNode_Text("num3928", number1);
+	hunlingminf[27] = atoi(number1);
+	opx2.QueryNode_Text("num3929", number1);
+	hunlingminf[28] = atoi(number1);
+	opx2.QueryNode_Text("num3930", number1);
+	hunlingminf[29] = atoi(number1);
+	opx2.QueryNode_Text("num3931", number1);
+	hunlingminf[30] = atoi(number1);
+	opx2.QueryNode_Text("num3932", number1);
+	hunlingminf[31] = atoi(number1);
+	opx2.QueryNode_Text("num3933", number1);
+	hunlingminf[32] = atoi(number1);
+	opx2.QueryNode_Text("num3934", number1);
+	hunlingminf[33] = atoi(number1);
+	opx2.QueryNode_Text("num3935", number1);
+	hunlingminf[34] = atoi(number1);
+	opx2.QueryNode_Text("num3936", number1);
+	hunlingminf[35] = atoi(number1);
+	opx2.QueryNode_Text("num3937", number1);
+	hunlingminf[36] = atoi(number1);
+	opx2.QueryNode_Text("num3938", number1);
+	hunlingminf[37] = atoi(number1);
+	opx2.QueryNode_Text("num3939", number1);
+	hunlingminf[38] = atoi(number1);
+	opx2.QueryNode_Text("num3940", number1);
+	hunlingminf[39] = atoi(number1);
+
+
+
+	opx2.QueryNode_Text("num4001", number1);
+	quyuf[0] = atoi(number1);
+	opx2.QueryNode_Text("num4002", number1);
+	quyuf[1] = atoi(number1);
+	opx2.QueryNode_Text("num4003", number1);
+	quyuf[2] = atoi(number1);
+	opx2.QueryNode_Text("num4004", number1);
+	quyuf[3] = atoi(number1);
+	opx2.QueryNode_Text("num4005", number1);
+	quyuf[4] = atoi(number1);
+	opx2.QueryNode_Text("num4006", number1);
+	quyuf[5] = atoi(number1);
+	opx2.QueryNode_Text("num4007", number1);
+	quyuf[6] = atoi(number1);
+	opx2.QueryNode_Text("num4008", number1);
+	quyuf[7] = atoi(number1);
+	opx2.QueryNode_Text("num4009", number1);
+	quyuf[8] = atoi(number1);
+	opx2.QueryNode_Text("num4010", number1);
+	quyuf[9] = atoi(number1);
+	opx2.QueryNode_Text("num4011", number1);
+	quyuf[10] = atoi(number1);
+	opx2.QueryNode_Text("num4012", number1);
+	quyuf[11] = atoi(number1);
+	opx2.QueryNode_Text("num4013", number1);
+	quyuf[12] = atoi(number1);
+	opx2.QueryNode_Text("num4014", number1);
+	quyuf[13] = atoi(number1);
+	opx2.QueryNode_Text("num4015", number1);
+	quyuf[14] = atoi(number1);
+	opx2.QueryNode_Text("num4016", number1);
+	quyuf[15] = atoi(number1);
+	opx2.QueryNode_Text("num4017", number1);
+	quyuf[16] = atoi(number1);
+	opx2.QueryNode_Text("num4018", number1);
+	quyuf[17] = atoi(number1);
+	opx2.QueryNode_Text("num4019", number1);
+	quyuf[18] = atoi(number1);
+	opx2.QueryNode_Text("num4020", number1);
+	quyuf[19] = atoi(number1);
+	opx2.QueryNode_Text("num4021", number1);
+	quyuf[20] = atoi(number1);
+	opx2.QueryNode_Text("num4022", number1);
+	quyuf[21] = atoi(number1);
+	opx2.QueryNode_Text("num4023", number1);
+	quyuf[22] = atoi(number1);
+	opx2.QueryNode_Text("num4024", number1);
+	quyuf[23] = atoi(number1);
+	opx2.QueryNode_Text("num4025", number1);
+	quyuf[24] = atoi(number1);
+	opx2.QueryNode_Text("num4026", number1);
+	quyuf[25] = atoi(number1);
+	opx2.QueryNode_Text("num4027", number1);
+	quyuf[26] = atoi(number1);
+	opx2.QueryNode_Text("num4028", number1);
+	quyuf[27] = atoi(number1);
+	opx2.QueryNode_Text("num4029", number1);
+	quyuf[28] = atoi(number1);
+	opx2.QueryNode_Text("num4030", number1);
+	quyuf[29] = atoi(number1);
+	opx2.QueryNode_Text("num4031", number1);
+	quyuf[30] = atoi(number1);
+	opx2.QueryNode_Text("num4032", number1);
+	quyuf[31] = atoi(number1);
+	opx2.QueryNode_Text("num4033", number1);
+	quyuf[32] = atoi(number1);
+	opx2.QueryNode_Text("num4034", number1);
+	quyuf[33] = atoi(number1);
+	opx2.QueryNode_Text("num4035", number1);
+	quyuf[34] = atoi(number1);
+	opx2.QueryNode_Text("num4036", number1);
+	quyuf[35] = atoi(number1);
+	opx2.QueryNode_Text("num4037", number1);
+	quyuf[36] = atoi(number1);
+	opx2.QueryNode_Text("num4038", number1);
+	quyuf[37] = atoi(number1);
+	opx2.QueryNode_Text("num4039", number1);
+	quyuf[38] = atoi(number1);
+	opx2.QueryNode_Text("num4040", number1);
+	quyuf[39] = atoi(number1);
+
+
+	opx2.QueryNode_Text("num4101", number1);
+	quyuerf[0] = atoi(number1);
+	opx2.QueryNode_Text("num4102", number1);
+	quyuerf[1] = atoi(number1);
+	opx2.QueryNode_Text("num4103", number1);
+	quyuerf[2] = atoi(number1);
+	opx2.QueryNode_Text("num4104", number1);
+	quyuerf[3] = atoi(number1);
+	opx2.QueryNode_Text("num4105", number1);
+	quyuerf[4] = atoi(number1);
+	opx2.QueryNode_Text("num4106", number1);
+	quyuerf[5] = atoi(number1);
+	opx2.QueryNode_Text("num4107", number1);
+	quyuerf[6] = atoi(number1);
+	opx2.QueryNode_Text("num4108", number1);
+	quyuerf[7] = atoi(number1);
+	opx2.QueryNode_Text("num4109", number1);
+	quyuerf[8] = atoi(number1);
+	opx2.QueryNode_Text("num4110", number1);
+	quyuerf[9] = atoi(number1);
+	opx2.QueryNode_Text("num4111", number1);
+	quyuerf[10] = atoi(number1);
+	opx2.QueryNode_Text("num4112", number1);
+	quyuerf[11] = atoi(number1);
+	opx2.QueryNode_Text("num4113", number1);
+	quyuerf[12] = atoi(number1);
+	opx2.QueryNode_Text("num4114", number1);
+	quyuerf[13] = atoi(number1);
+	opx2.QueryNode_Text("num4115", number1);
+	quyuerf[14] = atoi(number1);
+	opx2.QueryNode_Text("num4116", number1);
+	quyuerf[15] = atoi(number1);
+	opx2.QueryNode_Text("num4117", number1);
+	quyuerf[16] = atoi(number1);
+	opx2.QueryNode_Text("num4118", number1);
+	quyuerf[17] = atoi(number1);
+	opx2.QueryNode_Text("num4119", number1);
+	quyuerf[18] = atoi(number1);
+	opx2.QueryNode_Text("num4120", number1);
+	quyuerf[19] = atoi(number1);
+	opx2.QueryNode_Text("num4121", number1);
+	quyuerf[20] = atoi(number1);
+	opx2.QueryNode_Text("num4122", number1);
+	quyuerf[21] = atoi(number1);
+	opx2.QueryNode_Text("num4123", number1);
+	quyuerf[22] = atoi(number1);
+	opx2.QueryNode_Text("num4124", number1);
+	quyuerf[23] = atoi(number1);
+	opx2.QueryNode_Text("num4125", number1);
+	quyuerf[24] = atoi(number1);
+	opx2.QueryNode_Text("num4126", number1);
+	quyuerf[25] = atoi(number1);
+	opx2.QueryNode_Text("num4127", number1);
+	quyuerf[26] = atoi(number1);
+	opx2.QueryNode_Text("num4128", number1);
+	quyuerf[27] = atoi(number1);
+	opx2.QueryNode_Text("num4129", number1);
+	quyuerf[28] = atoi(number1);
+	opx2.QueryNode_Text("num4130", number1);
+	quyuerf[29] = atoi(number1);
+	opx2.QueryNode_Text("num4131", number1);
+	quyuerf[30] = atoi(number1);
+	opx2.QueryNode_Text("num4132", number1);
+	quyuerf[31] = atoi(number1);
+	opx2.QueryNode_Text("num4133", number1);
+	quyuerf[32] = atoi(number1);
+	opx2.QueryNode_Text("num4134", number1);
+	quyuerf[33] = atoi(number1);
+	opx2.QueryNode_Text("num4135", number1);
+	quyuerf[34] = atoi(number1);
+	opx2.QueryNode_Text("num4136", number1);
+	quyuerf[35] = atoi(number1);
+	opx2.QueryNode_Text("num4137", number1);
+	quyuerf[36] = atoi(number1);
+	opx2.QueryNode_Text("num4138", number1);
+	quyuerf[37] = atoi(number1);
+	opx2.QueryNode_Text("num4139", number1);
+	quyuerf[38] = atoi(number1);
+	opx2.QueryNode_Text("num4140", number1);
+	quyuerf[39] = atoi(number1);
+
+
+	opx2.QueryNode_Text("num4201", number1);
+	quyusanf[0] = atoi(number1);
+	opx2.QueryNode_Text("num4202", number1);
+	quyusanf[1] = atoi(number1);
+	opx2.QueryNode_Text("num4203", number1);
+	quyusanf[2] = atoi(number1);
+	opx2.QueryNode_Text("num4204", number1);
+	quyusanf[3] = atoi(number1);
+	opx2.QueryNode_Text("num4205", number1);
+	quyusanf[4] = atoi(number1);
+	opx2.QueryNode_Text("num4206", number1);
+	quyusanf[5] = atoi(number1);
+	opx2.QueryNode_Text("num4207", number1);
+	quyusanf[6] = atoi(number1);
+	opx2.QueryNode_Text("num4208", number1);
+	quyusanf[7] = atoi(number1);
+	opx2.QueryNode_Text("num4209", number1);
+	quyusanf[8] = atoi(number1);
+	opx2.QueryNode_Text("num4210", number1);
+	quyusanf[9] = atoi(number1);
+	opx2.QueryNode_Text("num4211", number1);
+	quyusanf[10] = atoi(number1);
+	opx2.QueryNode_Text("num4212", number1);
+	quyusanf[11] = atoi(number1);
+	opx2.QueryNode_Text("num4213", number1);
+	quyusanf[12] = atoi(number1);
+	opx2.QueryNode_Text("num4214", number1);
+	quyusanf[13] = atoi(number1);
+	opx2.QueryNode_Text("num4215", number1);
+	quyusanf[14] = atoi(number1);
+	opx2.QueryNode_Text("num4216", number1);
+	quyusanf[15] = atoi(number1);
+	opx2.QueryNode_Text("num4217", number1);
+	quyusanf[16] = atoi(number1);
+	opx2.QueryNode_Text("num4218", number1);
+	quyusanf[17] = atoi(number1);
+	opx2.QueryNode_Text("num4219", number1);
+	quyusanf[18] = atoi(number1);
+	opx2.QueryNode_Text("num4220", number1);
+	quyusanf[19] = atoi(number1);
+	opx2.QueryNode_Text("num4221", number1);
+	quyusanf[20] = atoi(number1);
+	opx2.QueryNode_Text("num4222", number1);
+	quyusanf[21] = atoi(number1);
+	opx2.QueryNode_Text("num4223", number1);
+	quyusanf[22] = atoi(number1);
+	opx2.QueryNode_Text("num4224", number1);
+	quyusanf[23] = atoi(number1);
+	opx2.QueryNode_Text("num4225", number1);
+	quyusanf[24] = atoi(number1);
+	opx2.QueryNode_Text("num4226", number1);
+	quyusanf[25] = atoi(number1);
+	opx2.QueryNode_Text("num4227", number1);
+	quyusanf[26] = atoi(number1);
+	opx2.QueryNode_Text("num4228", number1);
+	quyusanf[27] = atoi(number1);
+	opx2.QueryNode_Text("num4229", number1);
+	quyusanf[28] = atoi(number1);
+	opx2.QueryNode_Text("num4230", number1);
+	quyusanf[29] = atoi(number1);
+	opx2.QueryNode_Text("num4231", number1);
+	quyusanf[30] = atoi(number1);
+	opx2.QueryNode_Text("num4232", number1);
+	quyusanf[31] = atoi(number1);
+	opx2.QueryNode_Text("num4233", number1);
+	quyusanf[32] = atoi(number1);
+	opx2.QueryNode_Text("num4234", number1);
+	quyusanf[33] = atoi(number1);
+	opx2.QueryNode_Text("num4235", number1);
+	quyusanf[34] = atoi(number1);
+	opx2.QueryNode_Text("num4236", number1);
+	quyusanf[35] = atoi(number1);
+	opx2.QueryNode_Text("num4237", number1);
+	quyusanf[36] = atoi(number1);
+	opx2.QueryNode_Text("num4238", number1);
+	quyusanf[37] = atoi(number1);
+	opx2.QueryNode_Text("num4239", number1);
+	quyusanf[38] = atoi(number1);
+	opx2.QueryNode_Text("num4240", number1);
+	quyusanf[39] = atoi(number1);
+
+	opx2.QueryNode_Text("num4301", number1);
+	quyusif[0] = atoi(number1);
+	opx2.QueryNode_Text("num4302", number1);
+	quyusif[1] = atoi(number1);
+	opx2.QueryNode_Text("num4303", number1);
+	quyusif[2] = atoi(number1);
+	opx2.QueryNode_Text("num4304", number1);
+	quyusif[3] = atoi(number1);
+	opx2.QueryNode_Text("num4305", number1);
+	quyusif[4] = atoi(number1);
+	opx2.QueryNode_Text("num4306", number1);
+	quyusif[5] = atoi(number1);
+	opx2.QueryNode_Text("num4307", number1);
+	quyusif[6] = atoi(number1);
+	opx2.QueryNode_Text("num4308", number1);
+	quyusif[7] = atoi(number1);
+	opx2.QueryNode_Text("num4309", number1);
+	quyusif[8] = atoi(number1);
+	opx2.QueryNode_Text("num4310", number1);
+	quyusif[9] = atoi(number1);
+	opx2.QueryNode_Text("num4311", number1);
+	quyusif[10] = atoi(number1);
+	opx2.QueryNode_Text("num4312", number1);
+	quyusif[11] = atoi(number1);
+	opx2.QueryNode_Text("num4313", number1);
+	quyusif[12] = atoi(number1);
+	opx2.QueryNode_Text("num4314", number1);
+	quyusif[13] = atoi(number1);
+	opx2.QueryNode_Text("num4315", number1);
+	quyusif[14] = atoi(number1);
+	opx2.QueryNode_Text("num4316", number1);
+	quyusif[15] = atoi(number1);
+	opx2.QueryNode_Text("num4317", number1);
+	quyusif[16] = atoi(number1);
+	opx2.QueryNode_Text("num4318", number1);
+	quyusif[17] = atoi(number1);
+	opx2.QueryNode_Text("num4319", number1);
+	quyusif[18] = atoi(number1);
+	opx2.QueryNode_Text("num4320", number1);
+	quyusif[19] = atoi(number1);
+	opx2.QueryNode_Text("num4321", number1);
+	quyusif[20] = atoi(number1);
+	opx2.QueryNode_Text("num4322", number1);
+	quyusif[21] = atoi(number1);
+	opx2.QueryNode_Text("num4323", number1);
+	quyusif[22] = atoi(number1);
+	opx2.QueryNode_Text("num4324", number1);
+	quyusif[23] = atoi(number1);
+	opx2.QueryNode_Text("num4325", number1);
+	quyusif[24] = atoi(number1);
+	opx2.QueryNode_Text("num4326", number1);
+	quyusif[25] = atoi(number1);
+	opx2.QueryNode_Text("num4327", number1);
+	quyusif[26] = atoi(number1);
+	opx2.QueryNode_Text("num4328", number1);
+	quyusif[27] = atoi(number1);
+	opx2.QueryNode_Text("num4329", number1);
+	quyusif[28] = atoi(number1);
+	opx2.QueryNode_Text("num4330", number1);
+	quyusif[29] = atoi(number1);
+	opx2.QueryNode_Text("num4331", number1);
+	quyusif[30] = atoi(number1);
+	opx2.QueryNode_Text("num4332", number1);
+	quyusif[31] = atoi(number1);
+	opx2.QueryNode_Text("num4333", number1);
+	quyusif[32] = atoi(number1);
+	opx2.QueryNode_Text("num4334", number1);
+	quyusif[33] = atoi(number1);
+	opx2.QueryNode_Text("num4335", number1);
+	quyusif[34] = atoi(number1);
+	opx2.QueryNode_Text("num4336", number1);
+	quyusif[35] = atoi(number1);
+	opx2.QueryNode_Text("num4337", number1);
+	quyusif[36] = atoi(number1);
+	opx2.QueryNode_Text("num4338", number1);
+	quyusif[37] = atoi(number1);
+	opx2.QueryNode_Text("num4339", number1);
+	quyusif[38] = atoi(number1);
+	opx2.QueryNode_Text("num4340", number1);
+	quyusif[39] = atoi(number1);
+
+	opx2.QueryNode_Text("num4401", number1);
+	quyuwuf[0] = atoi(number1);
+	opx2.QueryNode_Text("num4402", number1);
+	quyuwuf[1] = atoi(number1);
+	opx2.QueryNode_Text("num4403", number1);
+	quyuwuf[2] = atoi(number1);
+	opx2.QueryNode_Text("num4404", number1);
+	quyuwuf[3] = atoi(number1);
+	opx2.QueryNode_Text("num4405", number1);
+	quyuwuf[4] = atoi(number1);
+	opx2.QueryNode_Text("num4406", number1);
+	quyuwuf[5] = atoi(number1);
+	opx2.QueryNode_Text("num4407", number1);
+	quyuwuf[6] = atoi(number1);
+	opx2.QueryNode_Text("num4408", number1);
+	quyuwuf[7] = atoi(number1);
+	opx2.QueryNode_Text("num4409", number1);
+	quyuwuf[8] = atoi(number1);
+	opx2.QueryNode_Text("num4410", number1);
+	quyuwuf[9] = atoi(number1);
+	opx2.QueryNode_Text("num4411", number1);
+	quyuwuf[10] = atoi(number1);
+	opx2.QueryNode_Text("num4412", number1);
+	quyuwuf[11] = atoi(number1);
+	opx2.QueryNode_Text("num4413", number1);
+	quyuwuf[12] = atoi(number1);
+	opx2.QueryNode_Text("num4414", number1);
+	quyuwuf[13] = atoi(number1);
+	opx2.QueryNode_Text("num4415", number1);
+	quyuwuf[14] = atoi(number1);
+	opx2.QueryNode_Text("num4416", number1);
+	quyuwuf[15] = atoi(number1);
+	opx2.QueryNode_Text("num4417", number1);
+	quyuwuf[16] = atoi(number1);
+	opx2.QueryNode_Text("num4418", number1);
+	quyuwuf[17] = atoi(number1);
+	opx2.QueryNode_Text("num4419", number1);
+	quyuwuf[18] = atoi(number1);
+	opx2.QueryNode_Text("num4420", number1);
+	quyuwuf[19] = atoi(number1);
+	opx2.QueryNode_Text("num4421", number1);
+	quyuwuf[20] = atoi(number1);
+	opx2.QueryNode_Text("num4422", number1);
+	quyuwuf[21] = atoi(number1);
+	opx2.QueryNode_Text("num4423", number1);
+	quyuwuf[22] = atoi(number1);
+	opx2.QueryNode_Text("num4424", number1);
+	quyuwuf[23] = atoi(number1);
+	opx2.QueryNode_Text("num4425", number1);
+	quyuwuf[24] = atoi(number1);
+	opx2.QueryNode_Text("num4426", number1);
+	quyuwuf[25] = atoi(number1);
+	opx2.QueryNode_Text("num4427", number1);
+	quyuwuf[26] = atoi(number1);
+	opx2.QueryNode_Text("num4428", number1);
+	quyuwuf[27] = atoi(number1);
+	opx2.QueryNode_Text("num4429", number1);
+	quyuwuf[28] = atoi(number1);
+	opx2.QueryNode_Text("num4430", number1);
+	quyuwuf[29] = atoi(number1);
+	opx2.QueryNode_Text("num4431", number1);
+	quyuwuf[30] = atoi(number1);
+	opx2.QueryNode_Text("num4432", number1);
+	quyuwuf[31] = atoi(number1);
+	opx2.QueryNode_Text("num4433", number1);
+	quyuwuf[32] = atoi(number1);
+	opx2.QueryNode_Text("num4434", number1);
+	quyuwuf[33] = atoi(number1);
+	opx2.QueryNode_Text("num4435", number1);
+	quyuwuf[34] = atoi(number1);
+	opx2.QueryNode_Text("num4436", number1);
+	quyuwuf[35] = atoi(number1);
+	opx2.QueryNode_Text("num4437", number1);
+	quyuwuf[36] = atoi(number1);
+	opx2.QueryNode_Text("num4438", number1);
+	quyuwuf[37] = atoi(number1);
+	opx2.QueryNode_Text("num4439", number1);
+	quyuwuf[38] = atoi(number1);
+	opx2.QueryNode_Text("num4440", number1);
+	quyuwuf[39] = atoi(number1);
+
+
+	opx2.QueryNode_Text("num4501", number1);
+	shenduf[0] = atoi(number1);
+	opx2.QueryNode_Text("num4502", number1);
+	shenduf[1] = atoi(number1);
+	opx2.QueryNode_Text("num4503", number1);
+	shenduf[2] = atoi(number1);
+	opx2.QueryNode_Text("num4504", number1);
+	shenduf[3] = atoi(number1);
+	opx2.QueryNode_Text("num4505", number1);
+	shenduf[4] = atoi(number1);
+	opx2.QueryNode_Text("num4506", number1);
+	shenduf[5] = atoi(number1);
+	opx2.QueryNode_Text("num4507", number1);
+	shenduf[6] = atoi(number1);
+	opx2.QueryNode_Text("num4508", number1);
+	shenduf[7] = atoi(number1);
+	opx2.QueryNode_Text("num4509", number1);
+	shenduf[8] = atoi(number1);
+	opx2.QueryNode_Text("num4510", number1);
+	shenduf[9] = atoi(number1);
+	opx2.QueryNode_Text("num4511", number1);
+	shenduf[10] = atoi(number1);
+	opx2.QueryNode_Text("num4512", number1);
+	shenduf[11] = atoi(number1);
+	opx2.QueryNode_Text("num4513", number1);
+	shenduf[12] = atoi(number1);
+	opx2.QueryNode_Text("num4514", number1);
+	shenduf[13] = atoi(number1);
+	opx2.QueryNode_Text("num4515", number1);
+	shenduf[14] = atoi(number1);
+	opx2.QueryNode_Text("num4516", number1);
+	shenduf[15] = atoi(number1);
+	opx2.QueryNode_Text("num4517", number1);
+	shenduf[16] = atoi(number1);
+	opx2.QueryNode_Text("num4518", number1);
+	shenduf[17] = atoi(number1);
+	opx2.QueryNode_Text("num4519", number1);
+	shenduf[18] = atoi(number1);
+	opx2.QueryNode_Text("num4520", number1);
+	shenduf[19] = atoi(number1);
+	opx2.QueryNode_Text("num4521", number1);
+	shenduf[20] = atoi(number1);
+	opx2.QueryNode_Text("num4522", number1);
+	shenduf[21] = atoi(number1);
+	opx2.QueryNode_Text("num4523", number1);
+	shenduf[22] = atoi(number1);
+	opx2.QueryNode_Text("num4524", number1);
+	shenduf[23] = atoi(number1);
+	opx2.QueryNode_Text("num4525", number1);
+	shenduf[24] = atoi(number1);
+	opx2.QueryNode_Text("num4526", number1);
+	shenduf[25] = atoi(number1);
+	opx2.QueryNode_Text("num4527", number1);
+	shenduf[26] = atoi(number1);
+	opx2.QueryNode_Text("num4528", number1);
+	shenduf[27] = atoi(number1);
+	opx2.QueryNode_Text("num4529", number1);
+	shenduf[28] = atoi(number1);
+	opx2.QueryNode_Text("num4530", number1);
+	shenduf[29] = atoi(number1);
+	opx2.QueryNode_Text("num4531", number1);
+	shenduf[30] = atoi(number1);
+	opx2.QueryNode_Text("num4532", number1);
+	shenduf[31] = atoi(number1);
+	opx2.QueryNode_Text("num4533", number1);
+	shenduf[32] = atoi(number1);
+	opx2.QueryNode_Text("num4534", number1);
+	shenduf[33] = atoi(number1);
+	opx2.QueryNode_Text("num4535", number1);
+	shenduf[34] = atoi(number1);
+	opx2.QueryNode_Text("num4536", number1);
+	shenduf[35] = atoi(number1);
+	opx2.QueryNode_Text("num4537", number1);
+	shenduf[36] = atoi(number1);
+	opx2.QueryNode_Text("num4538", number1);
+	shenduf[37] = atoi(number1);
+	opx2.QueryNode_Text("num4539", number1);
+	shenduf[38] = atoi(number1);
+	opx2.QueryNode_Text("num4540", number1);
+	shenduf[39] = atoi(number1);
+
+
+
+	opx2.QueryNode_Text("num4601", number1);
+	shenduerf[0] = atoi(number1);
+	opx2.QueryNode_Text("num4602", number1);
+	shenduerf[1] = atoi(number1);
+	opx2.QueryNode_Text("num4603", number1);
+	shenduerf[2] = atoi(number1);
+	opx2.QueryNode_Text("num4604", number1);
+	shenduerf[3] = atoi(number1);
+	opx2.QueryNode_Text("num4605", number1);
+	shenduerf[4] = atoi(number1);
+	opx2.QueryNode_Text("num4606", number1);
+	shenduerf[5] = atoi(number1);
+	opx2.QueryNode_Text("num4607", number1);
+	shenduerf[6] = atoi(number1);
+	opx2.QueryNode_Text("num4608", number1);
+	shenduerf[7] = atoi(number1);
+	opx2.QueryNode_Text("num4609", number1);
+	shenduerf[8] = atoi(number1);
+	opx2.QueryNode_Text("num4610", number1);
+	shenduerf[9] = atoi(number1);
+	opx2.QueryNode_Text("num4611", number1);
+	shenduerf[10] = atoi(number1);
+	opx2.QueryNode_Text("num4612", number1);
+	shenduerf[11] = atoi(number1);
+	opx2.QueryNode_Text("num4613", number1);
+	shenduerf[12] = atoi(number1);
+	opx2.QueryNode_Text("num4614", number1);
+	shenduerf[13] = atoi(number1);
+	opx2.QueryNode_Text("num4615", number1);
+	shenduerf[14] = atoi(number1);
+	opx2.QueryNode_Text("num4616", number1);
+	shenduerf[15] = atoi(number1);
+	opx2.QueryNode_Text("num4617", number1);
+	shenduerf[16] = atoi(number1);
+	opx2.QueryNode_Text("num4618", number1);
+	shenduerf[17] = atoi(number1);
+	opx2.QueryNode_Text("num4619", number1);
+	shenduerf[18] = atoi(number1);
+	opx2.QueryNode_Text("num4620", number1);
+	shenduerf[19] = atoi(number1);
+	opx2.QueryNode_Text("num4621", number1);
+	shenduerf[20] = atoi(number1);
+	opx2.QueryNode_Text("num4622", number1);
+	shenduerf[21] = atoi(number1);
+	opx2.QueryNode_Text("num4623", number1);
+	shenduerf[22] = atoi(number1);
+	opx2.QueryNode_Text("num4624", number1);
+	shenduerf[23] = atoi(number1);
+	opx2.QueryNode_Text("num4625", number1);
+	shenduerf[24] = atoi(number1);
+	opx2.QueryNode_Text("num4626", number1);
+	shenduerf[25] = atoi(number1);
+	opx2.QueryNode_Text("num4627", number1);
+	shenduerf[26] = atoi(number1);
+	opx2.QueryNode_Text("num4628", number1);
+	shenduerf[27] = atoi(number1);
+	opx2.QueryNode_Text("num4629", number1);
+	shenduerf[28] = atoi(number1);
+	opx2.QueryNode_Text("num4630", number1);
+	shenduerf[29] = atoi(number1);
+	opx2.QueryNode_Text("num4631", number1);
+	shenduerf[30] = atoi(number1);
+	opx2.QueryNode_Text("num4632", number1);
+	shenduerf[31] = atoi(number1);
+	opx2.QueryNode_Text("num4633", number1);
+	shenduerf[32] = atoi(number1);
+	opx2.QueryNode_Text("num4634", number1);
+	shenduerf[33] = atoi(number1);
+	opx2.QueryNode_Text("num4635", number1);
+	shenduerf[34] = atoi(number1);
+	opx2.QueryNode_Text("num4636", number1);
+	shenduerf[35] = atoi(number1);
+	opx2.QueryNode_Text("num4637", number1);
+	shenduerf[36] = atoi(number1);
+	opx2.QueryNode_Text("num4638", number1);
+	shenduerf[37] = atoi(number1);
+	opx2.QueryNode_Text("num4639", number1);
+	shenduerf[38] = atoi(number1);
+	opx2.QueryNode_Text("num4640", number1);
+	shenduerf[39] = atoi(number1);
+
+
+
+	opx2.QueryNode_Text("num4701", number1);
+	huif[0] = atoi(number1);
+	opx2.QueryNode_Text("num4702", number1);
+	huif[1] = atoi(number1);
+	opx2.QueryNode_Text("num4703", number1);
+	huif[2] = atoi(number1);
+	opx2.QueryNode_Text("num4704", number1);
+	huif[3] = atoi(number1);
+	opx2.QueryNode_Text("num4705", number1);
+	huif[4] = atoi(number1);
+	opx2.QueryNode_Text("num4706", number1);
+	huif[5] = atoi(number1);
+	opx2.QueryNode_Text("num4707", number1);
+	huif[6] = atoi(number1);
+	opx2.QueryNode_Text("num4708", number1);
+	huif[7] = atoi(number1);
+	opx2.QueryNode_Text("num4709", number1);
+	huif[8] = atoi(number1);
+	opx2.QueryNode_Text("num4710", number1);
+	huif[9] = atoi(number1);
+	opx2.QueryNode_Text("num4711", number1);
+	huif[10] = atoi(number1);
+	opx2.QueryNode_Text("num4712", number1);
+	huif[11] = atoi(number1);
+	opx2.QueryNode_Text("num4713", number1);
+	huif[12] = atoi(number1);
+	opx2.QueryNode_Text("num4714", number1);
+	huif[13] = atoi(number1);
+	opx2.QueryNode_Text("num4715", number1);
+	huif[14] = atoi(number1);
+	opx2.QueryNode_Text("num4716", number1);
+	huif[15] = atoi(number1);
+	opx2.QueryNode_Text("num4717", number1);
+	huif[16] = atoi(number1);
+	opx2.QueryNode_Text("num4718", number1);
+	huif[17] = atoi(number1);
+	opx2.QueryNode_Text("num4719", number1);
+	huif[18] = atoi(number1);
+	opx2.QueryNode_Text("num4720", number1);
+	huif[19] = atoi(number1);
+	opx2.QueryNode_Text("num4721", number1);
+	huif[20] = atoi(number1);
+	opx2.QueryNode_Text("num4722", number1);
+	huif[21] = atoi(number1);
+	opx2.QueryNode_Text("num4723", number1);
+	huif[22] = atoi(number1);
+	opx2.QueryNode_Text("num4724", number1);
+	huif[23] = atoi(number1);
+	opx2.QueryNode_Text("num4725", number1);
+	huif[24] = atoi(number1);
+	opx2.QueryNode_Text("num4726", number1);
+	huif[25] = atoi(number1);
+	opx2.QueryNode_Text("num4727", number1);
+	huif[26] = atoi(number1);
+	opx2.QueryNode_Text("num4728", number1);
+	huif[27] = atoi(number1);
+	opx2.QueryNode_Text("num4729", number1);
+	huif[28] = atoi(number1);
+	opx2.QueryNode_Text("num4730", number1);
+	huif[29] = atoi(number1);
+	opx2.QueryNode_Text("num4731", number1);
+	huif[30] = atoi(number1);
+	opx2.QueryNode_Text("num4732", number1);
+	huif[31] = atoi(number1);
+	opx2.QueryNode_Text("num4733", number1);
+	huif[32] = atoi(number1);
+	opx2.QueryNode_Text("num4734", number1);
+	huif[33] = atoi(number1);
+	opx2.QueryNode_Text("num4735", number1);
+	huif[34] = atoi(number1);
+	opx2.QueryNode_Text("num4736", number1);
+	huif[35] = atoi(number1);
+	opx2.QueryNode_Text("num4737", number1);
+	huif[36] = atoi(number1);
+	opx2.QueryNode_Text("num4738", number1);
+	huif[37] = atoi(number1);
+	opx2.QueryNode_Text("num4739", number1);
+	huif[38] = atoi(number1);
+	opx2.QueryNode_Text("num4740", number1);
+	huif[39] = atoi(number1);
+
+
+
+	opx2.QueryNode_Text("num4801", number1);
+	huierf[0] = atoi(number1);
+	opx2.QueryNode_Text("num4802", number1);
+	huierf[1] = atoi(number1);
+	opx2.QueryNode_Text("num4803", number1);
+	huierf[2] = atoi(number1);
+	opx2.QueryNode_Text("num4804", number1);
+	huierf[3] = atoi(number1);
+	opx2.QueryNode_Text("num4805", number1);
+	huierf[4] = atoi(number1);
+	opx2.QueryNode_Text("num4806", number1);
+	huierf[5] = atoi(number1);
+	opx2.QueryNode_Text("num4807", number1);
+	huierf[6] = atoi(number1);
+	opx2.QueryNode_Text("num4808", number1);
+	huierf[7] = atoi(number1);
+	opx2.QueryNode_Text("num4809", number1);
+	huierf[8] = atoi(number1);
+	opx2.QueryNode_Text("num4810", number1);
+	huierf[9] = atoi(number1);
+	opx2.QueryNode_Text("num4811", number1);
+	huierf[10] = atoi(number1);
+	opx2.QueryNode_Text("num4812", number1);
+	huierf[11] = atoi(number1);
+	opx2.QueryNode_Text("num4813", number1);
+	huierf[12] = atoi(number1);
+	opx2.QueryNode_Text("num4814", number1);
+	huierf[13] = atoi(number1);
+	opx2.QueryNode_Text("num4815", number1);
+	huierf[14] = atoi(number1);
+	opx2.QueryNode_Text("num4816", number1);
+	huierf[15] = atoi(number1);
+	opx2.QueryNode_Text("num4817", number1);
+	huierf[16] = atoi(number1);
+	opx2.QueryNode_Text("num4818", number1);
+	huierf[17] = atoi(number1);
+	opx2.QueryNode_Text("num4819", number1);
+	huierf[18] = atoi(number1);
+	opx2.QueryNode_Text("num4820", number1);
+	huierf[19] = atoi(number1);
+	opx2.QueryNode_Text("num4821", number1);
+	huierf[20] = atoi(number1);
+	opx2.QueryNode_Text("num4822", number1);
+	huierf[21] = atoi(number1);
+	opx2.QueryNode_Text("num4823", number1);
+	huierf[22] = atoi(number1);
+	opx2.QueryNode_Text("num4824", number1);
+	huierf[23] = atoi(number1);
+	opx2.QueryNode_Text("num4825", number1);
+	huierf[24] = atoi(number1);
+	opx2.QueryNode_Text("num4826", number1);
+	huierf[25] = atoi(number1);
+	opx2.QueryNode_Text("num4827", number1);
+	huierf[26] = atoi(number1);
+	opx2.QueryNode_Text("num4828", number1);
+	huierf[27] = atoi(number1);
+	opx2.QueryNode_Text("num4829", number1);
+	huierf[28] = atoi(number1);
+	opx2.QueryNode_Text("num4830", number1);
+	huierf[29] = atoi(number1);
+	opx2.QueryNode_Text("num4831", number1);
+	huierf[30] = atoi(number1);
+	opx2.QueryNode_Text("num4832", number1);
+	huierf[31] = atoi(number1);
+	opx2.QueryNode_Text("num4833", number1);
+	huierf[32] = atoi(number1);
+	opx2.QueryNode_Text("num4834", number1);
+	huierf[33] = atoi(number1);
+	opx2.QueryNode_Text("num4835", number1);
+	huierf[34] = atoi(number1);
+	opx2.QueryNode_Text("num4836", number1);
+	huierf[35] = atoi(number1);
+	opx2.QueryNode_Text("num4837", number1);
+	huierf[36] = atoi(number1);
+	opx2.QueryNode_Text("num4838", number1);
+	huierf[37] = atoi(number1);
+	opx2.QueryNode_Text("num4839", number1);
+	huierf[38] = atoi(number1);
+	opx2.QueryNode_Text("num4840", number1);
+	huierf[39] = atoi(number1);
+	opx2.SaveFile();
+
+	//CString ComChoosed = _T("COM5");
+	//CMyPublicData::ModbusInit(ComChoosed);
+	//for (int i = 0; i < 200; i++)
+	//{
+	//	datatestDPU[i + 4] = allData[1][1 + i];
+	//}
+
+	//for (int i = 0; i < 4; i++)
+	//{
+	//	CMyPublicData::setfunc(32, 16, i * 50 + 1, 50);
+	//	CMyPublicData::setfunc(33, 16, i * 50 + 1, 50);
+	//}
+	////for (int i = 0; i < 200; i += 100)
+	////{
+	////	CMyPublicData::setfunc(32, 16, i + 1, 100);
+	////	CMyPublicData::setfunc(33, 16, i + 1, 100);
+	////}
+
+	//for (int i = 0; i < 33; i++)
+	//{
+	//	datatestDPU[i + 4] = 32;
+	//}
+	//CMyPublicData::setfunc(32, 16, 32, 33);
+	//CMyPublicData::setfunc(33, 16, 32, 33);
+	//datatestDPU[4] = 0;
+	//datatestDPU[5] = 255;
+	//datatestDPU[6] = 0;
+	//datatestDPU[7] = 255;
+	//datatestDPU[8] = 0;
+	//datatestDPU[9] = 255;
+	//datatestDPU[10] = 0;
+	//datatestDPU[11] = 255;
+	//CMyPublicData::setfunc(32, 16, 351, 8);
+	//CMyPublicData::setfunc(33, 16, 351, 8);
+	////for (int i = 0; i < 400; i++)
+	////{
+	////	datatestDPU[i + 4] = allData[1][1 + i];
+	////}
+	////for (int i = 0; i < 8; i++)
+	////{
+	////	CMyPublicData::setfunc(32, 16, i * 50 + 1, 50);
+	////}
+	CMyPublicData::setfunc(10, 3, 9, 1);
+	if (fanhuizhi == (-1))
+	{
+		tongxincuowu[0] = -1;
+	}
+	for (int i = 0; i < 20; i++)
+	{
+		if (modsd[i] != L"OFF")
+		{
+			CMyPublicData::setfunc(32 + i, 3, 1, 1);
+			if (fanhuizhi == (-1))
+			{
+				tongxincuowu[i + 1] = -1;
+			}
+		}
+	}
+
+	if (tongxincuowu[0] != (-1))
+	{
+		CMyPublicData::setfunc(10, 3, 9, 1);
+		CMyPublicData::bit_set(10, 9, 6, false);                     //阀电源初始化前先关闭
+		if (fuzhusd[0] == L"ON")
+		{
+			CMyPublicData::bit_read(10, 9, 1);
+			CMyPublicData::bit_set(10, 9, 1, true);
+		}
+		if (fuzhusd[0] == L"OFF")
+		{
+			CMyPublicData::bit_read(10, 9, 1);
+			CMyPublicData::bit_set(10, 9, 1, false);
+		}
+		if (fuzhusd[1] == L"ON")
+		{
+			CMyPublicData::bit_read(10, 9, 2);
+			CMyPublicData::bit_set(10, 9, 2, true);
+		}
+		if (fuzhusd[1] == L"OFF")
+		{
+			CMyPublicData::bit_read(10, 9, 2);
+			CMyPublicData::bit_set(10, 9, 2, false);
+		}
+		if (fuzhusd[2] == L"ON")
+		{
+			CMyPublicData::bit_read(10, 9, 3);
+			CMyPublicData::bit_set(10, 9, 3, true);
+		}
+		if (fuzhusd[2] == L"OFF")
+		{
+			CMyPublicData::bit_read(10, 9, 3);
+			CMyPublicData::bit_set(10, 9, 3, false);
+		}
+		if (fuzhusd[3] == L"ON")
+		{
+			CMyPublicData::bit_read(10, 9, 4);
+			CMyPublicData::bit_set(10, 9, 4, true);
+		}
+		if (fuzhusd[3] == L"OFF")
+		{
+			CMyPublicData::bit_read(10, 9, 4);
+			CMyPublicData::bit_set(10, 9, 4, false);
+		}
+		if (fuzhusd[4] == L"ON")
+		{
+			CMyPublicData::bit_read(10, 7, 2);
+			CMyPublicData::bit_set(10, 7, 2, true);
+		}
+		if (fuzhusd[4] == L"OFF")
+		{
+			CMyPublicData::bit_read(10, 7, 2);
+			CMyPublicData::bit_set(10, 7, 2, false);
+		}
+		if (fuzhusd[5] == L"ON")
+		{
+			CMyPublicData::bit_read(10, 7, 3);
+			CMyPublicData::bit_set(10, 7, 3, true);
+		}
+		if (fuzhusd[5] == L"OFF")
+		{
+			CMyPublicData::bit_read(10, 7, 3);
+			CMyPublicData::bit_set(10, 7, 3, false);
+		}
+		for (int i = 0; i < 10; i++)                                 //通道流量调整
+		{
+			if (liuliangsd[i] == L"1")
+			{
+				allData[0][10 + i] = liuliang[i] + liuliang[10];
+			}
+			if (liuliangsd[i] == L"2")
+			{
+				allData[0][10 + i] = liuliang[i] + liuliang[11];
+			}
+			if (liuliangsd[i] == L"3")
+			{
+				allData[0][10 + i] = liuliang[i] + liuliang[12];
+			}
+		}
+		allData[0][30] = 1;              //流量置一
+		allData[0][34] = qinghui[0];     //清灰周期
+		allData[0][35] = qinghui[1];     //清灰时间
+		allData[0][36] = qinghui[2];     //返回时间
+		allData[0][37] = 1;
+		allData[0][38] = beijingban[0];  //前背景板位置
+		allData[0][39] = beijingban[1];  //后背景板位置
+		datatestDPU[4] = allData[0][30];
+		for (int i = 0; i < 30; i++)
+		{
+			datatestDPU[i + 4] = allData[0][i + 10];
+		}
+		CMyPublicData::setfunc(10, 16, 10, 30);
+		CMyPublicData::setfunc(10, 3, 9, 1);
+		CMyPublicData::bit_set(10, 9, 8, true);
+	}
+
+
+
+
+	for (int i = 0; i < 10; i++)
+	{
+		if (modsd[2 * i] == L"1")
+		{                                                                  //前相机
+			allData[2 * i + 1][4] = famen[3];                                  //前相机开阀时间
+			allData[2 * i + 1][27] = mian[2];                                  //前暗面积
+			allData[2 * i + 1][28] = mian[4];                                  //前亮面积
+
+			allData[2 * i + 1][64] = rlingmin[0] + rlingminf[i];               //R前暗敏感
+			allData[2 * i + 1][65] = rlingmin[1] + rlingminf[10 + i];          //R前亮敏感
+			allData[2 * i + 1][66] = glingmin[0] + glingminf[i];               //G前暗敏感
+			allData[2 * i + 1][67] = glingmin[1] + glingminf[10 + i];          //G前亮敏感
+			allData[2 * i + 1][68] = blingmin[0] + blingminf[i];               //B前暗敏感
+			allData[2 * i + 1][69] = blingmin[1] + blingminf[10 + i];          //B前亮敏感
+			allData[2 * i + 1][78] = hunselingmin[0] + hunlingminf[i];         //混色前暗敏感
+			allData[2 * i + 1][79] = hunselingmin[1] + hunlingminf[10 + i];    //混色前亮敏感
+
+			allData[2 * i + 1][82] = mian[0];                                  //前相机颜色面积
+
+			allData[2 * i + 1][83] = yanse[0] + quyuf[i];                      //区域1前上限
+			allData[2 * i + 1][84] = yanse[1] + quyuf[10 + i];                 //区域1前下限
+			allData[2 * i + 1][85] = shen[0] + shenduf[i];                     //深度1前上限
+			allData[2 * i + 1][86] = shen[1] + shenduf[10 + i];                //深度1前下限
+			allData[2 * i + 1][87] = huidu1sheding[0] + huif[i];               //灰度1前上限
+			allData[2 * i + 1][88] = huidu1sheding[1] + huif[10 + i];          //灰度1前下限
+			allData[2 * i + 1][89] = quyu[0] + quyuerf[i];                     //区域2前上限
+			allData[2 * i + 1][90] = quyu[1] + quyuerf[10 + i];                //区域2前下限
+			allData[2 * i + 1][91] = quyusansd[0] + quyusanf[i];               //区域3前上限
+			allData[2 * i + 1][92] = quyusansd[1] + quyusanf[10 + i];          //区域3前下限
+			allData[2 * i + 1][93] = quyusisd[0] + quyusif[i];                 //区域4前上限
+			allData[2 * i + 1][94] = quyusisd[1] + quyusif[10 + i];            //区域4前下限
+			allData[2 * i + 1][95] = quyuwusd[0] + quyuwuf[i];                 //区域5前上限
+			allData[2 * i + 1][96] = quyuwusd[1] + quyuwuf[10 + i];            //区域5前下限
+			allData[2 * i + 1][97] = shendu2[0] + shenduerf[i];                //深度2前上限
+			allData[2 * i + 1][98] = shendu2[1] + shenduerf[10 + i];           //深度2前下限
+			allData[2 * i + 1][99] = huidu2sheding[0] + huierf[i];             //灰度2前上限
+			allData[2 * i + 1][100] = huidu2sheding[1] + huierf[10 + i];       //灰度2前下限
+
+			allData[2 * i + 1][350] = yanseminganqiangdusd[0];                 //前相机颜色敏感强度
+		}
+		if (modsd[2 * i] == L"2")
+		{
+			allData[2 * i + 1][4] = famen[4];
+			allData[2 * i + 1][27] = mian[8];
+			allData[2 * i + 1][28] = mian[10];
+
+			allData[2 * i + 1][64] = rlingmin[4] + rlingminf[i];
+			allData[2 * i + 1][65] = rlingmin[5] + rlingminf[10 + i];
+			allData[2 * i + 1][66] = glingmin[4] + glingminf[i];
+			allData[2 * i + 1][67] = glingmin[5] + glingminf[10 + i];
+			allData[2 * i + 1][68] = blingmin[4] + blingminf[i];
+			allData[2 * i + 1][69] = blingmin[5] + blingminf[10 + i];
+			allData[2 * i + 1][78] = hunselingmin[4] + hunlingminf[i];
+			allData[2 * i + 1][79] = hunselingmin[5] + hunlingminf[10 + i];
+
+			allData[2 * i + 1][82] = mian[6];
+
+			allData[2 * i + 1][83] = yanse[4] + quyuf[i];
+			allData[2 * i + 1][84] = yanse[5] + quyuf[10 + i];
+			allData[2 * i + 1][85] = shen[4] + shenduf[i];
+			allData[2 * i + 1][86] = shen[5] + shenduf[10 + i];
+			allData[2 * i + 1][87] = huidu1sheding[4] + huif[i];
+			allData[2 * i + 1][88] = huidu1sheding[5] + huif[10 + i];
+			allData[2 * i + 1][89] = quyu[4] + quyuerf[i];
+			allData[2 * i + 1][90] = quyu[5] + quyuerf[10 + i];
+			allData[2 * i + 1][91] = quyusansd[4] + quyusanf[i];
+			allData[2 * i + 1][92] = quyusansd[5] + quyusanf[10 + i];
+			allData[2 * i + 1][93] = quyusisd[4] + quyusif[i];
+			allData[2 * i + 1][94] = quyusisd[5] + quyusif[10 + i];
+			allData[2 * i + 1][95] = quyuwusd[4] + quyuwuf[i];
+			allData[2 * i + 1][96] = quyuwusd[5] + quyuwuf[10 + i];
+			allData[2 * i + 1][97] = shendu2[4] + shenduerf[i];
+			allData[2 * i + 1][98] = shendu2[5] + shenduerf[10 + i];
+			allData[2 * i + 1][99] = huidu2sheding[4] + huierf[i];
+			allData[2 * i + 1][100] = huidu2sheding[5] + huierf[10 + i];
+
+			allData[2 * i + 1][350] = yanseminganqiangdusd[2];
+		}
+		if (modsd[2 * i] == L"3")
+		{
+			allData[2 * i + 1][4] = famen[6];
+			allData[2 * i + 1][27] = mian[14];
+			allData[2 * i + 1][28] = mian[16];
+
+			allData[2 * i + 1][64] = rlingmin[8] + rlingminf[i];
+			allData[2 * i + 1][65] = rlingmin[9] + rlingminf[10 + i];
+			allData[2 * i + 1][66] = glingmin[8] + glingminf[i];
+			allData[2 * i + 1][67] = glingmin[9] + glingminf[10 + i];
+			allData[2 * i + 1][68] = blingmin[8] + blingminf[i];
+			allData[2 * i + 1][69] = blingmin[9] + blingminf[10 + i];
+			allData[2 * i + 1][78] = hunselingmin[8] + hunlingminf[i];
+			allData[2 * i + 1][79] = hunselingmin[9] + hunlingminf[10 + i];
+
+			allData[2 * i + 1][82] = mian[12];
+
+			allData[2 * i + 1][83] = yanse[8] + quyuf[i];
+			allData[2 * i + 1][84] = yanse[9] + quyuf[10 + i];
+			allData[2 * i + 1][85] = shen[8] + shenduf[i];
+			allData[2 * i + 1][86] = shen[9] + shenduf[10 + i];
+			allData[2 * i + 1][87] = huidu1sheding[8] + huif[i];
+			allData[2 * i + 1][88] = huidu1sheding[9] + huif[10 + i];
+			allData[2 * i + 1][89] = quyu[8] + quyuerf[i];
+			allData[2 * i + 1][90] = quyu[9] + quyuerf[10 + i];
+			allData[2 * i + 1][91] = quyusansd[8] + quyusanf[i];
+			allData[2 * i + 1][92] = quyusansd[9] + quyusanf[10 + i];
+			allData[2 * i + 1][93] = quyusisd[8] + quyusif[i];
+			allData[2 * i + 1][94] = quyusisd[9] + quyusif[10 + i];
+			allData[2 * i + 1][95] = quyuwusd[8] + quyuwuf[i];
+			allData[2 * i + 1][96] = quyuwusd[9] + quyuwuf[10 + i];
+			allData[2 * i + 1][97] = shendu2[8] + shenduerf[i];
+			allData[2 * i + 1][98] = shendu2[9] + shenduerf[10 + i];
+			allData[2 * i + 1][99] = huidu2sheding[8] + huierf[i];
+			allData[2 * i + 1][100] = huidu2sheding[9] + huierf[10 + i];
+
+			allData[2 * i + 1][350] = yanseminganqiangdusd[4];
+		}
+
+
+		if (modsd[2 * i + 1] == L"1")
+		{                                                                    //后相机
+			allData[2 * i + 2][4] = famen[3];                                    //后相机开阀时间
+			allData[2 * i + 2][27] = mian[3];                                    //后暗面积
+			allData[2 * i + 2][28] = mian[5];                                    //后亮面积
+
+			allData[2 * i + 2][64] = rlingmin[2] + rlingminf[20 + i];            //R前暗敏感
+			allData[2 * i + 2][65] = rlingmin[3] + rlingminf[30 + i];            //R前亮敏感
+			allData[2 * i + 2][66] = glingmin[2] + glingminf[20 + i];            //G前暗敏感
+			allData[2 * i + 2][67] = glingmin[3] + glingminf[30 + i];            //G前亮敏感
+			allData[2 * i + 2][68] = blingmin[2] + blingminf[20 + i];            //B前暗敏感
+			allData[2 * i + 2][69] = blingmin[3] + blingminf[30 + i];            //B前亮敏感
+			allData[2 * i + 2][78] = hunselingmin[2] + hunlingminf[20 + i];      //混色前暗敏感
+			allData[2 * i + 2][79] = hunselingmin[3] + hunlingminf[30 + i];      //混色前亮敏感
+
+			allData[2 * i + 2][82] = mian[1];                                  //后相机颜色面积
+
+			allData[2 * i + 2][83] = yanse[2] + quyuf[20 + i];                   //区域1前上限
+			allData[2 * i + 2][84] = yanse[3] + quyuf[30 + i];                   //区域1前下限
+			allData[2 * i + 2][85] = shen[2] + shenduf[20 + i];                  //深度1前上限
+			allData[2 * i + 2][86] = shen[3] + shenduf[30 + i];                  //深度1前下限
+			allData[2 * i + 2][87] = huidu1sheding[2] + huif[20 + i];            //灰度1前上限
+			allData[2 * i + 2][88] = huidu1sheding[3] + huif[30 + i];            //灰度1前下限
+			allData[2 * i + 2][89] = quyu[2] + quyuerf[20 + i];                  //区域2前上限
+			allData[2 * i + 2][90] = quyu[3] + quyuerf[30 + i];                  //区域2前下限
+			allData[2 * i + 2][91] = quyusansd[2] + quyusanf[20 + i];            //区域3前上限
+			allData[2 * i + 2][92] = quyusansd[3] + quyusanf[30 + i];            //区域3前下限
+			allData[2 * i + 2][93] = quyusisd[2] + quyusif[20 + i];              //区域4前上限
+			allData[2 * i + 2][94] = quyusisd[3] + quyusif[30 + i];              //区域4前下限
+			allData[2 * i + 2][95] = quyuwusd[2] + quyuwuf[20 + i];              //区域5前上限
+			allData[2 * i + 2][96] = quyuwusd[3] + quyuwuf[30 + i];              //区域5前下限
+			allData[2 * i + 2][97] = shendu2[2] + shenduerf[20 + i];             //深度2前上限
+			allData[2 * i + 2][98] = shendu2[3] + shenduerf[30 + i];             //深度2前下限
+			allData[2 * i + 2][99] = huidu2sheding[2] + huierf[20 + i];          //灰度2前上限
+			allData[2 * i + 2][100] = huidu2sheding[3] + huierf[30 + i];         //灰度2前下限
+
+			allData[2 * i + 2][350] = yanseminganqiangdusd[1];                   //后相机颜色敏感强度
+		}
+		if (modsd[2 * i + 1] == L"2")
+		{
+			allData[2 * i + 2][4] = famen[4];
+			allData[2 * i + 2][27] = mian[9];
+			allData[2 * i + 2][28] = mian[11];
+
+			allData[2 * i + 2][64] = rlingmin[6] + rlingminf[20 + i];
+			allData[2 * i + 2][65] = rlingmin[7] + rlingminf[30 + i];
+			allData[2 * i + 2][66] = glingmin[6] + glingminf[20 + i];
+			allData[2 * i + 2][67] = glingmin[7] + glingminf[30 + i];
+			allData[2 * i + 2][68] = blingmin[6] + blingminf[20 + i];
+			allData[2 * i + 2][69] = blingmin[7] + blingminf[30 + i];
+			allData[2 * i + 2][78] = hunselingmin[6] + hunlingminf[20 + i];
+			allData[2 * i + 2][79] = hunselingmin[7] + hunlingminf[30 + i];
+
+			allData[2 * i + 2][82] = mian[7];
+
+			allData[2 * i + 2][83] = yanse[6] + quyuf[20 + i];
+			allData[2 * i + 2][84] = yanse[7] + quyuf[30 + i];
+			allData[2 * i + 2][85] = shen[6] + shenduf[20 + i];
+			allData[2 * i + 2][86] = shen[7] + shenduf[30 + i];
+			allData[2 * i + 2][87] = huidu1sheding[6] + huif[20 + i];
+			allData[2 * i + 2][88] = huidu1sheding[7] + huif[30 + i];
+			allData[2 * i + 2][89] = quyu[6] + quyuerf[20 + i];
+			allData[2 * i + 2][90] = quyu[7] + quyuerf[30 + i];
+			allData[2 * i + 2][91] = quyusansd[6] + quyusanf[20 + i];
+			allData[2 * i + 2][92] = quyusansd[7] + quyusanf[30 + i];
+			allData[2 * i + 2][93] = quyusisd[6] + quyusif[20 + i];
+			allData[2 * i + 2][94] = quyusisd[7] + quyusif[30 + i];
+			allData[2 * i + 2][95] = quyuwusd[6] + quyuwuf[20 + i];
+			allData[2 * i + 2][96] = quyuwusd[7] + quyuwuf[30 + i];
+			allData[2 * i + 2][97] = shendu2[6] + shenduerf[20 + i];
+			allData[2 * i + 2][98] = shendu2[7] + shenduerf[30 + i];
+			allData[2 * i + 2][99] = huidu2sheding[6] + huierf[20 + i];
+			allData[2 * i + 2][100] = huidu2sheding[7] + huierf[30 + i];
+
+			allData[2 * i + 2][350] = yanseminganqiangdusd[3];
+		}
+		if (modsd[2 * i + 1] == L"3")
+		{
+			allData[2 * i + 2][4] = famen[6];
+			allData[2 * i + 2][27] = mian[15];
+			allData[2 * i + 2][28] = mian[17];
+
+			allData[2 * i + 2][64] = rlingmin[10] + rlingminf[20 + i];
+			allData[2 * i + 2][65] = rlingmin[11] + rlingminf[30 + i];
+			allData[2 * i + 2][66] = glingmin[10] + glingminf[20 + i];
+			allData[2 * i + 2][67] = glingmin[11] + glingminf[30 + i];
+			allData[2 * i + 2][68] = blingmin[10] + blingminf[20 + i];
+			allData[2 * i + 2][69] = blingmin[11] + blingminf[30 + i];
+			allData[2 * i + 2][78] = hunselingmin[10] + hunlingminf[20 + i];
+			allData[2 * i + 2][79] = hunselingmin[11] + hunlingminf[30 + i];
+
+			allData[2 * i + 2][82] = mian[13];
+
+			allData[2 * i + 2][83] = yanse[10] + quyuf[20 + i];
+			allData[2 * i + 2][84] = yanse[11] + quyuf[30 + i];
+			allData[2 * i + 2][85] = shen[10] + shenduf[20 + i];
+			allData[2 * i + 2][86] = shen[11] + shenduf[30 + i];
+			allData[2 * i + 2][87] = huidu1sheding[10] + huif[20 + i];
+			allData[2 * i + 2][88] = huidu1sheding[11] + huif[30 + i];
+			allData[2 * i + 2][89] = quyu[10] + quyuerf[20 + i];
+			allData[2 * i + 2][90] = quyu[11] + quyuerf[30 + i];
+			allData[2 * i + 2][91] = quyusansd[10] + quyusanf[20 + i];
+			allData[2 * i + 2][92] = quyusansd[11] + quyusanf[30 + i];
+			allData[2 * i + 2][93] = quyusisd[10] + quyusif[20 + i];
+			allData[2 * i + 2][94] = quyusisd[11] + quyusif[30 + i];
+			allData[2 * i + 2][95] = quyuwusd[10] + quyuwuf[20 + i];
+			allData[2 * i + 2][96] = quyuwusd[11] + quyuwuf[30 + i];
+			allData[2 * i + 2][97] = shendu2[10] + shenduerf[20 + i];
+			allData[2 * i + 2][98] = shendu2[11] + shenduerf[30 + i];
+			allData[2 * i + 2][99] = huidu2sheding[10] + huierf[20 + i];
+			allData[2 * i + 2][100] = huidu2sheding[11] + huierf[30 + i];
+
+			allData[2 * i + 2][350] = yanseminganqiangdusd[5];
+		}
+		allData[2 * i + 1][1] = 0;                                       //前相机状态置0
+		allData[2 * i + 2][1] = 0;                                       //后相机状态置0
+		allData[2 * i + 1][5] = yanchisheding[i] + yanchisheding[10];    //前相机延迟设定
+		allData[2 * i + 2][5] = yanchisheding[i] + yanchisheding[10];    //后相机延迟设定
+		allData[2 * i + 1][8] = pingyisheding[i];                        //前相机平移设定
+		allData[2 * i + 2][8] = pingyisheding[10 + i];                   //后相机平移设定
+		allData[2 * i + 1][9] = famen[5];                                //前相机开阀周期
+		allData[2 * i + 2][9] = famen[5];                                //后相机开阀周期
+		allData[2 * i + 1][10] = fuzhugongneng[3];                       //前相机SpeedS
+		allData[2 * i + 2][10] = fuzhugongneng[3];                       //后相机SpeedS
+		allData[2 * i + 1][11] = 20;                                     //前相机平均速度
+		allData[2 * i + 2][11] = 20;                                     //后相机平均速度
+		allData[2 * i + 1][12] = famen[2];                               //前相机吹嘴测试速度
+		allData[2 * i + 2][12] = famen[2];                               //后相机吹嘴测试速度
+		allData[2 * i + 1][13] = 1;                                      //前相机孔位
+		allData[2 * i + 2][13] = 1;                                      //后相机孔位
+		allData[2 * i + 1][20] = yansehangmianjisd[i];                   //前相机颜色行面积
+		allData[2 * i + 2][20] = yansehangmianjisd[10 + i];              //后相机颜色行面积
+		if (vgasd[2 * i] == L"OFF")                                      //判断VGA设定为什么状态
+		{
+			allData[2 * i + 1][26] = 0;
+		}
+		else
+		{
+			allData[2 * i + 1][26] = 1;
+		}
+		if (vgasd[2 * i + 1] == L"OFF")
+		{
+			allData[2 * i + 2][26] = 0;
+		}
+		else
+		{
+			allData[2 * i + 2][26] = 1;
+		}
+		allData[2 * i + 1][31] = vga[3];                          //前相机单孔增益致能
+		allData[2 * i + 2][31] = vga[3];                          //后相机单孔增益致能
+		for (int k = 0; k < 32; k++)
+		{
+			allData[2 * i + 1][32 + k] = 32;                      //前相机单孔增益
+			allData[2 * i + 2][32 + k] = 32;                      //后相机单孔增益
+		}
+		allData[2 * i + 1][70] = rzengyi[i];                      //前相机R增益设定
+		allData[2 * i + 2][70] = rzengyi[10 + i];                 //后相机R增益设定
+		allData[2 * i + 1][72] = gzengyisheding[i];               //前相机G增益设定
+		allData[2 * i + 2][72] = gzengyisheding[10 + i];          //后相机G增益设定
+		allData[2 * i + 1][74] = bzengyisheding[i];               //前相机B增益设定
+		allData[2 * i + 2][74] = bzengyisheding[10 + i];          //后相机B增益设定
+		allData[2 * i + 1][77] = hunselingmin[20];                //前相机模式
+		allData[2 * i + 2][77] = hunselingmin[21];                //后相机模式
+		allData[2 * i + 1][81] = beijingyuzhisheding[i];          //前相机背景阈值
+		allData[2 * i + 2][81] = beijingyuzhisheding[10 + i];     //后相机背景阈值
+		allData[2 * i + 1][71] = fuzhugongneng[0];                //前相机ClamR
+		allData[2 * i + 2][71] = fuzhugongneng[0];                //后相机ClamR
+		allData[2 * i + 1][73] = fuzhugongneng[1];                //前相机ClamG
+		allData[2 * i + 2][73] = fuzhugongneng[1];                //后相机ClamG
+		allData[2 * i + 1][75] = fuzhugongneng[2];                //前相机ClamB
+		allData[2 * i + 2][75] = fuzhugongneng[2];                //后相机ClamB
+		allData[2 * i + 1][102] = xingxuansd[3];                  //前相机型选阈值
+		allData[2 * i + 2][102] = xingxuansd[3];                  //后相机型选阈值
+		allData[2 * i + 1][103] = xingxuanlingmindusd[i];         //前相机型选灵敏度
+		allData[2 * i + 2][103] = xingxuanlingmindusd[10 + i];    //后相机型选灵敏度
+		allData[2 * i + 1][104] = huiduhuluesheding[i];           //前相机灰度忽略
+		allData[2 * i + 2][104] = huiduhuluesheding[10 + i];      //后相机灰度忽略
+		allData[2 * i + 1][105] = mianjiweitiaosd[i];             //前相机面积微调
+		allData[2 * i + 2][105] = mianjiweitiaosd[10 + i];        //后相机面积微调
+		allData[2 * i + 1][106] = xingxuansd[4];                  //前相机型选模式
+		allData[2 * i + 2][106] = xingxuansd[4];                  //后相机型选模式
+		allData[2 * i + 1][113] = xingxuansd[1];                  //前相机开阀时间
+		allData[2 * i + 2][113] = xingxuansd[1];                  //后相机开阀时间
+		allData[2 * i + 1][114] = xingxuansd[0];                  //前相机延时
+		allData[2 * i + 2][114] = xingxuansd[0];                  //后相机延时
+		allData[2 * i + 1][115] = xingxuansd[2];                  //前相机开阀周期
+		allData[2 * i + 2][115] = xingxuansd[2];                  //后相机开阀周期
+		allData[2 * i + 1][351] = 0;                              //设置第二种RGB算法初始化设定
+		allData[2 * i + 2][351] = 0;                              //设置第二种RGB算法初始化设定
+		allData[2 * i + 1][352] = 255;                            //设置第二种RGB算法初始化设定
+		allData[2 * i + 2][352] = 255;                            //设置第二种RGB算法初始化设定
+		allData[2 * i + 1][353] = 0;                              //设置第二种RGB算法初始化设定
+		allData[2 * i + 2][353] = 0;                              //设置第二种RGB算法初始化设定
+		allData[2 * i + 1][354] = 255;                            //设置第二种RGB算法初始化设定 
+		allData[2 * i + 2][354] = 255;                            //设置第二种RGB算法初始化设定
+		allData[2 * i + 1][355] = 0;                              //设置第二种RGB算法初始化设定 
+		allData[2 * i + 2][355] = 0;                              //设置第二种RGB算法初始化设定
+		allData[2 * i + 1][356] = 255;                            //设置第二种RGB算法初始化设定
+		allData[2 * i + 2][356] = 255;                            //设置第二种RGB算法初始化设定  
+		allData[2 * i + 1][357] = 0;                              //设置第二种RGB算法初始化设定
+		allData[2 * i + 2][357] = 0;                              //设置第二种RGB算法初始化设定
+		allData[2 * i + 1][358] = 255;                            //设置第二种RGB算法初始化设定
+		allData[2 * i + 2][358] = 255;                            //设置第二种RGB算法初始化设定
+		if (addSW == 2)                                             //算法切换
+		{
+			allData[2 * i + 1][351] = allData[2 * i + 1][64];
+			allData[2 * i + 2][351] = allData[2 * i + 2][64];
+			allData[2 * i + 1][352] = allData[2 * i + 1][65];
+			allData[2 * i + 2][352] = allData[2 * i + 2][65];
+			allData[2 * i + 1][353] = allData[2 * i + 1][66];
+			allData[2 * i + 2][353] = allData[2 * i + 2][66];
+			allData[2 * i + 1][354] = allData[2 * i + 1][67];
+			allData[2 * i + 2][354] = allData[2 * i + 2][67];
+			allData[2 * i + 1][355] = allData[2 * i + 1][68];
+			allData[2 * i + 2][355] = allData[2 * i + 2][68];
+			allData[2 * i + 1][356] = allData[2 * i + 1][69];
+			allData[2 * i + 2][356] = allData[2 * i + 2][69];
+			allData[2 * i + 1][357] = allData[2 * i + 1][78];
+			allData[2 * i + 2][357] = allData[2 * i + 2][78];
+			allData[2 * i + 1][358] = allData[2 * i + 1][79];
+			allData[2 * i + 2][358] = allData[2 * i + 2][79];
+
+			allData[2 * i + 1][64] = 7;
+			allData[2 * i + 2][64] = 7;
+			allData[2 * i + 1][65] = 7;
+			allData[2 * i + 2][65] = 7;
+			allData[2 * i + 1][66] = 7;
+			allData[2 * i + 2][66] = 7;
+			allData[2 * i + 1][67] = 7;
+			allData[2 * i + 2][67] = 7;
+			allData[2 * i + 1][68] = 7;
+			allData[2 * i + 2][68] = 7;
+			allData[2 * i + 1][69] = 7;
+			allData[2 * i + 2][69] = 7;
+			allData[2 * i + 1][78] = 7;
+			allData[2 * i + 2][78] = 7;
+			allData[2 * i + 1][79] = 7;
+			allData[2 * i + 2][79] = 7;
+		}
+	}
+
+
+
+
+	//for (int i = 0; i < 200; i++)
+	//{
+	//	datatestDPU[i + 4] = allData[1][1 + i];
+	//}
+
+	//for (int i = 0; i < 4; i++)
+	//{
+	//	CMyPublicData::setfunc(32, 16, i * 50 + 1, 50);
+	//	CMyPublicData::setfunc(33, 16, i * 50 + 1, 50);
+	//}
+
+	////一次写入100个
+	//for (int i = 0; i < 20; i++)
+	//{
+	//	if (modsd[i] != "OFF")
+	//	{
+	//		if (tongxincuowu[i + 1] != (-1))
+	//		{
+	//			for (int j = 0; j < 100; j++)
+	//			{
+	//				datatestDPU[j + 4] = allData[i + 1][1 + j];
+	//			}
+	//			setfunc(32 + i, 16, 1, 100);
+	//			//for (int j = 0; j < 50; j++)
+	//			//{
+	//			//	datatestDPU[j + 4] = allData[i + 1][51+ j];
+	//			//}
+	//			//CMyPublicData::setfunc(32 + i, 16, 51, 50);
+	//			for (int j = 0; j < 100; j++)
+	//			{
+	//				datatestDPU[j + 4] = allData[i + 1][101 + j];
+	//			}
+	//			setfunc(32 + i, 16, 101, 100);
+	//			//for (int j = 0; j < 50; j++)
+	//			//{
+	//			//	datatestDPU[j + 4] = allData[i + 1][151 + j];
+	//			//}
+	//			//CMyPublicData::setfunc(32 + i, 16,151, 50);
+	//		}
+	//	}
+	//}
+
+	//一次写入50个
+	for (int i = 0; i < 20; i++)
+	{
+		if (modsd[i] != "OFF")
+		{
+			if (tongxincuowu[i + 1] != (-1))
+			{
+				for (int j = 0; j < 50; j++)
+				{
+					datatestDPU[j + 4] = allData[i + 1][1 + j];
+				}
+				CMyPublicData::setfunc(32 + i, 16, 1, 50);
+				for (int j = 0; j < 50; j++)
+				{
+					datatestDPU[j + 4] = allData[i + 1][51 + j];
+				}
+				CMyPublicData::setfunc(32 + i, 16, 51, 50);
+				for (int j = 0; j < 50; j++)
+				{
+					datatestDPU[j + 4] = allData[i + 1][101 + j];
+				}
+				CMyPublicData::setfunc(32 + i, 16, 101, 50);
+				for (int j = 0; j < 50; j++)
+				{
+					datatestDPU[j + 4] = allData[i + 1][151 + j];
+				}
+				CMyPublicData::setfunc(32 + i, 16, 151, 50);
+			}
+		}
+	}
+
+
+	for (int i = 0; i < 20; i++)
+	{
+		if (modsd[i] != L"OFF")
+		{
+			if (tongxincuowu[i + 1] != (-1))
+			{
+				for (int j = 0; j < 8; j++)
+				{
+					datatestDPU[j + 4] = allData[i + 1][351 + j];
+				}
+				setfunc(32 + i, 16, 351, 8);
+			}
+		}
+	}
+	if (tongxincuowu[0] != (-1))
+	{
+		setfunc(10, 3, 9, 1);
+		bit_set(10, 9, 6, true);               //阀电源最后开启
+	}
+	fanhuizhi = 0; //用完后重置为0
+}
 
 //向存储XML文件存储所有数据信息
 void CMyPublicData::writerXML(string strXML)

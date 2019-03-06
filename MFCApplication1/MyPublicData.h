@@ -23,5 +23,6 @@ public:
 	static bool	 CMyPublicData::bit_read(int sl, int ad, int bit_ad);
 	static void CMyPublicData::initzhanhao(int zhanhao[1024]);
 	static void CMyPublicData::readXML(string str);
+	static void CMyPublicData::MreadXML(string str);
 	static void CMyPublicData::writerXML(string strXML);
 };

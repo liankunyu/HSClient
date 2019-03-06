@@ -81,7 +81,7 @@ END_MESSAGE_MAP()
 
 void moshixuanzeer::ReadXML(string str)
 {
-	CMyPublicData::readXML(str);
+	CMyPublicData::MreadXML(str);
 
 	for (int i = 0; i < 21; i++)
 	{
