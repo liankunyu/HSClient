@@ -240,10 +240,13 @@ void xiangjihuafen::OnBnClickedButton1()
 	{
 		flag = 20;
 	}
-	CMyPublicData::setfunc(31 + flag, 16, 256, 91);
-	m_Tip = "num6610";//传入节点名
-	Tip tip;
-	tip.DoModal();
+	if (modsd[flag-1] != L"OFF")
+	{
+		CMyPublicData::setfunc(31 + flag, 16, 256, 91);
+		m_Tip = "num6610";//传入节点名
+		Tip tip;
+		tip.DoModal();
+	}
 	UpdateData(FALSE);
 }
 
@@ -332,8 +335,14 @@ void xiangjihuafen::OnBnClickedButton2()
 	{
 		flag = 20;
 	}
-	datatestDPU[4] = 1;
-	CMyPublicData::setfunc(31 + flag, 16, 253,1);
+	if (modsd[flag - 1] != L"OFF")
+	{
+		datatestDPU[4] = 1;
+		CMyPublicData::setfunc(31 + flag, 16, 253, 1);
+		m_Tip = "num6616";//传入节点名
+		Tip tip;
+		tip.DoModal();
+	}
 	UpdateData(FALSE);
 }
 
@@ -341,6 +350,114 @@ void xiangjihuafen::OnBnClickedButton2()
 void xiangjihuafen::OnBnClickedButton3()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	CString	ComChoosed;
+	m_combo1.GetLBText(m_combo1.GetCurSel(), ComChoosed);
+	if (ComChoosed == "f1")
+	{
+		flag = 1;
+	}
+	if (ComChoosed == "b1")
+	{
+		flag = 2;
+	}
+	if (ComChoosed == "f2")
+	{
+		flag = 3;
+	}
+	if (ComChoosed == "b2")
+	{
+		flag = 4;
+	}
+	if (ComChoosed == "f3")
+	{
+		flag = 5;
+	}
+	if (ComChoosed == "b3")
+	{
+		flag = 6;
+	}
+	if (ComChoosed == "f4")
+	{
+		flag = 7;
+	}
+	if (ComChoosed == "b4")
+	{
+		flag = 8;
+	}
+	if (ComChoosed == "f5")
+	{
+		flag = 9;
+	}
+	if (ComChoosed == "b5")
+	{
+		flag = 10;
+	}
+	if (ComChoosed == "f6")
+	{
+		flag = 11;
+	}
+	if (ComChoosed == "b6")
+	{
+		flag = 12;
+	}
+	if (ComChoosed == "f7")
+	{
+		flag = 13;
+	}
+	if (ComChoosed == "b7")
+	{
+		flag = 14;
+	}
+	if (ComChoosed == "f8")
+	{
+		flag = 15;
+	}
+	if (ComChoosed == "b8")
+	{
+		flag = 16;
+	}
+	if (ComChoosed == "f9")
+	{
+		flag = 17;
+	}
+	if (ComChoosed == "b9")
+	{
+		flag = 18;
+	}
+	if (ComChoosed == "f10")
+	{
+		flag = 19;
+	}
+	if (ComChoosed == "b10")
+	{
+		flag = 20;
+	}
+	if (modsd[flag - 1] != L"OFF")
+	{
+		CMyPublicData::setfunc(31+flag, 3, 256, 50);
+		for (int i = 0; i < 50; i++)
+		{
+			m_alldata[i] = databuff[i];
+		}
+		CMyPublicData::setfunc(31 + flag, 3, 306, 41);
+		for (int i = 0; i < 41; i++)
+		{
+			m_alldata[50+i] = databuff[i];
+		}
+		CString str;
+		for (int i = 0; i < 7; i++)
+		{
+			for (int j = 0; j < 13; j++)
+			{
+				str.Format(_T("%d"), m_alldata[i * 13 + j]);
+				m_ctllist.SetItemText(i, j + 1, str);
+			}
+		}
+		m_Tip = "num6615";//传入节点名
+		Tip tip;
+		tip.DoModal();
+	}
+	UpdateData(FALSE);
 }
 
 
@@ -436,7 +553,6 @@ void xiangjihuafen::OnBnClickedButton4()
 			str.Format(_T("%d"), m_alldata[i * 13 + j]);
 			m_ctllist.SetItemText(i, j + 1, str);
 		}
-
 	}
 	for (int i = 0; i < 91; i++)
 	{
