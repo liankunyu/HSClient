@@ -48,4 +48,5 @@ public:
 	afx_msg void OnBnClickedCancel2();
 	afx_msg void OnBnClickedButton9();
 	afx_msg void OnTimer(UINT_PTR nIDEvent);
+	BOOL Reset(string str, string str1);
 };

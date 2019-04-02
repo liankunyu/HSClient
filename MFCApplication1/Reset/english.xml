@@ -1,0 +1,1225 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<system>
+    <blingmin>
+        <num0101>B Sensitivity Setting</num0101>
+        <num0102>B Sensitivity Component</num0102>
+        <num0103>Start</num0103>
+        <num0104>Stop</num0104>
+        <num0105>First</num0105>
+        <num0106>Second</num0106>
+        <num0107>Third</num0107>
+        <num0108>F-Dark</num0108>
+        <num0109>F-Light</num0109>
+        <num0110>B-Dark</num0110>
+        <num0111>B-Light</num0111>
+        <num0112>Exit</num0112>
+        <num0113>0</num0113>
+        <num0114>0</num0114>
+        <num0115>0</num0115>
+    </blingmin>
+    <beijing>
+        <num0201>Background</num0201>
+        <num0202>Start</num0202>
+        <num0203>Stop</num0203>
+        <num0204>Front</num0204>
+        <num0205>Back</num0205>
+        <num0206>Vibrator</num0206>
+        <num0207>Exit</num0207>
+        <num0208>0</num0208>
+        <num0209>0</num0209>
+        <num0210>0</num0210>
+    </beijing>
+    <beijingyuzhi>
+        <num0301>Background Threshold</num0301>
+        <num0302>Front</num0302>
+        <num0303>Back</num0303>
+        <num0304>Exit</num0304>
+        <num0305>0</num0305>
+        <num0306>0</num0306>
+        <num0307>0</num0307>
+        <num0308>0</num0308>
+        <num0309>0</num0309>
+        <num0310>0</num0310>
+    </beijingyuzhi>
+    <bzengyi>
+        <num0401>B Gain</num0401>
+        <num0402>Start</num0402>
+        <num0403>Stop</num0403>
+        <num0404>Front</num0404>
+        <num0405>Back</num0405>
+        <num0406>Exit</num0406>
+        <num0407>0</num0407>
+        <num0408>0</num0408>
+        <num0409>0</num0409>
+        <num0410>0</num0410>
+    </bzengyi>
+    <caitushezhi>
+        <num0501>Mining map Set</num0501>
+        <num0502>OK</num0502>
+        <num0503>start</num0503>
+        <num0504>end</num0504>
+        <num0505>collect</num0505>
+        <num0506>IP1</num0506>
+        <num0507>IP2</num0507>
+        <num0508>Iiendelay</num0508>
+        <num0509>Front</num0509>
+        <num0510>Back</num0510>
+        <num0511>Exit</num0511>
+        <num0512>0</num0512>
+        <num0513>0</num0513>
+        <num0514>0</num0514>
+        <num0515>0</num0515>
+    </caitushezhi>
+    <huiduhulue>
+        <num0601>Gray Ignore</num0601>
+        <num0602>Front</num0602>
+        <num0603>Back</num0603>
+        <num0604>Exit</num0604>
+        <num0605>0</num0605>
+        <num0606>0</num0606>
+        <num0607>0</num0607>
+        <num0608>0</num0608>
+        <num0609>0</num0609>
+        <num0610>0</num0610>
+    </huiduhulue>
+    <famenceshi>
+        <num0701>Valve Test</num0701>
+        <num0702>Show</num0702>
+        <num0703>Chute</num0703>
+        <num0704>Aperture</num0704>
+        <num0705>Speed</num0705>
+        <num0706>1st Open time</num0706>
+        <num0707>2nd Open time</num0707>
+        <num0708>3rd Open time</num0708>
+        <num0709>Period</num0709>
+        <num0710>Start</num0710>
+        <num0711>Single Testing</num0711>
+        <num0712>Circular Testing</num0712>
+        <num0713>Stop Testing</num0713>
+        <num0714>Valve power</num0714>
+        <num0715>Exit</num0715>
+        <num0716>0</num0716>
+        <num0717>0</num0717>
+        <num0718>0</num0718>
+        <num0719>0</num0719>
+        <num0720>valve on</num0720>
+        <num0721>single testing</num0721>
+        <num0722>circular testing</num0722>
+        <num0723>stop</num0723>
+        <num0724>0</num0724>
+        <num0724>Front camera</num0724>
+        <num0725>Back camera</num0725>
+        <num0726>0</num0726>
+    </famenceshi>
+    <fuzhu>
+        <num0801>First</num0801>
+        <num0802>Second</num0802>
+        <num0803>Third</num0803>
+        <num0804>Fourth</num0804>
+        <num0805>Lamp switch</num0805>
+        <num0806>Front</num0806>
+        <num0807>Back</num0807>
+        <num0808>Background Lamp</num0808>
+        <num0809>lang</num0809>
+        <num0810>ClamR</num0810>
+        <num0811>ClamG</num0811>
+        <num0812>ClamB</num0812>
+        <num0813>SpeedS</num0813>
+        <num0814>Exit</num0814>
+        <num0815>0</num0815>
+        <num0816>0</num0816>
+        <num0817>0</num0817>
+        <num0818>0</num0818>
+        <num0819>0</num0819>
+        <num0820>0</num0820>
+    </fuzhu>
+    <glingmin>
+        <num0901>G Sensitivity Setting</num0901>
+        <num0902>G Sensitivity Component</num0902>
+        <num0903>Start</num0903>
+        <num0904>Stop</num0904>
+        <num0905>First</num0905>
+        <num0906>second</num0906>
+        <num0907>Third</num0907>
+        <num0908>F-Dark</num0908>
+        <num0909>F-Light</num0909>
+        <num0910>B-Dark</num0910>
+        <num0911>B-Light</num0911>
+        <num0912>Exit</num0912>
+        <num0913>0</num0913>
+        <num0914>0</num0914>
+        <num0915>0</num0915>
+    </glingmin>
+    <gzengyi>
+        <num1001>G Gain</num1001>
+        <num1002>Start</num1002>
+        <num1003>Stop</num1003>
+        <num1004>Front</num1004>
+        <num1005>Back</num1005>
+        <num1006>Exit</num1006>
+        <num1007>0</num1007>
+        <num1008>0</num1008>
+        <num1009>0</num1009>
+        <num1010>0</num1010>
+    </gzengyi>
+    <huidu1>
+        <num1101>Gray1</num1101>
+        <num1102>Gray1 Compont</num1102>
+        <num1103>Start</num1103>
+        <num1104>Stop</num1104>
+        <num1105>First</num1105>
+        <num1106>Second</num1106>
+        <num1107>Third</num1107>
+        <num1108>F-Upper</num1108>
+        <num1109>F-Lower</num1109>
+        <num1110>B-Upper</num1110>
+        <num1111>B-Lower</num1111>
+        <num1112>Vibrator</num1112>
+        <num1113>Exit</num1113>
+        <num1114>0</num1114>
+        <num1115>0</num1115>
+    </huidu1>
+    <huidu2>
+        <num1201>Gray2</num1201>
+        <num1202>Gray2 Compont</num1202>
+        <num1203>Start</num1203>
+        <num1204>Stop</num1204>
+        <num1205>First</num1205>
+        <num1206>Second</num1206>
+        <num1207>Third</num1207>
+        <num1208>F-Upper</num1208>
+        <num1209>F-Lower</num1209>
+        <num1210>B-Upper</num1210>
+        <num1211>B-Lower</num1211>
+        <num1212>Vibrator</num1212>
+        <num1213>Exit</num1213>
+        <num1214>0</num1214>
+        <num1215>0</num1215>
+    </huidu2>
+    <hunse>
+        <num1301>Blend Sensitivity Setting</num1301>
+        <num1302>Blend Component</num1302>
+        <num1303>Start</num1303>
+        <num1304>Stop</num1304>
+        <num1305>F-mode</num1305>
+        <num1306>B-mode</num1306>
+        <num1307>First</num1307>
+        <num1308>Second</num1308>
+        <num1309>Third</num1309>
+        <num1310>F-Dark</num1310>
+        <num1311>F-Light</num1311>
+        <num1312>B-Dark</num1312>
+        <num1313>B-Light</num1313>
+        <num1314>exit</num1314>
+        <num1315>0</num1315>
+        <num1316>0</num1316>
+        <num1317>0</num1317>
+        <num1318>0</num1318>
+        <num1319>0</num1319>
+        <num1320>0</num1320>
+    </hunse>
+    <inputtool>
+        <num1401>Clear</num1401>
+        <num1402>Exit</num1402>
+        <num1403>OK</num1403>
+        <num1404>0</num1404>
+        <num1405>0</num1405>
+        <num1406>0</num1406>
+        <num1407>0</num1407>
+        <num1408>0</num1408>
+        <num1409>0</num1409>
+        <num1410>0</num1410>
+    </inputtool>
+    <liuliang>
+        <num1501>Flow Setting</num1501>
+        <num1502>Start</num1502>
+        <num1503>Stop</num1503>
+        <num1504>First</num1504>
+        <num1505>Second</num1505>
+        <num1506>Third</num1506>
+        <num1507>Exit</num1507>
+        <num1508>0</num1508>
+        <num1509>0</num1509>
+        <num1510>0</num1510>
+    </liuliang>
+    <login>
+        <num1601>Register</num1601>
+        <num1602>Continue to use</num1602>
+        <num1603>Exit</num1603>
+        <num1604>0</num1604>
+        <num1605>0</num1605>
+        <num1606>0</num1606>
+        <num1607>0</num1607>
+        <num1608>0</num1608>
+        <num1609>0</num1609>
+        <num1610>0</num1610>
+    </login>
+    <mfc>
+        <num1701>Customer Only</num1701>
+        <num1702>Countdown</num1702>
+        <num1703>days</num1703>
+        <num1704>expiry date</num1704>
+        <num1705>Flow Setting</num1705>
+        <num1706>Sensitivity</num1706>
+        <num1707>Area Setting</num1707>
+        <num1708>Cleaning Setting</num1708>
+        <num1709>Remote communication</num1709>
+        <num1710>Mode Setting</num1710>
+        <num1711>Valve Testing</num1711>
+        <num1712>Color Sensitivity</num1712>
+        <num1713>Engineer Only</num1713>
+        <num1714>Communication light</num1714>
+        <num1715>Start Sorting</num1715>
+        <num1716>Stop sorting</num1716>
+        <num1717>shutdown</num1717>
+        <num1718>0</num1718>
+        <num1719>0</num1719>
+        <num1720>Customer service</num1720>
+        <num1721>Anhui Hongshi optoelectronic Hi-tech Co.,Ltd</num1721>
+        <num1722>Address：NO.2,Yanan Road,Bao he Industry Zone,Hefei,China</num1722>
+        <num1723>Hot line：400-078-9997</num1723>
+        <num1724>0</num1724>
+        <num1725>0</num1725>
+        <num1726>0</num1726>
+        <num1727>0</num1727>
+        <num1728>0</num1728>
+    </mfc>
+    <mian>
+        <num1801>Area Setting</num1801>
+        <num1802>First</num1802>
+        <num1803>Second</num1803>
+        <num1804>Third</num1804>
+        <num1805>F-Color area</num1805>
+        <num1806>B-Color area</num1806>
+        <num1807>F-Dark</num1807>
+        <num1808>B-Dark</num1808>
+        <num1809>F-Light</num1809>
+        <num1810>B-Light</num1810>
+        <num1811>Vibrator</num1811>
+        <num1812>Exit</num1812>
+        <num1813>0</num1813>
+        <num1814>0</num1814>
+        <num1815>0</num1815>
+    </mian>
+    <mianjiweitiao>
+        <num1901>Area setting</num1901>
+        <num1902>Front</num1902>
+        <num1903>Back</num1903>
+        <num1904>Exit</num1904>
+        <num1905>0</num1905>
+        <num1906>0</num1906>
+        <num1907>0</num1907>
+        <num1908>0</num1908>
+        <num1909>0</num1909>
+        <num1910>0</num1910>
+    </mianjiweitiao>
+    <mod>
+        <num2001>Bord</num2001>
+        <num2002>Address</num2002>
+        <num2003>Front</num2003>
+        <num2004>Address</num2004>
+        <num2005>Back</num2005>
+        <num2006>Read Data</num2006>
+        <num2007>Board</num2007>
+        <num2008>Chute</num2008>
+        <num2009>Camera</num2009>
+        <num2010>Exit</num2010>
+        <num2011>0</num2011>
+        <num2012>0</num2012>
+        <num2013>0</num2013>
+        <num2014>0</num2014>
+        <num2015>0</num2015>
+    </mod>
+    <moshixuanze1>
+        <num2101>Mode list</num2101>
+        <num2102>User setting 1</num2102>
+        <num2103>Running mode</num2103>
+        <num2104>Read data</num2104>
+        <num2105>Read data</num2105>
+        <num2106>Read data</num2106>
+        <num2107>Read data</num2107>
+        <num2108>Read data</num2108>
+        <num2109>Save data</num2109>
+        <num2110>Save data</num2110>
+        <num2111>Save data</num2111>
+        <num2112>Save data</num2112>
+        <num2113>Save data</num2113>
+        <num2114>Page 1</num2114>
+        <num2115>Page 2</num2115>
+        <num2116>Page 3</num2116>
+        <num2117>Exit</num2117>
+        <num2118>0</num2118>
+        <num2119>0</num2119>
+        <num2120>0</num2120>
+    </moshixuanze1>
+    <moshixuanze2>
+        <num2201>Mode list</num2201>
+        <num2202>User setting 2</num2202>
+        <num2203>Running mode</num2203>
+        <num2204>Read data</num2204>
+        <num2205>Read data</num2205>
+        <num2206>Read data</num2206>
+        <num2207>Read data</num2207>
+        <num2208>Read data</num2208>
+        <num2209>Save data</num2209>
+        <num2210>Save data</num2210>
+        <num2211>Save data</num2211>
+        <num2212>Save data</num2212>
+        <num2213>Save data</num2213>
+        <num2214>Exit</num2214>
+        <num2215>0</num2215>
+        <num2216>0</num2216>
+        <num2217>0</num2217>
+        <num2218>0</num2218>
+        <num2219>0</num2219>
+        <num2220>0</num2220>
+    </moshixuanze2>
+    <moshixuanze3>
+        <num2301>Mode list</num2301>
+        <num2302>User setting 3</num2302>
+        <num2303>Running mode</num2303>
+        <num2304>Read data</num2304>
+        <num2305>Read data</num2305>
+        <num2306>Read data</num2306>
+        <num2307>Read data</num2307>
+        <num2308>Read data</num2308>
+        <num2309>Save data</num2309>
+        <num2310>Save data</num2310>
+        <num2311>Save data</num2311>
+        <num2312>Save data</num2312>
+        <num2313>Save data</num2313>
+        <num2314>Exit</num2314>
+        <num2315>0</num2315>
+        <num2316>0</num2316>
+        <num2317>0</num2317>
+        <num2318>0</num2318>
+        <num2319>0</num2319>
+        <num2320>0</num2320>
+    </moshixuanze3>
+    <pingyi>
+        <num2401>Translation Setting</num2401>
+        <num2402>Front</num2402>
+        <num2403>Back</num2403>
+        <num2404>Exit</num2404>
+        <num2405>0</num2405>
+        <num2406>0</num2406>
+        <num2407>0</num2407>
+        <num2408>0</num2408>
+        <num2409>0</num2409>
+        <num2410>0</num2410>
+    </pingyi>
+    <qinghui>
+        <num2501>Cleaning Settig</num2501>
+        <num2502>Dust cleaning cycle set(m)</num2502>
+        <num2503>Forward time(s)</num2503>
+        <num2504>Return time(s)</num2504>
+        <num2505>clean down</num2505>
+        <num2506>Exit</num2506>
+        <num2507>0</num2507>
+        <num2508>0</num2508>
+        <num2509>0</num2509>
+        <num2510>0</num2510>
+    </qinghui>
+    <quanxian>
+        <num2601>Password：</num2601>
+        <num2602>OK</num2602>
+        <num2603>Cancel</num2603>
+        <num2604>0</num2604>
+        <num2605>0</num2605>
+        <num2606>0</num2606>
+        <num2607>0</num2607>
+        <num2608>0</num2608>
+        <num2609>0</num2609>
+        <num2610>0</num2610>
+    </quanxian>
+    <quyu2>
+        <num2701>Area 2</num2701>
+        <num2702>Area 2 component</num2702>
+        <num2703>Start</num2703>
+        <num2704>Stop</num2704>
+        <num2705>First</num2705>
+        <num2706>Second</num2706>
+        <num2707>Third</num2707>
+        <num2708>F-Upper</num2708>
+        <num2709>F-Lower</num2709>
+        <num2710>B-Upper</num2710>
+        <num2711>B-Lower</num2711>
+        <num2712>Vibrator</num2712>
+        <num2713>Exit</num2713>
+        <num2714>0</num2714>
+        <num2715>0</num2715>
+    </quyu2>
+    <quyu3>
+        <num2801>Area 3</num2801>
+        <num2802>Area 3 Component</num2802>
+        <num2803>Start</num2803>
+        <num2804>Stop</num2804>
+        <num2805>First</num2805>
+        <num2806>Second</num2806>
+        <num2807>Third</num2807>
+        <num2808>F-Upper</num2808>
+        <num2809>F-Lower</num2809>
+        <num2810>B-Upper</num2810>
+        <num2811>B-Lower</num2811>
+        <num2812>Vibrator</num2812>
+        <num2813>Exit</num2813>
+        <num2814>0</num2814>
+        <num2815>0</num2815>
+    </quyu3>
+    <quyu4>
+        <num2901>Area 4</num2901>
+        <num2902>Area 4 Component</num2902>
+        <num2903>Start</num2903>
+        <num2904>Stop</num2904>
+        <num2905>First</num2905>
+        <num2906>Second</num2906>
+        <num2907>Third</num2907>
+        <num2908>F-Upper</num2908>
+        <num2909>F-Lower</num2909>
+        <num2910>B-Upper</num2910>
+        <num2911>B-Lower</num2911>
+        <num2912>Vibrator</num2912>
+        <num2913>Exit</num2913>
+        <num2914>0</num2914>
+        <num2915>0</num2915>
+    </quyu4>
+    <quyu5>
+        <num3001>Area 5</num3001>
+        <num3002>Area 5 Component</num3002>
+        <num3003>Start</num3003>
+        <num3004>Stop</num3004>
+        <num3005>First</num3005>
+        <num3006>Second</num3006>
+        <num3007>Third</num3007>
+        <num3008>F-Upper</num3008>
+        <num3009>F-Lower</num3009>
+        <num3010>B-Upper</num3010>
+        <num3011>B-Lower</num3011>
+        <num3012>Vibrator</num3012>
+        <num3013>Exit</num3013>
+        <num3014>0</num3014>
+        <num3015>0</num3015>
+    </quyu5>
+    <rlingmin>
+        <num3101>R Sensitivity Setting</num3101>
+        <num3102>R Sensitivity Component</num3102>
+        <num3103>Start</num3103>
+        <num3104>Stop</num3104>
+        <num3105>First</num3105>
+        <num3106>Second</num3106>
+        <num3107>Third</num3107>
+        <num3108>F-Dark</num3108>
+        <num3109>F-Light</num3109>
+        <num3110>B-Dark</num3110>
+        <num3111>B-Light</num3111>
+        <num3112>G Sensitivity</num3112>
+        <num3113>B Sensitivity</num3113>
+        <num3114>Blend Sensitivity</num3114>
+        <num3115>Exit</num3115>
+        <num3116>0</num3116>
+        <num3117>0</num3117>
+        <num3118>0</num3118>
+        <num3119>0</num3119>
+        <num3120>0</num3120>
+    </rlingmin>
+    <rzengyi>
+        <num3201>R Gain</num3201>
+        <num3202>Start</num3202>
+        <num3203>Stop</num3203>
+        <num3204>Front</num3204>
+        <num3205>Back</num3205>
+        <num3206>G Gain</num3206>
+        <num3207>B Gain</num3207>
+        <num3208>Exit</num3208>
+        <num3209>0</num3209>
+        <num3210>0</num3210>
+    </rzengyi>
+    <shendu>
+        <num3301>Depth 1</num3301>
+        <num3302>Depth 1 Component</num3302>
+        <num3303>Start</num3303>
+        <num3304>Stop</num3304>
+        <num3305>First</num3305>
+        <num3306>Second</num3306>
+        <num3307>Third</num3307>
+        <num3308>F-Upper</num3308>
+        <num3309>F-Lower</num3309>
+        <num3310>B-Upper</num3310>
+        <num3311>B-Lower</num3311>
+        <num3312>Vibrator</num3312>
+        <num3313>Exit</num3313>
+        <num3314>0</num3314>
+        <num3315>0</num3315>
+    </shendu>
+    <shendu2>
+        <num3401>Depth 2</num3401>
+        <num3402>Depth 2 Component</num3402>
+        <num3403>Start</num3403>
+        <num3404>Stop</num3404>
+        <num3405>First</num3405>
+        <num3406>Second</num3406>
+        <num3407>Third</num3407>
+        <num3408>F-Upper</num3408>
+        <num3409>F-Lower</num3409>
+        <num3410>B-Upper</num3410>
+        <num3411>B-Lower</num3411>
+        <num3412>Vibrator</num3412>
+        <num3413>Exit</num3413>
+        <num3414>0</num3414>
+        <num3415>0</num3415>
+    </shendu2>
+    <tiaoshizhuanyong>
+        <num3501>Engineer Only</num3501>
+        <num3502>Sensitivity</num3502>
+        <num3503>Color Sensitivity</num3503>
+        <num3504>Shape Sorting</num3504>
+        <num3505>Gain Setting</num3505>
+        <num3506>Gray level neglect</num3506>
+        <num3507>Flow Setting</num3507>
+        <num3508>Valve Testing</num3508>
+        <num3509>Area Setting</num3509>
+        <num3510>Collecting pictures</num3510>
+        <num3511>UDP Collecting pictures</num3511>
+        <num3512>Background</num3512>
+        <num3513>MOD Setting</num3513>
+        <num3514>Cleaning Setting</num3514>
+        <num3515>Translation Setting</num3515>
+        <num3516>Restore factory settings</num3516>
+        <num3517>VGA Setting</num3517>
+        <num3518>Auxiliary function</num3518>
+        <num3519>Delay Setting</num3519>
+        <num3520>Comp</num3520>
+        <num3521>Restart</num3521>
+        <num3522>Exit</num3522>
+        <num3523>0</num3523>
+        <num3524>0</num3524>
+        <num3525>0</num3525>
+    </tiaoshizhuanyong>
+    <xiangjihuafen>
+        <num3601>Start</num3601>
+        <num3602>End</num3602>
+        <num3603>CH</num3603>
+        <num3604>Confirm revision</num3604>
+        <num3605>Send</num3605>
+        <num3606>Save</num3606>
+        <num3607>Read</num3607>
+        <num3608>Exit</num3608>
+        <num3609>0</num3609>
+        <num3610>0</num3610>
+    </xiangjihuafen>
+    <xingxuanlingmindu>
+        <num3701>Shape Sensitivity</num3701>
+        <num3702>Start</num3702>
+        <num3703>Stop</num3703>
+        <num3704>Front</num3704>
+        <num3705>Back</num3705>
+        <num3706>Exit</num3706>
+        <num3707>0</num3707>
+        <num3708>0</num3708>
+        <num3709>0</num3709>
+        <num3710>0</num3710>
+    </xingxuanlingmindu>
+    <xingxuanshezhi>
+        <num3801>Shape Sorting</num3801>
+        <num3802>Shape Sort Mode</num3802>
+        <num3803>Delay</num3803>
+        <num3804>Open time</num3804>
+        <num3805>Period</num3805>
+        <num3806>Shape Threshold</num3806>
+        <num3807>Shape Sensitivity</num3807>
+        <num3808>Area Setting</num3808>
+        <num3809>Gray level neglect</num3809>
+        <num3810>Exit</num3810>
+        <num3811>0</num3811>
+        <num3812>0</num3812>
+        <num3813>0</num3813>
+        <num3814>0</num3814>
+        <num3815>Stop shape sorting</num3815>
+        <num3816>All sorting</num3816>
+        <num3817>Big sorting</num3817>
+        <num3818>Small sorting</num3818>
+        <num3819>0</num3819>
+        <num3820>0</num3820>
+    </xingxuanshezhi>
+    <yanchi>
+        <num3901>Delay Setting</num3901>
+        <num3902>Start</num3902>
+        <num3903>Stop</num3903>
+        <num3904>Vibrator</num3904>
+        <num3905>Exit</num3905>
+        <num3906>0</num3906>
+        <num3907>0</num3907>
+        <num3908>0</num3908>
+        <num3909>0</num3909>
+        <num3910>0</num3910>
+    </yanchi>
+    <yansehangmianji>
+        <num4001>Color Area 2</num4001>
+        <num4002>Front</num4002>
+        <num4003>Back</num4003>
+        <num4004>Exit</num4004>
+        <num4005>0</num4005>
+        <num4006>0</num4006>
+        <num4007>0</num4007>
+        <num4008>0</num4008>
+        <num4009>0</num4009>
+        <num4010>0</num4010>
+    </yansehangmianji>
+    <yansemingan>
+        <num4101>Area一</num4101>
+        <num4102>Area一Component</num4102>
+        <num4103>Start</num4103>
+        <num4104>Stop</num4104>
+        <num4105>First</num4105>
+        <num4106>Second</num4106>
+        <num4107>Third</num4107>
+        <num4108>F-Upper</num4108>
+        <num4109>F-Lower</num4109>
+        <num4110>B-Upper</num4110>
+        <num4111>B-Lower</num4111>
+        <num4112>Vibrator</num4112>
+        <num4113>Exit</num4113>
+        <num4114>0</num4114>
+        <num4115>0</num4115>
+    </yansemingan>
+    <yanseminganqiangdu>
+        <num4201>Color intensity</num4201>
+        <num4202>First</num4202>
+        <num4203>Second</num4203>
+        <num4204>Third</num4204>
+        <num4205>Front</num4205>
+        <num4206>Back</num4206>
+        <num4207>Exit</num4207>
+        <num4208>0</num4208>
+        <num4209>0</num4209>
+        <num4210>0</num4210>
+    </yanseminganqiangdu>
+    <yuancheng>
+        <num4301>0</num4301>
+        <num4302>0</num4302>
+        <num4303>0</num4303>
+        <num4304>0</num4304>
+        <num4305>0</num4305>
+        <num4306>0</num4306>
+        <num4307>0</num4307>
+        <num4308>0</num4308>
+        <num4309>0</num4309>
+        <num4310>0</num4310>
+        <num4311>0</num4311>
+        <num4312>0</num4312>
+        <num4313>0</num4313>
+        <num4314>0</num4314>
+        <num4315>0</num4315>
+        <num4316>0</num4316>
+        <num4317>0</num4317>
+        <num4318>0</num4318>
+        <num4319>0</num4319>
+        <num4320>0</num4320>
+    </yuancheng>
+    <zhuce>
+        <num4401>Registration code：</num4401>
+        <num4402>Register</num4402>
+        <num4403>0</num4403>
+        <num4404>0</num4404>
+        <num4405>0</num4405>
+    </zhuce>
+    <vga>
+        <num4501>VGA Setting</num4501>
+        <num4502>Adress</num4502>
+        <num4503>Front</num4503>
+        <num4504>Adress</num4504>
+        <num4505>Back</num4505>
+        <num4506>Show all</num4506>
+        <num4507>Cancel all</num4507>
+        <num4508>Single Gain Enable</num4508>
+        <num4509>V-FI</num4509>
+        <num4510>V-POINT</num4510>
+        <num4511>V-GRAY</num4511>
+        <num4512>107check</num4512>
+        <num4513>106zero</num4513>
+        <num4514>Exit</num4514>
+        <num4515>0</num4515>
+    </vga>
+    <blingminf>
+        <num4601>B Sensitivity Setting</num4601>
+        <num4602>F-Dark</num4602>
+        <num4603>F-Light</num4603>
+        <num4604>B-Dark</num4604>
+        <num4605>B-Light</num4605>
+        <num4606>Vibrator</num4606>
+        <num4607>Exit</num4607>
+        <num4608>0</num4608>
+        <num4609>0</num4609>
+        <num4610>0</num4610>
+    </blingminf>
+    <shuru>
+        <num4701>clearing</num4701>
+        <num4702>Exit</num4702>
+        <num4703>OK</num4703>
+        <num4704>0</num4704>
+        <num4705>0</num4705>
+        <num4706>0</num4706>
+        <num4707>0</num4707>
+        <num4708>0</num4708>
+        <num4709>0</num4709>
+        <num4710>0</num4710>
+    </shuru>
+    <glingminf>
+        <num4801>G Sensitivity Component</num4801>
+        <num4802>F-Dark</num4802>
+        <num4803>F-Light</num4803>
+        <num4804>B-Dark</num4804>
+        <num4805>B-Light</num4805>
+        <num4806>Vibrator</num4806>
+        <num4807>Exit</num4807>
+        <num4808>0</num4808>
+        <num4809>0</num4809>
+        <num4810>0</num4810>
+    </glingminf>
+    <huierf>
+        <num4901>Gray 2 Component</num4901>
+        <num4902>F-Upper</num4902>
+        <num4903>F-Lower</num4903>
+        <num4904>B-Upper</num4904>
+        <num4905>B-Lower</num4905>
+        <num4906>Vibrator</num4906>
+        <num4907>Exit</num4907>
+        <num4908>0</num4908>
+        <num4909>0</num4909>
+        <num4910>0</num4910>
+    </huierf>
+    <huif>
+        <num5001>Gray1Component</num5001>
+        <num5002>F-Upper</num5002>
+        <num5003>F-Lower</num5003>
+        <num5004>B-Upper</num5004>
+        <num5005>B-Lower</num5005>
+        <num5006>Vibrator</num5006>
+        <num5007>Exit</num5007>
+        <num5008>0</num5008>
+        <num5009>0</num5009>
+        <num5010>0</num5010>
+    </huif>
+    <hunsef>
+        <num5101>Blend Component</num5101>
+        <num5102>F-Dark</num5102>
+        <num5103>F-Light</num5103>
+        <num5104>B-Dark</num5104>
+        <num5105>B-Light</num5105>
+        <num5106>Vibrator</num5106>
+        <num5107>Exit</num5107>
+        <num5108>0</num5108>
+        <num5109>0</num5109>
+        <num5110>0</num5110>
+    </hunsef>
+    <jiezhiriqi>
+        <num5201>Extend use period</num5201>
+        <num5202>Closing date</num5202>
+        <num5203>Write</num5203>
+        <num5204>check</num5204>
+        <num5205>Password</num5205>
+        <num5206>Unlock</num5206>
+        <num5207>Restart</num5207>
+        <num5208>0</num5208>
+        <num5209>0</num5209>
+        <num5210>0</num5210>
+    </jiezhiriqi>
+    <querf>
+        <num5301>Area 2 Component</num5301>
+        <num5302>F-Upper</num5302>
+        <num5303>F-Lower</num5303>
+        <num5304>B-Upper</num5304>
+        <num5305>B-Lower</num5305>
+        <num5306>Vibrator</num5306>
+        <num5307>Exit</num5307>
+        <num5308>0</num5308>
+        <num5309>0</num5309>
+        <num5310>0</num5310>
+    </querf>
+    <quf>
+        <num5401>Area 1 Component</num5401>
+        <num5402>F-Upper</num5402>
+        <num5403>F-Lower</num5403>
+        <num5404>B-Upper</num5404>
+        <num5405>B-Lower</num5405>
+        <num5406>Vibrator</num5406>
+        <num5407>Exit</num5407>
+        <num5408>0</num5408>
+        <num5409>0</num5409>
+        <num5410>0</num5410>
+    </quf>
+    <qusanf>
+        <num5501>Area 3 Component</num5501>
+        <num5502>F-Upper</num5502>
+        <num5503>F-Lower</num5503>
+        <num5504>B-Upper</num5504>
+        <num5505>B-Lower</num5505>
+        <num5506>Vibrator</num5506>
+        <num5507>Exit</num5507>
+        <num5508>0</num5508>
+        <num5509>0</num5509>
+        <num5510>0</num5510>
+    </qusanf>
+    <qusif>
+        <num5601>Area 4 Component</num5601>
+        <num5602>F-Upper</num5602>
+        <num5603>F-Lower</num5603>
+        <num5604>B-Upper</num5604>
+        <num5605>B-Lower</num5605>
+        <num5606>Vibrator</num5606>
+        <num5607>Exit</num5607>
+        <num5608>0</num5608>
+        <num5609>0</num5609>
+        <num5610>0</num5610>
+    </qusif>
+    <quwuf>
+        <num5701>Area 5 Component</num5701>
+        <num5702>F-Upper</num5702>
+        <num5703>F-Lower</num5703>
+        <num5704>B-Upper</num5704>
+        <num5705>B-Lower</num5705>
+        <num5706>Vibrator</num5706>
+        <num5707>Exit</num5707>
+        <num5708>0</num5708>
+        <num5709>0</num5709>
+        <num5710>0</num5710>
+    </quwuf>
+    <rlingminf>
+        <num5801>R Sensitivity Component</num5801>
+        <num5802>F-Dark</num5802>
+        <num5803>F-Light</num5803>
+        <num5804>B-Dark</num5804>
+        <num5805>B-Light</num5805>
+        <num5806>Vibrator</num5806>
+        <num5807>Exit</num5807>
+        <num5808>0</num5808>
+        <num5809>0</num5809>
+        <num5810>0</num5810>
+    </rlingminf>
+    <shenduf>
+        <num5901>Depth 1 Component</num5901>
+        <num5902>F-Upper</num5902>
+        <num5903>F-Lower</num5903>
+        <num5904>B-Upper</num5904>
+        <num5905>B-Lower</num5905>
+        <num5906>Vibrator</num5906>
+        <num5907>Exit</num5907>
+        <num5908>0</num5908>
+        <num5909>0</num5909>
+        <num5910>0</num5910>
+    </shenduf>
+    <shenerf>
+        <num6001>Depth 2 Component</num6001>
+        <num6002>F-Upper</num6002>
+        <num6003>F-Lower</num6003>
+        <num6004>B-Upper</num6004>
+        <num6005>B-Lower</num6005>
+        <num6006>Vibrator</num6006>
+        <num6007>Exit</num6007>
+        <num6008>0</num6008>
+        <num6009>0</num6009>
+        <num6010>0</num6010>
+    </shenerf>
+    <shuzhiduqu>
+        <num6101>Read Data</num6101>
+        <num6102>V-POINT</num6102>
+        <num6103>R</num6103>
+        <num6104>G</num6104>
+        <num6105>B</num6105>
+        <num6106>Chute 1 Front Camera</num6106>
+        <num6107>Numerical correction</num6107>
+        <num6108>Area</num6108>
+        <num6109>Depth</num6109>
+        <num6110>Gray</num6110>
+        <num6111>Reading</num6111>
+        <num6112>Refresh</num6112>
+        <num6113>Exit</num6113>
+        <num6114>0</num6114>
+        <num6115>Camera 1F</num6115>
+        <num6116>Camera 1B</num6116>
+        <num6117>Camera 2F</num6117>
+        <num6118>Camera 2B</num6118>
+        <num6119>Camera 3F</num6119>
+        <num6120>Camera 3B</num6120>
+        <num6121>Camera 4F</num6121>
+        <num6122>Camera 4B</num6122>
+        <num6123>Camera 5F</num6123>
+        <num6124>Camera 5B</num6124>
+        <num6125>Camera 6F</num6125>
+        <num6126>Camera 6B</num6126>
+        <num6127>Camera 7F</num6127>
+        <num6128>Camera 7B</num6128>
+        <num6129>Camera 8F</num6129>
+        <num6130>Camera 8B</num6130>
+        <num6131>Camera 9F</num6131>
+        <num6132>Camera 9B</num6132>
+        <num6133>Camera 10F</num6133>
+        <num6134>Camera 10B</num6134>
+        <num6135>0</num6135>
+        <num6136>0</num6136>
+        <num6137>0</num6137>
+        <num6138>0</num6138>
+        <num6139>0</num6139>
+        <num6140>0</num6140>
+    </shuzhiduqu>
+    <zhuangtai>
+        <num6201>Board</num6201>
+        <num6202>Front Camera</num6202>
+        <num6203>Back Camera</num6203>
+        <num6204>Resend</num6204>
+        <num6205>Exit</num6205>
+        <num6206>0</num6206>
+        <num6207>0</num6207>
+        <num6208>0</num6208>
+        <num6209>0</num6209>
+        <num6210>0</num6210>
+    </zhuangtai>
+    <yanse>
+        <num6301>Color Sensitivity</num6301>
+        <num6302>Area1</num6302>
+        <num6303>Area4</num6303>
+        <num6304>Area5</num6304>
+        <num6305>Color area 2</num6305>
+        <num6306>Read Data</num6306>
+        <num6307>Area2</num6307>
+        <num6308>Depth 1</num6308>
+        <num6309>Depth 2</num6309>
+        <num6310>Background Threshold</num6310>
+        <num6311>Area3</num6311>
+        <num6312>Gray 1</num6312>
+        <num6313>Gray 2</num6313>
+        <num6314>Color intensity</num6314>
+        <num6315>Exit</num6315>
+        <num6316>0</num6316>
+        <num6317>0</num6317>
+    </yanse>
+    <zhuban>
+        <num6401>Read Board Number</num6401>
+        <num6402>Flowrate</num6402>
+        <num6403>Vibrator</num6403>
+        <num6404>Vibrator</num6404>
+        <num6405>First</num6405>
+        <num6406>Second</num6406>
+        <num6407>F-Background</num6407>
+        <num6408>B-Background</num6408>
+        <num6409>ID</num6409>
+        <num6410>Cleaning cycle</num6410>
+        <num6411>Forward(s)</num6411>
+        <num6412>Return time(s)</num6412>
+        <num6413>Valve power</num6413>
+        <num6414>Exit</num6414>
+        <num6415>0</num6415>
+    </zhuban>
+    <yuancheng>
+        <num6501>Connect server</num6501>
+        <num6502>send files</num6502>
+        <num6503>Exit</num6503>
+        <num6504>IP</num6504>
+        <num6505>Port</num6505>
+        <num6506>0</num6506>
+        <num6507>0</num6507>
+        <num6508>0</num6508>
+        <num6509>0</num6509>
+        <num6510>Connect Success!</num6510>
+        <num6511>Failed to send!</num6511>
+        <num6512>Connect Error!</num6512>
+        <num6513>Upload file success!</num6513>
+        <num6514>Open failed!</num6514>
+        <num6515>Upload file failed!</num6515>
+        <num6516>Download failed!</num6516>
+        <num6517>Failed to send!</num6517>
+        <num6518>Receiving completed !</num6518>
+        <num6519>Abnormal communication!</num6519>
+        <num6520>HeartBeat send Error!</num6520>
+        <num6521>0</num6521>
+        <num6522>0</num6522>
+        <num6523>0</num6523>
+        <num6524>0</num6524>
+        <num6525>0</num6525>
+    </yuancheng>
+    <xiaoxikuang>
+        <num6601>Abnormal communication</num6601>
+        <num6602>Insufficient pressure</num6602>
+        <num6603>System time error, about to shut down</num6603>
+        <num6604>Device ID error</num6604>
+        <num6605>Date written successfully</num6605>
+        <num6606>The date error</num6606>
+        <num6607>Password error</num6607>
+        <num6608>Failed to get program access</num6608>
+        <num6609>Password error</num6609>
+        <num6610>Send successfully</num6610>
+        <num6611>IP or PORT cannot be empty</num6611>
+        <num6612>Send failure</num6612>
+        <num6613>Switch success</num6613>
+        <num6614>Cancelled operation</num6614>
+        <num6615>Read successfully</num6615>
+        <num6616>Save successfully</num6616>
+        <num6617>0</num6617>
+        <num6618>0</num6618>
+        <num6619>0</num6619>
+        <num6620>0</num6620>
+    </xiaoxikuang>
+    <tongdao>
+        <num6701>Camera parameters</num6701>
+        <num6702>Front Camera</num6702>
+        <num6703>Back Camera</num6703>
+        <num6704>Open time</num6704>
+        <num6705>Delay</num6705>
+        <num6706>Translation</num6706>
+        <num6707>Period</num6707>
+        <num6708>CCD Speed</num6708>
+        <num6709>Average speed</num6709>
+        <num6710>Speed</num6710>
+        <num6711>Aperture</num6711>
+        <num6712>19</num6712>
+        <num6713>Color line area</num6713>
+        <num6714>21</num6714>
+        <num6715>Correction</num6715>
+        <num6716>vga Filter</num6716>
+        <num6717>vga index</num6717>
+        <num6718>vga enable</num6718>
+        <num6719>Dark area</num6719>
+        <num6720>Light area</num6720>
+        <num6721>Overlapping points</num6721>
+        <num6722>单致</num6722>
+        <num6723>single gain 1</num6723>
+        <num6724>single gain 2</num6724>
+        <num6725>single gain 3</num6725>
+        <num6726>single gain 4</num6726>
+        <num6727>single gain 5</num6727>
+        <num6728>single gain 6</num6728>
+        <num6729>single gain 7</num6729>
+        <num6730>single gain 8</num6730>
+        <num6731>single gain 9</num6731>
+        <num6732>single gain 10</num6732>
+        <num6733>single gain 11</num6733>
+        <num6734>single gain 12</num6734>
+        <num6735>single gain 13</num6735>
+        <num6736>single gain 14</num6736>
+        <num6737>single gain 15</num6737>
+        <num6738>single gain 16</num6738>
+        <num6739>single gain 17</num6739>
+        <num6740>single gain 18</num6740>
+        <num6741>single gain 19</num6741>
+        <num6742>single gain 20</num6742>
+        <num6743>single gain 21</num6743>
+        <num6744>single gain 22</num6744>
+        <num6745>single gain 23</num6745>
+        <num6746>single gain 24</num6746>
+        <num6747>single gain 25</num6747>
+        <num6748>single gain 26</num6748>
+        <num6749>single gain 27</num6749>
+        <num6750>single gain 28</num6750>
+        <num6751>single gain 29</num6751>
+        <num6752>single gain 30</num6752>
+        <num6753>single gain 31</num6753>
+        <num6754>single gain 32</num6754>
+        <num6755>R-Dark</num6755>
+        <num6756>R-Light</num6756>
+        <num6757>G-Dark</num6757>
+        <num6758>G-Light</num6758>
+        <num6759>B-Dark</num6759>
+        <num6760>B-Light</num6760>
+        <num6761>R-Gain</num6761>
+        <num6762>clamR</num6762>
+        <num6763>G-Gain</num6763>
+        <num6764>clamG</num6764>
+        <num6765>B-Gain</num6765>
+        <num6766>clamB</num6766>
+        <num6767>Mode</num6767>
+        <num6768>Blend-Dark</num6768>
+        <num6769>Blend-Light</num6769>
+        <num6770>Background</num6770>
+        <num6771>Color area</num6771>
+        <num6772>Area 1 Upper</num6772>
+        <num6773>Area 1 Lower</num6773>
+        <num6774>Depth 1 Upper</num6774>
+        <num6775>Depth 1 Lower</num6775>
+        <num6776>Gray 1 Upper</num6776>
+        <num6777>Gray 1 Lower</num6777>
+        <num6778>Area 2 Upper</num6778>
+        <num6779>Area 2 Lower</num6779>
+        <num6780>Area 3 Upper</num6780>
+        <num6781>Area 3 Lower</num6781>
+        <num6782>Area 4 Upper</num6782>
+        <num6783>Area 4 Lower</num6783>
+        <num6784>Area 5 Upper</num6784>
+        <num6785>Area 5 Lower</num6785>
+        <num6786>Depth 2 Upper</num6786>
+        <num6787>Depth 2 Lower</num6787>
+        <num6788>Depth 2 Upper</num6788>
+        <num6789>Depth 2 Lower</num6789>
+        <num6790>Shape threshold</num6790>
+        <num6791>Shape Sensitivity</num6791>
+        <num6792>Gray level neglect</num6792>
+        <num6793>Area</num6793>
+        <num6794>Shape sort mode</num6794>
+        <num6795>Period</num6795>
+        <num6796>Open</num6796>
+        <num6797>Delay</num6797>
+        <num6798>NULL</num6798>
+        <num6799>Color instensity</num6799>
+        <num67100>Exit</num67100>
+        <num67101>0</num67101>
+        <num67102>0</num67102>
+        <num67103>0</num67103>
+        <num67104>0</num67104>
+        <num67105>0</num67105>
+        <num67106>0</num67106>
+        <num67107>0</num67107>
+        <num67108>0</num67108>
+        <num67109>0</num67109>
+        <num67110>0</num67110>
+        <num67111>0</num67111>
+        <num67112>0</num67112>
+        <num67113>0</num67113>
+        <num67114>0</num67114>
+        <num67115>0</num67115>
+        <num67116>0</num67116>
+        <num67117>0</num67117>
+        <num67118>0</num67118>
+        <num67119>0</num67119>
+        <num67120>0</num67120>
+    </tongdao>
+    <xiaoxikuang2>
+        <num6801>Prompt：Do you need to read?</num6801>
+        <num6802>Prompt：Do you need storage?</num6802>
+        <num6803>0</num6803>
+        <num6804>0</num6804>
+        <num6805>0</num6805>
+        <num6806>0</num6806>
+        <num6807>0</num6807>
+        <num6808>0</num6808>
+        <num6809>0</num6809>
+        <num6810>0</num6810>
+        <num6811>0</num6811>
+        <num6812>0</num6812>
+        <num6813>0</num6813>
+        <num6814>0</num6814>
+        <num6815>0</num6815>
+    </xiaoxikuang2>
+    <shurumianban>
+        <num6901>Max:</num6901>
+        <num6902>Min:</num6902>
+        <num6903>Clear</num6903>
+        <num6904>Exit</num6904>
+        <num6905>OK</num6905>
+        <num6906>0</num6906>
+        <num6907>0</num6907>
+        <num6908>0</num6908>
+        <num6909>0</num6909>
+        <num6910>0</num6910>
+    </shurumianban>
+    <mima>
+        <num7001>Password：</num7001>
+        <num7002>Exit system</num7002>
+        <num7003>Remote modification</num7003>
+        <num7004>OK</num7004>
+        <num7005>0</num7005>
+        <num7006>0</num7006>
+        <num7007>0</num7007>
+        <num7008>0</num7008>
+        <num7009>0</num7009>
+        <num7010>0</num7010>
+    </mima>
+</system>

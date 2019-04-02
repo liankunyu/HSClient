@@ -29,6 +29,7 @@
 #include "yanseCol.h"
 #include "xiangjihuafen.h"
 #include "Tip.h"
+#include "Tip2.h"
 // tiaoshi 对话框
 
 IMPLEMENT_DYNAMIC(tiaoshi, CDialogEx)
@@ -173,7 +174,7 @@ BOOL tiaoshi::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
 	// TODO:  在此添加额外的初始化
-	
+
 
 	//利用XML初始化各个控件的名称
 	const char* yuyan;
@@ -361,45 +362,69 @@ void tiaoshi::OnBnClickedButton135()
 void tiaoshi::OnBnClickedButton6()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	BOOL boolArray[50];
+	boolArray[0]=Reset("./Reset/lasttime.xml", "lasttime.xml"); 
+	boolArray[1] = Reset("./Reset/mode1.xml", "mode1.xml");
+	boolArray[2] = Reset("./Reset/mode2.xml", "mode2.xml");
+	boolArray[3] = Reset("./Reset/mode3.xml", "mode3.xml");
+	boolArray[4] = Reset("./Reset/mode4.xml", "mode4.xml");
+	boolArray[5] = Reset("./Reset/mode5.xml", "mode5.xml");
+	boolArray[6] = Reset("./Reset/mode6.xml", "mode6.xml");
+	boolArray[7] = Reset("./Reset/mode7.xml", "mode7.xml");
+	boolArray[8] = Reset("./Reset/mode8.xml", "mode8.xml");
+	boolArray[9] = Reset("./Reset/mode9.xml", "mode9.xml");
+	boolArray[10] = Reset("./Reset/mode10.xml", "mode10.xml");
+	boolArray[11] = Reset("./Reset/mode11.xml", "mode11.xml");
+	boolArray[12] = Reset("./Reset/mode12.xml", "mode12.xml");
+	boolArray[13] = Reset("./Reset/mode13.xml", "mode13.xml");
+	boolArray[14] = Reset("./Reset/mode14.xml", "mode14.xml");
+	boolArray[15] = Reset("./Reset/mode15.xml", "mode15.xml");
 
-	fuzhusd[0] = L"ON";
-	fuzhusd[1] = L"ON";
-	fuzhusd[2] = L"ON";
-	fuzhusd[3] = L"ON";
-	fuzhusd[4] = L"ON";
-	fuzhusd[5] = L"ON";
-	qinghui[0] = 40;                           //清灰周期
-	qinghui[1] = 10;                           //清灰时间
-	qinghui[2] = 10;                           //返回时间
-
-	for (int i = 0; i < 10; i++)
+	boolArray[40] = Reset("./Reset/name.xml", "name.xml");
+	for (int i=0;i<16;i++)
 	{
-		//前相机
-
-		pingyisheding[i] = 127;                //前相机平移设定
-		pingyisheding[10 + i] = 127;           //后相机平移设定
-		vgasd[2 * i] == L"ON";
-		vgasd[2 * i + 1] == L"ON";
-
-		rzengyi[i] = 400;                      //前相机R增益设定
-		rzengyi[10 + i] = 400;                 //后相机R增益设定
-		gzengyisheding[i] = 400;               //前相机G增益设定
-		gzengyisheding[10 + i] = 400;          //后相机G增益设定
-		bzengyisheding[i] = 400;               //前相机B增益设定
-		bzengyisheding[10 + i] = 400;          //后相机B增益设定
+		if (boolArray[i]==FALSE)
+		{
+			m_Tip = "num6619";
+			Tip tip;
+			tip.DoModal();
+			return;
+		}
 	}
-	famen[3] = 12;                             //前相机开阀时间
-	famen[5] = 255;                            //开阀周期
-	fuzhugongneng[3] = 11;                     //SpeedS
-	famen[2] = 20;                             //吹嘴测试速度
-	hunselingmin[20] = 0;                      //模式
-	hunselingmin[21] = 0;                      //模式
-	fuzhugongneng[0] = 200;                    //ClamR
-	fuzhugongneng[1] = 200;                    //ClamG
-	fuzhugongneng[2] = 200;                    //ClamB
+	if (boolArray[40] == FALSE)
+	{
+		m_Tip = "num6619";
+		Tip tip;
+		tip.DoModal();
+		return;
+	}
+	m_Tip = "num6620";
+	Tip tip;
+	tip.DoModal(); 
 }
 
-
+BOOL tiaoshi::Reset(string str, string str1)
+{
+	FILE *pFile = NULL, *pFil=NULL;
+	if (fopen_s(&pFile, str.c_str(), "rb") != 0)
+	{
+		return FALSE;
+	}
+	fseek(pFile, 0, SEEK_END);//将指针指到文件最后一个位置
+	int len = ftell(pFile);//获得文件最大长度
+	byte *pBuf;
+	pBuf = new byte[len];
+	rewind(pFile);   //指针复位  
+	fread(pBuf, 1, len, pFile);
+	if (fopen_s(&pFil, str1.c_str(), "w") != 0)
+	{
+		return FALSE;
+	}
+	fwrite(pBuf, 1, len , pFil);
+	fclose(pFile);
+	fclose(pFil);
+	return TRUE;
+}
 
 
 void tiaoshi::OnBnClickedButton7()
@@ -518,7 +543,7 @@ void tiaoshi::OnTimer(UINT_PTR nIDEvent)
 	// TODO: 在此添加消息处理程序代码和/或调用默认值
 	if (nIDEvent == 1)
 	{
-		if (SWlang==2)
+		if (SWlang == 2)
 		{
 			const char* yuyan;
 			CString cstr;
