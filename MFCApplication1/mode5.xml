@@ -134,8 +134,8 @@
         <lastlang>chinese.xml</lastlang>
         <serverIP>127.0.0.1</serverIP>
         <serverPort>9999</serverPort>
-        <fangan>MODE1 TR</fangan>
-        <sendtime>2018-11-11 13:36:03.13</sendtime>
+        <fangan>MODE10 超大米</fangan>
+        <sendtime>2019-01-02 19:40:00.69</sendtime>
         <bling2>2013-09-22</bling2>
         <bling3>2014-01-22</bling3>
         <bling4>2018-08-07 11:50:11</bling4>
@@ -154,8 +154,8 @@
         <rzeng1>200</rzeng1>
         <rzeng2>2017-11-26 08:53:24</rzeng2>
         <xianshi>xianshi</xianshi>
-        <jzsj>2019-1-30</jzsj>
-        <gjsj>2019-01-04 18:23:25</gjsj>
+        <jzsj>2019-8-30</jzsj>
+        <gjsj>2019-04-02 11:20:08</gjsj>
         <vga1>2017-11-30 14:01:46</vga1>
         <vga2>2018-01-24 08:56:06</vga2>
         <vga3>2018-01-08 05:09:18</vga3>
@@ -1570,4 +1570,36 @@
         <num4844>0</num4844>
         <num4845>0</num4845>
     </huierf>
+    <tongxinzhuangtai>
+        <num4901>0</num4901>
+        <num4902>0</num4902>
+        <num4903>0</num4903>
+        <num4904>0</num4904>
+        <num4905>0</num4905>
+        <num4906>0</num4906>
+        <num4907>0</num4907>
+        <num4908>0</num4908>
+        <num4909>0</num4909>
+        <num4910>0</num4910>
+        <num4911>0</num4911>
+        <num4912>0</num4912>
+        <num4913>0</num4913>
+        <num4914>0</num4914>
+        <num4915>0</num4915>
+        <num4916>0</num4916>
+        <num4917>0</num4917>
+        <num4918>0</num4918>
+        <num4919>0</num4919>
+        <num4920>0</num4920>
+        <num4921>0</num4921>
+        <num4922>0</num4922>
+        <num4923>0</num4923>
+        <num4924>0</num4924>
+        <num4925>0</num4925>
+        <num4926>0</num4926>
+        <num4927>0</num4927>
+        <num4928>0</num4928>
+        <num4929>0</num4929>
+        <num4930>0</num4930>
+    </tongxinzhuangtai>
 </mode>

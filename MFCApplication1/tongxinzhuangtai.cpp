@@ -67,10 +67,16 @@ BOOL tongxinzhuangtai::OnInitDialog()
 	// TODO:  在此添加额外的初始化
 	m_IconRed = AfxGetApp()->LoadIcon(IDR_ICONRED);//导入Icon资源，利用m_hIconBtn来存储句柄。
 	m_IconGreen = AfxGetApp()->LoadIcon(IDR_ICONGREEN);//导入Icon资源，利用m_hIconBtn来存储句柄。
+   //向lasttime.xml文件写入通信状态
+   //------------------------------------------------//
+	string str;
+	opXML Topx("lasttime.xml");
 	CMyPublicData::setfunc(10, 3, 9, 1);
 	if (fanhuizhi == (-1))
 	{
-		
+		str = Topx.numtoString(fanhuizhi);
+		Topx.ModifyNode("num4901", str);
+
 		m_state0.SetIcon(m_IconRed);
 	}
 	if (modsd[0]!="OFF")
@@ -78,7 +84,9 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(32, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
-			
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4902", str);
+
 			m_state1.SetIcon(m_IconRed);
 		}
 	}
@@ -87,6 +95,8 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(33, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4903", str);
 			
 			m_state2.SetIcon(m_IconRed);
 		}
@@ -96,6 +106,8 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(34, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4904", str);
 			
 			m_state3.SetIcon(m_IconRed);
 		}
@@ -105,6 +117,8 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(35, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4905", str);
 			
 			m_state4.SetIcon(m_IconRed);
 		}
@@ -114,6 +128,8 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(36, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4906", str);
 			
 			m_state5.SetIcon(m_IconRed);
 		}
@@ -123,6 +139,8 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(37, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4907", str);
 			
 			m_state6.SetIcon(m_IconRed);
 		}
@@ -132,6 +150,8 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(38, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4908", str);
 			
 			m_state7.SetIcon(m_IconRed);
 		}
@@ -141,6 +161,8 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(39, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4909", str);
 			
 			m_state8.SetIcon(m_IconRed);
 		}
@@ -150,6 +172,8 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(40, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4910", str);
 			
 			m_state9.SetIcon(m_IconRed);
 		}
@@ -159,6 +183,8 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(41, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4911", str);
 			
 			m_state10.SetIcon(m_IconRed);
 		}
@@ -168,6 +194,8 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(42, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4912", str);
 			
 			m_state11.SetIcon(m_IconRed);
 		}
@@ -177,6 +205,8 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(43, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4913", str);
 			
 			m_state12.SetIcon(m_IconRed);
 		}
@@ -186,6 +216,8 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(44, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4914", str);
 			
 			m_state13.SetIcon(m_IconRed);
 		}
@@ -195,6 +227,8 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(45, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4915", str);
 			
 			m_state14.SetIcon(m_IconRed);
 		}
@@ -204,6 +238,8 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(46, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4916", str);
 			
 			m_state15.SetIcon(m_IconRed);
 		}
@@ -213,6 +249,8 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(47, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4917", str);
 			
 			m_state16.SetIcon(m_IconRed);
 		}
@@ -222,6 +260,8 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(48, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4918", str);
 			
 			m_state17.SetIcon(m_IconRed);
 		}
@@ -231,6 +271,8 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(49, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4919", str);
 			
 			m_state18.SetIcon(m_IconRed);
 		}
@@ -240,6 +282,8 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(50, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4920", str);
 			
 			m_state19.SetIcon(m_IconRed);
 		}
@@ -249,12 +293,14 @@ BOOL tongxinzhuangtai::OnInitDialog()
 		CMyPublicData::setfunc(51, 3, 1, 1);
 		if (fanhuizhi == (-1))
 		{
+			str = Topx.numtoString(fanhuizhi);
+			Topx.ModifyNode("num4921", str);
 			
 			m_state20.SetIcon(m_IconRed);
 		}
 	}
-
-
+	Topx.SaveFile();
+	//-----------------------------------------//
 	const char* yuyan;
 	CString cstr;
 	opXML opx(lang);
