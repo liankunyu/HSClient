@@ -2916,6 +2916,55 @@ void CMyPublicData::readXML(string str)
 		}
 	}
 
+	//向lasttime.xml文件写入通信状态
+	//------------------------------------------------//
+	string Tstr;
+	opXML Topx("lasttime.xml");
+	Tstr = Topx.numtoString(tongxincuowu[0]);
+	Topx.ModifyNode("num4901", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[1]);
+	Topx.ModifyNode("num4902", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[2]);
+	Topx.ModifyNode("num4903", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[3]);
+	Topx.ModifyNode("num4904", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[4]);
+	Topx.ModifyNode("num4905", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[5]);
+	Topx.ModifyNode("num4906", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[6]);
+	Topx.ModifyNode("num4907", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[7]);
+	Topx.ModifyNode("num4908", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[8]);
+	Topx.ModifyNode("num4909", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[9]);
+	Topx.ModifyNode("num4910", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[10]);
+	Topx.ModifyNode("num4911", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[11]);
+	Topx.ModifyNode("num4912", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[12]);
+	Topx.ModifyNode("num4913", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[13]);
+	Topx.ModifyNode("num4914", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[14]);
+	Topx.ModifyNode("num4915", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[15]);
+	Topx.ModifyNode("num4916", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[16]);
+	Topx.ModifyNode("num4917", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[17]);
+	Topx.ModifyNode("num4918", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[18]);
+	Topx.ModifyNode("num4919", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[19]);
+	Topx.ModifyNode("num4920", Tstr);
+	Tstr = Topx.numtoString(tongxincuowu[20]);
+	Topx.ModifyNode("num4921", Tstr);
+	Topx.SaveFile();
+	//------------------------------------------------//
+
 	if (tongxincuowu[0] != (-1))
 	{
 		CMyPublicData::setfunc(10, 3, 9, 1);
@@ -5903,54 +5952,7 @@ void CMyPublicData::MreadXML(string str)
 			}
 		}
 	}
-	//向lasttime.xml文件写入通信状态
-	//------------------------------------------------//
-		string Tstr;
-		opXML Topx("lasttime.xml");
-		Tstr = Topx.numtoString(tongxincuowu[0]);
-		Topx.ModifyNode("num4901", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[1]);
-		Topx.ModifyNode("num4902", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[2]);
-		Topx.ModifyNode("num4903", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[3]);
-		Topx.ModifyNode("num4904", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[4]);
-		Topx.ModifyNode("num4905", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[5]);
-		Topx.ModifyNode("num4906", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[6]);
-		Topx.ModifyNode("num4907", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[7]);
-		Topx.ModifyNode("num4908", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[8]);
-		Topx.ModifyNode("num4909", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[9]);
-		Topx.ModifyNode("num4910", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[10]);
-		Topx.ModifyNode("num4911", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[11]);
-		Topx.ModifyNode("num4912", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[12]);
-		Topx.ModifyNode("num4913", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[13]);
-		Topx.ModifyNode("num4914", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[14]);
-		Topx.ModifyNode("num4915", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[15]);
-		Topx.ModifyNode("num4916", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[16]);
-		Topx.ModifyNode("num4917", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[17]);
-		Topx.ModifyNode("num4918", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[18]);
-		Topx.ModifyNode("num4919", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[19]);
-		Topx.ModifyNode("num4920", Tstr);
-		Tstr = Topx.numtoString(tongxincuowu[20]);
-		Topx.ModifyNode("num4921", Tstr);
-		Topx.SaveFile();
-	//------------------------------------------------//
+
 
 	if (tongxincuowu[0] != (-1))
 	{

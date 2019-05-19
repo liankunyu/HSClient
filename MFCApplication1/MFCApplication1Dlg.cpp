@@ -452,6 +452,7 @@ void CMFCApplication1Dlg::OnBnClickedMoshixuanzeButton()
 	Moshixuanze moshi;
 	moshi.DoModal();
 	ModelSize = m_moshi;    //将当前色选方案赋值给ModelSize编辑框
+	fanhuizhi = 0;  //开启定时器前返回值清零
 	SetTimer(2, 2000, NULL); //开启定时器
 	UpdateData(FALSE);
 }
@@ -659,6 +660,7 @@ void CMFCApplication1Dlg::OnBnClickedTongxunzhuangtaiButton()
 	KillTimer(2);  //暂时关闭主界面的通信异常判断，f防止多次出现提示界面
 	tongxinzhuangtai tx;
 	tx.DoModal();
+	fanhuizhi = 0;    //开启定时器前返回值清零
 	SetTimer(2, 2000, NULL); //开启定时器
 }
 
